@@ -695,7 +695,7 @@ badook_player_cn = {
     all_power_cost = 0.2
 }
 
-horde_centralisation_high = {
+horde_centralisation_very_high = {
 	potential = {
 		is_nomad = yes
 	}
@@ -707,4 +707,15 @@ horde_centralisation_high = {
 	infantry_power = 0.10
 	cavalry_power = 0.10
 }
-
+horde_centralisation_high = {
+	potential = {
+		is_nomad = yes
+	}
+	trigger = {
+		horde_unity = 75
+	}
+	development_cost = -0.05	
+	global_trade_goods_size_modifier = 0.05
+	infantry_power = 0.05
+	cavalry_power = 0.05
+}
