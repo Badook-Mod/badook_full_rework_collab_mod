@@ -91,27 +91,64 @@ country_event = {
 	}
 }
 
-#centralised hordes are cool
 country_event = {
 	id = nomadic_events.4
 	title = nomadic_events.4.t
 	desc = nomadic_events.4.d
 	picture = MESOAMERICAN_GODS_eventPicture
-	is_triggered_only = yes
+	fire_only_once = yes
 	
 	trigger = {
-		nomad = yes
+		tag = SHY
+		mil_tech = 5
+		adm_tech = 5
 	}
 	
-	immediate = {
-		hidden_effect = {
-			clr_country_flag = unity_gained 
-		}
+	mean_time_to_happen = {
+		months = 25
 	}
 	
 	option = {
 		name = nomadic_events.4.a #keep me in
+		1078 = {
+			add_siberian_construction = 999
+		}
+		1080 = {
+			add_siberian_construction = 999
+		}
+		1780 = {
+			add_siberian_construction = 999
+		}
+		hidden_effect = {
+			set_country_flag = colonised_siberia
+		}
 	}
 }
 
-
+country_event = {
+	id = nomadic_events.5
+	title = nomadic_events.5.t
+	desc = nomadic_events.5.d
+	picture = MESOAMERICAN_GODS_eventPicture
+	
+	trigger = {
+		has_country_flag = colonised_siberia
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = nomadic_events.5.a #keep me in
+		random_empty_neighbor_province = {
+			add_siberian_construction = 999
+		}
+		random_empty_neighbor_province = {
+			add_siberian_construction = 999
+		}
+		random_empty_neighbor_province = {
+			add_siberian_construction = 999
+		}
+	}
+}
