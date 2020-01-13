@@ -1,0 +1,77 @@
+#Manchu vassal
+vassal = {
+	first = MCH
+	second = KOR
+	start_date = 1637.1.1
+	end_date = 1645.6.30
+}
+
+#Manchu vassal
+vassal = {
+	first = QNG
+	second = KOR
+	start_date = 1645.7.1
+	end_date = 1895.1.1
+}
+
+# Seven-Year war
+alliance = {
+	first = MNG
+	second = KOR
+	start_date = 1593.1.1
+	end_date = 1598.1.1
+}
+
+# Tibet and Manchu
+vassal = {
+	first = QNG
+	second = UTS
+	start_date = 1724.1.1
+	end_date = 1792.11.1
+}
+
+vassal = {
+	first = QNG
+	second = KAM
+	start_date = 1724.1.1
+	end_date = 1776.1.1
+}
+
+#Chagatai Subject
+vassal = {
+	first = CHG
+	second = KAS
+	start_date = 1444.1.1
+	end_date = 1462.1.1
+}
+
+
+####Chinese Tributaries
+
+vassal = {
+	first = NMS
+	second = CHN
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+vassal = {
+	first = NMS
+	second = CCH
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+#gay kml shit
+royal_marriage = {
+	first = ZHO
+	second = XIP
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+guarantee = {
+	first = ZHO
+	second = XIP
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}

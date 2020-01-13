@@ -1,0 +1,36 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = sichuanese
+capital = 679	#Chengdu
+
+1429.5.2 = { leader = {	name = "Zhuge Liang"	type = general	fire = 2	shock = 0	manuever = 6	siege = 3	death_date = 1479.1.1 } }
+
+1444.1.1 = {
+	monarch = {
+		name = "Biao"
+		dynasty = "Lui"
+		birth_date = 1374.1.1
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+	leader = {name = "Zhang Fei"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Bei"
+		monarch_name = "Bei I"
+		dynasty = "Lui"
+		birth_date = 1396.1.1
+		death_date = 1469.11.8
+		claim = 100
+		adm = 3
+		dip = 6
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_heir_personality = inspiring_leader_personality
+}

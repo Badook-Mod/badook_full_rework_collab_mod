@@ -1,0 +1,286 @@
+﻿l_english:
+ #Cao/Shao/Han/Wei Missions
+ unite_north_mission_title:0 "Unite the North"
+ unite_north_mission_desc:0 "The North of China stands as a bulwark against the barbarians, we must serve this duty by uniting these lands under our flag."
+ assert_birthright_mission_title:0 "Assert Northern Hegemony"
+ assert_birthright_mission_desc:0 "Now that we control much of the north, we must reclaim our ancestral land and make ourselves a real power."
+ conquer_middle_kingdom_mission_title:0 "Wei's Conquest"
+ conquer_middle_kingdom_mission_desc:0 "Wei must become ascendant, the Mandate is ours!"
+ bulwark_against_barbarism_mission_title:0 "Bulwark against Barbarism"
+ bulwark_against_barbarism_mission_desc:0 "Our forts and walls always trounce the horse riders, we must demonstrate this to them!"
+ absorption_of_rivals_mission_title:0 "Absorption of our rivals"
+ absorption_of_rivals_mission_desc:0 "Our enemies armies were once vast, we must draft in these former soldier into a new army, our army."
+ quality_and_quantity_mission_title:0 "Quality and Quantity"
+ quality_and_quantity_mission_desc:0 "Our army must be both vast and elite if we are to stand up to foreign threats."
+ looking_north_mission_title:0 "Looking North"
+ looking_north_mission_desc:0 "For a long time the Jurchens have plauged us, now let us plauge them."
+
+ #Chengdu/Fan/Nanmans/Shu Missions
+ bring_back_han_mission_title:0 "Bring back the Han"
+ bring_back_han_mission_desc:0 "The House of Han once undisputably ruled over China, we must make this so again."
+ assert_birthright_shu_mission_title:0 "Assert Western Hegemony"
+ assert_birthright_shu_mission_desc:0 "Now that we control much of the West, we must reclaim our ancestral land and make ourselves a real power."
+ shu_ascension_mission_title:0 "Shu's Ascension"
+ shu_ascension_mission_desc:0 "Shu must become ascendant, the Mandate is ours!"
+ romance_of_three_kingdoms_mission_title:0 "Romance of the Three Kingdoms"
+ romance_of_three_kingdoms_mission_desc:0 "Love can bloom on the battlefield."
+ five_tiger_generals_mission_title:0 "The Five Tiger Generals"
+ five_tiger_generals_mission_desc:0 "The Five Tigers guard our nation once more."
+ rightful_emperor_mission_title:0 "Rightful Emperor"
+ rightful_emperor_mission_desc:0 "The Han dynasty must be restored at all costs."
+ looking_west_mission_title:0 "Looking West"
+ looking_west_mission_desc:0 "The people of Tibet sit to our west with their backwards ways and teachings, this is obviously a mistake which we must rectify"
+
+ #Sung Wu/Dong Wu/Wu-Yueh/Wu Missions
+ unite_house_of_sun_mission_title:0 "Unite the House of Sun"
+ unite_house_of_sun_mission_desc:0 "The House of Sun once undisputably ruled over eastern China, we must make this so again."
+ assert_birthright_wu_mission_title:0 "Assert our Birthright"
+ assert_birthright_wu_mission_desc:0 "Now that Sun is united into Wu, we must reclaim our ancestral land and make ourselves a real power."
+ wu_hegemony_mission_title:0 "Wu Hegemony"
+ wu_hegemony_mission_desc:0 "Wu must become ascendant, the Mandate is ours!"
+ battle_of_chi_bi_mission_title:0 "Battle of Chi Bi"
+ battle_of_chi_bi_mission_desc:0 "Our navy is our strength and shall always stand triumphant!"
+ estuaries_hegemony_mission_title:0 "Hegemony of the Estuaries"
+ estuaries_hegemony_mission_desc:0 "Our Trade is reliant on the control of the river estuaries of both the Yangtze and the Yellow River."
+ attack_by_fire_mission_title:0 "Attack by Fire"
+ attack_by_fire_mission_desc:0 "In order to follow our wise ancestors teachings, we must first have the weapons to do so."
+ looking_east_mission_title:0 "Looking East"
+ looking_east_mission_desc:0 "Those to our East hold on to much of the trade which is rightfully ours (grants claims on the CoT in Nippon node)"
+
+ #Ming Missions
+ rebuild_army_mission_title:0 "Rebuilding the Army"
+ rebuild_army_mission_desc:0 "Any growing country must maintain a reasonably sized army. By expanding our forces we can both further our political interests abroad and stimulate our domestic economy."
+ new_hope_mission_title:0 "A New Hope"
+ new_hope_mission_desc:0 "The Ming Empire is changed, now a glorious Republic, hence we must strike down the wicked rebels who have seized our land. Now for a first step."
+ empire_strikes_back_mission_title:0 "Empire Strikes Back"
+ empire_strikes_back_mission_desc:0 "With our foothold now established, we must rapidly grow it to be a solid powerbase in the south."
+ return_of_ming_mission_title:0 "Return of the Ming"
+ return_of_ming_mission_desc:0 "The South of China is now mostly ours, time to finish the job."
+ the_middle_menace_mission_title:0 "The Middle Menace"
+ the_middle_menace_mission_desc:0 "The land between the Yangtze and the Yellow River is rich and contains much of our ancestral land. It is time to reclaim it and rebuild it."
+ attack_of_the_tribes_mission_title:0 "Attack of the Tribes"
+ attack_of_the_tribes_mission_desc:0 "The foul Jurchens still plague our Northern Borders, it is time to take back the Great Wall to hold them off. "
+ revenge_of_ming_mission_title:0 "Revenge of the Ming"
+ revenge_of_ming_mission_desc:0 "I am the Senate!"
+ ming_one_mission_title:0 "Ming One"
+ ming_one_mission_desc:0 "test"
+ plan_b_mission_title:0 "Plan B"
+ plan_b_mission_desc:0 "The Mainland is hard and full of terrors, let us look to more simple climbs."
+ plan_c_mission_title:0 "Plan C"
+ plan_c_mission_desc:0 "Well, those little filipino tribes sure do seem weak..."
+ plan_d_mission_title:0 "Plan D"
+ plan_d_mission_desc:0 "If you really consider the merits of these little islands, it makes the idea of returning to the mainland almost seem silly!"
+ new_homeland_mission_title:0 "A New Homeland?"
+ new_homeland_mission_desc:0 "Our long journey means we have searched long and hard for a new home, perhaps we have finally found it."
+ rectifying_a_mistake_mission_title:0 "Rectifying a Mistake"
+ rectifying_a_mistake_mission_desc:0 "We were wrong about that continent and it shall not be spoken of. Lets try again."
+
+ #Qing Missions
+ eight_banners_mission_title:0 "The Eight Banners"
+ eight_banners_mission_desc:0 "To effectively combat the Chinese we must organize our Armies into a new more efficient fighting system."
+ green_standard_army_mission_title:0 "Green Standard Army"
+ green_standard_army_mission_desc:0 "As our conquest of the Middle Kingdom began, flocks of soldiers of the former emperor joined our cause, disgruntled with the lack of pay. We shall create a separate unit for these Chinese soldiers."
+ beyond_yellow_river_mission_title:0 "Beyond the Yellow River"
+ beyond_yellow_river_mission_desc:0 "The rich farmlands of middle China must be under our foot."
+ conquer_south_china_mission_title:0 "Conquer Southern China"
+ conquer_south_china_mission_desc:0 "The chinese people in the south must recognise our rule. The middle kingdom comes closer to reunification!"
+ qing_conquer_korea_title:0 "Subjugate the Koreans"
+ qing_conquer_korea_desc:0 "It is now time to assert our legtimacy as the middle kingdom that rules all of Asia! We must first start with the Submission of the Koreans."
+ conquer_xinan_mission_title:0 "Conquer Xinan"
+ conquer_xinan_mission_desc:0 "The people of Xinan exist in fear of conquest by the kingdoms of Burma. We must extend our hand to protect these people and annex the region for our own."
+ conquer_tibet_mission_title:0 "Conquer Tibet"
+ conquer_tibet_mission_desc:0 "For too long have the Dalai Lamas of Tibet claimed independence and authority in the spiritual matters. Since we are the rightful Son of Heaven we must subjugate these so called 'holy men'."
+ reconquer_north_yuan_mission_title:0 "Reconquer the North Yuan"
+ reconquer_north_yuan_mission_desc:0 "The northern hordes have long been indepedant since the fall of the Yuan dynasty. We must reconquer the lands of Mongolia to assimilate the steppe hordes under the Qing banner."
+ reconquer_old_frontier_mission_title:0 "Reconquer the Old Frontier"
+ reconquer_old_frontier_mission_desc:0 "The old frontiers used to guard the ancient empires of the Tang dynasty and many more. If we are to guard our people, these old lands must be retaken to form a buffer."
+
+ #Great Mekong Missions
+ internal_harmony_mission_title:0 "Internal Harmony"
+ internal_harmony_mission_desc:0 "Before we look further afield, we must first be at peace at home."
+ begone_pirates_mission_title:0 "Begone Pirates"
+ begone_pirates_mission_desc:0 "We must rid the world of the vile pirates to our south and secure our own trade interests."
+ jungles_of_burma_mission_title:0 "The Jungles of Burma"
+ jungles_of_burma_mission_desc:0 "For Centuries we have clashed with the Burmese on our border, now it is time to bring them into the fold."
+ riches_of_china_mission_title:0 "The Riches of China"
+ riches_of_china_mission_desc:0 "The provinces in China seem more Mekong than Chinese."
+ emperor_of_china_mission_title:0 "The Emperors New Clothes"
+ emperor_of_china_mission_desc:0 "It is time China came under new management."
+
+ # ============== #
+ # Mossi Missions #
+ # ============== #
+prepare_for_conquest_title:0 "Prepare for Conquest"
+prepare_for_conquest_desc:0 "We must raise our troops to deal with our encroaching neighbors!"
+
+consolidate_mossi_lands_title:0 "Consolidate Mossi Lands"
+consolidate_mossi_lands_desc:0 "We have an army, now to back it up with our land!"
+
+strike_mali_title:0 "Strike the Mali"
+strike_mali_desc:0 "That's our land!"
+
+destroy_mali_empire_title:0 "Destroy the Mali Empire"
+destroy_mali_empire_desc:0 "You call that an empire?"
+
+creation_of_mossi_empire_title:0 "Creation of the Mossi Empire"
+creation_of_mossi_empire_desc:0 "As we strip away our Tribal ways, we embrace the ways of an empire."
+
+free_people_jenne_title:0 "Free the people of Jenne"
+free_people_jenne_desc:0 "What a mighty fine capital you have there..."
+
+strike_songhai_title:0 "Strike the Songhai"
+strike_songhai_desc:0 "Mind if we take this?"
+
+riches_of_katsina_title:0 "Riches of Katsina"
+riches_of_katsina_desc:0 "It's just a minor tax, I swear!"
+
+crush_petty_princes_title:0 "Crush the Petty Princes"
+crush_petty_princes_desc:0 "We must not be held back by these barbaric princes."
+
+ruler_of_mossi_title:0 "Ruler of the Mossi"
+ruler_of_mossi_desc:0 "Our new ruler has gloriously stabilized the southern lands."
+
+integrate_the_songhai_title:0 "Integrate the Songhai"
+integrate_the_songhai_desc:0 "One of us! One of us!"
+
+capital_for_king_title:0 "Capital fit for a King"
+capital_for_king_desc:0 "Aaaah, comfy."
+
+the_great_reform_title:0 "The Great Reform"
+the_great_reform_desc:0 "We have decided our religious fate."
+
+timbuktu_trade_title:0 "Timbuktu Trade"
+timbuktu_trade_desc:0 "We must monopolize the Timbuktu trade region."
+
+mines_of_mali_title:0 "Mines of Mali"
+mines_of_mali_desc:0 "Do you like my necklace? It's pure gold."
+
+mossi_ascendancy_title:0 "Mossi Ascendancy"
+mossi_ascendancy_desc:0 "All must bow before the thiccccccc Mossi Empire!"
+
+the_kings_treasury_title:0 "The King's Treasury"
+the_kings_treasury_desc:0 "We need an army to protect our treasury."
+
+feed_the_population_title:0 "Feed the Population"
+feed_the_population_desc:0 "Insert hungry African joke here."
+
+wealth_of_jenne_title:0 "Wealth of Jenne"
+wealth_of_jenne_desc:0 "This shall be the capital of all of West Africa."
+
+coastal_trade_title:0 "Coastal Trade"
+coastal_trade_desc:0 "What is this water you speak of? There is no such thing!"
+
+wealth_of_katsina_title:0 "Wealth of Katsina"
+wealth_of_katsina_desc:0 "This is mine now."
+
+ # ============== #
+ # Kongo Missions #
+ # ============== #
+kon_military_prep_title:0 "Military Prep"
+kon_military_prep_desc:0 "SANTIAGO!"
+
+kon_consolidate_kongo_title:0 "Consolidate Kongo"
+kon_consolidate_kongo_desc:0 "I'm sure you don't mind me taking this, right?"
+
+kon_take_south_title:0 "Take the South"
+kon_take_south_desc:0 "How about a little more?"
+
+kon_proclaim_empire_title:0 "Proclaim Empire"
+kon_proclaim_empire_desc:0 "Don't mind me over here."
+
+kon_expand_east_title:0 "Eastern Expansion"
+kon_expand_east_desc:0 "Ooh, what's over here?"
+
+kon_further_east_title:0 "Further East"
+kon_further_east_desc:0 "There's water over here too?"
+
+kon_treasury_title:0 "Kongo's Treasury"
+kon_treasury_desc:0 "It's Ditto Time."
+
+kon_slaves_title:0 "Kongolese Slaves"
+kon_slaves_desc:0 "Alright everyone, 40 acres and a mule this way!"
+
+kon_ca_trade_title:0 "Kongo Trade"
+kon_ca_trade_desc:0 "This is our trade node. See? Our names match."
+
+kon_integrate_conquests_title:0 "Integrate our Conquests"
+kon_integrate_conquests_desc:0 "Your'e part of us now."
+
+kon_kazembe_mines_title:0 "Kazembe Mines"
+kon_kazembe_mines_desc:0 "Everything that glitters is not gold."
+
+kon_loyal_subjects_title:0 "Loyal Subjects"
+kon_loyal_subjects_desc:0 "Behave!"
+
+kon_integrate_subjects_title:0 "Integrate our Subjects"
+kon_integrate_subjects_desc:0 "You're being rescued! Do not resist."
+
+kon_centralization_title:0 "Centralize the Kongo"
+kon_centralization_desc:0 "Looking pretty good over here, how're things with you?"
+
+  # ============= #
+  # Mali Missions #
+  # ============= #
+
+mal_prepare_for_reconquest_title:0 "Prepare for Reconquest"
+mal_prepare_for_reconquest_desc:0 "Make Mali Great Again!"
+
+mal_conquer_kong_title:0 "Conquer the Kong"
+mal_conquer_kong_desc:0 "You're part of us now."
+
+mal_triumph_at_jenne_title:0 "Triumph at Jenne"
+mal_triumph_at_jenne_desc:0 "Such an easy Siege."
+
+mal_control_the_mossi_title:0 "Control the Mossi"
+mal_control_the_mossi_desc:0 "Time to continue East."
+
+mal_conquer_jolof_title:0 "Conquer Jolof"
+mal_conquer_jolof_desc:0 "Do you see that coastline? That's ours."
+
+mal_crush_macina_title:0 "Crush the Macina"
+mal_crush_macina_desc:0 ""
+
+mal_subjugate_songhai_title:0 "Subjugate Songhai"
+mal_subjugate_songhai_desc:0 ""
+
+mal_mali_empire_title:0 "Declare the Mali Empire"
+mal_mali_empire_desc:0 ""
+
+mal_fetishist_problem_title:0 "The Fetishist Problem"
+mal_fetishist_problem_desc:0 ""
+
+mal_rule_the_kong_title:0 "Rule the Kong"
+mal_rule_the_kong_desc:0 ""
+
+mal_integrate_the_macina_title:0 "Integrate the Macina"
+mal_integrate_the_macina_desc:0 ""
+
+mal_conquest_of_gao_title:0 "Conquest of Gao"
+mal_conquest_of_gao_desc:0 ""
+
+mal_ascendant_title:0 "Mali Ascendant"
+mal_ascendant_desc:0 ""
+
+mal_develop_the_coast_title:0 "Develop the Coast"
+mal_develop_the_coast_desc:0 ""
+
+mal_ruler_of_mossi_title:0 "Ruler of Mossi"
+mal_ruler_of_mossi_desc:0 ""
+
+mal_timbuktu_trade_title:0 "Timbuktu Trade"
+mal_timbuktu_trade_desc:0 ""
+
+mal_colonial_ambition_title:0 "Colonial Ambition"
+mal_colonial_ambition_desc:0 ""
+
+mal_mines_title:0 "Mines of Mali"
+mal_mines_desc:0 ""
+
+mal_knowledge_of_jenne_title:0 "Knowledge of Jenne"
+mal_knowledge_of_jenne_desc:0 ""
+
+mal_wealth_of_jenne_title:0 "Wealth of Jenne"
+mal_wealth_of_jenne_desc:0 ""
+
+mal_coastal_trade_title:0 "Coastal Trade"
+mal_coastal_trade_desc:0 ""

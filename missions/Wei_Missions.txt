@@ -1,0 +1,249 @@
+wei_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = WEI
+			tag = HAO
+			tag = CAO
+			tag = GGS
+		}
+	}
+	has_country_shield = yes
+	
+	unite_north_mission = {
+		icon = mission_conquer_50_development
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			OR = { 
+				province_id = 693
+				province_id = 700
+				province_id = 688
+				province_id = 699
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			693 = { # Taiyuan
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			700 = { # Xi'an
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			688 = { # Kaifeng
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			699 = { # Lanzhou
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "conquered_wei_pretenders"
+				duration = 5475
+			}
+			north_henan_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gansu_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shaanxi_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shanxi_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	assert_birthright_mission = {
+		icon = mission_chinese_general_riding
+		required_missions = { unite_north_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = gansu_area
+				area = shanxi_area
+				area = shaanxi_area
+				area = north_henan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			gansu_area = {
+				type = all
+				owned_by = ROOT
+			}
+			shanxi_area = {
+				type = all
+				owned_by = ROOT
+			}
+			shaanxi_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_henan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = peasant_recruitment
+				duration = -1
+			}
+			north_china_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	conquer_middle_kingdom_mission = {
+		icon = mission_unite_home_region
+		required_missions = { assert_birthright_mission }
+		position = 3
+		provinces_to_highlight = {
+			superregion = china_superregion
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_emperor_of_china = yes
+			china_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 50
+			add_adm_power = 150
+		}
+	}
+}
+
+wei_missions_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = WEI
+			tag = HAO
+			tag = GGS
+			tag = CAO
+		}
+	}
+	has_country_shield = yes
+	bulwark_against_barbarism_mission = {
+		icon = mission_great_wall
+		required_missions = {  }
+		position = 1
+		trigger = {
+			OR = { 
+				fort_15th = 5
+				fort_16th = 5
+				fort_17th = 5
+				fort_18th = 5
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "great_wall_of_china_repaired"
+				duration = 3650
+			}
+		}
+	}
+	absorption_of_rivals_mission = {
+		icon = mission_chinese_general_riding
+		required_missions = { bulwark_against_barbarism_mission }
+		position = 2
+		trigger = {
+			army_size = 70
+		}
+		effect = {
+			add_country_modifier = {
+				name = "chinese_cheaper_army_maint"
+				duration = 5475
+			}
+		}
+	}
+	quality_and_quantity_mission = {
+		icon = mission_assemble_an_army
+		required_missions = { absorption_of_rivals_mission }
+		position = 3
+		trigger = {
+			OR = { 
+				has_global_modifier_value = {
+				which = discipline
+				value = 0.15
+				extra_shortcut = yes
+				}
+				land_morale = 6.25
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "chinese_imperialism"
+				duration = 5475
+			}
+		}
+	}
+	looking_north_mission = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { quality_and_quantity_mission }
+		position = 4
+		provinces_to_highlight = {
+			region = manchuria_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			manchuria_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "secured_manchuria"
+				duration = 5475
+			}
+			add_country_modifier = {
+				name = "recruited_manchu_tribes"
+				duration = -1
+			}
+		}
+	}
+	
+}

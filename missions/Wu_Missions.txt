@@ -1,0 +1,264 @@
+wu_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = WUU
+			tag = CSW
+			tag = SNW
+			tag = DWU
+		}
+	}
+	has_country_shield = yes
+	
+	unite_house_of_sun_mission = {
+		icon = mission_conquer_50_development
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			OR = { 
+				province_id = 684
+				province_id = 2151
+				province_id = 1824
+				province_id = 685
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			684 = { # 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2151 = { # 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1824 = { # 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			685 = { # 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "house_of_sun_united"
+				duration = 5475
+			}
+			south_jiangsu_area = {
+				limit = {
+					NOT = { 
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			zhejiang_area = {
+				limit = {
+					NOT = { 
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			south_anhui_area = {
+				limit = {
+					NOT = { 
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			jiangxi_area = {
+				limit = {
+					NOT = { 
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	assert_birthright_wu_mission = {
+		icon = mission_chinese_general_riding
+		required_missions = { unite_house_of_sun_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = south_jiangsu_area
+				area = zhejiang_area
+				area = south_anhui_area
+				area = jiangxi_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			south_jiangsu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zhejiang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_anhui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jiangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = trading_connections
+				duration = -1
+			}
+			south_china_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wu_hegemony_mission = {
+		icon = mission_unite_home_region
+		required_missions = { assert_birthright_wu_mission }
+		position = 3
+		provinces_to_highlight = {
+			superregion = china_superregion
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_emperor_of_china = yes
+			china_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 50
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "wu_mercantile_expansion"
+				duration = 5475
+			}
+		}
+	}
+}
+wu_missions_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = WUU
+			tag = CSW
+			tag = SNW
+			tag = DWU
+		}
+	}
+	has_country_shield = yes
+	battle_of_chi_bi_mission = {
+		icon = mission_sea_battles
+		required_missions = {  }
+		position = 1
+		trigger = {
+			navy_size = 75
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "chinese_fleet_expansion"
+				duration = 5475
+			}
+		}
+	}
+	estuaries_hegemony_mission = {
+		icon = mission_galleys_in_port
+		required_missions = { battle_of_chi_bi_mission }
+		position = 2
+		trigger = {
+			owns_core_province = 4196
+			owns_core_province = 2141
+			owns_core_province = 685
+			owns_core_province = 1822
+			1373 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_country_modifier = {
+				name = "hangzhou_trade_dominance"
+				duration = 5475
+			}
+		}
+	}
+	attack_by_fire_mission = {
+		icon = mission_cannons_firing
+		required_missions = { estuaries_hegemony_mission }
+		position = 3
+		trigger = {
+			num_of_artillery = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = "mastered_cannonmaking"
+				duration = 5475
+			}
+			1818 = {
+				add_permanent_claim = ROOT
+			}
+			1028 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	looking_east_mission = {
+		icon = mission_asian_trader
+		required_missions = { attack_by_fire_mission }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 1818
+			province_id = 1028
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			1376 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			owns_core_province = 1818
+			owns_core_province = 1028
+		}
+		effect = {
+			add_navy_tradition = 15
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "chinese_traders_in_japan"
+				duration = -1
+			}
+		}
+	}
+}

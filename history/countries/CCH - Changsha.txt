@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = animism
+primary_culture = cantonese
+capital = 2161
+
+1407.1.1 = {
+	monarch = {
+		name = "Mulu"
+		dynasty = "Hua"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

@@ -1,0 +1,89 @@
+namespace = flavor_wei
+normal_or_historical_nations = yes
+
+
+country_event = {
+	id = flavor_wei.2
+	title = "flavor_mng.EVTNAME2"
+	desc = "flavor_mng.EVTDESC2"
+	picture = REVOLUTION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WEI
+		is_year = 1450
+		NOT = { is_year = 1490 }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA2" #Yes, we need to repair the Great Wall
+		add_years_of_income = -0.50
+		add_army_tradition = 25
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB2" #Let it continue to crumble
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = flavor_wei.3
+	title = "flavor_mng.EVTNAME3"
+	desc = "flavor_mng.EVTDESC3"
+	picture = REVOLUTION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WEI
+		is_year = 1500
+		NOT = { is_year = 1540 }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA2" #Yes, we need to repair the Great Wall
+		add_years_of_income = -0.50
+		add_army_tradition = 25
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB2" #Let it continue to crumble
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = flavor_wei.4
+	title = "flavor_mng.EVTNAME6"
+	desc = "flavor_mng.EVTDESC6"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WEI
+		is_year = 1558
+		NOT = { is_year = 1588 }
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA6" #Go with the reforms
+		add_mil_power = 100
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB6" #No, such reforms would be too costly
+		add_stability_or_adm_power = yes
+	}
+}

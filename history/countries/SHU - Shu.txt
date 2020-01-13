@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = sichuanese
+add_accepted_culture = hubei
+capital = 679	#Chengdu
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Bei"
+		dynasty = "Lui"
+		birth_date = 1394.1.1
+		adm = 2
+		dip = 6
+		mil = 1
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Shun"
+		monarch_name = "Shun I"
+		dynasty = "Lui"
+		birth_date = 1424.1.1
+		death_date = 1471.11.8
+		claim = 100
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+# Zhuge Liang 6/2/2/2		Guan Yu 0/6/4/0

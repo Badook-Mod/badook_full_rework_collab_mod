@@ -1,0 +1,251 @@
+shu_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = CNU
+
+			tag = SHU
+		}
+	}
+		
+	bring_back_han_mission = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = { 
+				province_id = 679
+				province_id = 671
+				province_id = 665
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			679 = { # Chengdu
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			671 = { # Changsha
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			665 = { # Shiuhing
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "conquered_shu_pretenders"
+				duration = 5475
+			}
+			sichuan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hunan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chuannan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yun_gui_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guangxi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_guangdong_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	assert_birthright_shu_mission = {
+		icon = mission_chinese_general_riding
+		required_missions = { bring_back_han_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = west_guangdong_area
+				area = guangxi_area
+				area = yun_gui_area
+				area = chuannan_area
+				area = hunan_area
+				area = sichuan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			west_guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yun_gui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chuannan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hunan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sichuan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = modern_army
+				duration = -1
+			}
+			xinan_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	shu_ascension_mission = {
+		icon = mission_unite_home_region
+		required_missions = { assert_birthright_shu_mission }
+		position = 3
+		provinces_to_highlight = {
+			superregion = china_superregion
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_emperor_of_china = yes
+			china_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 200
+			add_adm_power = 200
+			add_mil_power = 200
+			add_dip_power = 200
+		}
+	}
+}
+shu_missions_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CNU
+			tag = FAN
+			tag = NMS
+			tag = SHU
+		}
+	}
+	has_country_shield = yes
+	romance_of_three_kingdoms_mission = {
+		icon = mission_alliances
+		required_missions = {  }
+		position = 1
+		trigger = {
+			num_of_royal_marriages = 5
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "shu_nobilty_expanded"
+				duration = 5475
+			}
+		}
+	}
+	five_tiger_generals_mission = {
+		icon = mission_chinese_general_riding
+		required_missions = { romance_of_three_kingdoms_mission }
+		position = 2
+		trigger = {
+			num_of_generals = 5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "five_tiger_generals"
+				duration = 7300
+			}
+		}
+	}
+	rightful_emperor_mission = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { five_tiger_generals_mission }
+		position = 3
+		trigger = {
+			is_emperor_of_china = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "han_dynasty_restored"
+				duration = 5475
+			}
+		}
+	}
+	looking_west_mission = {
+		icon = mission_buddhist_monk_praying
+		required_missions = { rightful_emperor_mission }
+		position = 4
+		provinces_to_highlight = {
+			region = tibet_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tibet_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "subdued_tibet"
+				duration = -1
+			}
+		}
+	}
+	
+}

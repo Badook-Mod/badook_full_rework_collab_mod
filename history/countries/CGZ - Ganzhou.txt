@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = jianghuai
+capital = 686
+
+1415.1.1 = {
+	monarch = {
+		name = "Ci"
+		dynasty = "Taishi"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+

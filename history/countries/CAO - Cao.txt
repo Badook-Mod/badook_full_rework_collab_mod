@@ -1,0 +1,37 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = jin
+capital = 693	#Taiyuan
+
+1426.2.2 = { leader = {	name = "Xiahao Dun"	type = general	fire = 0	shock = 4	manuever = 1	siege = 0	death_date = 1467.1.1 } }
+
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Cao"
+		dynasty = "Cao"
+		birth_date = 1406.1.1
+		adm = 6
+		dip = 2
+		mil = 5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Pi"
+		monarch_name = "Pi I"
+		dynasty = "Cao"
+		birth_date = 1432.1.1
+		death_date = 1471.11.8
+		claim = 100
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = xiang
+add_accepted_culture = gan
+capital = 671	#Taozhou
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Yu"
+		dynasty = "Guan"
+		birth_date = 1399.1.1
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Ping"
+		monarch_name = "Ping I"
+		dynasty = "Guan"
+		birth_date = 1431.1.1
+		death_date = 1491.11.8
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}

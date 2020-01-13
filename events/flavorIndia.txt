@@ -1,0 +1,316 @@
+namespace = flavor_ind
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_ind.1
+	title = "flavor_ind.EVTNAME1"
+	desc = "flavor_ind.EVTDESC1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAH 
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_truce_with = VIJ
+			BNG = {
+				add_truce_with = BAN
+			}
+			every_country = { 
+				limit = {
+					technology_group = indian
+					religion_group = muslim
+				}
+				change_religion = hinduism
+			}	
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA1"
+		4430 = {
+			add_core = BAH
+		}
+		2036 = {
+			add_core = BAH
+		}
+		517 = {
+			add_core = BAH
+		}
+		set_country_flag = bah_north_flag
+	}
+	option = {
+		name = "flavor_ind.EVTOPTB1"
+		4427 = {
+			add_core = BAH
+		}
+		2033 = {
+			add_core = BAH
+		}
+		4428 = {
+			add_core = BAH
+		}
+		set_country_flag = bah_south_flag
+	}
+	option = {
+		name = "flavor_ind.EVTOPTC1"
+		542 = {
+			add_core = BAH
+		}
+		4436 = {
+			add_core = BAH
+		}
+		2028 = {
+			add_core = BAH
+		}
+		4438 = {
+			add_core = BAH
+		}
+		set_country_flag = bah_east_flag
+	}
+}
+
+country_event = {
+	id = flavor_ind.2
+	title = "flavor_ind.EVTNAME2"
+	desc = "flavor_ind.EVTDESC2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VIJ
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA2"
+		2050 = {
+			add_core = VIJ
+		}
+		4443 = {
+			add_core = VIJ
+		}
+		546 = {
+			add_core = VIJ
+		}
+		set_country_flag = vij_north_flag
+	}
+	option = {
+		name = "flavor_ind.EVTOPTB2"
+		2031 = {
+			add_core = VIJ
+		}
+		2027 = {
+			add_core = VIJ
+		}
+		539 = {
+			add_core = VIJ
+		}
+		set_country_flag = vij_south_flag
+	}
+	option = {
+		name = "flavor_ind.EVTOPTC2"
+		4437 = {
+			add_core = VIJ
+		}
+		1948 = {
+			add_core = VIJ
+		}
+		2035 = {
+			add_core = VIJ
+		}
+		set_country_flag = vij_west_flag
+	}
+}
+
+country_event = {
+	id = flavor_ind.3
+	title = "flavor_ind.EVTNAME3"
+	desc = "flavor_ind.EVTDESC3"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VIJ
+		has_country_flag = vij_north_flag
+		owns_or_non_sovereign_subject_of = 2050
+		owns_or_non_sovereign_subject_of = 4443
+		owns_or_non_sovereign_subject_of = 546
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA3"
+		add_adm_power = 25
+		add_mil_power = 25
+	}
+}
+
+country_event = {
+	id = flavor_ind.4
+	title = "flavor_ind.EVTNAME4"
+	desc = "flavor_ind.EVTDESC4"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VIJ
+		has_country_flag = vij_south_flag
+		owns_or_non_sovereign_subject_of = 2031
+		owns_or_non_sovereign_subject_of = 2027
+		owns_or_non_sovereign_subject_of = 539
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA3"
+		add_adm_power = 25
+		add_mil_power = 25
+	}
+}
+
+country_event = {
+	id = flavor_ind.5
+	title = "flavor_ind.EVTNAME5"
+	desc = "flavor_ind.EVTDESC5"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VIJ
+		has_country_flag = vij_west_flag
+		owns_or_non_sovereign_subject_of = 4437
+		owns_or_non_sovereign_subject_of = 1948
+		owns_or_non_sovereign_subject_of = 2035
+		NOT = {
+			alliance_with = BAH
+		}
+		has_truce = BAH
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA3"
+		add_adm_power = 125
+		add_mil_power = 125
+		add_years_of_income = 1.5
+		add_dip_power = 125
+		
+	}
+}
+
+country_event = {
+	id = flavor_ind.6
+	title = "flavor_ind.EVTNAME6"
+	desc = "flavor_ind.EVTDESC6"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = bah_north_flag
+		owns_or_non_sovereign_subject_of = 4430
+		owns_or_non_sovereign_subject_of = 2036
+		owns_or_non_sovereign_subject_of = 517
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA3"
+		add_adm_power = 50
+		add_mil_power = 50
+	}
+}
+
+country_event = {
+	id = flavor_ind.7
+	title = "flavor_ind.EVTNAME7"
+	desc = "flavor_ind.EVTDESC7"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = bah_south_flag
+		owns_or_non_sovereign_subject_of = 4427
+		owns_or_non_sovereign_subject_of = 2033
+		owns_or_non_sovereign_subject_of = 4428
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA3"
+		add_adm_power = 50
+		add_mil_power = 50
+	}
+}
+
+country_event = {
+	id = flavor_ind.8
+	title = "flavor_ind.EVTNAME8"
+	desc = "flavor_ind.EVTDESC8"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = bah_east_flag
+		owns_or_non_sovereign_subject_of = 542
+		owns_or_non_sovereign_subject_of = 4436
+		owns_or_non_sovereign_subject_of = 2028
+		owns_or_non_sovereign_subject_of = 4438
+		NOT = {
+			alliance_with = VIJ
+		}
+		has_truce = VIJ
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "flavor_ind.EVTOPTA3"
+		add_adm_power = 125
+		add_mil_power = 125
+		add_years_of_income = 1.5
+		add_dip_power = 125
+		
+	}
+}

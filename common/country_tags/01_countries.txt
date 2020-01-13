@@ -1,0 +1,27 @@
+#New Chinese Minors
+WEI = "countries/Wei.txt"
+WUU = "countries/Wu.txt"
+MAA = "countries/Ma.txt" #
+GGS = "countries/Gongsun.txt" #
+CNU = "countries/Chengdu.txt" # old shu
+XUI = "countries/Xui.txt" #
+TBS = "countries/Turbans.txt" #
+FAN = "countries/Fan.txt" #
+HAA = "countries/Han.txt" #
+HAO = "countries/Shao.txt" #
+XIP = "countries/Xiapi.txt" #
+NMS = "countries/Nanmans.txt" #
+CAO = "countries/Cao.txt" # old wei
+ZHO = "countries/Zhong.txt" #
+HNG = "countries/Huang.txt" #
+CCH = "countries/Changsha.txt" # mulu, a vassal
+CYL = "countries/Yuanling.txt" # wutugu, a vassal
+CHN = "countries/Henyang.txt" # duosi, a vassal
+CSW = "countries/Shiukwan.txt" # wu-yueh
+CGZ = "countries/Ganzhou.txt" # he fei
+CJI = "countries/Ji'an.txt" # yiling
+DWU = "countries/Dongwu.txt" # dong wu
+ZHU = "countries/Zhou.txt" # zhou
+SNW = "countries/Sunwu.txt" # old wu
+SIA = "countries/Siam.txt" #siam formable
+PRC = "countries/PRC.txt" # PRC

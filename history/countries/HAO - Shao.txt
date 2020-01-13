@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = zhongyuan
+capital = 688
+
+1438.3.2 = { leader = {	name = "Zheng He"	type = general	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1480.1.1 } }
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Shao"
+		dynasty = "Yuan"
+		birth_date = 1402.1.1
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Shang"
+		monarch_name = "Shang I"
+		dynasty = "Yuan"
+		birth_date = 1425.1.1
+		death_date = 1478.11.8
+		claim = 100
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

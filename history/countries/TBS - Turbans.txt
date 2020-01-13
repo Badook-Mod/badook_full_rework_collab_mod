@@ -1,0 +1,36 @@
+government = republic
+add_government_reform = peasants_republic
+technology_group = chinese
+religion = confucianism
+primary_culture = chihan
+add_accepted_culture = shandong_culture
+capital = 1816	#Beijing
+add_harmony = -50
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Jiao"
+		dynasty = "Zhang"
+		birth_date = 1404.1.1
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality 
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Bao"
+		monarch_name = "Bao I"
+		dynasty = "Zhang"
+		birth_date = 1427.1.1
+		death_date = 1471.11.8
+		claim = 100
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

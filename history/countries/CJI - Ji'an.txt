@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = xiang
+add_accepted_culture = sichuanese
+capital = 672
+
+1404.1.1 = {
+	monarch = {
+		name = "Tong"
+		dynasty = "Pang"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+

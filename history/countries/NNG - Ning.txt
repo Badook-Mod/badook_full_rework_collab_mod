@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = gan
+capital = 2151	#Nanchang #now Changsha as placeholder for cluster
+historical_friend = CCH
+historical_rival = MNG
+
+#Changsha CCH

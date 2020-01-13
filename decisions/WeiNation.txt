@@ -1,0 +1,74 @@
+country_decisions = {
+
+	wei_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_wei_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				NOT = { exists = WEI }
+			}
+			OR = {
+				tag = CAO
+				tag = GGS
+				tag = HAO
+			}
+			religion = confucianism
+		}
+		provinces_to_highlight = {
+			OR = { 
+				province_id = 1836 # louyang
+				province_id = 700 # xi'an
+				province_id = 693 # taiyuan
+				province_id = 699 # lanzhou
+				province_id = 688 # kaifeng
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_tribal = no
+			NOT = { exists = WEI }
+			owns_core_province = 1836 # louyang
+			owns_core_province = 700 # xi'an
+			owns_core_province = 693 # taiyuan
+			owns_core_province = 699 # lanzhou
+			owns_core_province = 688 # kaifeng
+		}
+		effect = {
+			change_tag = WEI
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			north_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WEI
+			}
+			1836 = {
+				move_capital_effect = yes
+			}
+			add_prestige = 15
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_wei_flag			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

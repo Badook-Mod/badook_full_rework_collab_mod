@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = wu
+add_accepted_culture = chimin
+add_accepted_culture = jianghuai
+capital = 684	#Hangzhou
+
+1432.1.1 = { leader = {	name = "Zhou Yu"	type = general	fire = 2	shock = 2	manuever = 2	siege = 2	death_date = 1453.1.1 } }
+
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Quan"
+		dynasty = "Sun"
+		birth_date = 1414.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

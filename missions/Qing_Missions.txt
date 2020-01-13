@@ -1,0 +1,297 @@
+qing_missions_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {	
+		tag = QNG
+	}
+	has_country_shield = yes
+	
+	eight_banners_mission = { 
+		icon = mission_non-western_cavalry_raid
+		required_missions = {  }
+		position = 1
+		trigger = {
+			num_of_banners = 20 
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "banner_army"
+				duration = 5475 
+			}
+		}
+	}
+	green_standard_army_mission = { 
+		icon = mission_assemble_an_army
+		required_missions = { eight_banners_mission }
+		position = 2
+		trigger = {
+			is_emperor_of_china = yes
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "qing_dynasty"
+				duration = 5475 
+			}
+		}
+	}
+	beyond_yellow_river_mission = { 
+		icon = mission_conquer_50_development
+		required_missions = { green_standard_army_mission }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				region = north_china_region
+				province_id = 1821
+				province_id = 685
+				province_id = 4197
+				province_id = 682
+				province_id = 2172
+				province_id = 2171
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			685 = {
+				owned_by = ROOT 
+			}
+			4197 = {
+				owned_by = ROOT 
+			}
+			682 = {
+				owned_by = ROOT 
+			}
+			2172 = {
+				owned_by = ROOT 
+			}
+			2171 = {
+				owned_by = ROOT 
+			}
+		}
+		effect = { 
+			add_treasury = 400
+			add_country_modifier = {
+				name = "expanded_qing_authority"
+				duration = 5475 
+			}
+		}
+	}
+	conquer_south_china_mission = { 
+		icon = mission_unite_home_region
+		required_missions = { beyond_yellow_river_mission }
+		position = 4
+		provinces_to_highlight = {
+			region = south_china_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_mercantilism = 5
+			add_country_modifier = {
+				name = "subjugated_south_china"
+				duration = 5475 
+			}
+		}
+	}
+}
+
+qing_missions_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		tag = QNG
+	}
+	has_country_shield = yes
+	qing_conquer_korea = {
+		icon = mission_japanese_fort
+		required_missions = { eight_banners_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = { 
+				region = korea_region
+				area = liaoning_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			korea_region = {
+				type = all
+				owned_by = ROOT
+			}
+			liaoning_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "choson_one"
+				duration = 3650
+			}
+		}
+	}
+	conquer_xinan_mission = { 
+		icon = mission_unite_home_region
+		required_missions = { beyond_yellow_river_mission }
+		position = 4
+		provinces_to_highlight = {
+			region = xinan_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 15
+			tibet_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "subjugated_xinan"
+				duration = 5475
+			}
+		}
+	}
+	conquer_tibet_mission = { 
+		icon = mission_buddhist_monk_praying
+		required_missions = { conquer_xinan_mission }
+		position = 5
+		provinces_to_highlight = {
+			region = tibet_region
+			NOT = { owned_by = ROOT } 
+		}
+		trigger = {
+			tibet_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 15
+			add_dip_power = 50
+			add_adm_power = 50
+		}
+	}
+}
+
+qing_missions_3 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {	
+		tag = QNG
+	}
+	has_country_shield = yes
+	
+	reconquer_north_yuan_mission = { 
+		icon = mission_non-western_cavalry_raid
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			region = mongolia_region
+			NOT = { owned_by = ROOT } 
+		}
+		trigger = {
+			mongolia_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 15
+			shanshan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kashgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jetysuu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	reconquer_old_frontier_mission = { 
+		icon = mission_non-western_cavalry_raid
+		required_missions = { reconquer_north_yuan_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = { 
+				area = jetysuu_area
+				area = tarim_basin_area
+				area = shanshan_area
+				area = kashgaria_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			jetysuu_area = {
+				type = all
+				owned_by = ROOT
+			}
+			tarim_basin_area = {
+				type = all
+				owned_by = ROOT
+			}
+			shanshan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kashgaria_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 10
+			add_mil_power = 75
+		}
+	}
+}

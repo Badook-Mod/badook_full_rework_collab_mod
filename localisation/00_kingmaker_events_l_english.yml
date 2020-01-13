@@ -1,0 +1,73 @@
+﻿l_english:
+ #zoroastrian events
+ zoro_events.1.t:0 "The zoroastrian Yazads"
+ zoro_events.1.d:0 "Each ruler devoted the whole life to one main yazad, these make clear the policies that will be adopted to the whole country and keep cohesion between our people and the royalty."
+ zoro_events.1.a:0 "Anahita, yazad of love."
+ zoro_events.1.b:0 "Bahram, yazad of victory."
+ zoro_events.1.c:0 "Rashnu, yazad of justice."
+ zoro_events.1.d:0 "Nairyosangha, messenger of Ahura Mazda."
+ zoro_events.1.e:0 "Mithra, yazad personification of light."
+ zoro_events.1.f:0 "Akhshti, yazad of peace."
+ 
+ #Elections
+ election_adm:0 "Due to having embraced Innovative Ideas fully, our ruler has been educated on these matters."
+ election_dip:0 "Due to having embraced Diplomatic Ideas fully, our ruler has been educated on these matters."
+ 
+ #Special events
+ special_events.1.t:0 "The Dane and the Rivers"
+ special_events.1.d:0 "There was a time, when every dane dreamed to swim into the big river of Danube, the big rivers of china, the Gange river of India. Let the imagination run wild into the tall Vindhya Range along with the gentle waves from the gulf of Khambhat. But why stopping at this when there is so much to see like the big flooding of the Sahara desert into an inner sea with shiny vessels catching the winds, sparkling with gold and silver revealing a sky filled with stars on water. Perhaps one day, these dreams will be a reality."
+ special_events.1.a:0 "I am sure that day will come."
+ 
+ #Wu events
+ #kingdom upon independence
+ flavor_wuu.EVTNAME2:0 "Kingdom upon independence"
+ flavor_wuu.EVTDESC2:0 "Now that we're free from the yoke of the Ming dynasty, we can rightfully proclaim ourselves a kingdom again!"
+ flavor_wuu.EVTOPTA2:0 "Okay, this is epic."
+ 
+ flavor_wuu.EVTNAME2:0 "Institutioning of Zheng He"
+ flavor_wuu.EVTDESC2:0 "Despite Zheng He famously being an eunuch, a dashing sailor has stepped forward and claimed direct lineage. Surprisingly people are buying this and he's been gathering general support! Now he offers to lead a number of expeditions to the South china Sea! What shall we do with him?"
+ flavor_wuu.EVTOPTA2:0 "Give him a ship and send him away!"
+ flavor_wuu.EVTOPTB2:0 "Unruly ingrate, off with his head!"
+ 
+ #Wei events
+ #kingdom upon independence
+ flavor_wei.EVTNAME1:0 "Kingdom upon independence"
+ flavor_wei.EVTDESC1:0 "Although really we're an empire, let's just go along and call ourselves no longer a princedom. For now."
+ flavor_wei.EVTOPTA1:0 "Proclaim Kingdom!"
+ 
+ #Shu events
+ #kingdom upon independence
+ flavor_shu.EVTNAME1:0 "Kingdom upon independence"
+ flavor_shu.EVTDESC1:0 "Now that we're free from the yoke of the Ming dynasty, we can rightfully proclaim ourselves a kingdom again!"
+ flavor_shu.EVTOPTA1:0 "Okay, this is epic."
+ 
+ #Lithuanian Events
+ flavor_lit.EVTNAME14:0 "Conquest of Moscow"
+ flavor_lit.EVTDESC14:0 "The city of Moscow has been captured by our brave armies, while our enemies are still shocked by this loss we will not lose time and push them back by securing the region for a greater Lithuania!"
+ flavor_lit.EVTOPTA14:0 "Uz garbe!"
+ 
+ #Muscovy Events
+ flavor_rus.EVTNAME1017:0 "Occupation of Kievan Rus"
+ flavor_rus.EVTDESC1017:0 "The Kievan Rus state was annexed by Lithuania in 1321 and till now is ruled by those foreigners, now that we managed to occupy the key areas we can claim their lands to the rightful owners!"
+ flavor_lit.EVTOPTA17:0 "Russians will be united!"
+ 
+ #Professionalism Events
+ ideagroups.5000.t:0 "Foreign Powers Seek Our Instructors"
+ ideagroups.5000.d:0 "Several foreign countries have heard of the fame of our instructors and are looking to hire them."
+ ideagroups.5000.opta:0 "Allow them to hire our officers."
+ ideagroups.5000.optb:0 "We can use these leaders ourselves."
+ ideagroups.5001.t:0 "A Brilliant Instructor"
+ ideagroups.5001.d:0 "One of our generals has gained fame as an excellent instructor of troops."
+ ideagroups.5001.opta:0 "Hire this man straight away!"
+ ideagroups.5002.t:0 "Our Officers Are Using Inferior Tactics"
+ ideagroups.5002.d:0 "Some of our generals and army officers are using outdated ways to train our army."
+ ideagroups.5002.opta:0 "Time to shake things up."
+ ideagroups.5002.optb:0 "Nonsense, our army is unbeatable."
+ ideagroups.5002.optc:0 "I will reform our army myself!"
+ ideagroups.5003.t:0 "Efficient Drilling Tactics"
+ ideagroups.5003.d:0 "Our generals have developed new ways to maximize the training of our troops."
+ ideagroups.5003.opta:0 "Excellent."
+ ideagroups.5004.t:0 "Our Army Is Not So Professional"
+ ideagroups.5004.d:0 "The 'glorious' army of our nation is not so glorious these days."
+ ideagroups.5004.opta:0 "I am sure there is nothing to worry about."
+ 

@@ -1,0 +1,48 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = shandong_culture
+capital = 2139	#Laizhou
+
+1444.1.1 = {
+	monarch = {
+		name = "Bu"
+		dynasty = "Lu"
+		birth_date = 1412.1.1
+		adm = 0
+		dip = 0
+		mil = 6
+		leader = { name = "Bu Lu"   	type = general	fire = 0	shock = 6	manuever = 0	siege = 0 }
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+}
+
+1444.1.1 = {
+	queen = { # Consort
+		country_of_origin = HAA
+		name = "Diao"
+		dynasty = "Chan"
+		birth_date = 1429.4.20
+		death_date = 1494.2.12
+		adm = 2
+		dip = 6
+		mil = 0
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Lingqi"
+		monarch_name = "Lingqi I"
+		dynasty = "Lu"
+		female = yes
+		birth_date = 1428.1.1
+		death_date = 1491.11.8
+		claim = 100
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}

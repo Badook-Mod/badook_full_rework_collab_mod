@@ -1,0 +1,110 @@
+country_decisions = {
+
+	wu_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_wu_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				NOT = { exists = WUU }
+			}
+			OR = {
+				tag = CSW
+				tag = SNW
+				tag = DWU
+			}
+			religion = confucianism
+		}
+		provinces_to_highlight = {
+			OR = { 
+				province_id = 684 # hangzhou
+				province_id = 2151 # poyang
+				province_id = 1824 # wenzhou
+				province_id = 1829 # quanzhou
+				province_id = 1821 # nanjing
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			is_tribal = no
+			NOT = { exists = WUU }
+			owns_core_province = 684 # hangzhou
+			owns_core_province = 2151 # poyang
+			owns_core_province = 1824 # wenzhou
+			owns_core_province = 1829 # quanzhou
+			owns_core_province = 1821 # nanjing
+		}
+		effect = {
+			change_tag = WUU
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			south_jiangsu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WUU
+			}
+			south_anhui_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WUU
+			}
+			anhui_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WUU
+			}
+			jiangxi_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WUU
+			}
+			zhejiang_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WUU
+			}
+			fujian_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WUU
+			}
+			jiangsu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WUU
+			}
+			684 = {
+				move_capital_effect = yes
+			}
+			add_prestige = 15
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_wu_flag			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

@@ -1,0 +1,117 @@
+namespace = nomadic_events
+
+#centralised hordes are cool
+country_event = {
+	id = nomadic_events.1
+	title = nomadic_events.1.t
+	desc = nomadic_events.1.d
+	picture = MESOAMERICAN_GODS_eventPicture
+	
+	trigger = {
+		is_in_war = {
+			attacker_leader = ROOT
+			war_score = 50
+			casus_belli = cb_unity_gain
+		}
+		OR = {    	#for cheese uncons
+			unit_in_battle = yes
+			war_score = 99
+		}
+		NOT = {
+			has_country_flag = unity_gained 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = unity_gained
+		}
+	}
+	option = {
+		name = nomadic_events.1.a #keep me in
+		add_horde_unity = 25
+	}
+}
+
+country_event = {
+	id = nomadic_events.2
+	title = nomadic_events.2.t
+	desc = nomadic_events.2.d
+	picture = MESOAMERICAN_GODS_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		NOT = {
+			is_in_war = {
+				attacker_leader = ROOT
+				casus_belli = cb_unity_gain
+			}
+		}
+		has_country_flag = unity_gained 
+	}
+
+	immediate = {
+		clr_country_flag = unity_gained
+	}
+	
+	option = {
+		name = nomadic_events.2.a #keep me in
+	}
+}
+
+country_event = {
+	id = nomadic_events.3
+	title = nomadic_events.3.t
+	desc = nomadic_events.3.d
+	picture = MESOAMERICAN_GODS_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = nomadicism
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				change_religion = nomadicism
+			}
+			add_horde_unity = -100
+		}
+	}
+	
+	option = {
+		name = nomadic_events.3.a #keep me in
+	}
+}
+
+#centralised hordes are cool
+country_event = {
+	id = nomadic_events.4
+	title = nomadic_events.4.t
+	desc = nomadic_events.4.d
+	picture = MESOAMERICAN_GODS_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		nomad = yes
+	}
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = unity_gained 
+		}
+	}
+	
+	option = {
+		name = nomadic_events.4.a #keep me in
+	}
+}
+
+

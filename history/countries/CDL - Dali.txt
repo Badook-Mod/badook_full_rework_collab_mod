@@ -1,0 +1,35 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+primary_culture = bai
+add_accepted_culture = yi
+add_accepted_culture = shan
+religion = buddhism
+technology_group = chinese
+capital = 661	# Dali
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Me"
+		dynasty = "Agtsom"
+		birth_date = 1424.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Zhe"
+		monarch_name = "Zhe"
+		dynasty = "Agtsom"
+		birth_date = 1433.1.1
+		death_date = 1460.4.10
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+

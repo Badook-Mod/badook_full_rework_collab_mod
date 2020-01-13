@@ -1,0 +1,100 @@
+### KML modifiers ###
+
+#### Fertile Lands - to be used around for grain/cows/wine/tea ####
+
+fertile_lands = {
+	trade_goods_size = 1.5
+	picture = "trade_goods_size"
+}
+
+## Largest sapphire mine in the world ##
+
+sapphire_mine = {
+	trade_goods_size = 3
+	picture = "trade_goods_size"
+}
+
+### Confucianism modifiers ###
+
+legalism_influence_modifier = {
+	yearly_harmony = 1.5
+}
+
+taoism_influence_modifier = {
+	yearly_harmony = -1.5
+}
+##############################################
+guerilla_warfare = {
+	local_hostile_attrition = 5
+	local_hostile_movement_speed = 0.40
+}
+
+weak_fortification = {
+	local_defensiveness = -0.50
+}
+
+modern_army = {
+	infantry_power = 0.10
+}
+
+integrated_aristocracy = {
+	army_tradition = 1
+}
+
+clergical_takeover = {
+	global_missionary_strength = 0.03
+	land_morale = 0.1
+}
+
+peasant_recruitment = {
+	manpower_recovery_speed = 0.30
+}
+
+decentralised_society = {
+	vassal_forcelimit_bonus = 1
+	mercenary_discipline = 0.05
+}
+
+japanese_roots = {
+	leader_land_fire = 1
+	leader_siege = 1
+}
+
+trading_connections = {
+	possible_mercenaries = 0.35
+	colonists = 1
+}
+
+japanese_gunpowder = {
+	artillery_power = 0.15
+}
+
+horde_roots = {
+	leader_land_manuever = 1
+	leader_land_shock = 1
+}
+
+trained_cavalry = {
+	cavalry_power = 0.25
+}
+
+religious_surge = {
+	global_missionary_strength = 0.05
+}
+
+religious_scholars = {
+	technology_cost = -0.025
+}
+
+colony_gang = {
+	colonists = 1
+}
+
+good_produced = {
+		global_trade_goods_size_modifier = 0.05
+}
+
+impenetrable_fortress = {
+	local_tax_modifier = -0.99
+	defensiveness = 0.20
+}

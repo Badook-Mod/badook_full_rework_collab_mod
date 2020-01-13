@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = animism
+primary_culture = miao
+capital = 673
+
+1429.1.1 = {
+	monarch = {
+		name = "Wutugu"
+		dynasty = "Kojimbo"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

@@ -1,0 +1,506 @@
+chinese_missions_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {	
+		tag = MNG
+	}
+	has_country_shield = yes
+	
+	rebuild_army_mission = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = {  }
+		position = 1
+		trigger = {
+			army_size_percentage = 1 
+		}
+		effect = { 
+			
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 
+			}
+		}
+	}
+	new_hope_mission = { 
+		icon = mission_invade_island
+		required_missions = { rebuild_army_mission }
+		position = 2
+		provinces_to_highlight = {
+			region = south_china_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				region = south_china_region
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "foothold_gained"
+				duration = 7300 
+			}
+			south_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	empire_strikes_back_mission = { 
+		icon = mission_conquer_50_development
+		required_missions = { new_hope_mission }
+		position = 3
+		provinces_to_highlight = {
+			region = south_china_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				region = south_china_region
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 25
+			add_country_modifier = {
+				name = "consolidate_the_rebellion"
+				duration = 7300 
+			}
+		}
+	}
+	return_of_ming_mission = { 
+		icon = mission_chinese_general_riding
+		required_missions = { empire_strikes_back_mission }
+		position = 4
+		provinces_to_highlight = {
+			region = south_china_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "the_last_ming"
+				duration = 3650 
+			}
+			north_china_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			xinan_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	the_middle_menace_mission = { 
+		icon = mission_unite_home_region
+		required_missions = { return_of_ming_mission }
+		position = 5
+		provinces_to_highlight = {
+			OR = { 
+				area = henan_area
+				area = anhui_area
+				area = north_henan_area
+				province_id = 700
+				province_id = 4198
+				province_id = 689
+				province_id = 2141
+				province_id = 2142
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			henan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			anhui_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_henan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 700
+			owns = 4198
+			owns = 689
+			owns = 2141
+			owns = 2142
+		}
+		effect = { 
+			add_mil_power = 100
+			north_china_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			xinan_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "ming_legacy"
+				duration = -1
+			}
+		}
+	}
+	attack_of_the_tribes_mission = { 
+		icon = mission_non-western_cavalry_raid
+		required_missions = { the_middle_menace_mission }
+		position = 6
+		provinces_to_highlight = {
+			superregion = china_superregion
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			china_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "not_a_death_star"
+				duration = 3650 
+			}
+		}
+	}
+	revenge_of_ming_mission = { 
+		icon = mission_monarch_in_throne_room
+		required_missions = { attack_of_the_tribes_mission }
+		position = 7
+		trigger = {
+			government = monarchy
+		}
+		effect = { 
+			add_mandate_large_effect = yes
+			indo_china_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malaya_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			burma_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "i_am_the_senate"
+				duration = -1
+			}
+		}
+	}
+	ming_one_mission = { 
+		icon = mission_monarch_in_throne_room
+		required_missions = { revenge_of_ming_mission }
+		position = 8
+		provinces_to_highlight = {
+			OR = { 
+				region = indo_china_region
+				region = malaya_region
+				region = burma_region
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			indo_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			malaya_region = {
+				type = all
+				owned_by = ROOT
+			}
+			burma_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "rebellions_are_built_on_hope"
+				duration = 5475 
+			}
+		}
+	}
+}
+
+chinese_missions_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		tag = MNG
+	}
+	has_country_shield = yes
+	plan_b_mission = { 
+		icon = mission_trade_company_region_abroad
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			region = moluccas_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 1
+				region = moluccas_region
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 10
+			luzon_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "chinese_colonial_ambitions"
+				duration = 7300
+			}
+		}
+	}
+	plan_c_mission = {
+		icon = mission_invade_island
+		required_missions = { plan_b_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = luzon_area
+				area = southern_luzon_area
+				area = visayas_area
+				area = west_mindanao_area
+				area = mindanao_area
+				area = palawan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		trigger = {
+			luzon_area = {
+				type = all
+				owned_by = ROOT
+			}
+			southern_luzon_area = {
+				type = all
+				owned_by = ROOT
+			}
+			visayas_area = {
+				type = all
+				owned_by = ROOT
+			}
+			west_mindanao_area = {
+				type = all
+				owned_by = ROOT
+			}
+			mindanao_area = {
+				type = all
+				owned_by = ROOT
+			}
+			palawan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = { 
+			add_prestige = 5
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "integration_of_filipinos"
+				duration = 5475
+			}
+		}
+	}
+	plan_d_mission = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { plan_c_mission }
+		position = 3
+		provinces_to_highlight = {
+			region = moluccas_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 35
+				region = moluccas_region
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "ming_spice_traders"
+				duration = 7300
+			}
+		}
+	}
+	new_homeland_mission = {
+		icon = mission_colonial
+		required_missions = { plan_d_mission }
+		position = 4
+		provinces_to_highlight = {
+			colonial_region = colonial_australia
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = yes
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 5
+				colonial_region = colonial_australia
+				is_city = yes
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "ming_colonial_refugees"
+				duration = 7300
+			}
+		}
+	}
+	rectifying_a_mistake_mission = {
+		icon = mission_invade_island
+		required_missions = { new_homeland_mission }
+		position = 5
+		provinces_to_highlight = {
+			OR = { 
+				colonial_region = colonial_california
+				colonial_region = colonial_alaska
+				colonial_region = colonial_mexico
+				colonial_region = colonial_colombia
+				colonial_region = colonial_peru
+				colonial_region = colonial_la_plata
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = yes
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 5
+				OR = { 
+					colonial_region = colonial_california
+					colonial_region = colonial_alaska
+					colonial_region = colonial_mexico
+					colonial_region = colonial_colombia
+					colonial_region = colonial_peru
+					colonial_region = colonial_la_plata
+				}
+				is_city = yes
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_mil_power = 100
+			add_adm_power = 100
+			add_treasury = 500
+			add_country_modifier = {
+				name = "destiny_lies_east"
+				duration = 5475
+			}
+		}
+	}
+}
+
+chinese_missions_3 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MNG
+	}
+	has_country_shield = yes
+	defend_korea = {
+		icon = mission_great_wall
+		required_missions = {  }
+		position = 3
+		provinces_to_highlight = {
+			OR = { 
+				region = korea_region
+				area = liaoning_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			korea_region = {
+				type = all
+				owned_by = ROOT
+			}
+			liaoning_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "choson_one"
+				duration = 3650
+			}
+		}
+	}
+}

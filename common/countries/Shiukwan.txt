@@ -1,0 +1,71 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 68  19  120 }
+
+
+historical_idea_groups = {
+	trade_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+	humanist_ideas
+	quantity_ideas
+	naval_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	eastern_bow
+	chinese_footsoldier
+	chinese_steppe
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	manchu_banner
+	han_banner
+	asian_musketeer
+	chinese_dragoon
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	reformed_manchu_rifle
+}
+
+monarch_names = {
+	"Luzhen #0" = -10
+	"Heying #1" = -10
+	"Chunmei #1" = -10
+	"Tianhui #1" = -10
+	"Kon #1" = -10
+	"Mao #1" = -10
+	"Yuying #1" = -30
+	"Yuantong #1" = -20
+	"Yanxiang #1" = -30
+	"Xiurong #1" = -20
+	"Shouying #1" = -20
+	"Fuyuan #1" = -10
+	"Ruirong #1" = -10
+	"Suzhen #1" = -10
+	"Xiao'e #1" = -30
+	"Xiaoying #1" = -30
+	"Xiaoyuan #1" = -30
+	"Xiaoji #1" = -30
+	"Xiaolou #1" = -30
+}
+
+leader_names = {
+	Heying Chunmei Tianhui Kon Mao Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen 
+	Xiao'e Xiaoying Xiaoyuan Xiaoji Xiaolou
+}
+
+ship_names = {
+	Beiji Tianshu Sifu Gouchen Tianzhu Zhushi Tianqiang Xuange
+	Taizun Beidou Santai Tianji Wenchang Qizhenjiangjun Tenshe
+	Liaoning Beiluoshimen Yujing Hongshi 
+	Qinglong Baihu Zhuque Xuanwu Zhaowu Yong'an Nan'an Longhai Fu'an Fuding Jinchang
+	Qingyuan Xining Xingyi Wu'an Xianning Ruichang Xinghua
+	Zhaoyuan Xingping Yongji Xiaoyi Yongkang Rende Anding
+	Yanping 
+}

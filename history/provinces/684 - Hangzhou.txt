@@ -1,0 +1,30 @@
+#684 - Hangzhou (can't change file name)
+
+owner = SNW
+controller = SNW
+add_core = SNW
+culture = wu
+religion = confucianism
+capital = "Hangzhou"
+trade_goods = silk
+hre = no
+base_tax = 4
+base_production = 5
+base_manpower = 6
+is_city = yes
+#fort_15th = yes #More than 1 Weisuo
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+extra_cost = 15
+
+center_of_trade = 2
+
+1519.1.1 = { discovered_by = POR } # Tome Pires
+1645.6.14 = {	owner = QNG
+	controller = QNG
+	add_core = QNG
+}
+1675.1.1 = { controller = MNG }
+1680.1.1 = { controller = QNG }

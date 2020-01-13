@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = xibei
+capital = 708	#Zanghye
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Chao"
+		dynasty = "Ma"
+		birth_date = 1419.8.2
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Dai"
+		monarch_name = "Dai I"
+		dynasty = "Ma"
+		birth_date = 1439.3.15
+		death_date = 1471.11.8
+		claim = 100
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}

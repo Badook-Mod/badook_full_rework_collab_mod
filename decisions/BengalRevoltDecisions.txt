@@ -1,0 +1,129 @@
+country_decisions = {
+	
+	bengal_revolt_attack = {
+		major = yes
+		potential = {
+			tag = BNG
+			NOT = {
+				OR = {
+					has_country_flag = bengal_revolt_attack_flag
+					has_country_flag = bengal_revolt_defend_flag
+				}
+			}
+		}
+		allow = {
+			tag = BNG
+			NOT = {
+				OR = {
+					has_country_flag = bengal_revolt_attack_flag
+					has_country_flag = bengal_revolt_defend_flag
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = bengal_revolt_attack_flag
+			set_global_flag = bengal_revolt_attack_flag
+			declare_war_with_cb = {
+				who = BAN
+				casus_belli = cb_annex
+			}
+		}
+	}
+	
+	
+	bengal_revolt_defend = {
+		major = yes
+		potential = {
+			tag = BNG
+			NOT = {
+				OR = {
+					has_country_flag = bengal_revolt_attack_flag
+					has_country_flag = bengal_revolt_defend_flag
+				}
+			}
+		}
+		allow = {
+			tag = BNG
+			NOT = {
+				OR = {
+					has_country_flag = bengal_revolt_attack_flag
+					has_country_flag = bengal_revolt_defend_flag
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = bengal_revolt_defend_flag
+			set_global_flag = bengal_revolt_defend_flag
+			add_spy_network_in = {
+				who = BAN
+				value = 20
+			}
+			set_country_flag = bengal_revolt_infiltrate_flag
+			add_years_of_income = 1
+		}
+	}
+	
+	bengal_revolt_infiltrate = {
+		major = yes
+		potential = {
+			tag = BNG
+			has_country_flag = bengal_revolt_infiltrate_flag
+			exists = BAN
+		}
+		
+		allow = {
+			tag = BNG
+			NOT = { 
+				offensive_war_with = BAN
+			}
+			has_spy_network_in = {
+				who = BAN
+				value = 10
+			}		
+		}
+		
+		effect = {
+		BNG = { country_event = { id = flavor_bngrev.3 } }
+		
+		}
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

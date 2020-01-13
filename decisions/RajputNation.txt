@@ -1,0 +1,96 @@
+country_decisions = {
+
+	rajput_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_rajputana_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				NOT = { exists = RJP }
+				ai = no
+			}
+			OR = {
+				tag = MER
+				tag = DLH
+				tag = SRH
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = sirhind_area
+				area = lahore_area
+				area = multan_area
+				area = marwar_area
+				area = jangladesh_area
+				area = jaipur_area
+
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = RJP }
+			adm_tech = 10
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			sirhind_area = { type = all is_core = ROOT owned_by = ROOT }
+			lahore_area = { type = all is_core = ROOT owned_by = ROOT }
+			multan_area = { type = all is_core = ROOT owned_by = ROOT }
+			marwar_area = { type = all is_core = ROOT owned_by = ROOT }
+			jangladesh_area = { type = all is_core = ROOT owned_by = ROOT }
+			jaipur = { type = all is_core = ROOT owned_by = ROOT }
+		}
+		effect = {
+			change_tag = RJP
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RJP
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = indian }
+				}
+				change_technology_group = indian
+				change_unit_type = indian
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_rajputana_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

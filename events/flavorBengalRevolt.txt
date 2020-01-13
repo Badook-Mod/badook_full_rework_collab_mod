@@ -1,0 +1,148 @@
+namespace = flavor_bngrev
+normal_or_historical_nations = yes
+
+
+province_event = {
+	id = flavor_bngrev.1
+	title = "flavor_bngrev.EVTNAME1"
+	desc = "flavor_bngrev.EVTDESC1"
+	picture = ANGRY_MOB_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	NOT = { is_year = 1450 }
+	has_global_flag = bengal_revolt_attack_flag
+		owner = {
+			tag = BAN 
+		}
+		controller = {
+			tag = BNG
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			cede_province = BNG
+			add_core = BNG
+			if = {
+				limit = { 
+					base_manpower = 1
+					base_production = 1
+					base_tax = 1
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+		}
+	}
+	option = {
+		name = "flavor_bngrev.EVTOPTA1"
+		tooltip = {
+			cede_province = BNG
+			add_core = BNG
+			if = {
+				limit = { 
+					base_manpower = 1
+					base_production = 1
+					base_tax = 1
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+		}
+	}
+}
+
+
+province_event = {
+	id = flavor_bngrev.2
+	title = "flavor_bngrev.EVTNAME2"
+	desc = "flavor_bngrev.EVTDESC2"
+	picture = ANGRY_MOB_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		has_global_flag = bengal_revolt_attack_flag
+		NOT = { is_year = 1450 }
+		owner = {
+			tag = BNG
+		}
+		controller = {
+			tag = BAN
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			cede_province = BAN
+			add_core = BAN
+			if = {
+				limit = { 
+					base_manpower = 1
+					base_production = 1
+					base_tax = 1
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_bngrev.EVTOPTA2"
+		tooltip = {
+			cede_province = BAN
+			add_core = BAN
+			if = {
+				limit = { 
+					base_manpower = 1
+					base_production = 1
+					base_tax = 1
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = flavor_bngrev.3
+	title = "flavor_bngrev.EVTNAME3"
+	desc = "flavor_bngrev.EVTDESC3"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BNG
+	}
+	
+	option = {
+		name = "flavor_bngrev.EVTOPTA3"
+		add_spy_network_in = {
+				who = BAN
+				value = -10
+		}
+		BAN = { 
+			random_core_province = { 
+				add_base_manpower = 1
+				remove_core = BAN
+				cede_province = BNG
+				add_core = BNG
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_despotism
+technology_group = chinese
+religion = animism
+primary_culture = cantonese
+add_accepted_culture = zhuang
+capital = 665	#shiuhing
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Huo"
+		dynasty = "Meng"
+		birth_date = 1413.1.1
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}

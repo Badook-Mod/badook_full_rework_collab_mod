@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = pirate_republic_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = hubei
+capital = 682	#Wuchang
+
+1437.5.2 = { leader = {	name = "Gan Ning"	type = admiral	fire = 2	shock = 4	manuever = 2	siege = 0	death_date = 1473.1.1 } }
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Zu"
+		dynasty = "Huang"
+		birth_date = 1402.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = celestial_empire
+government_rank = 3
+technology_group = chinese
+religion = confucianism
+primary_culture = xibei
+capital = 700	#Xi'An
+add_harmony = -10
+
+1434.3.2 = { leader = {	name = "Hua Xiong"	type = general	fire = 2	shock = 3	manuever = 0	siege = 0	death_date = 1477.1.1 } }
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Zhou"
+		dynasty = "Dong"
+		birth_date = 1406.1.1
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
+}

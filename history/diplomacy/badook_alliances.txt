@@ -1,0 +1,18 @@
+#Ladakh
+vassal = {
+	first = KSH
+	second = LDK
+	start_date = 1444.1.1
+	end_date = 1600.1.1
+}
+#Idar
+vassal = {
+	first = AFG
+	second = IDR
+	start_date = 1444.1.1
+	end_date = 1600.1.1
+}
+
+#Modded Tributaries
+
+

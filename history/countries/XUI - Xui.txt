@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = chinese
+religion = confucianism
+primary_culture = xibei
+add_accepted_culture = sichuanese
+capital = 2183	#Taozhou
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Xui"
+		dynasty = "Zhang"
+		birth_date = 1414.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
