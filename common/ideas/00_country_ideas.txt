@@ -46,7 +46,7 @@ SIA_ideas = {
 	}
 	
 	bonus = {
-		fire_damage_received = -0.1
+		fire_damage_received = -0.075
 	}
 	
 	trigger = {
