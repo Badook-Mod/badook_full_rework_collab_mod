@@ -2377,7 +2377,7 @@ MUG_ideas = {
 	}
 	
 	bonus = {
-		technology_cost = -0.05
+		technology_cost = -0.075
 	}
 	
 	trigger = {
@@ -3261,7 +3261,7 @@ MAR_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	expand_maratha_navy = {
-		global_ship_cost = -0.1
+		global_ship_cost = -0.15
 	}
 }
 
