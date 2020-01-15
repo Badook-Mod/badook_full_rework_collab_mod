@@ -1,0 +1,8 @@
+#no more daimyos
+dependency = {
+	subject_type = "tributary_state"
+	first = TKG
+	second = RYU
+	start_date = 1609.4.5
+	end_date = 1879.1.1
+}
