@@ -13,22 +13,6 @@ country_event = {
 		tag = BAH 
 	}
 	
-	immediate = {
-		hidden_effect = {
-			add_truce_with = VIJ
-			BNG = {
-				add_truce_with = BAN
-			}
-			every_country = { 
-				limit = {
-					technology_group = indian
-					religion_group = muslim
-				}
-				change_religion = hinduism
-			}	
-		}
-	}
-	
 	mean_time_to_happen = {
 		days = 1
 	}

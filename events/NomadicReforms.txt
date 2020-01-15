@@ -83,6 +83,19 @@ country_event = {
 				change_religion = nomadicism
 			}
 			add_horde_unity = -100
+			BAH = {
+				add_truce_with = VIJ
+			}
+			BNG = {
+				add_truce_with = BAN
+			}
+			every_country = { 
+				limit = {
+					technology_group = indian
+					religion_group = muslim
+				}
+				change_religion = hinduism
+			}	
 		}
 	}
 	
