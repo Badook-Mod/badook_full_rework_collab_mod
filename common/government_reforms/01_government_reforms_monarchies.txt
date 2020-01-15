@@ -127,14 +127,11 @@ shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { has_country_flag = formed_japan_flag }
 		OR = {
 			AND = {
-				capital_scope = {
-					province_id = 1020
-				}
+				tag = ASK
 				culture_group = japanese_g
-				NOT = { exists = JAP }
+				NOT = { exists = ASK }
 			}
 			AND = {
 				is_playing_custom_nation = yes
@@ -153,14 +150,11 @@ shogunate = {
 	legacy_equivalent = shogunate_legacy
 	fixed_rank = 2
 	maintain_dynasty = yes
-	allow_vassal_war = yes
-	allow_vassal_alliance = yes
 	lock_level_when_selected = yes
 
 	modifiers = {
-		diplomats = 1
-		envoy_travel_time = -0.25
-		max_absolutism = 5
+		land_morale = 0.075
+		galley_power = 0.10
 	}
 
 	custom_attributes = {
@@ -187,8 +181,8 @@ daimyo = {
 		capital_scope = { region = japan_region }
 	}
 	modifiers = {
-		land_morale = 0.1
-		infantry_power = 0.1
+		land_morale = 0.05
+		galley_power = 0.10
 	}
 	custom_attributes = {
 		locked_government_type = yes
