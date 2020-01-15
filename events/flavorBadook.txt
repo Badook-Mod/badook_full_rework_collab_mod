@@ -1,0 +1,36 @@
+namespace = badookmp
+# ty foffy x3 :peepolove:
+# Takab Gold Mine
+
+country_event = {
+	id = badookmp.1
+	title = badookmp.1.t
+	desc = badookmp.1.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2212 #Zanjan
+		OR = {
+			tag = MUG
+			tag = PER
+		}
+		2212 = {
+			NOT = { trade_goods = gold }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = badookmp.1.a
+		2212 = {
+			change_trade_goods = gold
+			add_base_production = 3
+		}
+	}
+	
+}
