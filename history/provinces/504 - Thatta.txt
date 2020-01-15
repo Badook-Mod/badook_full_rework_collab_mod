@@ -1,7 +1,7 @@
 #504 - Thatta
 
-owner = MER
-controller = MER
+owner = SND
+controller = SND
 culture = sindhi
 religion = sunni
 capital = "Thatta"
@@ -12,7 +12,6 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = SND
-add_core = MER
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim 
