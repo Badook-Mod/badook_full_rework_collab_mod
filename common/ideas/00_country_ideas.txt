@@ -2397,7 +2397,7 @@ MUG_ideas = {
 		free_mil_policy = 1
 	}
 	zabt_system = {
-		cavalry_shock = 0.5
+		shock_damage = 0.5
 	}
 	mughal_architecture = {
 		prestige = 1
@@ -3254,7 +3254,7 @@ MAR_ideas = {
 		core_creation = -0.15
 	}
 	encourage_ties_with_brahmin_financial_families = {
-		cavalry_fire = 0.5
+		fire_damage = 0.10
 	}
 	reform_the_bureaucracy = {
 		global_trade_goods_size_modifier = 0.1

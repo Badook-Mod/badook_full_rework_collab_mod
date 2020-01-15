@@ -1,0 +1,52 @@
+#ty foffy x2 :peepolove:
+country_decisions = {
+	h_found_riyadh = {
+		potential = {
+			tag = ARB
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			owns = 4275
+			NOT = { has_country_flag = h_founded_riyadh }
+		}
+		allow = {
+			is_core = 4275
+			is_at_war = no
+			4275 = { has_province_modifier = h_fortified_oasis }
+		}
+		effect = {
+			4275 = {
+				change_province_name = "Riyadh"
+				rename_capital = "Riyadh"
+				add_base_tax = 4
+				add_base_manpower = 4
+				add_base_production = 4
+				change_trade_goods = cloth
+				center_of_trade = 1
+			}
+			add_prestige = 10
+			4275 = {
+				move_capital_effect = yes
+			}
+			set_country_flag = h_founded_riyadh
+		}
+	}
+	
+	h_sok_jihad = {
+		potential = {
+			tag = SOK
+			NOT = { has_country_flag = h_sok_declared_jihad }
+		}
+		allow = {
+			stability = 1
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			set_country_flag = h_sok_declared_jihad
+			country_event = { id = hashmp.5 } #Jihad Event
+		}
+	}
+}

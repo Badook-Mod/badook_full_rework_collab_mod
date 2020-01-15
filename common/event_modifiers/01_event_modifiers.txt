@@ -98,3 +98,14 @@ impenetrable_fortress = {
 	local_tax_modifier = -0.99
 	defensiveness = 0.20
 }
+
+h_fortified_oasis = {
+	local_development_cost = -0.4
+	local_defensiveness = 0.25
+	local_manpower_modifier = 0.25
+}
+
+h_qar_caucasus = {
+	global_tax_modifier = 0.2
+	tolerance_own = 2
+}
