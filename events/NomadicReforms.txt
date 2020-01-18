@@ -96,6 +96,28 @@ country_event = {
 				}
 				change_religion = hinduism
 			}	
+			
+			set_global_flag = reset_forts
+			every_province = {
+				limit = {
+					owner = {
+						ai = no
+					}
+				}
+				remove_building = fort_15th
+			}
+			every_country = {
+				limit = {
+					ai = no
+				}
+				add_country_modifier = {
+					name = "build_forts"
+					duration = 30
+				}
+			}
+		}	
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	
