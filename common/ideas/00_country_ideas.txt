@@ -772,7 +772,7 @@ NMS_ideas = {                                 # KML
 CNU_ideas = {                                       # KML
 	start = {
 		diplomatic_reputation = 1
-		discipline = 0.5
+		discipline = 0.05
 	}
 	
 	bonus = {
@@ -4657,7 +4657,7 @@ AFG_ideas = {
 		defensiveness = 0.15
 	}
 	tureh = {
-		global_manpower_modifier = 0.05
+		global_manpower_modifier = 0.125
 	}
 	afghan_diaspora = {
 		diplomatic_reputation = 1
