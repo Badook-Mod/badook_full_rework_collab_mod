@@ -65,7 +65,7 @@ country_event = {
 		name = nomadic_events.2.a #keep me in
 	}
 }
-
+#global day 1 setup event
 country_event = {
 	id = nomadic_events.3
 	title = nomadic_events.3.t
@@ -79,24 +79,33 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			#nomads land swapped
 			every_owned_province = {
 				change_religion = nomadicism
 			}
 			add_horde_unity = -100
+			#truces
 			BAH = {
 				add_truce_with = VIJ
 			}
 			BNG = {
 				add_truce_with = BAN
 			}
+			MAM = {
+				add_truce_with = KAR
+			}
+			#convert de indians
 			every_country = { 
 				limit = {
 					technology_group = indian
 					religion_group = muslim
 				}
 				change_religion = hinduism
+				every_owned_province = { 
+					change_religion = hinduism
+				}
 			}	
-			
+			#fort building
 			set_global_flag = reset_forts
 			every_province = {
 				limit = {
