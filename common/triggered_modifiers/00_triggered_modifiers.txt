@@ -115,58 +115,6 @@ east_indian_trade_route = {
 #}
 #
 ######################################
-# Louyang the capital of china.
-######################################
-
-louyang_capital = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 1836 #xi'an
-		capital_scope = {
-			superregion = china_superregion
-		}
-		culture_group = east_asian
-		NOT = { primary_culture = manchu }
-		NOT = { TAG = QNG } #qing
-		NOT = { TAG = MCH } #manchu
-	}
-	
-	trigger = {
-		owns = 1836 #louyang
-	}
-	
-	prestige = 1
-	legitimacy = 1
-	meritocracy = 0.5
-	imperial_mandate = 0.05
-}	
-
-######################################
-# Mandate without Louyang
-######################################
-
-no_louyang_capital = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_dlc = "Mandate of Heaven"
-		has_discovered = 1836 #xi'an
-		is_emperor_of_china = yes
-		NOT = { owns = 1836 }
-	}
-	
-	trigger = {
-		is_emperor_of_china = yes
-		NOT = { owns = 1836 }
-		culture_group = east_asian
-		NOT = { primary_culture = manchu }
-	}
-	
-	prestige = -1
-	meritocracy = -1
-	imperial_mandate = -0.075
-}	
-
-######################################
 # Buddhist control of Bodh Gaya.
 ######################################
 #buddhist_bodh_gaya = {
@@ -343,79 +291,6 @@ custodian_of_the_two_holy_mosques = {
 #}
 
 ######################################
-# Catholic control of Rome.
-######################################
-catholic_rome = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 118	# Roma
-		religion = catholic
-		NOT = { tag = PAP }
-	}
-
-	trigger = {	
-		NOT = { overlord_of = PAP }
-		owns_or_vassal_of = 118 # Roma		
-		NOT = { tag = ITA }
-		NOT = { tag = ROM }
-	}
-
-	papal_influence = -10
-	diplomatic_reputation = -1
-	#icon = 9
-}
-
-papal_subjugation = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 118	# Roma
-		religion = catholic
-		NOT = { tag = PAP }
-	}
-
-	trigger = {	
-		overlord_of = PAP
-		NOT = { tag = ITA }
-	}
-
-	diplomatic_reputation = -2
-	#icon = 9
-}
-
-
-rapid_collapse_of_society = {
-	potential = {
-		normal_or_historical_nations = yes
-		capital_scope = {
-			OR = {
-				continent = north_america
-				continent = south_america
-				continent = new_world
-			}
-		}
-		
-	}
-	trigger = {
-		NOT = { has_institution = feudalism }
-		custom_trigger_tooltip = {
-			tooltip = rapid_collapse_of_society_tooltip
-			has_country_flag = european_diseases_struck
-			NOT = {
-				had_country_flag = {
-					flag = european_diseases_struck
-					days = 9125
-				}
-			}
-		}
-	}
-	
-	all_power_cost = 0.33
-	discipline = -0.1
-	land_morale = -0.2
-	
-}
-
-######################################
 # Italian - Submission to Emperor
 ######################################
 submission_to_emperor = {
@@ -474,6 +349,32 @@ counter_revolution = {
 }
 
 
+
+######################################
+# Reaction
+######################################
+reaction = {
+	potential = {
+		revolution_target_exists = yes
+		capital_scope = { continent = europe }
+	}
+
+	trigger = {
+		capital_scope = { continent = europe }
+		revolution_target_exists = yes
+		is_revolution_target = no
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+		revolution_target = {
+			war_with = ROOT
+		}  
+
+	}
+
+	prestige = 10
+	stability_cost_modifier = -0.1
+	global_unrest = -10
+}
 
 ######################################
 # Crusader
@@ -571,7 +472,8 @@ the_mandate_of_heaven = {
 	
 	trigger = {	
 		stability = 0
-		legitimacy = 50
+		legitimacy = 60
+		num_of_cities = 20
 	}
 
 	stability_cost_modifier = -0.10
@@ -587,7 +489,8 @@ the_mandate_of_heaven_lost = {
 	trigger = {
 		OR = {
 			NOT = { stability = 0 }
-			NOT = { legitimacy = 50 }	
+			NOT = { legitimacy = 60 }
+			NOT = { num_of_cities = 20 }	
 		}
 	}
 
@@ -659,6 +562,7 @@ synthetic_remnants = {
 	technology_cost = -0.25
 }
 
+#modded
 the_fort_of_roh = {
 	potential = {
 		capital_scope = { 
@@ -679,7 +583,6 @@ the_fort_of_roh = {
 	}
 	global_tax_income = -30
 }
-
 
 badook_player_cn = {
     potential = {
@@ -718,4 +621,89 @@ horde_centralisation_high = {
 	global_trade_goods_size_modifier = 0.05
 	infantry_power = 0.05
 	cavalry_power = 0.05
+}
+
+emperor_brandenburg = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		BRA = {
+			is_emperor = yes
+		}
+	}
+	land_morale = 0.10
+}
+
+emperor_austria = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		HAB = {
+			is_emperor = yes
+		}
+	}
+	ae_impact = -0.2
+	improve_relation_modifier = 0.25
+}
+
+emperor_swiss = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		SWI = {
+			is_emperor = yes
+		}
+	}
+	mercenary_discipline = 0.075
+}
+
+emperor_munster = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		MUN = {
+			is_emperor = yes
+		}
+	}
+	global_manpower = 20
+}
+
+emperor_venice = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		VEN = {
+			is_emperor = yes
+		}
+	}
+	global_tax_income = 24
+}
+
+emperor_genoa = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		GEN = {
+			is_emperor = yes
+		}
+	}
+	development_cost = -0.1
+}
+
+emperor_naples = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		NAP = {
+			is_emperor = yes
+		}
+	}
+	possible_mercenaries = 0.3
 }
