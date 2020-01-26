@@ -60,7 +60,7 @@ country_decisions = {
 			multan_area = { type = all is_core = ROOT owned_by = ROOT }
 			marwar_area = { type = all is_core = ROOT owned_by = ROOT }
 			jangladesh_area = { type = all is_core = ROOT owned_by = ROOT }
-			jaipur = { type = all is_core = ROOT owned_by = ROOT }
+			jaipur_area = { type = all is_core = ROOT owned_by = ROOT }
 		}
 		effect = {
 			change_tag = RJP
