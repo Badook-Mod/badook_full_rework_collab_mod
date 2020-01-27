@@ -660,12 +660,12 @@ emperor_swiss = {
 	mercenary_discipline = 0.075
 }
 
-emperor_munster = {
+emperor_hesse = {
 	potential = {
 		is_elector = yes
 	}
 	trigger = {
-		MUN = {
+		HES = {
 			is_emperor = yes
 		}
 	}
