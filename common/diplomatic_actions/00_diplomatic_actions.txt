@@ -203,3 +203,64 @@ form_coalition = {
 		}
 	}
 }
+
+#Badook Mod
+
+allianceaction = {
+	condition = {
+		tooltip = badook_cn_ally_restriction
+		potential = {
+			is_colonial_nation = no
+		}
+		allow = {
+			FROM = { is_colonial_nation = no }
+		}
+	}
+	condition = {
+		tooltip = badook_cn_ally_restriction
+		potential = {
+			is_colonial_nation = yes
+		}
+		allow = {
+			FROM = { is_colonial_nation = no }
+		}
+	}
+	condition = {
+		tooltip = badook_elector_ally_limit
+		potential = {
+			has_global_flag = elector_alliance_no
+		}
+		allow = {
+			NOT = {
+				AND = {
+					FROM = {
+						is_elector = yes
+					}
+					ROOT = {
+						is_elector = yes
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = badook_elector_ally_limit
+		potential = {
+			has_global_flag = elector_alliance_no
+		}
+		allow = {
+			NOT = {
+				AND = {
+					ROOT = {
+						is_elector = yes
+					}
+					FROM = {
+						is_elector = yes
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
