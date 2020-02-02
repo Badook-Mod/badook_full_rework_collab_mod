@@ -508,23 +508,10 @@ hab_protect_the_balkans = {
 			}
 		}
 	}
-}
-
-hab_italian_ambitions = {
-	slot = 4 #upper left column
-	generic = no
-	ai = yes
-	
-	potential = {
-		tag = HAB
-		NOT = { map_setup = map_setup_random }
-	}
-	
-	has_country_shield = yes
 	
 	austrian_italian_ambition = {
 		icon = mission_italian_condottiere
-		position = 5
+		position = 6
 		completed_by = 1797.10.17
 		
 		ai_weight = {
@@ -569,3 +556,4 @@ hab_italian_ambitions = {
 		}
 	}
 }
+
