@@ -81,7 +81,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			south_german_region = { type = all is_core = ROOT owned_by = ROOT }
+			italy_region = { type = all is_core = ROOT owned_by = ROOT }
 		}
 		effect = {
 			add_imperial_influence = 50
