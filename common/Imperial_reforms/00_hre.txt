@@ -1,5 +1,6 @@
 reichsreform = {
 	empire = hre
+	
 	member = {
 		global_tax_income = 8
 		global_autonomy = -0.025
@@ -19,12 +20,14 @@ reichsreform = {
 
 reichsregiment = {
 	empire = hre
+	
 	member = {
-		reform_progress_growth = 0.20
-		adm_tech_cost_modifier = -0.05
+		reform_progress_growth = 0.30
+		adm_tech_cost_modifier = -0.075
+		global_manpower = 2
 	}
 	emperor = {
-		reform_progress_growth = 0.25
+		reform_progress_growth = 0.35
 		adm_tech_cost_modifier = -0.10
 		global_manpower = 5
 	}
@@ -32,9 +35,11 @@ reichsregiment = {
 
 hofgericht = { 
 	empire = hre
+	
 	member = {
 		land_morale = 0.05
 		global_tax_modifier = 0.075
+		global_manpower = 2
 	}
 	emperor = {
 		leader_land_shock = 1
@@ -44,6 +49,7 @@ hofgericht = {
 
 gemeinerpfennig = {
 	empire = hre
+	
 	member = {
 		land_forcelimit = 25
 		army_tradition = 0.5
@@ -57,12 +63,12 @@ gemeinerpfennig = {
 		imperial_authority = 0.15
 	}
 	on_effect = {
-		country_event = { id = HREreforms.1 tooltip = vassalize_empire2 } #no elector alliances
 	}
 }
 
 landfriede = {
 	empire = hre
+	
 	member = {
 		land_forcelimit = -15
 		army_tradition = -0.5
@@ -71,10 +77,11 @@ landfriede = {
 	emperor = {
 		land_forcelimit_modifier = 0.25
 		global_manpower = 8
-		land_morale = 0.075
+		land_morale = 0.05
 	}
 	on_effect = {
 		internal_hre_cb = yes
+		country_event = { id = HREreforms.2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
 	}
 	off_effect = {
 		internal_hre_cb = yes
@@ -87,12 +94,11 @@ erbkaisertum = {
 	member = {
 	}
 	emperor = {
-		development_cost = -0.10
+		development_cost = -0.125
 		global_manpower = 9
 	}
 	on_effect = {
 		hre_inheritable = no
-		country_event = { id = HREreforms.2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
 	}
 	off_effect = {
 		hre_inheritable = no
@@ -110,16 +116,4 @@ privilegia_de_non_appelando = {
 	on_effect = {
 		country_event = { id = HREreforms.3 tooltip = vassalize_empire2 } #enables buff depending on tag
 	}	
-}
-
-renovatio = {
-	empire = hre
-	emperor = {
-		infantry_fire = 1
-		infantry_shock = 1
-	}
-	
-	on_effect = {
-	
-	}
 }
