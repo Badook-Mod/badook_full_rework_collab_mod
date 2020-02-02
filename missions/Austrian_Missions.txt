@@ -392,7 +392,7 @@ hab_protect_the_balkans = {
 	austrian_croatia = {
 		icon = mission_galleys_in_port
 		required_missions = { austrian_hungary }
-		position = 5
+		position = 4
 		completed_by = 1526.8.30
 		
 		ai_weight = {
@@ -454,6 +454,7 @@ hab_protect_the_balkans = {
 	conquer_transylvania = {
 		icon = mission_eastern_european_city
 		required_missions = { austrian_croatia }
+		position = 5
 		completed_by = 1699.1.26
 		ai_weight = {
 			factor = 2
@@ -523,7 +524,7 @@ hab_italian_ambitions = {
 	
 	austrian_italian_ambition = {
 		icon = mission_italian_condottiere
-		position = 6
+		position = 5
 		completed_by = 1797.10.17
 		
 		ai_weight = {
