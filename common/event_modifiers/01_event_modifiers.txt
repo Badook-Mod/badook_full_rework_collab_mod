@@ -114,3 +114,16 @@ build_forts = {
 	build_cost = -0.85
 	build_time = -0.99
 }
+
+gen_hre_emperor_south = {
+	imperial_authority_value = 0.15
+	prestige = 0.5
+}
+gen_hre_emperor_north = {
+	imperial_authority_value = 0.15
+	prestige = 0.5
+}
+gen_hre_emperor_italy = {
+	imperial_authority_value = 0.25
+	prestige = 0.5
+}
