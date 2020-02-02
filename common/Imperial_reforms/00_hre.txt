@@ -1,63 +1,81 @@
 reichsreform = {
 	empire = hre
 	member = {
-		build_cost = -0.05
-		development_cost = -0.05
+		global_tax_income = 8
+		global_autonomy = -0.025
 	}
 	emperor = {
-		build_cost = -0.05
-		development_cost = -0.05
+		global_tax_income = 14
+		global_autonomy = -0.025
+		global_manpower = 3
 	}
 	on_effect = {
 		imperial_ban_allowed = yes
 	}
 	off_effect = {
-		imperial_ban_allowed = no
+		imperial_ban_allowed = yes
 	}
 }
 
 reichsregiment = {
 	empire = hre
 	member = {
-		global_unrest = -2
+		reform_progress_growth = 0.20
+		adm_tech_cost_modifier = -0.05
 	}
 	emperor = {
-		diplomatic_reputation = 1
-		diplomats = 1
+		reform_progress_growth = 0.25
+		adm_tech_cost_modifier = -0.10
+		global_manpower = 3
 	}
 }
 
 hofgericht = { 
 	empire = hre
 	member = {
-		legitimacy = 0.5
+		land_morale = 0.05
+		global_tax_modifier = 0.075
 	}
 	emperor = {
-		legitimacy = 0.5
-		core_creation = -0.10
+		leader_land_shock = 1
+		leader_land_manuever = 1
+		global_manpower = 3
 	}
 }
 
 gemeinerpfennig = {
 	empire = hre
 	member = {
-		diplomatic_reputation = 1
+		land_forcelimit = 2.5
+		army_tradition = 0.75
+		global_manpower = 2.5
+		republican_tradition = 0.5
 	}
 	emperor = {
-		global_tax_income = 20
+		leader_siege = 1
+		leader_land_fire = 1
+		global_manpower = 4
+		imperial_authority = 0.125
+	}
+	on_effect = {
+		country_event = { id = HREreforms1 tooltip = vassalize_empire2 } #no elector alliances
 	}
 }
 
 landfriede = {
 	empire = hre
 	member = {
-		technology_cost = -0.05
+		land_forcelimit = -1
+		army_tradition = -0.5
+		global_manpower = -1
 	}
 	emperor = {
-		prestige = 0.5
+		land_forcelimit_modifier = 0.25
+		global_manpower = 5
+		land_morale = 0.075
 	}
 	on_effect = {
-		internal_hre_cb = no
+		internal_hre_cb = yes
 	}
 	off_effect = {
 		internal_hre_cb = yes
@@ -66,21 +84,16 @@ landfriede = {
 
 erbkaisertum = {
 	empire = hre
+	
 	member = {
-		legitimacy = 0.5
 	}
 	emperor = {
-		imperial_authority = 0.25
+		development_cost = -0.10
+		global_manpower = 5
 	}
 	on_effect = {
-		if = {
-			limit = {
-				hre_religion_locked = no
-				hre_religion_treaty = no
-			}
-			set_hre_religion_treaty = yes
-		}	
-		hre_inheritable = yes
+		hre_inheritable = no
+		country_event = { id = HREreforms2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
 	}
 	off_effect = {
 		hre_inheritable = no
@@ -89,38 +102,26 @@ erbkaisertum = {
 
 privilegia_de_non_appelando = {
 	empire = hre
-	war = yes			#this may cause a war, so special AI check needed, to not lose many.
 	
 	member = {
-		stability_cost_modifier = -0.10
 	}
 	emperor = {
-		imperial_authority = 0.25
+		possible_mercenaries = 0.5
+		global_manpower = 5
 	}
 	on_effect = {
-	
-		emperor = {
-			country_event = { id = 9073 tooltip = vassalize_empire2 }
-		}
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
-					is_emperor = no
-					num_of_cities = 1
-					NOT = { vassal_of = ROOT }
-				}
-				country_event = { id = 9074 }
-			}
-		}
+		country_event = { id = HREreforms3 tooltip = vassalize_empire2 } #enables buff depending on tag
 	}	
 }
 
 renovatio = {
 	empire = hre
+	emperor = {
+		infantry_fire = 1
+		infantry_shock = 1
+	}
+	
 	on_effect = {
-		emperor = {
-			country_event = { id = 9075 tooltip = renovatio_effect }
-		}
+	
 	}
 }
