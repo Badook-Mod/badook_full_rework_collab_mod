@@ -58,7 +58,7 @@ gemeinerpfennig = {
 		imperial_authority = 0.125
 	}
 	on_effect = {
-		country_event = { id = HREreforms1 tooltip = vassalize_empire2 } #no elector alliances
+		country_event = { id = HREreforms.1 tooltip = vassalize_empire2 } #no elector alliances
 	}
 }
 
@@ -93,7 +93,7 @@ erbkaisertum = {
 	}
 	on_effect = {
 		hre_inheritable = no
-		country_event = { id = HREreforms2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
+		country_event = { id = HREreforms.2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
 	}
 	off_effect = {
 		hre_inheritable = no
@@ -110,7 +110,7 @@ privilegia_de_non_appelando = {
 		global_manpower = 5
 	}
 	on_effect = {
-		country_event = { id = HREreforms3 tooltip = vassalize_empire2 } #enables buff depending on tag
+		country_event = { id = HREreforms.3 tooltip = vassalize_empire2 } #enables buff depending on tag
 	}	
 }
 
