@@ -38,7 +38,6 @@ country_event = {
 		is_emperor = yes
 	}
 	
-	
 	immediate = {
 		hidden_effect = {
 			set_global_flag = IA_land_decision
