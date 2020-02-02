@@ -81,7 +81,7 @@ landfriede = {
 	}
 	on_effect = {
 		internal_hre_cb = yes
-		country_event = { id = HREreforms.2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
+		#country_event = { id = HREreforms.2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
 	}
 	off_effect = {
 		internal_hre_cb = yes
