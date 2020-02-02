@@ -223,10 +223,3 @@ vassal = {
 	end_date = 1656.11.20
 }
 
-# Danish vassal, Holstein
-vassal = {
-	first = DAN
-	second = SHL
-	start_date = 1444.1.1
-	end_date = 1460.3.6
-}
