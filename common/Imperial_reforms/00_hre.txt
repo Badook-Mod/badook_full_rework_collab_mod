@@ -46,14 +46,14 @@ gemeinerpfennig = {
 	empire = hre
 	member = {
 		land_forcelimit = 25
-		army_tradition = 0.75
+		army_tradition = 0.5
 		global_manpower = 6
 		republican_tradition = 0.5
 	}
 	emperor = {
 		leader_siege = 1
 		leader_land_manuever = 1
-		global_manpower = 7
+		global_manpower = 8
 		imperial_authority = 0.15
 	}
 	on_effect = {
