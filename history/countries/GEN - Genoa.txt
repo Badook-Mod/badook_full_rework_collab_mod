@@ -1,12 +1,11 @@
 government = republic
-add_government_reform = merchants_reform
+add_government_reform = oligarchy_reform
 government_rank = 1
-mercantilism = 25
+mercantilism = 10
 primary_culture = ligurian
-elector = yes
-add_accepted_culture = pontic_greek
-add_accepted_culture = greek
+add_accepted_culture = sardinian
 religion = catholic
+elector = yes
 technology_group = western
 capital = 101	# Genova
 fixed_capital = 101 # Cannot move capital away from this province & no power cost to move to it

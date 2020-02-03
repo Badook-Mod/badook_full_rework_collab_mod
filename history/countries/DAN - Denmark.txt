@@ -2,9 +2,8 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = danish
 religion = catholic
-technology_group = western
 elector = yes
-hre = yes
+technology_group = western
 historical_friend = NOR
 capital = 12 #Sjaelland
 
@@ -28,7 +27,7 @@ capital = 12 #Sjaelland
 		culture = bavarian
 		adm = 3
 		dip = 2
-		mil = 2
+		mil = 3
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = infertile_personality
@@ -87,7 +86,8 @@ capital = 12 #Sjaelland
 		mil = 4
 		leader = { 
 			name = "Hans"
-			type = general
+			type = general
+
 			fire = 2
 			shock = 2
 			manuever = 2
@@ -306,7 +306,8 @@ capital = 12 #Sjaelland
 		mil = 0
 		leader = { 
 			name = "Christian IV"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 2
@@ -430,7 +431,8 @@ capital = 12 #Sjaelland
 		mil = 3
 		leader = { 
 			name = "Christian V"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 3

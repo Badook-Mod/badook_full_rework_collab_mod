@@ -3,10 +3,11 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = austrian
 religion = catholic
-technology_group = western
 elector = yes
+technology_group = western
 capital = 134 # Wien
 historical_friend = HUN
+historical_friend = PFI
 historical_rival = TUR
 historical_rival = FRA
 national_focus = ADM
@@ -52,9 +53,9 @@ national_focus = ADM
 		name = "Friedrich III"
 		dynasty = "von Habsburg"
 		birth_date = 1415.9.21
-		adm = 2
+		adm = 4
 		dip = 5
-		mil = 1
+		mil = 3
 	}
 	
 	clear_scripted_personalities = yes

@@ -18,6 +18,18 @@ add_army_professionalism = 0.1
 	}
 }
 
+1444.1.1 = {
+	monarch = {
+		name = "Wolfhart Brandis"
+		birth_date = 1415.11.14 #1408
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+}
+
 1528.1.1 = { religion = reformed }
 
 1798.1.1 = { set_legacy_government = constitutional_republic }
