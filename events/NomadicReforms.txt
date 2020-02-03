@@ -207,13 +207,12 @@ country_event = {
 	trigger = {
 		OR = {
 			is_emperor = yes
-			is_elector = yes
 		}	
 	}
 	
 	immediate = {
 		hidden_effect = {
-			add_imperial_influence = 12.5
+			add_imperial_influence = 15
 		}
 	}
 	
