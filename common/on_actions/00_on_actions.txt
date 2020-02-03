@@ -5,6 +5,7 @@ on_startup = {
 	events = {
 		muslim_school_events.20 #Pick School
 		nomadic_events.3
+		nomadic_events.6
 	}
 	if = {
 		limit = {
