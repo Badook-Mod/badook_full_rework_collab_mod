@@ -75,10 +75,11 @@ country_event = {
 	
 	trigger = {
 		religion = nomadicism
+		is_emperor = yes
 	}
 	
 	immediate = {
-		hidden_effect = {
+		hidden_effect = {		
 			#nomads land swapped
 			every_owned_province = {
 				change_religion = nomadicism
@@ -196,3 +197,28 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = nomadic_events.6
+	title = nomadic_events.6.t
+	desc = nomadic_events.6.d
+	picture = MESOAMERICAN_GODS_eventPicture
+	
+	trigger = {
+		OR = {
+			is_emperor = yes
+			is_elector = yes
+		}	
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_imperial_influence = 12.5
+		}
+	}
+	
+	option = {
+		name = nomadic_events.6.a #keep me in
+	}
+}
+	
