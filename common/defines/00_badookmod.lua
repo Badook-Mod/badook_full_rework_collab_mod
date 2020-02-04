@@ -42,4 +42,4 @@ NDefines.NMilitary.BANNER_DISCIPLINE_BONUS = 0
 NDefines.NMilitary.BANNER_AGE_MULTIPLIER = 0.5
 NDefines.NMilitary.BANNER_REINFORCE_SPEE = -0.35
 NDefines.NMilitary.BANNER_MAINTENANCE_COST = 0.25
-NDefines.NMilitary.FORTRESS_COST = 2
+NDefines.NMilitary.FORTRESS_COST = 1.5
