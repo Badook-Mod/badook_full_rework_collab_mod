@@ -75,7 +75,6 @@ country_event = {
 	
 	trigger = {
 		religion = nomadicism
-		is_emperor = yes
 	}
 	
 	immediate = {
