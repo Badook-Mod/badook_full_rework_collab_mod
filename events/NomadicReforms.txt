@@ -211,7 +211,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			add_imperial_influence = 15
+			add_imperial_influence = 5
 		}
 	}
 	
