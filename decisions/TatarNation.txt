@@ -27,43 +27,19 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				AND = {
-					OR = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					OR = {
-						province_id = 284 #Crimea
-						province_id = 302 #Tambov
-						province_id = 464 #Astrakhan
-						province_id = 465 #Nogai
-						province_id = 466 #Sarai
-						province_id = 476 #Kypchak
-						province_id = 1075 #Chimgi-Tura
-						province_id = 1082 #Kazan
-						province_id = 1778 #Qasim
-						province_id = 2411 #Mansur
-					}
-				}
-				AND = {
-					OR = {
 						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-					OR = {
-						province_id = 294
-						province_id = 295
-						province_id = 301
-						province_id = 307
-						province_id = 308
-						province_id = 1956
-					}
-				}
+				region = ural_region
+				area = vologda_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
 			NOT = { exists = GLH }
 			has_reform = steppe_horde
-			ural_region_region = {
+			ural_region = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
