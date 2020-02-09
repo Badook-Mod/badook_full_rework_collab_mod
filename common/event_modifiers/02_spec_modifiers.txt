@@ -1,0 +1,159 @@
+#1444
+
+spec_1444_war = {
+	land_morale = 0.025
+	development_cost = 0.05
+}
+
+spec_1444_dev = {
+	development_cost = -0.05
+	land_morale = -0.025
+}
+
+spec_1444_eco = {
+	global_tax_modifier = 0.05
+	advisor_cost = 0.05
+}
+
+spec_1444_reductions = {
+	global_tax_modifier = -0.05
+	advisor_cost = -0.05
+}
+
+#1500
+
+spec_1500_manpower = {
+	build_cost = 0.10
+	manpower_recovery_speed = 0.1
+}
+
+spec_1500_building = {
+	build_cost = -0.10
+	manpower_recovery_speed = -0.1
+}
+
+spec_1500_dev = {
+	development_cost = -0.075
+	infantry_power = -0.075
+	global_colonial_growth = -35
+}
+
+spec_1500_colonial = {
+	development_cost = 0.05
+	infantry_power = -0.05
+	global_colonial_growth = 55
+}
+
+#1550
+
+spec_1550_land = {
+	discipline = 0.05
+	movement_speed = -0.15
+}
+
+spec_1550_land2 = {
+	land_morale = 0.1
+	movement_speed = -0.15
+}
+
+spec_1550_mana = {
+	technology_cost = -0.10
+	global_trade_goods_size_modifier = -0.15
+}
+
+spec_1550_eco = {
+	global_trade_goods_size_modifier = 0.15
+	technology_cost = 0.10
+}
+
+#1600
+
+spec_1600_forts = {
+	defensiveness = 0.30
+	siege_ability = -0.25
+}
+
+spec_1600_offensive = {
+	defensiveness = -0.30
+	siege_ability = 0.25
+	artillery_bonus_vs_fort = 1
+}
+
+spec_1600_wide = {
+	min_autonomy_in_territories = -0.25
+	core_creation = -0.35
+	build_cost = 0.10
+}
+
+spec_1600_tall = {
+	stability_cost_modifier = -0.25
+	build_cost = -0.15
+	min_autonomy_in_territories = 0.25
+}
+
+#1650
+spec_1650_quantity = {
+	land_forcelimit_modifier = 0.25
+	infantry_cost = -0.125
+}
+
+spec_1650_mercs = {
+	mercenary_discipline = 0.1
+	possible_mercenaries = 0.30
+}
+
+spec_1650_stability = {
+	stability_cost_modifier = -0.25
+	idea_cost = -0.1
+	global_unrest = -4
+}
+
+spec_1650_trade = {
+	global_trade_power = 0.15
+	trade_efficiency = 0.15
+}
+
+#1700
+spec_1700_dev = {
+	development_cost = -0.15
+	discipline = -0.05
+}
+
+spec_1700_war = {
+	development_cost = 0.15
+	discipline = 0.05
+}
+
+spec_1700_AT = {
+	army_tradition = 1
+	yearly_army_professionalism = -0.05
+}
+
+spec_1700_AP = {
+	yearly_army_professionalism = 0.05
+	army_tradition = -0.5
+}
+
+#1750
+
+spec_1750_attrition = {
+	global_supply_limit_modifier = 0.33
+	land_attrition = -0.30
+	artillery_power = -0.10
+}
+
+spec_1750_arti = {
+	artillery_power = 0.15
+	land_attrition = 0.25
+}
+
+spec_1750_monarchy = {
+	monarch_military_power = 2
+	monarch_diplomatic_power = 2
+	monarch_admin_power = 2
+}
+
+spec_1750_republic = {
+	republican_tradition = 2
+	reelection_cost = -0.25
+}
