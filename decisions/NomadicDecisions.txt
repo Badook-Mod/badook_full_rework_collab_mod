@@ -1,0 +1,28 @@
+country_decisions = {
+	unity_gain = {
+		major = yes
+		potential = {
+			is_nomad = yes
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					is_in_war = {
+						attacker_leader = ROOT
+						war_score = 50
+						casus_belli = cb_unity_gain
+					}
+					unit_in_battle = yes
+				}
+				war_score = 99
+			}
+		NOT = {
+			has_country_flag = unity_gained 
+		}
+	}
+	effect = {
+		add_horde_unity = 25
+		set_country_flag = unity_gained
+	}
+}
