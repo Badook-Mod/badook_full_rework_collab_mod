@@ -307,9 +307,7 @@ submission_to_emperor = {
 		}
 	}
 
-	global_unrest = 3
-	stability_cost_modifier = 0.1
-	prestige = -1
+	global_unrest = 2
 }
 
 
@@ -711,18 +709,18 @@ emperor_naples = {
 	possible_mercenaries = 0.3
 }
 
-player_nation = {
-	potential = {
-		OR = {
-			was_player = yes
-			ai = no
-		}
-	}
-	trigger = {
-		OR = {
-			was_player = yes
-			ai = no
-		}
-	}
-	land_forcelimit = 3
-}
+#player_nation = {
+	#potential = {
+	#	OR = {
+	#		was_player = yes
+	#		ai = no
+	#	}
+	#}
+	#trigger = {
+	#	OR = {
+	#		was_player = yes
+	#		ai = no
+	#	}
+	#}
+	#land_forcelimit = 3
+#}
