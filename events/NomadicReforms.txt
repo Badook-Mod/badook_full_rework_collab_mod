@@ -1,42 +1,5 @@
 namespace = nomadic_events
 
-#centralised hordes are cool
-country_event = {
-	id = nomadic_events.1
-	title = nomadic_events.1.t
-	desc = nomadic_events.1.d
-	picture = MESOAMERICAN_GODS_eventPicture
-	
-	trigger = {
-		is_in_war = {
-			attacker_leader = ROOT
-			war_score = 50
-			casus_belli = cb_unity_gain
-		}
-		OR = {    	#for cheese uncons
-			unit_in_battle = yes
-			war_score = 99
-		}
-		NOT = {
-			has_country_flag = unity_gained 
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_country_flag = unity_gained
-		}
-	}
-	option = {
-		name = nomadic_events.1.a #keep me in
-		add_horde_unity = 25
-	}
-}
-
 country_event = {
 	id = nomadic_events.2
 	title = nomadic_events.2.t
@@ -62,7 +25,7 @@ country_event = {
 	}
 	
 	option = {
-		name = nomadic_events.2.a #keep me in
+		name = nomadic_events.2.a 
 	}
 }
 #global day 1 setup event
@@ -185,9 +148,6 @@ country_event = {
 	
 	option = {
 		name = nomadic_events.5.a #keep me in
-		random_empty_neighbor_province = {
-			add_siberian_construction = 999
-		}
 		random_empty_neighbor_province = {
 			add_siberian_construction = 999
 		}
