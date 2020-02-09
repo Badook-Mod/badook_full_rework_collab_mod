@@ -27,7 +27,6 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				region = ural_region
 				area = vologda_area
 			}
