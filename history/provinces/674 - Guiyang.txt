@@ -1,9 +1,8 @@
 #674 - Guiyang
 
-owner = CDL
-controller = CDL
-add_core = CDL
-add_core = CYI
+owner = QHU
+controller = QHU
+add_core = QHU
 culture = yi
 religion = animism
 capital = "Guiyang"

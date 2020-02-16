@@ -1,9 +1,9 @@
 #673 - Bozhou
 
-owner = CDL
-controller = CDL
+owner = BEU
+controller = BEU
 add_core = CYL
-add_core = CDL
+add_core = BEU
 culture = miao
 religion = animism
 capital = "Zhenyuan"

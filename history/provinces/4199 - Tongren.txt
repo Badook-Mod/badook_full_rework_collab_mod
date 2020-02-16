@@ -1,8 +1,8 @@
 #4199 - Tongren
 
-owner = CNU
-controller = CNU
-add_core = CNU
+owner = BEU
+controller = BEU
+add_core = BEU
 culture = miao
 religion = animism
 capital = "Tongren"

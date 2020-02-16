@@ -1,8 +1,8 @@
 # 4211 - Dazhou
 
-owner = CNU
-controller = CNU
-add_core = CNU
+owner = NHX
+controller = NHX
+add_core = NHX
 culture = sichuanese
 religion = confucianism
 capital = "Dazhou"

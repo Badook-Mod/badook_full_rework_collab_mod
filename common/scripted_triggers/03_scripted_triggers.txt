@@ -1,0 +1,5 @@
+turban_rebellion_viable = {
+	ai = yes
+	development = 50
+	technology_group = chinese
+}

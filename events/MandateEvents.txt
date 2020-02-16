@@ -1,0 +1,531 @@
+namespace = mandate_events
+#agrarian crisis
+country_event = {
+	id = mandate_events.1
+	title = mandate_events.1.t
+	desc = mandate_events.1.d
+	picture = FAMINE_eventPicture.dds
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			estate_influence = {
+				estate = estate_nobles
+				influence = 35
+			}
+		}
+		has_global_flag = yellow_river_flood
+		NOT = { has_country_flag = agrarian_crisis }
+		NOT = { ai = yes }
+		technology_group = chinese
+	}
+	
+	immediate = {
+		set_country_flag = agrarian_crisis
+	}
+	
+	option = { # fuck the poor
+		name = mandate_events.1.a 
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_prestige = 10
+		hidden_effect = {
+			set_global_flag = turban_enabled
+			country_event = {
+				id = mandate_events.8
+				days = 1
+			}
+		}
+	}
+	
+	option = { #fuck my wallet
+		name = mandate_events.1.b
+		add_years_of_income = -1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}
+
+#yellow river flood
+country_event = {
+	id = mandate_events.2
+	title = mandate_events.2.t
+	desc = mandate_events.2.d
+	picture = FARMING_eventPicture
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 32
+	}
+	
+	trigger = {
+		is_year = 1450
+		OR = {
+			owns_core_province = 692
+			owns_core_province = 1836
+			owns_core_province = 694
+			owns_core_province = 2179
+			owns_core_province = 688
+			owns_core_province = 2180
+			owns_core_province = 5057
+			owns_core_province = 2176
+			owns_core_province = 2141
+			owns_core_province = 4196
+			owns_core_province = 2142
+		}
+	}
+	
+	option = { #flood
+		name = mandate_events.2.a 
+		country_event = {
+			id = mandate_events.3
+			days = 1
+		}
+		set_global_flag = yellow_river_flood
+	}
+}
+
+country_event = {
+	id = mandate_events.3
+	title = mandate_events.3.t
+	desc = mandate_events.3.d
+	picture = FARMING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1450
+		capital_scope = { 
+			continent = asia
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			692 = {	
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+			1836 = {	
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+			694 = {	
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+			2179 = {		
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+			
+			688 = {
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+			2180 = {
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+		
+			5057 = {
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+			2176 = {
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+			
+			2141 = {	
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+			4196 = {
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		
+			2142 = {	
+				add_province_modifier = {
+					name = "yellow_river_flood"
+					duration = 730
+				}
+			}
+		}
+	}
+	option = {
+		name = mandate_events.3.a 
+		custom_tooltip = yellow_river_burst	
+	}
+}
+
+country_event = {
+	id = mandate_events.4
+	title = mandate_events.4.t
+	desc = mandate_events.4.d
+	picture = FARMING_eventPicture
+	
+	mean_time_to_happen = {	
+		months = 5
+	}
+	
+	trigger = {
+		has_country_flag = agrarian_crisis
+		NOT = { has_country_flag = refugee_swarm }
+		is_year = 1450
+		OR = {
+			owns_core_province = 692
+			owns_core_province = 1836
+			owns_core_province = 694
+			owns_core_province = 2179
+			owns_core_province = 688
+			owns_core_province = 2180
+			owns_core_province = 5057
+			owns_core_province = 2176
+			owns_core_province = 2141
+			owns_core_province = 4196
+			owns_core_province = 2142
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = refugee_swarm
+		}
+	}
+	
+	
+	option = {
+		name = mandate_events.4.a 
+		
+		688 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		692 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		1836 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		694 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		2142 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		2180 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		5057 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		2179 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		4196 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		2141 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+		2176 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = -5
+			}
+		}
+	}
+}
+country_event = {
+	id = mandate_events.5
+	title = mandate_events.5.t
+	desc = mandate_events.5.d
+	picture = FARMING_eventPicture
+	
+	mean_time_to_happen = {	
+		months = 10
+	}
+	
+	trigger = {
+		technology_group = chinese
+		if = {
+			limit = {
+				any_neighbor_country = {
+					exists = yes
+				}
+			}
+			any_neighbor_country = {
+				has_country_flag = refugee_swarm
+			}
+		}
+		NOT = { has_country_flag = refugee_swarm }
+	}
+	
+	immediate = {
+		set_country_flag = refugee_swarm
+	}
+	
+	option = {
+		name = mandate_events.5.a 
+		if = {
+			limit = {
+				has_global_flag = turban_enabled
+				NOT = { ai = yes }
+			}
+			random_owned_province = { 
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 3
+				}
+			}
+			random_owned_province = { 
+				spawn_rebels = {
+					type = bandit_rebels
+					size = 2
+				}
+			}
+			random_owned_province = { 
+				add_base_manpower = 2
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_global_flag = turban_enabled }
+				NOT = { ai = yes }
+			}
+			random_owned_province = { 
+				spawn_rebels = {
+					type = bandit_rebels
+					size = 1
+				}
+			}
+			random_owned_province = { 
+				add_base_manpower = 4
+			}
+		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			random_owned_province = { 
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 0.5
+				}
+			}
+			random_owned_province = { 
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mandate_events.6
+	title = mandate_events.6.t
+	desc = mandate_events.6.d
+	picture = FARMING_eventPicture
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		NOT = { ai = yes }
+		technology_group = chinese
+		had_global_flag = {
+			flag = turban_enabled
+			days = 1825
+		}
+	}
+	
+	option = {
+		name = mandate_events.6.a 
+		custom_tooltip = turbans_arrive
+		hidden_effect = {
+			WHU = {
+				every_owned_province = { 
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			CJI = {
+				every_owned_province = { 
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			FAN = {
+				every_owned_province = { 
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mandate_events.7
+	title = mandate_events.7.t
+	desc = mandate_events.7.d
+	picture = FARMING_eventPicture
+	
+	trigger = {
+		tag = TBS
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = mandate_events.7.a 
+		capital_scope = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+		}
+		
+		add_country_modifier = {
+			name = turban_rebellion 
+			duration = -1 
+		}
+	}
+}
+
+country_event = {
+	id = mandate_events.8
+	title = mandate_events.8.t
+	desc = mandate_events.8.d
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		technology_group = chinese
+	}
+	
+	option = {
+		name = mandate_events.8.a 
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = mandate_events.9
+	title = mandate_events.9.t
+	desc = mandate_events.9.d
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		technology_group = chinese
+		owns_or_non_sovereign_subject_of = 1836
+		NOT = { ai = yes }
+		has_global_flag = empire_of_china_new
+	}
+	
+	option = {
+		name = mandate_events.8.a 
+		set_emperor_of_china = ROOT
+	}
+}

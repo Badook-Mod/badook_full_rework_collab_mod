@@ -1,0 +1,221 @@
+#tier 0
+reform_china_successor_state = {
+	icon = "chinese_palace"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		core_creation = 0.15
+		reduced_liberty_desire = -25
+		max_states = -3
+	}
+}
+
+reform_china_dynastic_supremacy = {
+icon = "chinese_palace"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = XIA
+			tag = SNG
+			tag = TNG
+		}
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		core_creation = -0.15
+		reduced_liberty_desire = 25
+		max_states = 3
+	}
+}
+
+reform_china_modern_state = {
+icon = "chinese_palace"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = PRC
+		}
+	}
+	modifiers = {
+		max_states = 10
+		global_manpower_modifier = 0.075
+		max_absolutism = 25
+		yearly_absolutism = 2
+	}
+}
+
+#tier 1
+reform_china_scale_warfare_infantry = {
+	icon = "soldiers"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.175
+		cavalry_power = -0.10
+		global_autonomy = -0.05
+	}
+}
+
+reform_china_scale_warfare_cavalry = {
+	icon = "horde_riding"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		cavalry_power = 0.15
+		culture_conversion_cost = -0.15
+	}
+}
+
+#tier 2
+
+reform_china_art_of_war = {
+	icon = "castle"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		movement_speed = 0.1
+		siege_ability = 0.15
+	}
+}
+
+reform_china_methods_of_the_sima = {
+	icon = "asian_scripture"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		global_supply_limit_modifier = 0.33
+		war_exhaustion = -0.1
+		war_taxes_cost_modifier = -0.1
+	}
+}
+
+reform_china_wuzi = {
+	icon = "nobleman"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		global_unrest = -3
+		stability_cost_modifier = -0.25
+		harsh_treatment_cost = -0.35
+	}
+}
+
+reform_china_wei_liaozi = {
+	icon = "soldiers_6"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		global_manpower_modifier = 0.1
+		global_trade_goods_size_modifier = 0.025	
+	}
+}
+
+# tier 3 schools of thought
+
+reform_china_confucianism = {
+	icon = "man_on_podium"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+		religion = confucianism
+	}
+	modifiers = {
+		tolerance_own = 2
+		num_accepted_cultures = 1
+	}
+}
+
+reform_china_taoism = {
+	icon = "feudal_theocracy"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		yearly_corruption = -0.1
+		promote_culture_cost = -0.25
+	}
+}
+
+reform_china_mohism = {
+	icon = "landscape"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		advisor_cost = -0.15
+		advisor_pool = 1
+	}
+}
+
+# tier 4 
+
+reform_china_iron_working = {
+	icon = "fist_in_air"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		leader_land_fire = 1
+	}
+}
+
+reform_china_trade = {
+	icon = "merchant_ship"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	potential = {
+	}
+	modifiers = {
+		trade_efficiency = 0.125
+	}
+}
+
+#tier 5 
+
+reform_china_dynasties = {
+	icon = "crown_highlighted"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = { ai = yes }
+	}
+	effect = {
+		set_country_flag = dynasties_unlocked
+	}
+	ai = {
+		factor = 0
+	}
+}

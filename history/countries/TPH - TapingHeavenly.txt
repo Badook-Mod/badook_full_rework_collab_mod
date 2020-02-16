@@ -1,0 +1,19 @@
+government = theocracy
+government_rank = 1
+technology_group = chinese
+religion = catholic
+primary_culture = jianghuai
+capital = 1821
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Hong"
+		dynasty = "Xiuquan"
+		birth_date = 1386.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+}

@@ -1,0 +1,27 @@
+reform_china_city_state = {
+	icon = "chinese_palace"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = yes
+	fixed_rank = 1
+	potential = {
+		OR = {
+			tag = TAO
+			tag = XUZ
+			tag = XYU
+			tag = YNG
+			tag = KYA
+		}
+	}
+	modifiers = {
+		garrison_size = 0.5
+		defensiveness = 0.25
+		global_tax_income = 18
+		max_states = -9
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	duration = 4
+}

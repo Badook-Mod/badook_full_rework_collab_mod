@@ -1,8 +1,8 @@
 # 2158 - Shiukwan
 
-owner = NMS
-controller = NMS
-add_core = NMS
+owner = CHN
+controller = CHN
+add_core = CHN
 culture = hakka
 religion = animism
 capital = "Shiukwan"

@@ -1,8 +1,8 @@
 #684 - Hangzhou (can't change file name)
 
-owner = SNW
-controller = SNW
-add_core = SNW
+owner = XYU
+controller = XYU
+add_core = XYU
 culture = wu
 religion = confucianism
 capital = "Hangzhou"

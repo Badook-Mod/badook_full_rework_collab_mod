@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = jin
+capital = 697	
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Xiaowen"
+		dynasty = "Wei"
+		birth_date = 1395.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+	clear_scripted_personalities = yes
+}

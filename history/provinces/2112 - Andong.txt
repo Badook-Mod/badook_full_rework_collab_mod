@@ -1,8 +1,8 @@
 # 2112 - Andong
 
-owner = TBS
-controller = TBS
-add_core = TBS
+owner = QIC
+controller = QIC
+add_core = QIC
 culture = manchu
 religion = confucianism
 capital = "Andong"

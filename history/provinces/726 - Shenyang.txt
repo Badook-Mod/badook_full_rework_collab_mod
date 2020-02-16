@@ -1,8 +1,8 @@
 #726 - Liaodong
 
-owner = TBS
-controller = TBS
-add_core = TBS
+owner = YAN
+controller = YAN
+add_core = YAN
 culture = manchu
 religion = confucianism
 capital = "Shenyang"

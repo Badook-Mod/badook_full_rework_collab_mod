@@ -1,0 +1,11 @@
+yellow_river_flood = {
+	attrition = 4
+	max_attrition = 3
+	trade_goods_size_modifier = -0.85
+	local_manpower_modifier = -0.50
+}
+
+turban_rebellion = {
+	land_morale = 0.25
+	infantry_cost = -0.35
+}

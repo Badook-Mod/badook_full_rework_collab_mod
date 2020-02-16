@@ -161,7 +161,7 @@ empire_of_china_in_name = {
 	
 
 	modifier = {
-		imperial_mandate = -0.75
+		imperial_mandate = -0.3
 		years_of_nationalism = 5
 		technology_cost = 0.2
 	}	

@@ -87,6 +87,55 @@ country_event = {
 					duration = 30
 				}
 			}
+			#treaty ports
+			
+			5010 = {
+				add_province_triggered_modifier = treaty_port_western
+			}
+			5015 = {
+				add_province_triggered_modifier = treaty_port_western
+			}
+			2148 = {
+				add_province_triggered_modifier = treaty_port_western
+			}
+			685 = {
+				add_province_triggered_modifier = treaty_port_western
+			}
+			684 = {
+				add_province_triggered_modifier = treaty_port_western
+			}
+			
+			#battle sites
+
+			
+			5088 = {
+				add_province_triggered_modifier = battle_of_yamen
+			}
+			5054 = {
+				add_province_triggered_modifier = battle_of_fei_river
+			}
+			5042 = {
+				add_province_triggered_modifier = battle_of_kunyang
+			}
+			697 = {
+				add_province_triggered_modifier = battle_of_zhuolu
+			}
+			
+			#imperial cities
+			
+			1816 = {
+				add_province_triggered_modifier = imperial_beijing
+			}
+			679 = {
+				add_province_triggered_modifier = imperial_chengdu
+			}
+			1821 = {
+				add_province_triggered_modifier = imperial_nanjing
+			}
+			682 = {
+				add_province_triggered_modifier = imperial_wuhan
+			}
+			
 		}	
 		ai_will_do = {
 			factor = 0

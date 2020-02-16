@@ -1,8 +1,8 @@
 # 2176 - Shangqiu
 
-owner = HAO
-controller = HAO
-add_core = HAO
+owner = LUU
+controller = LUU
+add_core = LUU
 culture = zhongyuan
 religion = confucianism
 capital = "Shangqiu"

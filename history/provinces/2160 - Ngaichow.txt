@@ -1,8 +1,8 @@
 # 2160 - Ngaichow
 
-owner = MIN
-controller = MIN
-add_core = MIN
+owner = NYU
+controller = NYU
+add_core = NYU
 culture = chimin
 religion = confucianism
 capital = "Ngaichow"

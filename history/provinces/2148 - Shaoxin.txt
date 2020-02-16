@@ -1,8 +1,8 @@
 # 2148 - Shaoxin
 
-owner = SNW
-controller = SNW
-add_core = SNW
+owner = KYA
+controller = KYA
+add_core = KYA
 culture = wu
 religion = confucianism
 capital = "Shaoxin"

@@ -1,0 +1,170 @@
+treaty_port_western = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			OR = {
+				technology_group = western
+				technology_group = eastern
+			}
+		}
+	}
+	imperial_mandate = -0.05
+	production_efficiency = 0.04
+	trade_efficiency = 0.04
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}
+
+#battle sites
+
+battle_of_yamen = { #power of navies
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	army_tradition = 0.25
+	navy_tradition = 0.25
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}
+
+battle_of_fei_river = {   #a decisive manouever
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	army_tradition = 0.25
+	shock_damage = 0.05
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+
+
+battle_of_kunyang = {   #overconfidence kills
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	army_tradition = 0.25
+	defensiveness = 0.125
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}
+
+battle_of_zhuolu = {   #morale
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	army_tradition = 0.25
+	land_morale = 0.025
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}
+
+
+#imperial capitals
+
+imperial_beijing = { 
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	reform_progress_growth = 0.25
+	local_tax_modifier = 0.075
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}
+
+imperial_chengdu = {  
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	reform_progress_growth = 0.25
+	development_cost = -0.025
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}
+
+imperial_nanjing = {  
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	reform_progress_growth = 0.25
+	production_efficiency = 0.05
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}
+
+imperial_wuhan = {  
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	reform_progress_growth = 0.25
+	build_cost = -0.075
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}

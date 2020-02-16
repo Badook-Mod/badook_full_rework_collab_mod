@@ -1,8 +1,8 @@
 #668 - Macau
 
-owner = CHN
-controller = CHN
-add_core = CHN
+owner = NYU
+controller = NYU
+add_core = NYU
 culture = cantonese
 religion = confucianism
 capital = "Macau"

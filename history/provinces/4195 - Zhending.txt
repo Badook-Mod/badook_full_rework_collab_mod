@@ -1,8 +1,8 @@
 #4195 - Zhending
 
-owner = CAO
-controller = CAO
-add_core = CAO
+owner = DEZ
+controller = DEZ
+add_core = DEZ
 culture = chihan
 religion = confucianism
 capital = "Zhending"

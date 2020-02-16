@@ -1,8 +1,8 @@
 #700 - Shaanxi
 
-owner = HAA
-controller = HAA
-add_core = HAA
+owner = SUI
+controller = SUI
+add_core = SUI
 culture = xibei
 religion = confucianism
 capital = "Xi'an"

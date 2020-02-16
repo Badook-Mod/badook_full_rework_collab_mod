@@ -4,9 +4,9 @@ latent_trade_goods = {
 	coal
 }
 
-owner = GGS
-controller = GGS
-add_core = GGS
+owner = DWU
+controller = DWU
+add_core = DWU
 culture = mongol
 religion = vajrayana
 capital = "Ordos"

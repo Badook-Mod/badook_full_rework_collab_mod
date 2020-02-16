@@ -1,8 +1,8 @@
 # 2151 - Poyang
 
-owner = CSW
-controller = CSW
-add_core = CSW
+owner = NNG
+controller = NNG
+add_core = NNG
 culture = wu
 religion = confucianism
 capital = "Poyang"

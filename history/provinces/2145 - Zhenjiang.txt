@@ -1,8 +1,9 @@
 # 2145 - Zhenjiang
 
-owner = SNW
-controller = SNW
-add_core = SNW
+owner = HZH
+controller = HZH
+add_core = STG
+add_core = HZH
 culture = jianghuai
 religion = confucianism
 capital = "Zhenjiang"

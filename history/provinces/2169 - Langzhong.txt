@@ -1,8 +1,8 @@
 # 2169 - Langzhong
 
-owner = CNU
-controller = CNU
-add_core = CNU
+owner = NHX
+controller = NHX
+add_core = NHX
 culture = sichuanese
 religion = confucianism
 capital = "Langzhong"

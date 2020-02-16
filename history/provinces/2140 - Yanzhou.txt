@@ -1,8 +1,8 @@
 # 2140 - Yanzhou
 
-owner = CAO
-controller = CAO
-add_core = CAO
+owner = KFG
+controller = KFG
+add_core = KFG
 culture = zhongyuan
 religion = confucianism
 capital = "Yanzhou"

@@ -1,11 +1,9 @@
-#New Chinese Minors
+#New Chinese Minors 
 WEI = "countries/Wei.txt"
-WUU = "countries/Wu.txt"
 MAA = "countries/Ma.txt" #
 GGS = "countries/Gongsun.txt" #
 CNU = "countries/Chengdu.txt" # old shu
 XUI = "countries/Xui.txt" #
-TBS = "countries/Turbans.txt" #
 FAN = "countries/Fan.txt" #
 HAA = "countries/Han.txt" #
 HAO = "countries/Shao.txt" #
@@ -16,12 +14,62 @@ ZHO = "countries/Zhong.txt" #
 HNG = "countries/Huang.txt" #
 CCH = "countries/Changsha.txt" # mulu, a vassal
 CYL = "countries/Yuanling.txt" # wutugu, a vassal
-CHN = "countries/Henyang.txt" # duosi, a vassal
+CHN = "countries/Henyang.txt" # 
 CSW = "countries/Shiukwan.txt" # wu-yueh
 CGZ = "countries/Ganzhou.txt" # he fei
 CJI = "countries/Ji'an.txt" # yiling
 DWU = "countries/Dongwu.txt" # dong wu
-ZHU = "countries/Zhou.txt" # zhou
+ZHU = "countries/Zhou.txt" # zhou (luoyang)
 SNW = "countries/Sunwu.txt" # old wu
 SIA = "countries/Siam.txt" #siam formable
 PRC = "countries/PRC.txt" # PRC
+
+#new china+ 
+SHG = "countries/Shang.txt" #shang (shangqiu)
+KFG = "countries/Kaifeng.txt" #Kaifeng (Kaifeng/song)
+YAN = "countries/Yan.txt" #Yan (beijing)
+NWE = "countries/NorthernWei.txt" #Northern Wei (datong)
+QHU = "countries/QiaoShu.txt" #Qiao Shu (chengdu area)
+WHU = "countries/Kuomintang.txt" #Kuomintang (wuhan)
+TPH = "countries/TaipingHeavenly.txt" #Taiping Heavenly Kingdom rebellion (nanjing)
+STG = "countries/SouthernTang.txt" #Southern Tang (nanjing)
+SUI = "countries/Sui.txt" #sui (xi'an)
+NYU = "countries/Nanyue.txt" #Nanyue (Guangzhou)
+TBS = "countries/Turbans.txt" #Yellow Turban rebellion
+TIJ = "countries/Tianjin.txt"
+
+#new formables
+XIA = "countries/Xia.txt"
+TNG = "countries/Tang.txt"
+SNG = "countries/Song.txt"
+
+
+
+#east coast charters (opm)
+TAO = "countries/Taozhou.txt"
+XUZ = "countries/Xuzhou.txt"
+YNG = "countries/Yingkou.txt"
+KYA = "countries/Kaiyang.txt"
+XYU = "countries/Xinyu.txt"
+
+#more fillers
+DEZ = "countries/Dezhou.txt" 
+WUZ = "countries/Wuzhong.txt" 
+TAN = "countries/Tangut.txt"
+HAG = "countries/Hanzhong.txt"
+LUU = "countries/Lu.txt"
+TAP = "countries/Taiping.txt"
+LUI = "countries/Lulin.txt"
+BEU = "countries/Bei.txt"
+HZH = "countries/Huaiyin.txt"
+JIH = "countries/Jinhua.txt"
+NAN = "countries/Nanping.txt"
+DIA = "countries/Dian.txt"
+TIA = "countries/Tianwan.txt"
+
+#1.29 converted
+SOO = "countries/So.txt" # Japanese potential pirate daimyo
+NVK = "countries/Nivkh.txt" # Split from Yeren
+SOL = "countries/Solon.txt" # Split from Yeren
+EJZ = "countries/EastJianzhou.txt" # Split from Jianzhou
+NHX = "countries/NorthHaixi.txt" # Split from Haixi

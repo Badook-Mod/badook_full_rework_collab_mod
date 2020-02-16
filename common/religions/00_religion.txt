@@ -24,8 +24,8 @@ christian = {
 			protestant
 		}
 		country = {
-			tolerance_own = 1
-			tolerance_heretic = -1
+			warscore_cost_vs_other_religion = -0.25
+			technology_cost = -0.10
 		}
 		
 		country_as_secondary = {
@@ -58,7 +58,7 @@ christian = {
 			seat_of_papacy = 118 # rome
 			
 			levy_church_tax = {
-				cost = 50
+				cost = 35
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -77,7 +77,7 @@ christian = {
 				}				
 			}			
 			bless_monarch = {
-				cost = 50
+				cost = 30
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -97,7 +97,7 @@ christian = {
 				}
 			}
 			indulgence_for_sins = {
-				cost = 50
+				cost = 10
 				potential = {
 					government = monarchy
 					NOT = { tag = PAP }
@@ -118,7 +118,7 @@ christian = {
 				}
 			}	
 			local_saint = {
-				cost = 100
+				cost = 55
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -138,7 +138,7 @@ christian = {
 				}
 			}
 			forgiveness_for_usury = {
-				cost = 50
+				cost = 80
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -161,7 +161,7 @@ christian = {
 				}
 			}			
 			proclaim_holy_war = {
-				cost = 50
+				cost = 65
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -185,7 +185,7 @@ christian = {
 				}
 			}
 			send_papal_legate = {
-				cost = 50
+				cost = 20
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -204,7 +204,7 @@ christian = {
 				}
 			}	
 			sanction_commercial_monopoly = {
-				cost = 50
+				cost = 30
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -234,8 +234,8 @@ christian = {
 			catholic
 		}
 		country = {
-			development_cost = -0.1
-			innovativeness_gain = 0.5
+			possible_mercenaries = 0.20
+			colonists = 1
 		}
 		
 		country_as_secondary = {
@@ -405,7 +405,7 @@ christian = {
 			catholic
 		}
 		country = {
-			tolerance_heretic = 2
+			land_morale = 0.075
 			advisor_pool = 1
 		}
 		
@@ -537,8 +537,8 @@ christian = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			icon_michael = {
-				discipline = 0.05
-				manpower_recovery_speed = 0.1
+				discipline = 0.025
+				province_warscore_cost = -0.10
 				
 				allow = {
 					always = yes
@@ -557,8 +557,8 @@ christian = {
 			}
 
 			icon_eleusa = {
-				global_unrest = -3
-				harsh_treatment_cost = -0.25
+				global_unrest = -4
+				harsh_treatment_cost = -0.30
 				
 				allow = {
 					always = yes
@@ -589,8 +589,8 @@ christian = {
 			}
 
 			icon_pancreator = {
-				development_cost = -0.10
-				build_cost = -0.1
+				development_cost = -0.05
+				build_cost = -0.05
 				
 				allow = {
 					always = yes
@@ -612,8 +612,8 @@ christian = {
 			}
 
 			icon_climacus = {
-				global_institution_spread = 0.25
-				embracement_cost = -0.2
+				global_institution_spread = 0.50
+				embracement_cost = -0.25
 				allow = {
 					always = yes
 				}
@@ -988,7 +988,7 @@ muslim = {
 		color = { 0 153 0 }
 		icon = 5
 		country = {
-			cav_to_inf_ratio = 0.10
+			cav_to_inf_ratio = 0.25
 			heir_chance = 1.0
 		}
 		country_as_secondary = {
@@ -1062,8 +1062,8 @@ eastern = {
 			mahayana
 		}
 		country = {
-			tolerance_heretic = 2
-			advisor_cost = -0.1
+			fire_damage_received = -0.1
+			prestige = 1
 		}
 		country_as_secondary = {
 			development_cost = -0.1
@@ -1071,7 +1071,6 @@ eastern = {
 		}
 		on_convert = {
 			add_prestige = -100
-			add_stability = -1
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
@@ -1093,7 +1092,7 @@ eastern = {
 			buddhism #Theravada
 		}
 		country = {
-			tolerance_heretic = 1
+			global_tax_modifier = 0.10
 			land_morale = 0.05
 		}
 		country_as_secondary = {
@@ -1102,7 +1101,6 @@ eastern = {
 		}
 		on_convert = {
 			add_prestige = -100
-			add_stability = -1
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
@@ -1124,8 +1122,8 @@ eastern = {
 			buddhism #Theravada
 		}
 		country = {
-			tolerance_heretic = 2
-			idea_cost = -0.05
+			movement_speed = 0.1
+			idea_cost = -0.10
 		}
 		country_as_secondary = {
 			global_tax_modifier = 0.1
@@ -1226,7 +1224,7 @@ dharmic = {
 		}
 		country_as_secondary = {
 			land_morale = 0.05
-			global_unrest = -1
+			siege_ability = 0.1
 		}
 		province = {
 			local_missionary_strength = 0.02
@@ -1261,8 +1259,8 @@ pagan = {
 		color = { 127 0 0 }
 		icon = 11
 		country = {
-			tolerance_own = 1
-			global_unrest = -1
+			global_tax_income = 30
+			global_unrest = -2
 		}
 		country_as_secondary = {
 			tolerance_own = 2

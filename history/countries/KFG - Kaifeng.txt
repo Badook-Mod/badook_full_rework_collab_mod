@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+technology_group = chinese
+religion = confucianism
+primary_culture = zhongyuan
+capital = 688	#Xi'An
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Taizu"
+		dynasty = "Song"
+		birth_date = 1406.1.1
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
+}

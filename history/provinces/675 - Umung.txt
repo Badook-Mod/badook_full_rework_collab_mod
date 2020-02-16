@@ -1,8 +1,8 @@
 #675 - Qujing
 
-owner = CDL
-controller = CDL
-add_core = CYI
+owner = QHU
+controller = QHU
+add_core = QHU
 add_core = CDL
 culture = yi
 religion = animism

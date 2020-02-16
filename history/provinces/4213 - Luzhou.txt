@@ -1,8 +1,8 @@
 #4213 - Luzhou
 
-owner = CNU
-controller = CNU
-add_core = CNU
+owner = QHU
+controller = QHU
+add_core = QHU
 culture = sichuanese
 religion = confucianism
 capital = "Luzhou"

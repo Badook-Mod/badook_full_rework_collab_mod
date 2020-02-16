@@ -1,8 +1,9 @@
 #698 - Guyuan
 
-owner = GGS
-controller = GGS
-add_core = GGS
+owner = WUZ
+controller = WUZ
+add_core = SUI
+add_core = WUZ
 culture = mongol
 religion = confucianism
 capital = "Ningxia"

@@ -1,8 +1,8 @@
 # 2177 - Ningwu
 
-owner = CAO
-controller = CAO
-add_core = CAO
+owner = NWE
+controller = NWE
+add_core = NWE
 culture = jin
 religion = confucianism
 capital = "Ningwu"

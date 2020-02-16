@@ -1,8 +1,8 @@
 # 2172 - Jingzhou
 
-owner = HNG
-controller = HNG
-add_core = HNG
+owner = TIA
+controller = TIA
+add_core = TIA
 culture = hubei
 religion = confucianism
 capital = "Jingzhou"

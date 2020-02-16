@@ -879,13 +879,33 @@ on_integrate = {
 # FROM is the nation being annexed
 on_annexed = {
 	events = {
-		celestial_empire_events.1 # Empire dismantled
 	}
 	FROM = {
 		if = {
-			limit = { is_emperor_of_china = yes }
+			limit = { 
+				is_emperor_of_china = yes 
+				1836 = {
+					owner = { 
+						technology_group = chinese
+					}
+				}
+			}
+			1836 = {
+				set_emperor_of_china = owner
+			}
+		}
+		if = {
+			limit = { 
+				is_emperor_of_china = yes 
+				1836 = {
+					NOT = {
+						owner = { 
+							technology_group = chinese
+						}
+					}
+				}
+			}
 			dismantle_empire_of_china = yes
-			set_global_flag = empire_of_china_dismantled
 		}
 		if = {
 			limit = { has_country_modifier = legatus_natus }
@@ -921,20 +941,14 @@ on_mandate_of_heaven_gained = {
 	if = {
 		limit = {
 			OR = {
-				NOT = { government = monarchy }
+				NOT = { government = china_successor }
 				government = tribal
 			}
 		}
-		change_government = monarchy
+		change_government = china_successor
 	}
-	add_government_reform = celestial_empire
 	set_mandate = 60
-	china_superregion = {
-		limit = {
-			NOT = { is_core = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
+	set_meritocracy = 65
 	if = {
 		limit = {
 			has_dlc = "Mandate of Heaven"

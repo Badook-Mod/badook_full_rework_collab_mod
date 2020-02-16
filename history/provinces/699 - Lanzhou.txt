@@ -1,8 +1,8 @@
 #699 - Lanzhou
 
-owner = GGS
-controller = GGS
-add_core = GGS
+owner = SUI
+controller = SUI
+add_core = SUI
 culture = xibei
 religion = confucianism
 capital = "Lanzhou"

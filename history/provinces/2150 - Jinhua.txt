@@ -1,8 +1,8 @@
 # 2150 - Jinhua
 
-owner = SNW
-controller = SNW
-add_core = SNW
+owner = HAG
+controller = HAG
+add_core = HAG
 culture = wu
 religion = confucianism
 capital = "Jinhua"

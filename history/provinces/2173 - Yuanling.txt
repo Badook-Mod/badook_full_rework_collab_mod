@@ -1,8 +1,8 @@
 # 2173 - Yuanling
 
-owner = FAN
-controller = FAN
-add_core = FAN
+owner = DIA
+controller = DIA
+add_core = DIA
 culture = miao
 religion = confucianism
 capital = "Yuanling"

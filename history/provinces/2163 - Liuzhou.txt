@@ -1,8 +1,8 @@
 # 2163 - Liuzhou
 
-owner = NMS
-controller = NMS
-add_core = NMS
+owner = CGS
+controller = CGS
+add_core = CGS
 culture = zhuang
 religion = animism
 capital = "Liuzhou"

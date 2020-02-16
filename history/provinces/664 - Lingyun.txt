@@ -1,7 +1,7 @@
 #664 - Lingyun
 
-owner = NMS
-controller = NMS
+owner = CYI
+controller = CYI
 culture = zhuang
 religion = animism
 capital = "Lingyun"
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 3
 is_city = yes
-add_core = NMS
+add_core = CYI
 
 
 

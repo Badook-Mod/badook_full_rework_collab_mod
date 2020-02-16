@@ -1,10 +1,10 @@
 #667 - Guangzhou
 
-owner = NMS
-controller = NMS
-add_core = NMS
+owner = NYU
+controller = NYU
+add_core = NYU
 culture = cantonese
-religion = animism
+religion = confucianism
 capital = "Canton"
 trade_goods = chinaware
 hre = no

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = zhili
+capital = 1816	
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Wu"
+		dynasty = "Yan"
+		birth_date = 1392.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+}

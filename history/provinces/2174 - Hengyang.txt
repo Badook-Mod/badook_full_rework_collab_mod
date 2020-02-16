@@ -1,8 +1,8 @@
 # 2174 - Hengyang
 
-owner = NMS
-controller = NMS
-add_core = NMS
+owner = TAN
+controller = TAN
+add_core = TAN
 culture = xiang
 religion = animism
 capital = "Hengyang"

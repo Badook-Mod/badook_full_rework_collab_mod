@@ -397,7 +397,7 @@ crusader = {
 		land_maintenance = 1.0
 	}
 
-	global_manpower_modifier = 0.3
+	global_manpower_modifier = 0.15
 	global_tax_modifier = 0.1
 	land_morale = 0.10
 	prestige = 1
@@ -561,6 +561,9 @@ synthetic_remnants = {
 }
 
 #modded
+
+#Roh costs money
+
 the_fort_of_roh = {
 	potential = {
 		capital_scope = { 
@@ -579,8 +582,10 @@ the_fort_of_roh = {
 	trigger = {
 			owns_or_non_sovereign_subject_of = 578
 	}
-	global_tax_income = -30
+	global_tax_income = -20
 }
+
+#CN nerf
 
 badook_player_cn = {
     potential = {
@@ -596,6 +601,8 @@ badook_player_cn = {
     all_power_cost = 0.2
 }
 
+#horde unity buffs
+
 horde_centralisation_very_high = {
 	potential = {
 		is_nomad = yes
@@ -605,8 +612,8 @@ horde_centralisation_very_high = {
 	}
 	development_cost = -0.075	
 	global_trade_goods_size_modifier = 0.10
-	infantry_power = 0.10
-	cavalry_power = 0.10
+	infantry_power = 0.125
+	cavalry_power = 0.125
 }
 horde_centralisation_high = {
 	potential = {
@@ -624,17 +631,7 @@ horde_centralisation_high = {
 	cavalry_power = 0.05
 }
 
-emperor_brandenburg = {
-	potential = {
-		is_elector = yes
-	}
-	trigger = {
-		BRA = {
-			is_emperor = yes
-		}
-	}
-	land_morale = 0.10
-}
+#HRE emperor buff
 
 emperor_austria = {
 	potential = {
@@ -648,6 +645,7 @@ emperor_austria = {
 	ae_impact = -0.2
 	improve_relation_modifier = 0.25
 }
+
 
 emperor_swiss = {
 	potential = {
@@ -709,18 +707,155 @@ emperor_naples = {
 	possible_mercenaries = 0.3
 }
 
-#player_nation = {
-	#potential = {
-	#	OR = {
-	#		was_player = yes
-	#		ai = no
-	#	}
-	#}
-	#trigger = {
-	#	OR = {
-	#		was_player = yes
-	#		ai = no
-	#	}
-	#}
-	#land_forcelimit = 3
-#}
+emperor_austria = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		HAB = {
+			is_emperor = yes
+		}
+	}
+	ae_impact = -0.2
+	improve_relation_modifier = 0.25
+}
+
+emperor_brandenburg = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		BRA = {
+			is_emperor = yes
+		}
+	}
+	land_morale = 0.10
+}
+
+emperor_denmark = {
+	potential = {
+		is_elector = yes
+	}
+	trigger = {
+		DAN = {
+			is_emperor = yes
+		}
+	}
+	monarch_military_power = 2
+	republican_tradition = 1
+}
+
+#Yellow turban rebellion
+yellow_turbans_here = {
+	potential = {
+		exists = TBS
+		technology_group = chinese
+	}
+	trigger = {
+		exists = TBS
+	}
+	imperial_mandate = -0.15
+	meritocracy = -1
+	stability_cost_modifier = 0.25
+}
+
+#charters
+charter_port_sungkiang = {
+	potential = {
+		technology_group = chinese
+		exists = TAO
+	}
+	trigger = {
+		exists = TAO
+		TAO = {
+			is_vassal = no
+		}
+		is_emperor_of_china = yes
+		5010 = {
+			owned_by = TAO
+		}
+	}
+	production_efficiency = 0.02
+	trade_efficiency = 0.02
+	imperial_mandate = 0.02
+}
+
+charter_port_jiaxing = {
+	potential = {
+		technology_group = chinese
+		exists = XUZ
+	}
+	trigger = {
+		exists = XUZ
+		XUZ = {
+			is_vassal = no
+		}
+		is_emperor_of_china = yes
+		5015 = {
+			owned_by = XUZ
+		}
+	}
+	production_efficiency = 0.02
+	trade_efficiency = 0.02
+	imperial_mandate = 0.02
+}
+
+charter_port_hangzhou = {
+	potential = {
+		technology_group = chinese
+		exists = XYU
+	}
+	trigger = {
+		exists = XYU
+		XYU = {
+			is_vassal = no
+		}
+		is_emperor_of_china = yes
+		684 = {
+			owned_by = XYU
+		}
+	}
+	production_efficiency = 0.02
+	trade_efficiency = 0.02
+	imperial_mandate = 0.02
+}
+
+charter_port_shaoxin = {
+	potential = {
+		technology_group = chinese
+		exists = KYA
+	}
+	trigger = {
+		exists = KYA
+		is_emperor_of_china = yes
+		KYA = {
+			is_vassal = no
+		}
+		2148 = {
+			owned_by = KYA
+		}
+	}
+	production_efficiency = 0.02
+	trade_efficiency = 0.02
+	imperial_mandate = 0.02
+}
+
+charter_port_yangzhou = {
+	potential = {
+		technology_group = chinese
+		exists = YNG
+	}
+	trigger = {
+		exists = YNG
+		YNG = {
+			is_vassal = no
+		}
+		is_emperor_of_china = yes
+		685 = {
+			owned_by = YNG
+		}
+	}
+	production_efficiency = 0.02
+	trade_efficiency = 0.02
+	imperial_mandate = 0.02
+}

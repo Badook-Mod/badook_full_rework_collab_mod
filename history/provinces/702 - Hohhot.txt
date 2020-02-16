@@ -1,8 +1,8 @@
 #702 - Ulanqab
 
-owner = GGS
-controller = GGS
-add_core = GGS
+owner = NWE
+controller = NWE
+add_core = NWE
 culture = mongol
 religion = vajrayana
 capital = "Hohhot"

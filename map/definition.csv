@@ -4649,7 +4649,140 @@ province;red;green;blue;x;x
 4648;2;69;200;Acaxee;x
 4649;62;137;250;Mayo;x
 4650;82;176;150;Opata;x
-4651;74;157;240;Jing Jiang;x
-4652;30;124;237;Yangzi Jiang;x
-4653;32;144;221;Shang Huang He;x
-4654;21;129;196;Xia Huang He;x
+4651;214;134;156;Tsushima;x
+4652;140;69;200;Haicheng;
+4653;117;192;171;Maolian;x
+4654;60;240;76;Fuerhe;x
+4655;194;93;131;Shilimian;x
+4656;95;228;201;Wolanhe;x
+4657;220;32;204;Changbai Mountains;x
+4658;245;120;6;Nanghaer;x
+4659;237;134;253;Tulutingshan;x
+4660;130;176;43;Tunhe;x
+4661;246;142;22;Edala;x
+4662;213;239;212;Halacha;x
+4663;163;187;193;Jixi;x
+4664;79;144;220;North Buteha;x
+4665;18;225;17;South Buteha;x
+4666;147;155;192;South Hulunbur;x
+4667;209;189;232;North Setsen;x
+4668;206;72;139;West Ih Huree;x
+4669;137;60;168;East Dornogovi;x
+4670;1;153;63;West Khara Narin Ula;x
+4671;55;94;80;East Ereen;x
+4672;43;141;219;North Ju Ud;x
+4673;221;36;225;East Xilin Gol;x
+4674;77;35;96;North Jirem;x
+4675;122;140;89;Central Jirem;x
+4676;27;169;8;West Alxa;x
+4677;248;107;18;East Govi;x
+4678;147;150;150;East Qaraqorum;x
+4679;236;42;149;North Tsetserleg;x
+4680;3;38;13;East Zagast;x
+4681;215;140;255;North Kobdo;x
+4682;106;90;108;South Kobdo;x
+4683;186;144;83;East Hoboskar;x
+4684;255;216;1;Dzhemenika;x
+4685;196;69;0;Karagandy;x
+4686;255;90;0;Ekibastuz;x
+4687;255;186;0;Imakia;x
+4688;255;223;172;Baraba;x
+4689;255;150;0;Om;x
+4690;231;61;8;Ishim;x
+4691;255;227;0;As;x
+4692;255;213;0;Turgay;x
+4693;254;103;217;Keriya;x
+5004;161;34;189;Shunteh;Heibei;
+5005;83;91;79;Tianjin;heibei;
+5006;143;154;75;Kuangping;heibei;merged with shunteh
+5007;145;25;206;Dengzhou;Shandong;
+5008;99;132;205;Linchu;shandong;
+5009;67;134;65;Tungchang;shandong;
+5010;206;201;173;Sungkiang;jiangsu;
+5011;;;;;;
+5012;185;149;51;changzhou;jiangsu;
+5013;69;206;65;chuzhou;zhejiang;
+5014;97;57;255;huzhou;zhejiang;
+5015;97;121;146;jiaxing;zhejiang;
+5016;206;210;79;Taizhou;zhejiang;
+5017;147;103;65;hengzhou;zhejiang;
+5018;180;120;255;yanzhou;zhejiang;
+5019;203;117;127;Quanzhou;Fujian;
+5020;144;217;37;Nanping;fujian;
+5021;144;128;37;shaowu;fujian;
+5022;91;91;255;funing;fujian;
+5023;65;158;160;Gaozhou;guangdong;
+5024;223;167;0;loting;guangdong;deleted
+5025;172;47;176;nanhsiung;guangdong;deleted
+5026;196;71;192;Guigang;Guangxi;
+5027;67;219;192;Taiping ;guangxi;
+5028;67;212;128;Hechi/ssucheng;guangxi;
+5029;134;79;65;Pingle;guangxi;
+5030;113;63;128;qingyuan;guangxi;
+5031;67;71;77;ssuen;guangxi;
+5032;198;219;192;summing;guangxi;deleted
+5033;158;170;63;Yungzhou;hunan;
+5034;29;63;63;Chenzhou;hunan;deleted
+5035;208;97;128;Dayong ;hunan;deleted
+5036;208;210;128;Shiuchau;hunan;deleted
+5037;223;208;65;Shaoyang;hunan;
+5038;57;95;65;Yueyang/yuezhou;hunan;
+5039;225;57;65;Shizhou/shinan;hubei;
+5040;184;49;65;Zhongxiang ;hubei;
+5041;170;117;128;déwang;hubei;
+5042;153;111;57;yunyang;hubei;
+5043;97;217;128;hanyang;hubei;deleted as near wuchang just across the river 
+5044;198;125;127;fuzhou;jiangxi;to merge with chienchang
+5045;224;101;35;Shangrao;jiangxi;
+5046;85;119;192;Yuenchau;jiangxi;
+5047;79;29;127;Linjiang;jiangxi;
+5048;198;224;127;chienchang;jiangxi;to merge with fuzhou
+5049;;;;;;
+5050;79;226;127;juzhou;jiangxi;
+5051;141;119;192;jiujiang;jiangxi;Merged with nankang.preferred because nankang is too close to nanchang
+5052;;;;;;
+5053;99;57;65;chizhou;anhui;
+5054;95;134;173;taiping ;anhui;
+5055;83;197;39;kuangte;anhui;
+5056;217;136;128;Changteh;Henan;
+5057;165;136;128;Weihui ;henan;
+5058;208;188;224;Yulin;shaanxi;
+5059;205;216;65;Kingyang;gansu;
+5060;227;150;67;chinglu wei;gansu;deleted
+5061;101;41;39;Suzhou (jiuquan);gansu;
+5062;149;121;33;shunqing;sichuan;
+5063;;;;;;
+5064;87;111;255;tunchuan;sichuan;
+5065;142;99;192;tuyun;guizhou;
+5066;132;117;59;shizhen/ssunan/jiunan ?;guizhou;
+5067;151;101;255;anshun;guizhou;
+5068;222;172;192;Lin'an;yungui;
+5069;95;191;128;qujing;yungui;
+5070;222;172;51;guangxi/guangyou/kuangsi;yungui;
+5071;23;75;65;tsuhiung/chusiung;yungui;
+5072;170;205;51;mengding;yungui;
+5073;255;137;0;jingdong;yungui;
+5074;135;123;0;nantong/formerly tongzhou;jiangsu;
+5075;79;206;127;xinghua;fujian;
+5076;223;186;0;luoting;guangdong;
+5077;65;191;176;nanxong;guangdong;
+5078;95;184;0;nanan;jiangxi;
+5079;225;119;17;nankang;jiangxi;merged with jiujiang
+5080;202;191;126;yongding
+5081;68;169;117;Yueyanglou
+5082;84;142;22;Yuetang
+5083;151;151;11;Zhengxiang
+5084;88;185;153;Tianyuan
+5085;38;176;180;Pengzhou
+5086;73;133;18;Pitong
+5087;109;90;179;Jinyuan
+5088;116;223;15;Huiyang
+5089;215;26;152
+5090;;;;;;
+5091;64;187;209
+5092;;;;;;
+5093;77;43;124
+5094;;;;;;
+5095;238;236;43;xilinhot
+5096;;;;;;
+5097;28;171;119;Laiyang

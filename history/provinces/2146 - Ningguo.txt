@@ -1,8 +1,8 @@
 # 2144 - Ningguo
 
-owner = SNW
-controller = SNW
-add_core = SNW
+owner = CMI
+controller = CMI
+add_core = CMI
 culture = wu
 religion = confucianism
 capital = "Ningguo"

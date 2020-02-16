@@ -1,8 +1,8 @@
 #1840 - Guilin
 
-owner = NMS
-controller = NMS
-add_core = NMS
+owner = TAN
+controller = TAN
+add_core = TAN
 culture = zhuang
 religion = animism
 capital = "Guilin"

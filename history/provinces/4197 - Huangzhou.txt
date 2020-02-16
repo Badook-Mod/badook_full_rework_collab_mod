@@ -4,9 +4,9 @@ latent_trade_goods = {
 	coal
 }
 
-owner = HAO
-controller = HAO
-add_core = HAO
+owner = WHU
+controller = WHU
+add_core = WHU
 culture = hubei
 religion = confucianism
 capital = "Huangzhou"

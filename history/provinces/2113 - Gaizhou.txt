@@ -1,8 +1,8 @@
 # 2113 - Gaizhou
 
-owner = TBS
-controller = TBS
-add_core = TBS
+owner = QIC
+controller = QIC
+add_core = QIC
 culture = shandong_culture
 religion = confucianism
 capital = "Gaizhou"

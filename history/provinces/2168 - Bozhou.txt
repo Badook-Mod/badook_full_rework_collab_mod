@@ -1,8 +1,8 @@
 # 2168 - Bozhou
 
-owner = CNU
-controller = CNU
-add_core = CNU
+owner = QHU
+controller = QHU
+add_core = QHU
 culture = yi
 religion = animism
 capital = "Bozhou"

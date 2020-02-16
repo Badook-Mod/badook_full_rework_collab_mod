@@ -1,8 +1,8 @@
 # 2164 - Namning
 
-owner = NMS
-controller = NMS
-add_core = NMS
+owner = CCH
+controller = CCH
+add_core = CCH
 culture = zhuang
 religion = animism
 capital = "Namning"

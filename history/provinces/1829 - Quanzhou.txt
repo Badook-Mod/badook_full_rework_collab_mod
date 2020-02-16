@@ -1,7 +1,7 @@
 #1829 - Xiamen
 
-owner = MIN
-controller = MIN
+owner = NAN
+controller = NAN
 culture = chimin
 religion = confucianism
 capital = "Quanzhou"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 4
 is_city = yes
-add_core = MIN
+add_core = NAN
 
 
 

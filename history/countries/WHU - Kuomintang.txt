@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = hubei
+capital = 682	
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Chiang"
+		dynasty = "Kai-shek"
+		birth_date = 1395.1.1
+		adm = 6
+		dip = 6
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+}

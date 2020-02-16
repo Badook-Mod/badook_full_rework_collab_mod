@@ -1,0 +1,20 @@
+government = china_successor
+add_government_reform = reform_china_successor_state
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = xibei 
+capital = 700
+
+1444.1.1 = {
+	monarch = {
+
+		name = "Wen"
+		dynasty = "Sui"
+		birth_date = 1386.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+}

@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = reform_china_city_state
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = hubei #ganyu
+capital = 4844 #Kaiyang

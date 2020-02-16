@@ -205,8 +205,45 @@ form_coalition = {
 }
 
 #Badook Mod
+declarewar = {
+	#charter 
+	condition = {
+		tooltip = badook_charter_war_restriction
+		potential = {
+			ai = yes
+		}
+		allow = {
+			FROM = { 
+				NOT = { 
+					tag = TAO 
+					tag = XUZ 
+					tag = XYU
+					tag = KYA
+					tag = YNG 
+				}	
+			}
+		}
+	}
+	condition = {
+		tooltip = badook_charter_war_restriction2
+		potential = {
+			OR = {
+				tag = TAO 
+				tag = XUZ 
+				tag = XYU
+				tag = KYA
+				tag = YNG
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
 
 allianceaction = {
+	#CN
 	condition = {
 		tooltip = badook_cn_ally_restriction
 		potential = {
@@ -217,7 +254,7 @@ allianceaction = {
 		}
 	}
 	condition = {
-		tooltip = badook_cn_ally_restriction
+		tooltip = badook_cn_ally_restriction2
 		potential = {
 			is_colonial_nation = yes
 		}
@@ -225,42 +262,72 @@ allianceaction = {
 			FROM = { is_colonial_nation = no }
 		}
 	}
+	#yellow turban
 	condition = {
-		tooltip = badook_elector_ally_limit
+		tooltip = badook_turban_ally_restriction
 		potential = {
-			has_global_flag = elector_alliance_no
+			NOT = { tag = TBS }
 		}
 		allow = {
-			NOT = {
-				AND = {
-					FROM = {
-						is_elector = yes
-					}
-					ROOT = {
-						is_elector = yes
-					}
-				}
+			FROM = { 
+				NOT = { tag = TBS }
 			}
 		}
 	}
 	condition = {
-		tooltip = badook_elector_ally_limit
+		tooltip = badook_turban_ally_restriction2
 		potential = {
-			has_global_flag = elector_alliance_no
+			tag = TBS
 		}
 		allow = {
-			NOT = {
-				AND = {
-					ROOT = {
-						is_elector = yes
-					}
-					FROM = {
-						is_elector = yes
-					}
+			FROM = { 
+				tag = TBS 
+			}
+		}
+	}
+	#charter ports
+	condition = {
+		tooltip = badook_charter_ally_restriction
+		potential = {
+			ai = yes
+		}
+		allow = {
+			FROM = { 
+				NOT = { 
+					tag = TAO 
+					tag = XUZ 
+					tag = XYU
+					tag = KYA
+					tag = YNG 
+				}	
+			}
+		}
+	}
+	condition = {
+		tooltip = badook_charter_ally_restriction2
+		potential = {
+			OR = {
+				tag = TAO 
+				tag = XUZ 
+				tag = XYU
+				tag = KYA
+				tag = YNG 
+			}
+		}
+		allow = {
+			FROM = {
+				OR = {
+					tag = TAO 
+					tag = XUZ 
+					tag = XYU
+					tag = KYA
+					tag = YNG
 				}
 			}
 		}
 	}
+}
+
 	
 	
 	

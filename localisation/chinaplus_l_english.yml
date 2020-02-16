@@ -1,0 +1,31 @@
+﻿l_english:
+ KFG:0 "Kaifeng"
+ KFG_ADJ:0 "Kaifeng"
+ NWE:0 "Northern Wei"
+ NWE_ADJ:0 "Northern Wei"
+ NYU:0 "Nanyue"
+ NYU_ADJ:0 "Nanyue"
+ QHU:0 "Qiao Shu"
+ QHU_ADJ:0 "Qiao Shu"
+ STG:0 "Southern Tang"
+ STG_ADJ:0 "Kaifengan"
+ SUI:0 "Sui"
+ SUI_ADJ:0 "Sui"
+ TPH:0 "Taiping Heavenly Kingdom"
+ TPH_ADJ:0 "Heavenly"
+ WHU:0 "Wuhan"
+ WHU_ADJ:0 "Wuhan"
+ YAN:0 "Yan"
+ YAN_ADJ:0 "Yan"
+ SHG:0 "Shang"
+ SHG_ADJ:0 "Shang"
+ 
+ 
+ #modifiers
+ yellow_river_flood:0 "The Yellow Flood"
+ 
+ #tooltip
+ yellow_river_burst:0 "Provinces along the §YYellow River§! will be §Runinhabitable§! for the next 2 years. All of China expects §Rsocial consequences§! as a result."
+ bandit_rebels_won_siege_tooltip:0 "The Bandits have looted the province for 2 base tax, 1 base manpower and caused +3 unrest!
+ bandit_rebels_demand:0 "Every province you own will lose 1 base tax, you will lose 25 prestige and 1 year of income!
+ turbans_arrive:0 "The §YYellow Turban Rebellion has risen§!! They bring with them a §Rmassive loss in stability§! and faith in the Emperor, has he §Rlost the Mandate§R for good?"

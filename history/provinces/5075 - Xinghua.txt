@@ -1,0 +1,28 @@
+# No previous file for Xinghua
+
+owner = SNW
+controller = SNW
+add_core = SNW
+culture = chimin
+religion = confucianism
+capital = "Xinghua"
+trade_goods = fish
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = NAN
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+1514.1.1 = { discovered_by = POR }
+
+1647.4.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

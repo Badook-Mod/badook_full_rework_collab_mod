@@ -1,8 +1,8 @@
 # 2170 - Songqu
 
-owner = CNU
-controller = CNU
-add_core = CNU
+owner = LUI
+controller = LUI
+add_core = LUI
 culture = tibetan
 religion = vajrayana
 capital = "Songqu"

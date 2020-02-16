@@ -1,8 +1,8 @@
 # 2137 - Daming
 
-owner = CAO
-controller = CAO
-add_core = CAO
+owner = KFG
+controller = KFG
+add_core = KFG
 culture = chihan
 religion = confucianism
 capital = "Daming"

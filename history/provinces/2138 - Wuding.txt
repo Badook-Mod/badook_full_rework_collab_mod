@@ -1,8 +1,8 @@
 # 2138 - Wuding
 
-owner = TBS
-controller = TBS
-add_core = TBS
+owner = SHG
+controller = SHG
+add_core = SHG
 culture = shandong_culture
 religion = confucianism
 capital = "Wuding"

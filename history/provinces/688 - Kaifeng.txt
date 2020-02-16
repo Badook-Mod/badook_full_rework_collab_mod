@@ -1,8 +1,9 @@
 #688 - Kaifeng (can't change file name)
 
-owner = HAO
-controller = HAO
-add_core = HAO
+owner = LUU
+controller = LUU
+add_core = KFG
+add_core = LUU
 culture = zhongyuan
 religion = confucianism
 capital = "Kaifeng"

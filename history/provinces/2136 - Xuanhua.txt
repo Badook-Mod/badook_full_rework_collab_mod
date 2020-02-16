@@ -1,8 +1,8 @@
 # 2136 - Xuanhua
 
-owner = GGS
-controller = GGS
-add_core = GGS
+owner = NWE
+controller = NWE
+add_core = NWE
 culture = jin
 religion = confucianism
 capital = "Xuanhua"
