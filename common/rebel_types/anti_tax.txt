@@ -40,6 +40,11 @@ anti_tax_rebels = {
 			is_overseas = yes
 		}
 		modifier = {
+			factor = 0
+			culture_group = east_asian
+			NOT = { is_year = 1550 }
+		}
+		modifier = {
 			factor = 0.05
 			owner = {
 				OR = {
