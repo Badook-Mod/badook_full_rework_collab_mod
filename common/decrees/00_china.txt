@@ -6,8 +6,8 @@ expand_bureaucracy_decree = {
 	cost = 35
 	duration = 3650
 	modifier = {
-		development_cost = -0.05
-		build_cost = -0.05
+		global_missionary_strength = 0.03
+		build_cost = -0.075
 	}
 	ai_will_do = {
 		factor = 100
