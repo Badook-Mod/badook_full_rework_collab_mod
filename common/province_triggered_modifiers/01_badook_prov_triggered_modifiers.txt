@@ -56,7 +56,7 @@ battle_of_fei_river = {   #a decisive manouever
 	}
 	on_deactivation = {
 	}
-
+}
 
 battle_of_kunyang = {   #overconfidence kills
 	potential = {
