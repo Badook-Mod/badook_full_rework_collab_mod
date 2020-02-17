@@ -114,7 +114,7 @@ country_event = {
 			5054 = {
 				add_province_triggered_modifier = battle_of_fei_river
 			}
-			5042 = {
+			2171 = {
 				add_province_triggered_modifier = battle_of_kunyang
 			}
 			697 = {
