@@ -1,5 +1,43 @@
 # These ideas are loaded after all country ideas, but before default idea.
 
+all_china_ideas = {
+	start = {
+		siege_ability = 0.1
+		core_creation = -0.15
+	}
+	
+	bonus = {
+		build_cost = -0.1
+	}
+	
+	trigger = {
+		culture_group = chinese
+	}
+	free = yes
+		
+	all_china_1 = {
+		global_unrest = -2
+	}
+	all_china_2 = {	
+		legitimacy = 1
+	}
+	all_china_3 = {
+		defensiveness = 0.15
+	}
+	all_china_4 = {
+		production_efficiency = 0.1
+	}	
+	all_china_5 = {
+		global_manpower_modifier = 0.15
+	}
+	all_china_6 = {
+		max_states = 3
+	}	
+	all_china_7 = {
+		advisor_pool = 1
+	}
+}
+
 client_ideas = {
 	start = {
 		land_morale = 0.1
