@@ -3,6 +3,45 @@
 # If adding new groups or ideas, make sure they are unique.
 
 
+chartercity_ideas = { #China Charter Cities
+    start = {
+        global_tax_income = 15
+        global_prov_trade_power_modifier = 0.35
+    }
+    bonus = {
+        discipline = 0.05
+    }
+	
+	trigger = {
+		has_reform = reform_china_city_state
+	}
+    
+    chartercity_idea_1 = {
+        defensiveness = 0.25
+    }
+    chartercity_idea_2 = {
+        idea_cost = -0.1
+    }
+    chartercity_idea_3 = {
+       idea_cost = -0.15      
+    }
+    chartercity_idea_4 = {
+       merchants = 1
+	   trade_steering = 0.25
+    }
+    chartercity_idea_5 = {
+        development_cost = -0.15
+    }
+    chartercity_idea_6 = {
+        trade_efficiency = 0.15
+    }
+    chartercity_idea_7 = {
+        infantry_power = 0.15
+    }
+}
+
+
+
 malayan_empire_ideas = { #Malayan empire
 	start = {
 		discipline = 0.05
