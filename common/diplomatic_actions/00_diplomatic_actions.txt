@@ -205,6 +205,22 @@ form_coalition = {
 }
 
 #Badook Mod
+infiltrate_administration = {
+	condition = {
+		tooltip = badook_inflitrate_restriction
+		potential = {
+			NOT = {
+				has_idea = audit_checks
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+
+
 declarewar = {
 	#charter 
 	condition = {
