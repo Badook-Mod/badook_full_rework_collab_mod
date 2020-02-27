@@ -7,10 +7,10 @@ reform_china_successor_state = {
 	potential = {
 	}
 	modifiers = {
-		years_of_nationalism = -5
-		core_creation = 0.15
-		reduced_liberty_desire = -25
-		max_states = -3
+		years_of_nationalism = -10
+		ae_impact = 25
+		reduced_liberty_desire = -15
+		max_states = -5
 	}
 }
 
