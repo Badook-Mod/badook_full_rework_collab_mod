@@ -95,7 +95,6 @@ good_produced = {
 }
 
 impenetrable_fortress = {
-	local_tax_modifier = -0.99
 	defensiveness = 0.20
 }
 
@@ -111,7 +110,7 @@ h_qar_caucasus = {
 }
 
 build_forts = {
-	build_cost = -0.85
+	build_cost = -0.95
 	build_time = -0.99
 }
 
