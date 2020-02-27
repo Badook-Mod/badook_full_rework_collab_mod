@@ -13,6 +13,10 @@ country_decisions = {
 				ai = no
 				NOT = { exists = XIA }
 			}
+			OR = {
+				culture_group = chinese
+			
+			}
 		}
 		provinces_to_highlight = {
 			OR = { 
