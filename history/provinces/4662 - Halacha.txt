@@ -1,9 +1,9 @@
 #Halacha
 
-owner = SOL
-controller = SOL
-add_core = SOL
-culture = evenk
+owner = MYR
+controller = MYR
+add_core = MYR
+culture = manchu
 religion = tengri_pagan_reformed
 capital = "Halacha"
 trade_goods = fur

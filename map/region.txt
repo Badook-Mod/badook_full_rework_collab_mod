@@ -570,7 +570,6 @@ central_asia_region = {
 		transcaspia_area
 		transoxiana_area
 		kazakhstan_area
-		balchasj_area
 		khiva_area
 		ferghana_area
 		jetysuu_area
@@ -582,6 +581,7 @@ central_asia_region = {
 		shanshan_area
 		kyzylkum_area
 		termez_area
+		balchasj_area
 	}
 }
 
