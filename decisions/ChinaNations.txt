@@ -81,6 +81,10 @@ country_decisions = {
 				ai = no
 				NOT = { exists = SNG }
 			}
+			OR = {
+				culture_group = chinese
+			
+			}
 		}
 		provinces_to_highlight = {
 			OR = { 
@@ -88,6 +92,7 @@ country_decisions = {
 			}
 			NOT = { owned_by = ROOT }
 		}
+		
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -144,6 +149,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				NOT = { exists = TNG }
+			}
+			OR = {
+				culture_group = chinese
+			
 			}
 		}
 		provinces_to_highlight = {
