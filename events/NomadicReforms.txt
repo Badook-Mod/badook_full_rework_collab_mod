@@ -206,26 +206,26 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = nomadic_events.6
-	title = nomadic_events.6.t
-	desc = nomadic_events.6.d
-	picture = MESOAMERICAN_GODS_eventPicture
+#country_event = {
+	#id = nomadic_events.6
+	#title = nomadic_events.6.t
+	#desc = nomadic_events.6.d
+	#picture = MESOAMERICAN_GODS_eventPicture
 	
-	trigger = {
-		OR = {
-			is_emperor = yes
-		}	
-	}
+	#trigger = {
+	#	OR = {
+	#		is_emperor = yes
+	#	}	
+	#}
 	
-	immediate = {
-		hidden_effect = {
-			add_imperial_influence = 5
-		}
-	}
+	#immediate = {
+	#	hidden_effect = {
+	#		add_imperial_influence = 5
+	#	}
+	#}
 	
-	option = {
-		name = nomadic_events.6.a #keep me in
-	}
-}
+	#option = {
+	#	name = nomadic_events.6.a #keep me in
+	#}
+#}
 	
