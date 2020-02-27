@@ -107,7 +107,7 @@ imperial_beijing = {
 		}
 	}
 	reform_progress_growth = 0.25
-	local_tax_modifier = 0.075
+	global_tax_modifier = 0.05
 	#Province scope
 	on_activation = {
 	}

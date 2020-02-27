@@ -14,7 +14,7 @@ country_decisions = {
 				NOT = { exists = XIA }
 			}
 			OR = {
-				culture_group = chinese
+				culture_group = east_asian
 			
 			}
 		}
@@ -82,7 +82,7 @@ country_decisions = {
 				NOT = { exists = SNG }
 			}
 			OR = {
-				culture_group = chinese
+				culture_group = east_asian
 			
 			}
 		}
@@ -151,7 +151,7 @@ country_decisions = {
 				NOT = { exists = TNG }
 			}
 			OR = {
-				culture_group = chinese
+				culture_group = east_asian
 			
 			}
 		}
