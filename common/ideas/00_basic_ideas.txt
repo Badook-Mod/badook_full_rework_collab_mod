@@ -231,7 +231,7 @@ spy_ideas = {
 }
 
 
-diplomatic_ideas = {  #now internal trade
+diplomatic_ideas = {  #now internal trade  #localisation complete
 	category = DIP
 	bonus = {
 		placed_merchant_power = 15
@@ -590,6 +590,11 @@ exploration_ideas = {
 	}
 }
 
+#improved_rams:0 "Improved Rams"
+ #improved_rams_desc:0 "The concept of outfitting warships with rams goes back thousands of years, but great advancements in metallurgy have been made since then and we should take advantage of these to create sturdier rams."
+# naval_glory:0 "Naval Glory"
+
+
 
 maritime_ideas = { #now naval
 	category = DIP
@@ -622,7 +627,7 @@ maritime_ideas = { #now naval
 		heavy_ship_power = 0.05
 	}
 	naval_fighting_instruction = {
-		treasure_fleet_income = 0.1
+		admiral_cost = -0.1
 		movement_speed_onto_off_boat_modifier = -0.15
 	}
 
@@ -945,7 +950,6 @@ influence_ideas = {
 #	bonus = {
 #		ship_durability = 0.1
 #	}
-
 #	boarding_parties = {
 #		leader_naval_shock = 1
 #	}
