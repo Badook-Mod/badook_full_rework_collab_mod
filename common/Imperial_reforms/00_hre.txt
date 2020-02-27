@@ -6,9 +6,9 @@ reichsreform = {
 		global_autonomy = -0.025
 	}
 	emperor = {
-		global_tax_income = 14
+		global_tax_income = 12
 		global_autonomy = -0.025
-		global_manpower = 4
+		global_manpower = 3
 	}
 	on_effect = {
 		imperial_ban_allowed = yes
@@ -22,14 +22,14 @@ reichsregiment = {
 	empire = hre
 	
 	member = {
-		reform_progress_growth = 0.30
+		reform_progress_growth = 0.20
 		adm_tech_cost_modifier = -0.075
 		global_manpower = 2
 	}
 	emperor = {
-		reform_progress_growth = 0.35
+		reform_progress_growth = 0.25
 		adm_tech_cost_modifier = -0.10
-		global_manpower = 5
+		global_manpower = 4
 	}
 }
 
@@ -38,12 +38,12 @@ hofgericht = {
 	
 	member = {
 		land_morale = 0.05
-		global_tax_modifier = 0.075
+		global_tax_modifier = 0.05
 		global_manpower = 2
 	}
 	emperor = {
 		leader_land_shock = 1
-		global_manpower = 6
+		global_manpower = 4
 	}
 }
 
@@ -51,15 +51,14 @@ gemeinerpfennig = {
 	empire = hre
 	
 	member = {
-		land_forcelimit = 25
+		land_forcelimit = 15
 		army_tradition = 0.5
-		global_manpower = 6
+		global_manpower = 4
 		republican_tradition = 0.5
 	}
 	emperor = {
 		leader_siege = 1
-		leader_land_manuever = 1
-		global_manpower = 8
+		global_manpower = 6
 		imperial_authority = 0.15
 	}
 	on_effect = {
@@ -72,11 +71,11 @@ landfriede = {
 	member = {
 		land_forcelimit = -15
 		army_tradition = -0.5
-		global_manpower = -15
+		global_manpower = -10
 	}
 	emperor = {
-		land_forcelimit_modifier = 0.25
-		global_manpower = 8
+		land_forcelimit_modifier = 0.20
+		global_manpower = 7
 		land_morale = 0.05
 	}
 	on_effect = {
@@ -94,8 +93,8 @@ erbkaisertum = {
 	member = {
 	}
 	emperor = {
-		development_cost = -0.125
-		global_manpower = 9
+		development_cost = -0.1
+		global_manpower = 8
 	}
 	on_effect = {
 		hre_inheritable = no
@@ -111,7 +110,7 @@ privilegia_de_non_appelando = {
 	member = {
 	}
 	emperor = {
-		global_manpower = 10
+		global_manpower = 8
 	}
 	on_effect = {
 		country_event = { id = HREreforms.3 tooltip = vassalize_empire2 } #enables buff depending on tag
