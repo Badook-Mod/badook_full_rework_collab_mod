@@ -1,0 +1,113 @@
+country_decisions = {
+
+	pol_commonwealth = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_plc_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = PLC }
+			NOT = { tag = HLR }
+			tag = POL
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = ruthenia_region
+				region = poland_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			LIT = { was_player = no }
+			LIT = {
+				NOT = { num_of_cities = 58 } #Keep this number the same as in potential. Original 38 +10
+			}
+			adm_tech = 20
+			is_at_war = no
+			poland_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			ruthenia_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			change_tag = PLC
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { accepted_culture = lithuanian } }
+				add_accepted_culture = lithuanian
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					poland_region = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				poland_region = {
+					add_permanent_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					white_ruthenia_area = {
+						NOT = { owned_by = POL }
+					}
+				}
+				white_ruthenia_area = {
+					add_permanent_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					lithuania_area = {
+						NOT = { owned_by = POL }
+					}
+				}
+				lithuania_area = {
+					add_permanent_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					pripyat_area = {
+						NOT = { owned_by = POL }
+					}
+				}
+				pripyat_area = {
+					add_permanent_claim = PLC
+				}
+			}
+			random_owned_province = {
+				limit = { culture = polish }
+				add_base_tax = 1
+			}
+			set_country_flag = formed_plc_flag
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		do_not_integrate = LIT
+	}
+}
+
