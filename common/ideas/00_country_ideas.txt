@@ -1170,7 +1170,7 @@ CJI_ideas = {                                           # KML
 	}
 }
 
-SHU_ideas = {                                         # KML
+tng_ideas = {       #china
 	start = {
 		improve_relation_modifier = 0.2
 		discipline = 0.5
@@ -1180,7 +1180,7 @@ SHU_ideas = {                                         # KML
 	}
 	
 	trigger = {
-			tag = SHU
+			tag = TNG
 		}
 	free = yes
 	
@@ -1197,7 +1197,6 @@ SHU_ideas = {                                         # KML
 	SHU_northern_expedition = {
 		defensiveness = 0.15
 		diplomatic_reputation = 1
-		diplomatic_upkeep = 1
 	}
 	SHU_chi_ko_nu = {
 		leader_land_fire = 1
@@ -1211,7 +1210,7 @@ SHU_ideas = {                                         # KML
 	}
 }
 
-WUU_ideas = {                                            # KML
+sng_ideas = {                                            # KML
 	start = {
 		mercenary_discipline = 0.075
 		galley_power = 0.15
@@ -1222,7 +1221,7 @@ WUU_ideas = {                                            # KML
     }
 
     trigger = {
-        tag = WUU
+        tag = SNG
     }
 	
     free = yes
@@ -1259,19 +1258,19 @@ WUU_ideas = {                                            # KML
 }
 
 
-WEI_ideas = {                                                # KML
+xia_ideas = {      # China
 	start = {
 		shock_damage = 0.10
 		infantry_cost = -0.15
 	}
 
 	bonus = {
-		global_manpower_modifier = 0.35
+		global_manpower_modifier = 0.325
 	}
 
 	trigger = {               
 		OR = {
-			tag = WEI
+			tag = XIA
 		}
 	}
 	free = yes		#will be added at load.
@@ -1286,7 +1285,7 @@ WEI_ideas = {                                                # KML
 		land_forcelimit_modifier = 0.15
 	}
 	wei4 = {
-		manpower_recovery_speed = 0.25
+		manpower_recovery_speed = 0.20
 	}
 	wei5 = {
 		discipline = 0.5
@@ -2035,6 +2034,47 @@ POR_ideas = {
 	}
 }
 
+PLC_ideas = {
+	start = {
+		cavalry_cost = -0.1
+		num_accepted_cultures = 1
+	}
+	
+	bonus = {
+	 	tolerance_heretic = 3
+	}
+	
+	trigger = {
+		OR = {
+			tag = PLC
+		}
+	}
+	free = yes		#will be added at load.
+	
+	PLC_system = {
+		production_efficiency = 0.1
+	}
+	PLC_novi = {
+		stability_cost_modifier = -0.1
+	}
+	PLC_wybraniecka = {
+		global_manpower_modifier = 0.25
+		infantry_power = 0.1
+	}
+	PLC_hussars = {
+		cavalry_power = 0.20
+		cav_to_inf_ratio = 0.25
+	}
+	PLC_komputoe = {
+		diplomatic_upkeep = 2
+	}
+	PLC_section = {
+		discipline = 0.5
+	}
+	PLC_defences = {
+		land_morale = 0.10
+	}
+}
 
 POL_ideas = {
 	start = {
@@ -2049,34 +2089,32 @@ POL_ideas = {
 	trigger = {
 		OR = {
 			tag = POL
-			tag = PLC
 		}
 	}
 	free = yes		#will be added at load.
 	
 	folwark_system = {
-		production_efficiency = 0.1
+		production_efficiency = 0.05
 	}
 	nihil_novi = {
 		stability_cost_modifier = -0.1
-		war_exhaustion = -0.02
 	}
 	peichota_wybraniecka = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.15
 		infantry_power = 0.1
 	}
 	winged_hussars = {
-		cavalry_power = 0.33
-		cav_to_inf_ratio = 0.10
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 0.25
 	}
 	wojsko_komputoe = {
-		global_regiment_cost = -0.10
+		diplomatic_upkeep = 2
 	}
 	foreign_section = {
-		discipline = 0.05
+		caravan_power = 0.1
 	}
 	focus_on_field_defences = {
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 }
 
@@ -9902,26 +9940,25 @@ GLH_ideas = {
 	free = yes
 	
 	glh_legacy_of_the_golden_horde = {
-		horde_unity = 1
-		legitimacy = 1
+		land_morale = 0.10
 	}
 	glh_perso_mongol_administration = {
 		core_creation = -0.25
 	}
 	glh_tatar_traditions = {
-		cavalry_power = 0.20
+		cavalry_power = 0.25
 	}
 	glh_secure_the_trade_routes = {
 		global_prov_trade_power_modifier = 0.10
 	}
 	logistics_of_khan = { #Used by horde_ideas
-		manpower_recovery_speed = 0.2
+		manpower_recovery_speed = 0.15
 	}
 	glh_populating_the_steppes = {
-		development_cost = -0.1
+		development_cost = -0.075
 	}
 	glh_religious_pragmatism = {
-		tolerance_heathen = 2
+		discipline = 0.05
 	}
 }
 
