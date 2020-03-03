@@ -1,6 +1,6 @@
 # These ideas are loaded after all country ideas, but before default idea.
 
-all_china_ideas = {
+chinese_ideas = {
 	start = {
 		siege_ability = 0.1
 		core_creation = -0.15
@@ -11,30 +11,33 @@ all_china_ideas = {
 	}
 	
 	trigger = {
-		culture_group = chinese
+		OR = {
+			culture_group = east_asian #Chinese
+			tag = CGS #Changsheng
+		}
 	}
 	free = yes
-		
-	all_china_1 = {
+	
+	keju_examination = {
 		global_unrest = -2
 	}
-	all_china_2 = {	
+	scholar_gentry = {
 		legitimacy = 1
 	}
-	all_china_3 = {
-		defensiveness = 0.15
+	order_of_four_occupations = {
+		production_efficiency = 0.10
 	}
-	all_china_4 = {
-		production_efficiency = 0.1
-	}	
-	all_china_5 = {
+	nation_of_rites_and_etiquette = {
 		global_manpower_modifier = 0.15
 	}
-	all_china_6 = {
+	firearm_training = {
 		max_states = 3
-	}	
-	all_china_7 = {
+	}
+	son_of_heaven = {
 		advisor_pool = 1
+	}
+	middle_kingdom = {
+		diplomatic_reputation = 1
 	}
 }
 
@@ -57,13 +60,13 @@ client_ideas = {
 		global_unrest = -2
 	}
 	foreign_tax_collectors = {	
-		global_tax_modifier = 0.10
+		legitimacy = 1
 	}
 	fortified_borders = {
 		defensiveness = 0.15
 	}
 	magnate_landowners = {
-		production_efficiency = 0.1
+		global_manpower_modifier = 0.15
 	}	
 	mercantile_privileges = {
 		global_prov_trade_power_modifier = 0.15
@@ -577,12 +580,12 @@ mindanao_ideas = {
 
 horde_ideas = {
 	start = {
-		ae_impact = -0.10
+		cavalry_power = 0.125
 		years_of_nationalism = -5
 	}
 	
 	bonus = {
-		stability_cost_modifier = -0.10
+		stability_cost_modifier = -0.125
 	}
 	
 	trigger = {
@@ -591,10 +594,10 @@ horde_ideas = {
 	free = yes
 	
 	life_of_steppe_warrior = {
-		land_attrition = -0.20
+		land_attrition = -0.15
 	}
 	traditions_of_the_great_khan = {
-		cavalry_power = 0.20
+		cavalry_cost = -0.15
 	}
 	horse_supplies = {
 		land_maintenance_modifier = -0.05
@@ -603,13 +606,13 @@ horde_ideas = {
 		leader_land_shock = 1
 	}
 	tradition_of_conquest = {
-		core_creation = -0.25
+		core_creation = -0.20
 	}
 	logistics_of_khan = {
 		#manpower_recovery_speed = 0.2 (effect taken in GLH idea)
 	}
 	glory_of_conquest = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.15
 	}
 }
 
