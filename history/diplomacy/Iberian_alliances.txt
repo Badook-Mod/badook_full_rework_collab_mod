@@ -1,8 +1,8 @@
 # Navarra under John II of Aragon
 union =  {
-	first = ARA
+	first = CAS
 	second = NAV
-	start_date = 1458.6.29
+	start_date = 1444.1.1
 	end_date = 1479.1.20
 }
 
