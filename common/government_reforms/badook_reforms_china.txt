@@ -8,8 +8,8 @@ reform_china_successor_state = {
 	}
 	modifiers = {
 		years_of_nationalism = -10
-		ae_impact = 0.025
-		reduced_liberty_desire = -15
+		ae_impact = 0.25
+		reduced_liberty_desire = -10
 		max_states = -5
 	}
 }
