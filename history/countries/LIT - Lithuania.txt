@@ -4,9 +4,9 @@ government_rank = 1
 primary_culture = lithuanian
 add_accepted_culture = byelorussian
 add_accepted_culture = ruthenian
-religion = orthodox
 technology_group = eastern
 historical_friend = POL
+religion = orthodox
 capital = 272 # Vilnius
 
 
@@ -43,7 +43,7 @@ capital = 272 # Vilnius
 		dip = 3
 		mil = 1
 	}
-	religion = catholic
+	religion = orthodox
 }
 
 1440.1.1 = {
@@ -58,6 +58,7 @@ capital = 272 # Vilnius
 	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
 	add_ruler_personality = incorruptible_personality
+	religion = orthodox
 }
 
 1461.8.5 = {
