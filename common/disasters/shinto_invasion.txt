@@ -1,0 +1,93 @@
+shinto_invasion = {
+	potential = {
+		has_global_flag = shinto_pirates_here
+		technology_group = chinese
+		NOT = { ai = yes }
+	}
+
+	can_start = {
+		has_global_flag = shinto_pirates_here
+		custom_trigger_tooltip = {
+			tooltip = shinto_invasion
+		}
+	}
+	
+	can_stop = { 
+		OR = {
+			NOT = { has_global_flag = shinto_pirates_here }
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 20
+			has_global_flag = shinto_pirates_here
+		}
+		modifier = {
+			factor = -2
+			stability = 1
+		}
+		modifier = {
+			factor = -3
+			stability = 2
+		}
+		modifier = {
+			factor = -5
+			stability = 3
+		}
+	}
+
+	can_end = {
+		4196 = {
+			NOT = { religion = shinto }
+		}
+		2142 = {
+			NOT = { religion = shinto }
+		}
+		685 = {
+			NOT = { religion = shinto }
+		}
+		5074 = {
+			NOT = { religion = shinto }
+		}
+		2145 = {
+			NOT = { religion = shinto }
+			}
+		1822 = {
+			NOT = { religion = shinto }
+		}
+		5010 = {
+			NOT = { religion = shinto }
+			}
+		5015 = {
+			NOT = { religion = shinto }
+		}
+		684 = {
+			NOT = { religion = shinto }
+		}
+		2148 = {
+			NOT = { religion = shinto }
+		}
+	}
+	
+
+	modifier = {
+		imperial_mandate = -0.25
+		global_unrest = 5
+		religious_unity = -0.5
+	}	
+	
+	
+	on_start = Chinareforms.2
+	on_end = Chinareforms.3
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			#1000 = 0
+			# None
+		}
+	}
+}
+
