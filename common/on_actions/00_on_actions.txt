@@ -885,8 +885,11 @@ on_annexed = {
 			limit = { 
 				is_emperor_of_china = yes 
 				1836 = {
-					owner = { 
-						technology_group = chinese
+					owner = {
+						OR = {
+							technology_group = chinese
+							technology_group = eastern
+						}
 					}
 				}
 			}
@@ -900,12 +903,16 @@ on_annexed = {
 				1836 = {
 					NOT = {
 						owner = { 
-							technology_group = chinese
+							OR = {
+								technology_group = chinese
+								technology_group = eastern
+							}
 						}
 					}
 				}
 			}
 			dismantle_empire_of_china = yes
+			set_global_flag = china_gone_flag
 		}
 		if = {
 			limit = { has_country_modifier = legatus_natus }
