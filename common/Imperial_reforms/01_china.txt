@@ -1,35 +1,39 @@
-establish_gaituguiliu_decision = {
+establish_gaituguiliu_decision = { #enables warlord resistance (buff for non emperor)
 	empire = celestial_empire
 	emperor = {
-		meritocracy = 0.5
+		global_tax_income = 25
 	}
 }
 
-seaban_decision = {
+seaban_decision = {  #enables take warlord tribute decision
 	empire = celestial_empire
 	emperor = {
-		diplomats = 1
-		trade_efficiency = 0.05
+		global_manpower = 8
 	}
 }
 
-reform_land_tax_decision = {
+reform_land_tax_decision = { #enables shinto invasion disaster
 	empire = celestial_empire
 	emperor = {
-		global_autonomy = -0.05
+		merchants = 1
+		trade_efficiency = 0.075
+		imperial_mandate = -0.05
 	}
 }
 
-military_governors_decision = {
+military_governors_decision = { #enables loss of mandate for non chinese in china
 	empire = celestial_empire
 	emperor = {
-		core_creation = -0.1
+		technology_cost = -0.05
+		imperial_mandate = -0.1
 	}
 }
 
-centralizing_top_government_decision = {
+centralizing_top_government_decision = { 
 	empire = celestial_empire
 	emperor = {
-		monarch_admin_power = 1
+		monarch_military_power = 3
+		land_morale = 0.10
+		meritocracy = 2
 	}
 }
