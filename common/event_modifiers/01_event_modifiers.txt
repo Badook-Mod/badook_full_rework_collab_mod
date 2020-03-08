@@ -126,3 +126,7 @@ gen_hre_emperor_italy = {
 	imperial_authority_value = 0.25
 	prestige = 0.5
 }
+
+frontier_life = {
+	may_establish_frontier = yes
+}
