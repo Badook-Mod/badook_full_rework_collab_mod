@@ -1,0 +1,115 @@
+namespace = Chinareforms
+
+country_event = {
+	id = Chinareforms.0
+	title = Chinareforms.0.t
+	desc = Chinareforms.0.d
+	picture = ANGRY_MOB_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		technology_group = chinese
+		NOT = { is_emperor_of_china = yes }
+		has_global_flag = shinto_pirates_here
+		NOT = { has_global_flag = shinto_pirates_announce }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = shinto_pirates_announce
+		}
+	}
+	option = {
+		name = Chinareforms.2.a 
+		
+	}
+}
+
+country_event = { #shinto invasion
+	id = Chinareforms.1
+	title = Chinareforms.1.t
+	desc = Chinareforms.1.d
+	picture = BARBARY_PIRATES_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		technology_group = chinese
+		is_emperor_of_china = yes
+		empire_of_china_reform_level = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = shinto_pirates_here
+			2142 = {
+				change_religion = shinto
+			}
+			685 = {
+				change_religion = shinto
+			}
+			5074 = {
+				change_religion = shinto
+			}
+			2145 = {
+				change_religion = shinto
+			}
+			1822 = {
+				change_religion = shinto
+			}
+			5010 = {
+				change_religion = shinto
+			}
+			5015 = {
+				change_religion = shinto
+			}
+			684 = {
+				change_religion = shinto
+			}
+			2148 = {
+				change_religion = shinto
+			}
+			4196 = {
+				change_religion = shinto
+			}
+		}	
+	}
+	option = {
+		name = Chinareforms.1.a 
+	}
+}
+
+country_event = {
+	id = Chinareforms.2
+	title = Chinareforms.2.t
+	desc = Chinareforms.2.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = Chinareforms.2.a 
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = Chinareforms.3
+	title = Chinareforms.3.t
+	desc = Chinareforms.3.d
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = shinto_pirates_here
+		}
+	}
+	option = {
+		name = Chinareforms.3.a 
+	}
+}
