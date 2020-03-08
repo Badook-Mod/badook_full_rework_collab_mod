@@ -1,0 +1,125 @@
+country_decisions = {
+
+	sino_soviet_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_sino_soviet_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				tag = RUS
+				tag = MOS
+			}
+			NOT = { exists = SSN }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 20
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = ural_region
+				region = russia_region
+				region = central_asia_region
+				region = mongolia_region
+				region = north_china_region 
+				region = east_sibera_region
+				region = manchuria_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = SSN }
+			NOT = { has_reform = steppe_horde }
+			adm_tech = 20
+			OR = {
+				is_emperor_of_china = yes
+				has_global_flag = china_gone_flag
+			}
+			ural_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			russia_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			central_asia_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			mongolia_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			east_sibera_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			manchuria_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			change_tag = SSN
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				set_country_flag = formed_sino_soviet_flag
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 14600
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
