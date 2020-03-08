@@ -633,20 +633,6 @@ horde_centralisation_high = {
 
 #HRE emperor buff
 
-emperor_austria = {
-	potential = {
-		is_elector = yes
-	}
-	trigger = {
-		HAB = {
-			is_emperor = yes
-		}
-	}
-	ae_impact = -0.2
-	improve_relation_modifier = 0.25
-}
-
-
 emperor_swiss = {
 	potential = {
 		is_elector = yes
@@ -656,7 +642,7 @@ emperor_swiss = {
 			is_emperor = yes
 		}
 	}
-	mercenary_discipline = 0.075
+	mercenary_discipline = 0.05
 }
 
 emperor_hesse = {
@@ -680,7 +666,7 @@ emperor_venice = {
 			is_emperor = yes
 		}
 	}
-	global_tax_income = 24
+	global_tax_income = 48
 }
 
 emperor_genoa = {
@@ -704,7 +690,7 @@ emperor_naples = {
 			is_emperor = yes
 		}
 	}
-	possible_mercenaries = 0.3
+	possible_mercenaries = 0.25
 }
 
 emperor_austria = {
@@ -716,7 +702,7 @@ emperor_austria = {
 			is_emperor = yes
 		}
 	}
-	ae_impact = -0.2
+	ae_impact = -0.15
 	improve_relation_modifier = 0.25
 }
 
@@ -742,7 +728,8 @@ emperor_denmark = {
 		}
 	}
 	monarch_military_power = 2
-	republican_tradition = 1
+	monarch_diplomatic_power = 2
+	republican_tradition = 3
 }
 
 #Yellow turban rebellion
@@ -754,9 +741,10 @@ yellow_turbans_here = {
 	trigger = {
 		exists = TBS
 	}
-	imperial_mandate = -0.15
-	meritocracy = -1
-	stability_cost_modifier = 0.25
+	imperial_mandate = -0.25
+	meritocracy = -2
+	stability_cost_modifier = 0.35
+	global_unrest = 5
 }
 
 #charters
