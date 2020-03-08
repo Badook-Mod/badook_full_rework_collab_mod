@@ -17,9 +17,9 @@ country_decisions = {
 		NOT = {
 			has_country_flag = unity_gained 
 		}
+		effect = {
+			add_horde_unity = 25
+			set_country_flag = unity_gained
+		}
 	}
-	effect = {
-		add_horde_unity = 25
-		set_country_flag = unity_gained
-	}
-}
+}	
