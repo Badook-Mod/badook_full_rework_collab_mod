@@ -21,8 +21,6 @@ CJI = "countries/Ji'an.txt" # yiling
 DWU = "countries/Dongwu.txt" # dong wu
 ZHU = "countries/Zhou.txt" # zhou (luoyang)
 SNW = "countries/Sunwu.txt" # old wu
-SIA = "countries/Siam.txt" #siam formable
-PRC = "countries/PRC.txt" # PRC
 
 #new china+ 
 SHG = "countries/Shang.txt" #shang (shangqiu)
@@ -42,8 +40,9 @@ TIJ = "countries/Tianjin.txt"
 XIA = "countries/Xia.txt"
 TNG = "countries/Tang.txt"
 SNG = "countries/Song.txt"
-
-
+SSN = "countries/SinoSoviet.txt" # sino soviet union (russia)
+PRC = "countries/PRC.txt" # PRC
+SIA = "countries/Siam.txt" #siam formable
 
 #east coast charters (opm)
 TAO = "countries/Taozhou.txt"
