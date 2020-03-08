@@ -1,0 +1,183 @@
+country_decisions = {
+
+	haizhou_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			4196 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 4196	
+		}
+		effect = {
+			4196 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	huai'an_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			2142 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 2142
+		}
+		effect = {
+			2142 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	yangzhou_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			685 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 685
+		}
+		effect = {
+			685 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	tongzhou_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			5074 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 5074
+		}
+		effect = {
+			5074 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	zhenjiang_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			2145 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 2145
+		}
+		effect = {
+			2145 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	suzhou_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			1822 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 1822
+		}
+		effect = {
+			1822 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	sungkiang_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			5010 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 5010	
+		}
+		effect = {
+			5010 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	jiaxing_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			5015 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 5015	
+		}
+		effect = {
+			5015 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	hangzhou_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			684 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 684
+		}
+		effect = {
+			684 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+	shaoxin_convert = {
+		potential = {
+			has_global_flag = shinto_pirates_here
+			ai = no
+			2148 = {
+				NOT = { religion = confucianism }
+			}
+		}
+		allow = {
+			controls = 2148	
+		}
+		effect = {
+			2148 = {
+				change_religion = confucianism
+			}
+			add_adm_power = -25
+		}
+	}
+}
