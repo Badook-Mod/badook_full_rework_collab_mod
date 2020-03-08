@@ -6,17 +6,14 @@ country_decisions = {
 		}
 		
 		allow = {
-			OR = {
-				AND = {
-					is_in_war = {
-						attacker_leader = ROOT
-						war_score = 50
-						casus_belli = cb_unity_gain
-					}
-					unit_in_battle = yes
+			AND = {
+				is_in_war = {
+					attacker_leader = ROOT
+					war_score = 50
+					casus_belli = cb_unity_gain
 				}
-				war_score = 99
 			}
+		}
 		NOT = {
 			has_country_flag = unity_gained 
 		}
