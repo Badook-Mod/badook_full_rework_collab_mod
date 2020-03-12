@@ -69,6 +69,7 @@ technology = { #National Ideas
 
 	allowed_idea_groups = 1
 	production_efficiency	 =	0.02
+	max_states = 3
 }
 
 technology = { #Workshop
@@ -78,6 +79,7 @@ technology = { #Workshop
 	#Workshop
 	farm_estate = yes
 	workshop = yes
+	
 }
 
 technology = { #Renaissance Thought
@@ -113,6 +115,7 @@ technology = { #Modern Theocracy
 	
 	allowed_idea_groups = 3
 	theocratic_government = yes
+	max_states = 3
 }
 
 technology = { #Textile Manufactory
@@ -138,7 +141,7 @@ technology = { #Improved Drainage
 	year = 1570
 	
 	#Improved Drainage
-	production_efficiency 	=	0.02
+	may_force_march = yes
 }
 
 technology = { #Scientific Experimentation
@@ -153,7 +156,7 @@ technology = { #Military Administration
 	# Tech 15
 	year = 1596
 	
-	may_force_march = yes
+	production_efficiency 	=	0.01
 	
 }
 
@@ -162,7 +165,7 @@ technology = { #Metallurgy
 	year = 1609
 	
 	mills = yes
-	production_efficiency 	=	0.02
+	production_efficiency 	=	0.01
 
 
 }
@@ -175,7 +178,7 @@ technology = { #University
 	max_states = 5
 	
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1
+	development_efficiency = 0.05
 }
 
 technology = { #National Sovereignty
@@ -206,7 +209,7 @@ technology = { #Land Clearance
 	year = 1674
 	
 	#Land Clearance
-	production_efficiency 	=	0.02
+	production_efficiency 	=	0.01
 	furnace = yes
 }
 
@@ -225,8 +228,8 @@ technology = { #Measuring the World
 	# Tech 23
 	year = 1700
 	
-	administrative_efficiency = 0.1
-	development_efficiency = 0.1
+	administrative_efficiency = 0.2
+	development_efficiency = 0.05
 }
 
 technology = { #Bonds and Tontines
@@ -242,7 +245,7 @@ technology = { #Improved Production
 	year = 1730
 	
 	#Improved Farm Animals
-	production_efficiency 	=	0.02
+	production_efficiency 	=	0.01
 }
 
 technology = { #Separation of Powers
@@ -256,8 +259,8 @@ technology = { #Modern Bureaucracy
 	# Tech 27
 	year = 1760
 
-	administrative_efficiency = 0.1
-	development_efficiency = 0.1	
+	administrative_efficiency = 0.2
+	development_efficiency = 0.05	
 	max_states = 5
 }
 
@@ -266,7 +269,7 @@ technology = { #Rotherham Plough
 	year = 1775
 	
 	#Rotherham Plough
-	production_efficiency 	=	0.02
+	production_efficiency 	=	0.01
 }
 
 technology = { #Rights of Man
@@ -283,7 +286,7 @@ technology = { #Advanced Production
 	year = 1805
 	
 	#Improved Draft Animals
-	production_efficiency 	=	0.02
+	production_efficiency 	=	0.01
 }
 
 technology = { #Revolutionary Ideals
@@ -300,5 +303,6 @@ technology = { #Four Field Rotation
 	year = 1835
 	
 	#Four field rotation
-	production_efficiency 	=	0.02
+	production_efficiency 	=	0.01
+	max_states = 5
 }
