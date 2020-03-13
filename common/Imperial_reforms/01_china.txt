@@ -1,14 +1,14 @@
-establish_gaituguiliu_decision = { #enables warlord resistance (buff for non emperor)
+establish_gaituguiliu_decision = { #enables warlord resistance (allows taking mandate)
 	empire = celestial_empire
 	emperor = {
-		global_tax_income = 25
+		global_tax_income = 36
 	}
 }
 
 seaban_decision = {  #enables take warlord tribute decision
 	empire = celestial_empire
 	emperor = {
-		global_manpower = 8
+		global_manpower = 10
 	}
 }
 
@@ -17,15 +17,13 @@ reform_land_tax_decision = { #enables shinto invasion disaster
 	emperor = {
 		merchants = 1
 		trade_efficiency = 0.075
-		imperial_mandate = -0.05
 	}
 }
 
 military_governors_decision = { #enables loss of mandate for non chinese in china
 	empire = celestial_empire
 	emperor = {
-		technology_cost = -0.05
-		imperial_mandate = -0.1
+		technology_cost = -0.075
 	}
 }
 
