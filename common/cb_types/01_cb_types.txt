@@ -21,11 +21,23 @@ cb_unity_gain = {
 		religion = nomadicism
 		is_neighbor_of = FROM
 		FROM = {
-			was_player = yes
+			ai = no
 			NOT = {
 				religion = nomadicism
 			}
 		}
 	}
 	war_goal = nomadic_conquest
+}
+
+cb_rebellion_emperor = {
+	valid_for_subject = no
+	prerequisites = {
+		is_free_or_tributary_trigger = yes
+		FROM = {
+			is_emperor_of_china = yes
+		}
+		has_country_flag = rebellion_on_the_emperor
+	}
+	war_goal = mandate_with_conquest
 }
