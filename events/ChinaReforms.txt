@@ -1,9 +1,9 @@
-namespace = Chinareforms
+namespace = chinareforms
 
 country_event = {
-	id = Chinareforms.0
-	title = Chinareforms.0.t
-	desc = Chinareforms.0.d
+	id = chinareforms.0
+	title = chinareforms.0.t
+	desc = chinareforms.0.d
 	picture = ANGRY_MOB_eventPicture
 	
 	mean_time_to_happen = {
@@ -23,15 +23,15 @@ country_event = {
 		}
 	}
 	option = {
-		name = Chinareforms.2.a 
+		name = chinareforms.2.a 
 		
 	}
 }
 
 country_event = { #shinto invasion
-	id = Chinareforms.1
-	title = Chinareforms.1.t
-	desc = Chinareforms.1.d
+	id = chinareforms.1
+	title = chinareforms.1.t
+	desc = chinareforms.1.d
 	picture = BARBARY_PIRATES_eventPicture
 	
 	mean_time_to_happen = {
@@ -80,27 +80,27 @@ country_event = { #shinto invasion
 		}	
 	}
 	option = {
-		name = Chinareforms.1.a 
+		name = chinareforms.1.a 
 	}
 }
 
 country_event = {
-	id = Chinareforms.2
-	title = Chinareforms.2.t
-	desc = Chinareforms.2.d
+	id = chinareforms.2
+	title = chinareforms.2.t
+	desc = chinareforms.2.d
 	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = Chinareforms.2.a 
+		name = chinareforms.2.a 
 		add_stability = -1
 	}
 }
 
 country_event = {
-	id = Chinareforms.3
-	title = Chinareforms.3.t
-	desc = Chinareforms.3.d
+	id = chinareforms.3
+	title = chinareforms.3.t
+	desc = chinareforms.3.d
 	picture = MERCHANTS_TALKING_eventPicture
 	is_triggered_only = yes
 	
@@ -110,6 +110,71 @@ country_event = {
 		}
 	}
 	option = {
-		name = Chinareforms.3.a 
+		name = chinareforms.3.a 
+	}
+}
+
+country_event = {
+	id = chinareforms.4
+	title = chinareforms.4.t
+	desc = chinareforms.4.d
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { is_emperor_of_china = yes }
+		technology_group = chinese
+		ai = no
+	}
+	
+	immediate = { 
+		set_country_flag = rebellion_on_the_emperor
+	}
+	
+	option = {
+		name = chinareforms.4.a 
+		add_years_of_income = -0.5
+		add_stability = -1
+		country_event = { 
+			id = chinareforms.6
+			days = 9125
+			random = 100
+			tooltip = WARLORD_TRIBUTE_TOOLTIP
+		}
+	}
+}
+
+country_event = {
+	id = chinareforms.5
+	title = chinareforms.5.t
+	desc = chinareforms.5.d
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_emperor_of_china = yes	
+	}
+	
+	option = {
+		name = chinareforms.5.a 
+		clr_global_flag = took_warlord_tribute
+	}
+}
+
+country_event = {
+	id = chinareforms.6
+	title = chinareforms.6.t
+	desc = chinareforms.6.d
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		technology_group = chinese	
+		ai = no
+	}
+	
+	option = {
+		name = chinareforms.6.a 
+		clr_country_flag = rebellion_on_the_emperor
 	}
 }
