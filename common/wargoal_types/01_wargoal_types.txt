@@ -47,13 +47,15 @@
 #
 # --------------------------------------------------------------
 
+#unique wargoals
+
 nomadic_conquest = {
 	type = take_province
 	
 	attacker = {
 		badboy_factor = 0.5
 		prestige_factor = 1.25
-		peace_cost_factor = 1.35
+		peace_cost_factor = 1.5
 		
 		allowed_provinces = {
 			always = yes
@@ -91,4 +93,161 @@ nomadic_conquest = {
 	}
 	
 	war_name = TRIBAL_RAID_WAR_NAME
+}
+
+mandate_with_conquest = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1.5
+		peace_cost_factor = 0.35
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_release_vassals
+			po_take_mandate
+			po_humiliate
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1.25
+		prestige_factor = 1.25
+		peace_cost_factor = 1.25	
+		
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_release_vassals
+			po_gold
+			po_humiliate
+		}
+		
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	war_name = TAKE_MANDATE_REBELLION_NAME
+}
+
+
+#generic ones
+
+all_out_war = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0.50
+		prestige_factor = 1.5
+		peace_cost_factor = 0.50
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_change_religion
+			po_gold
+			po_annul_treaties
+			po_humiliate
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1.5
+		peace_cost_factor = 0.50	
+		
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_change_religion
+			po_gold
+			po_annul_treaties
+			po_humiliate
+		}
+		
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	war_name = ALL_OUT_WAR_NAME
+}
+
+limited_war = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1.5
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+			po_revoke_cores
+			po_release_vassals
+			po_gold
+			po_annul_treaties
+			po_humiliate
+		}
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1.5	
+		
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+			po_revoke_cores
+			po_release_vassals
+			po_gold
+			po_annul_treaties
+			po_humiliate
+		}
+		
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	war_name = LIMITED_WAR_NAME
 }
