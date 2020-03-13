@@ -168,3 +168,25 @@ imperial_wuhan = {
 	on_deactivation = {
 	}
 }
+
+imperial_luoyang = {  
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			technology_group = chinese
+		}
+	}
+	reform_progress_growth = 0.35
+	imperial_mandate = 0.15
+	meritocracy = 1.5
+	prestige = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	}
+}
