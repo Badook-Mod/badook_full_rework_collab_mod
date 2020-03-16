@@ -7,14 +7,12 @@ country_decisions = {
 				tag = KHM
 				tag = PEG
 			}
+			NOT = { exists = SIA }
 		}
 		provinces_to_highlight = {
 			OR = {
 			    region = indo_china_region
-				area = lower_burma_area
-				area = central_burma_area
-				area = upper_burma_area
-				area = karenni_area
+				region = burma_region
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -24,11 +22,11 @@ country_decisions = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			central_burma_area = { type = all is_core = ROOT owned_by = ROOT }
-			lower_burma_area = { type = all is_core = ROOT owned_by = ROOT }
-			karenni_area = { type = all is_core = ROOT owned_by = ROOT }
-			lower_burma_area = { type = all is_core = ROOT owned_by = ROOT }
-			NOT = { exists = SIA }
+			burma_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 		effect = {
 			add_prestige = 25
