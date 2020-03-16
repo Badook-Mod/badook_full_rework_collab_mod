@@ -131,6 +131,19 @@
  imperial_nanjing:0 "The Imperial City of Nanjing"
  imperial_wuhan:0 "The Imperial City of Wuhan"
  imperial_luoyang:0 "The Imperial City of Luoyang"
+
+ #missions
+ prepare_the_followers_mission_title:0 "Prepare the Followers"
+ prepare_the_followers_mission_desc:0 "The religion of Naga Sung Bai is a new endavour, but with full control over the country, many are flocking to our banner. This is our moment to thrive!"
+ take_kamchanod_mission_title:0 "Sieze Kamchanod"
+ take_kamchanod_mission_desc:0 "The great forest of Kamchanod has long been rumoured to be the entrance to the Underworld, and the birthplace of the Naga. We must take it ourselves, or have a trusted ally hold it, as this could well be the most important site of our nation."
+ find_the_key_title:0 "Search For the key"
+ find_the_key_desc:0 "After a long search by our scouts they have finally discovered a locked gate, half buried into the earth. This must be the entrance to the Nagas realm. An extensive search of the northern land will hopefully provide the key to entering this gateway!"
+ emerge_from_the_underworld_desc:0 "We have done what no others could do, and have emerged from the realm of the Naga, blessed with their power and influence. Let us go forth and spread the tide of change, the world yearns to be under OUR rule."
+ emerge_from_the_underworld_title:0 "Emerge From the Underworld"
+ 
+ 
+ 
  
  #tooltip
  yellow_river_burst:0 "Provinces along the §YYellow River§! will be §Runinhabitable§! for the next 2 years. All of China expects §Rsocial consequences§! as a result."
@@ -138,6 +151,10 @@
  bandit_rebels_demand:0 "Every province you own will lose 1 base tax, you will lose 25 prestige and 1 year of income!
  turbans_arrive:0 "The §YYellow Turban Rebellion has risen§!! They bring with them a §Rmassive loss in stability§! and faith in the Emperor, has he §Rlost the Mandate§R for good?"
  aristocracy_let_roam:0 "This choice will have lasting consequences on all of China..."
+ form_snake_major:0 "Unlock the Naga Empire Formable"
+ form_snake_minor:0 "Unlock the Regional Naga Cult Formables"
+ FIND_THE_KEY_TOOLTIP:0 "No longer have the modifier "Preparing Expedition". Own the province of Kengtung, and follow the religion of Naga Sung Bai. Or be allied to someone who fufills all of these criteria, and no longer have the modifier "Preparing Expedition yourself."
+ TAKE_KAMCHANOD_TOOLTIP:0 "Own the province of Vientiane, and follow the religion of Naga Sung Bai. Or be allied to someone who fufills both of these criteria."
  
  #events
  mandate_events.3.t:0 "The Yellow Flood"
@@ -220,6 +237,27 @@
  chinareforms.10.t:0 "Confucian China no longer a priority"
  chinareforms.10.d:0 "The people of China no longer care about making China fully Confucian."
  chinareforms.10.a:0 "Luckily"
+ 
+ kamchanod_forest.3.t:0 "Expedition to the Underworld"
+ kamchanod_forest.3.d:0 "We have done it! Finally, the key to unlocking the way through the Kamchanod Forest is in our hands. With a chosen band of warriors, and any likeminded allies, we venture on. Finally finding the gate down, we are greeted with an abyss of darkness... This discovery shall surely grant us an untold legacy. We are no longer a mere cult - we are the founders of the one true faith. In 20 days we prepare to venture deeper."
+ kamchanod_forest.3.a:0 "A small price to pay..."
+ 
+ kamchanod_forest.4.t:0 "The First Choice"
+ kamchanod_forest.4.d:0 "At the first junction, a three headed serpent appears before our group. Presenting its great length to our mere mortal eyes - it offers each leader a choice. But for each boon, a sacrifice must be given." 
+ kamchanod_forest.4.a:0 "The Serpent eyes our troops hungrily"
+ kamchanod_forest.4.b:0 "The Serpent's eyes gleem at our gold"
+ kamchanod_forest.4.c:0 "The Serpent is not happy at our lack of gifts"
+ 
+ kamchanod_forest.5.t:0 "The Serpentine Riddle"
+ kamchanod_forest.5.d:0 "Only our leaders proceed, through a pitch black abyss, arriving at a set of three jars. An eerily distant voice hisses out through the silence. "Three jarssss, three choicesss. What do you value mosssst?"
+ kamchanod_forest.5.a:0 "My ability to rule the land is of no consequence!"
+ kamchanod_forest.5.b:0 "I never engage in Diplomacy anyway!"
+ kamchanod_forest.5.c:0 "My military skill is useless!"
+ 
+ kamchanod_forest.6.t:0 "The Final Reward"
+ kamchanod_forest.6.d:0 "We are offered two scrolls, each containing the secrets to expanding our nation. Shall we co-operate with any possible allies of our faith? Or go alone and form the greatest empire in history."
+ kamchanod_forest.6.a:0 "I choose the empire!"
+ kamchanod_forest.6.b:0 "Co-operation always works better!"
  
  #decisions 
  warlord_tribute_title:0 "Take Tribute from the Warlords"
