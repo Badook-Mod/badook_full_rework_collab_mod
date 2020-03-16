@@ -130,9 +130,100 @@
  imperial_chengdu:0 "The Imperial City of Chengdu"
  imperial_nanjing:0 "The Imperial City of Nanjing"
  imperial_wuhan:0 "The Imperial City of Wuhan"
+ imperial_luoyang:0 "The Imperial City of Luoyang"
  
  #tooltip
  yellow_river_burst:0 "Provinces along the §YYellow River§! will be §Runinhabitable§! for the next 2 years. All of China expects §Rsocial consequences§! as a result."
  bandit_rebels_won_siege_tooltip:0 "The Bandits have looted the province for 2 base tax, 1 base manpower and caused +3 unrest!
  bandit_rebels_demand:0 "Every province you own will lose 1 base tax, you will lose 25 prestige and 1 year of income!
  turbans_arrive:0 "The §YYellow Turban Rebellion has risen§!! They bring with them a §Rmassive loss in stability§! and faith in the Emperor, has he §Rlost the Mandate§R for good?"
+ aristocracy_let_roam:0 "This choice will have lasting consequences on all of China..."
+ 
+ #events
+ mandate_events.3.t:0 "The Yellow Flood"
+ mandate_events.3.d:0 "For a long time the state of Yellow River, situated in the north of china, has been a concern to all people of Asia. With the fall of the Ming Dynasty many of the measures used to keep the River in check have fallen into disrepear. This has culminated in the largest flood ever recorded by scribes, the social consequences will be far reaching as many flee the populous region to escape oncoming tides."
+ mandate_events.3.a:0 "Hopefully we can avoid the harshest impact."
+ 
+ mandate_events.2.t:0 "The first Reports of a flood"
+ mandate_events.2.d:0 "Due to our uniquely situated position along the Yellow River we are able to sense an oncoming flood, hopefully this helps us to prepare adeqeutly."
+ mandate_events.2.a:0 "I'm a little bit scared..."
+ 
+ mandate_events.1.t:0 "The Nobility exploiting refugees"
+ mandate_events.1.d:0 "The Aristocracy of our land are exploiting many of the new refugees fleeing the Yellow River flood, what should we do about them?"
+ mandate_events.1.a:0 "Peasants have done nothing for us!"
+ mandate_events.1.b:0 "The Aristocracy are overreaching their influence!"
+ 
+ mandate_events.4.t:0 "Refugees mass exodus from the Yellow River"
+ mandate_events.4.d:0 "A large group of peasants, farmers, and other similarly employed lower class people have decided to leave the land. This will surely cost us a large amount of manpower for centuries to come!"
+ mandate_events.4.a:0 "Hope they come back?"
+ 
+ mandate_events.5.t:0 "Peasants form raiding parties"
+ mandate_events.5.d:0 "Unfortunately, the consequences from the flood have arrived sooner than expected. A group of peasants have begun pillaging the countryside, and possibly drawn bandits to our lands. Luckily a few of the peasants have decided to settle down in our land as well, granting us an increase in manpower! Hopefully we can destroy this rebellion before any large organisation happens...."
+ mandate_events.5.a:0 "Here they come!"
+ 
+ mandate_events.6.t:0 "The Yellow Turbans Rise"
+ mandate_events.6.d:0 "Our neglect of the peasants has lead to a mass uprising of the Yellow Turbans in central china, a small religious sect following a branch of Confucianism, has now grown to a massive organisation, and have siezed control of many of the central provinces. Faith in the emperor is low and this rebellion MUST be crushed for china to prosper once more!"
+ mandate_events.6.a:0 "What have we done..."
+ 
+ mandate_events.8.t:0 "Repression of the peasants"
+ mandate_events.8.d:0 "Reports have been circulating China about repression of peasants and a growing movement known as the "Yellow Turbans", our advisors suggest we have approximately 10 years to bring control to the Hubei, Hunan, and Jiangxi states in Central China, before a full scale rebellion occurs."
+ mandate_events.8.a:0 "We have 10 years to act"
+ 
+ mandate_events.9.t:0 "The new Emperor"
+ mandate_events.9.d:0 "We are now the Emperor of China."
+ mandate_events.9.a:0 "Cool!"
+ 
+ chinareforms.0.t:0 "The Shinto Piracy Crisis"
+ chinareforms.0.d:0 "A full scale crisis has erupted along the East Coast of China, a mass influx of pirates sent by the Japanese Shogun has infiltrated many towns and provinces. We will be forced to go in and restore order before the situation gets out of hand!"
+ chinareforms.0.a:0 "We make our move!"
+ 
+ chinareforms.1.t:0 "The Shinto Piracy Crisis"
+ chinareforms.1.d:0 "A full scale crisis has erupted along the East Coast of China, a mass influx of pirates sent by the Japanese Shogun has infiltrated many towns and provinces. The Chinese will be forced to go in and restore order before the situation gets out of hand!"
+ chinareforms.1.a:0 "Time to eject the Japanese."
+ 
+ chinareforms.2.t:0 "Escalating Crisis"
+ chinareforms.2.d:0 "People are rioting in the street, against the authority of the Emperor and the central government. We must take action now."
+ chinareforms.2.a:0 "Truly an awful time for China."
+ 
+ chinareforms.3.t:0 "The Shinto Crisis is over"
+ chinareforms.3.d:0 "With the Shinto dealt with, china can finally rest and cease worrying about the peasants. The Mandate is clearly alive!"
+ chinareforms.3.a:0 "We have escaped the crisis permanently!"
+ 
+ chinareforms.11.t:0 "The Shinto Crisis is over, for now..."
+ chinareforms.11.d:0 "With the Shinto dealt with, china can finally rest and cease worrying about the peasants. Hopefully the Mandate is kept strong."
+ chinareforms.11.a:0 "We have escaped the crisis for now."
+ 
+ chinareforms.4.t:0 "The Emperor demands tribute!"
+ chinareforms.4.d:0 "We have heard rumours of a pretender emperor recently, he has taken the mantle of the Mandate, and is now demanding tribute from all Warlords. While we have no choice to resist immediately, this will surely grant us an opportunity to sieze the mandate for ourselves."
+ chinareforms.4.a:0 "A CB for the next 25 years? Excellent." 
+
+ chinareforms.5.t:0 "Taking of tribute forgotten"
+ chinareforms.5.d:0 "Our taking of tribute from the Warlords has been forgotten, we may now take it again."
+ chinareforms.5.a:0 "So much money...."
+ 
+ chinareforms.6.t:0 "Our chance for rebellion gone"
+ chinareforms.6.d:0 "The people no longer support a war on the Emperor, if he takes tribute again we shall have another chance!"
+ chinareforms.6.a:0 "Hopefully we used it well"
+ 
+ chinareforms.7.t:0 "Emperor of China under attack"
+ chinareforms.7.d:0 "As we enter the year 1550 the people of China have been questioning the rule of the Emperor more and more. Now they demand he reclaim all chinese land to nations following the rightful religion, confucian. Failure to follow this request could end disastrously for all of China!"
+ chinareforms.7.a:0 "What shall we do..."
+ 
+ chinareforms.8.t:0 "The Mandate is Lost?"
+ chinareforms.8.d:0 "Bandits are ransacking our land, under the guise of the Mandate being lost, we must put them down immediately!"
+ chinareforms.8.a:0 "Kill these curs!"
+ 
+ chinareforms.9.t:0 "China is Confucian once more"
+ chinareforms.9.d:0 "Our crisis is over, China is now ruled by Confucians again!"
+ chinareforms.9.a:0 "Truly a sign of the Mandate"
+ 
+ chinareforms.10.t:0 "Confucian China no longer a priority"
+ chinareforms.10.d:0 "The people of China no longer care about making China fully Confucian."
+ chinareforms.10.a:0 "Luckily"
+ 
+ #decisions 
+ warlord_tribute_title:0 "Take Tribute from the Warlords"
+ warlord_tribute_desc:0 "This will give them all a CB to take the Mandate from us, but will also allow us to improve the city of Luoyang. Is it worth it?
+ 
+ warlord_construction_title:0 "Improve the city of Luoyang"
+ warlord_construction_desc:0 "We must improve the anicent capital of Luoyang to be among the great imperial cities"
