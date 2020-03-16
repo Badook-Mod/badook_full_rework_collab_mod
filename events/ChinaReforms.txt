@@ -23,7 +23,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = chinareforms.2.a 
+		name = chinareforms.0.a 
 		
 	}
 }
@@ -41,7 +41,7 @@ country_event = { #shinto invasion
 	trigger = {
 		technology_group = chinese
 		is_emperor_of_china = yes
-		empire_of_china_reform_level = 3
+		is_year = 1500
 	}
 
 	immediate = {
@@ -49,33 +49,43 @@ country_event = { #shinto invasion
 			set_global_flag = shinto_pirates_here
 			2142 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			685 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			5074 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			2145 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			1822 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			5010 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			5015 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			684 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			2148 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 			4196 = {
 				change_religion = shinto
+				add_claim = JAP
 			}
 		}	
 	}
@@ -98,11 +108,60 @@ country_event = {
 }
 
 country_event = {
+	id = chinareforms.11
+	title = chinareforms.11.t
+	desc = chinareforms.11.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = chinareforms.11.a 
+	}
+}
+
+country_event = {
 	id = chinareforms.3
 	title = chinareforms.3.t
 	desc = chinareforms.3.d
 	picture = MERCHANTS_TALKING_eventPicture
-	is_triggered_only = yes
+	
+	trigger = {
+		4196 = {
+			NOT = { religion = shinto }
+		}
+		2142 = {
+			NOT = { religion = shinto }
+		}
+		685 = {
+			NOT = { religion = shinto }
+		}
+		5074 = {
+			NOT = { religion = shinto }
+		}
+		2145 = {
+			NOT = { religion = shinto }
+			}
+		1822 = {
+			NOT = { religion = shinto }
+		}
+		5010 = {
+			NOT = { religion = shinto }
+			}
+		5015 = {
+			NOT = { religion = shinto }
+		}
+		684 = {
+			NOT = { religion = shinto }
+		}
+		2148 = {
+			NOT = { religion = shinto }
+		}
+		has_global_flag = shinto_pirates_here 
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	immediate = {
 		hidden_effect = {
@@ -122,9 +181,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { is_emperor_of_china = yes }
-		technology_group = chinese
-		ai = no
+		has_reform = reform_china_successor_state
 	}
 	
 	immediate = { 
@@ -135,11 +192,12 @@ country_event = {
 		name = chinareforms.4.a 
 		add_years_of_income = -0.5
 		add_stability = -1
-		country_event = { 
-			id = chinareforms.6
-			days = 9125
-			random = 100
-			tooltip = WARLORD_TRIBUTE_TOOLTIP
+		hidden_effect = {
+			country_event = { 
+				id = chinareforms.6
+				days = 9125
+				random = 100
+			}
 		}
 	}
 }
@@ -176,5 +234,106 @@ country_event = {
 	option = {
 		name = chinareforms.6.a 
 		clr_country_flag = rebellion_on_the_emperor
+	}
+}
+
+country_event = {
+	id = chinareforms.7
+	title = chinareforms.7.t
+	desc = chinareforms.7.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		ai = no
+		is_year = 1550
+		OR = {
+			technology_group = chinese
+			technology_group = indian
+			technology_group = nomadic
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = emperor_under_attack
+		}
+	}
+	option = {
+		name = chinareforms.7.a 
+		
+	}
+}
+
+country_event = {
+	id = chinareforms.8
+	title = chinareforms.8.t
+	desc = chinareforms.8.d
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes 
+
+	option = {
+		name = chinareforms.8.a 
+		random_owned_province = { 
+			spawn_rebels = {
+				size = 2
+				type = bandit_rebels
+			}
+		}
+		random_owned_province = { 
+			spawn_rebels = {
+				size = 2
+				type = bandit_rebels
+			}
+		}
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			random_owned_province = { 
+				spawn_rebels = {
+					size = 3
+					type = bandit_rebels
+				}	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = chinareforms.9
+	title = chinareforms.9.t
+	desc = chinareforms.9.d
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = chinareforms.9.a 
+		add_stability = 1
+	}
+}
+
+country_event = {
+	id = chinareforms.10
+	title = chinareforms.10.t
+	desc = chinareforms.10.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		ai = no
+		is_year = 1600
+		technology_group = chinese
+	}
+	
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = emperor_under_attack
+		}
+	}
+	option = {
+		name = chinareforms.10.a 
 	}
 }
