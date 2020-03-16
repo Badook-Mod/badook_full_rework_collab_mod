@@ -34,5 +34,9 @@ country_decisions = {
 				change_religion = naga_sung_bai
 			}
 		}
+		ai_will_do = {
+			factor = -1
+		}
+		ai_importance = 0
 	}
 }	

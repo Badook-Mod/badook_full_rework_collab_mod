@@ -1,7 +1,7 @@
 #603 - Nakhon Thung Yai
 
-owner = KHM
-controller = KHM
+owner = AYU
+controller = AYU
 culture = central_thai
 religion = buddhism
 capital = "Nakhon Thung Yai"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = KHM
+add_core = AYU
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

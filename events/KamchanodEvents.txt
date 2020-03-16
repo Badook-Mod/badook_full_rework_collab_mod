@@ -1,0 +1,344 @@
+namespace = kamchanod_forest
+
+country_event = {
+	id = kamchanod_forest.1
+	title = kamchanod_forest.1.t
+	desc = kamchanod_forest.1.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = owns_kamchanod
+		}
+	}
+	
+	option = {
+		name = kamchanod_forest.1.a 
+		add_stability = 1
+		add_prestige = 25
+	}
+}
+
+country_event = {
+	id = kamchanod_forest.2
+	title = kamchanod_forest.2.t
+	desc = kamchanod_forest.2.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			controls = 614
+			religion = naga_sung_bai
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = kamchanod_burnt
+		}
+		614 = {
+			remove_province_modifier = kamchanod_forest
+		}
+	}
+	
+	option = {
+		name = kamchanod_forest.2.a 
+		if = {
+			limit = {
+				religion = naga_sung_bai 
+			}
+			add_stability = -1
+		}
+		
+		else = {
+			add_prestige = 25
+			add_stability = 1
+		}
+	}
+}
+
+country_event = {
+	id = kamchanod_forest.3
+	title = kamchanod_forest.3.t
+	desc = kamchanod_forest.3.d
+	picture = PRAYING_eventPicture
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+				owns_core_province = 614
+				has_country_flag = found_the_key_flag
+			}
+			if = {
+				limit = {
+					tag = PEG
+				}
+				alliance_with = KHM
+				has_country_flag = found_the_key_flag
+				KHM = {
+					religion = naga_sung_bai
+					owns_core_province = 614
+					has_country_flag = found_the_key_flag
+				}	
+			}
+			else_if = {
+				limit = {
+					tag = KHM
+				}
+				alliance_with = PEG
+				has_country_flag = found_the_key_flag
+				PEG = {
+					religion = naga_sung_bai
+					owns_core_province = 614
+					has_country_flag = found_the_key_flag
+				}		
+			}
+		}
+		is_at_war = no
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = into_the_underworld
+		}
+	}
+	
+	option = {
+		name = kamchanod_forest.3.a 
+		add_prestige = 50
+		add_years_of_income = -2
+		hidden_effect = {
+			country_event = {
+				id = kamchanod_forest.4
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kamchanod_forest.4
+	title = kamchanod_forest.4.t
+	desc = kamchanod_forest.4.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = PEG
+			tag = KHM	
+		}
+		has_country_flag = into_the_underworld
+	}
+
+	immediate = {
+	
+	}
+	
+	option = {
+		name = kamchanod_forest.4.a 
+		hidden_effect = {
+			country_event = {
+				id = kamchanod_forest.5
+				days = 30
+			}
+		}
+		add_country_modifier = {
+			name = "blessing_of_vasuki"
+			duration = -1
+		}
+		if = {
+			limit = {
+				manpower = 20
+			}
+			add_manpower = -0.02
+		}
+		else = {
+			add_army_tradition = -50
+			add_army_professionalism = -0.5
+		}
+	}
+	option = {
+		name = kamchanod_forest.4.b 
+		hidden_effect = {
+			country_event = {
+				id = kamchanod_forest.5
+				days = 30
+			}
+		}
+		add_country_modifier = {
+			name = "blessing_of_mucalindi"
+			duration = -1
+		}
+		add_years_of_income = -3
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -15
+		}
+	}
+	
+	option = {
+		name = kamchanod_forest.4.c 
+		hidden_effect = {
+			country_event = {
+				id = kamchanod_forest.5
+				days = 30
+			}
+		}
+		add_country_modifier = {
+			name = "blessing_of_amrita"
+			duration = -1
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = bandit_rebels
+				size = 4
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = bandit_rebels
+				size = 4
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = bandit_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kamchanod_forest.5
+	title = kamchanod_forest.5.t
+	desc = kamchanod_forest.5.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = PEG
+			tag = KHM	
+		}
+		has_country_flag = into_the_underworld
+	}
+
+	immediate = {
+	
+	}
+	
+	option = {
+		name = kamchanod_forest.5.a 
+		hidden_effect = {
+			country_event = {
+				id = kamchanod_forest.6
+				days = 30
+			}
+		}
+		add_country_modifier = {
+			name = "blessing_of_anouvong"
+			duration = -1
+		}
+		if = {
+			limit = {
+				adm = 3 
+			}
+			change_adm = -2
+		}
+		else = {
+			change_adm = -2
+			change_dip = -2
+		}
+	}
+	option = {
+		name = kamchanod_forest.5.b 
+		hidden_effect = {
+			country_event = {
+				id = kamchanod_forest.6
+				days = 30
+			}
+		}
+		add_country_modifier = {
+			name = "blessing_of_mekong"
+			duration = -1
+		}
+		if = {
+			limit = {
+				dip = 3 
+			}
+			change_dip = -2
+		}
+		else = {
+			change_dip = -2
+			change_mil = -2
+		}
+	}
+	
+	option = {
+		name = kamchanod_forest.5.c 
+		hidden_effect = {
+			country_event = {
+				id = kamchanod_forest.6
+				days = 30
+			}
+		}
+		add_country_modifier = {
+			name = "blessing_of_sri_gumum"
+			duration = -1
+		}
+		if = {
+			limit = {
+				mil = 4
+			}
+			change_mil = -3
+		}
+		else = {
+			change_dip = -2
+			change_adm = -2
+			change_mil = -3
+		}
+	}
+}
+
+country_event = {
+	id = kamchanod_forest.6
+	title = kamchanod_forest.6.t
+	desc = kamchanod_forest.6.d
+	picture = PRAYING_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = PEG
+			tag = KHM	
+		}
+		has_country_flag = into_the_underworld
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = a_meeting_with_naga
+		}
+	}
+	
+	option = {
+		name = kamchanod_forest.6.b 
+		set_country_flag = form_snake_major_flag
+		custom_tooltip = form_snake_major
+	}
+	option = {
+		name = kamchanod_forest.6.b 
+		set_country_flag = form_snake_minor_flag
+		custom_tooltip = form_snake_minor
+	}
+	
+}

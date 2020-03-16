@@ -1494,7 +1494,6 @@ flag_emblem_index_range = { 110 110 }
 		country = {
 			global_missionary_strength = 0.03
 			hostile_attrition = 1
-			siege_ability = 0.15
 		}
 		country_as_secondary = {
 			siege_ability = 0.15

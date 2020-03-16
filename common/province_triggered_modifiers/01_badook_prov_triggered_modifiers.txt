@@ -190,3 +190,27 @@ imperial_luoyang = {
 	on_deactivation = {
 	}
 }
+
+kamchanod_forest = {  
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			religion = naga_sung_bai
+		}
+	}
+	
+	missionary_maintenance_cost = -0.25
+	missionaries = 2
+	
+	#Province scope
+	on_activation = {
+		country_event = {
+			id = kamchanod_forest.1
+		}
+	}
+	on_deactivation = {
+
+	}
+}

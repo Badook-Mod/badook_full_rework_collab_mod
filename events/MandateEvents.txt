@@ -32,11 +32,12 @@ country_event = {
 	
 	option = { # fuck the poor
 		name = mandate_events.1.a 
+		custom_tooltip = aristocracy_let_roam
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = 10
+			loyalty = 15
 		}
-		add_prestige = 10
+		add_prestige = 20
 		hidden_effect = {
 			set_global_flag = turban_enabled
 			country_event = {
@@ -363,14 +364,8 @@ country_event = {
 			}
 			random_owned_province = { 
 				spawn_rebels = {
-					type = anti_tax_rebels
-					size = 3
-				}
-			}
-			random_owned_province = { 
-				spawn_rebels = {
 					type = bandit_rebels
-					size = 2
+					size = 3
 				}
 			}
 			random_owned_province = { 
@@ -385,7 +380,7 @@ country_event = {
 			random_owned_province = { 
 				spawn_rebels = {
 					type = bandit_rebels
-					size = 1
+					size = 2
 				}
 			}
 			random_owned_province = { 
@@ -397,13 +392,7 @@ country_event = {
 				ai = yes
 			}
 			random_owned_province = { 
-				spawn_rebels = {
-					type = anti_tax_rebels
-					size = 0.5
-				}
-			}
-			random_owned_province = { 
-				add_base_manpower = 2
+				add_base_manpower = 1
 			}
 		}
 	}
@@ -414,7 +403,6 @@ country_event = {
 	title = mandate_events.6.t
 	desc = mandate_events.6.d
 	picture = FARMING_eventPicture
-	fire_only_once = yes
 	
 	mean_time_to_happen = {
 		days = 1
@@ -423,35 +411,175 @@ country_event = {
 	trigger = {
 		NOT = { ai = yes }
 		technology_group = chinese
+		NOT = { has_global_flag = turbans_here2 }
 		had_global_flag = {
 			flag = turban_enabled
 			days = 1825
 		}
 	}
 	
-	option = {
-		name = mandate_events.6.a 
-		custom_tooltip = turbans_arrive
+	immediate = {
 		hidden_effect = {
-			WHU = {
-				every_owned_province = { 
+			set_global_flag = turbans_here2
+			5040 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
 					cede_province = TBS
 					add_core = TBS
 				}
 			}
-			CJI = {
-				every_owned_province = { 
+			682 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
 					cede_province = TBS
 					add_core = TBS
 				}
 			}
-			FAN = {
-				every_owned_province = { 
+			5041 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			4197 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			5051 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			5079 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			683 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			5038 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			2172 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			5081 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			671 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			5082 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			5046 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
+					cede_province = TBS
+					add_core = TBS
+				}
+			}
+			5047 = {
+				if = {
+					limit = {
+						owner = {
+							ai = yes
+						}
+					}
 					cede_province = TBS
 					add_core = TBS
 				}
 			}
 		}
+	}
+	option = {
+		name = mandate_events.6.a 
+		custom_tooltip = turbans_arrive
 	}
 }
 
@@ -472,6 +600,11 @@ country_event = {
 	option = {
 		name = mandate_events.7.a 
 		capital_scope = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
@@ -504,7 +637,7 @@ country_event = {
 	
 	option = {
 		name = mandate_events.8.a 
-		add_prestige = -10
+		add_prestige = -5
 	}
 }
 
@@ -525,7 +658,7 @@ country_event = {
 	}
 	
 	option = {
-		name = mandate_events.8.a 
+		name = mandate_events.9.a 
 		set_emperor_of_china = ROOT
 	}
 }

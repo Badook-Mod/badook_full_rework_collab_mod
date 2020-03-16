@@ -1,0 +1,171 @@
+naga_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = KHM
+			tag = PEG
+		}
+	}
+	has_country_shield = yes
+	
+	prepare_the_followers_mission = {
+		icon = mission_conquer_50_development
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			army_size_percentage = 1
+			religious_unity = 0.5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "followers_ready"
+				duration = 5475
+			}
+		}
+	}
+	
+	take_kamchanod_mission = {
+		icon = mission_chinese_general_riding
+		required_missions = { prepare_the_followers_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 614
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					owns_core_province = 614
+					614 = {
+						has_active_triggered_province_modifier = kamchanod_forest
+					}
+				}
+				if = {
+					limit = {
+						tag = PEG
+					}
+					alliance_with = KHM
+					KHM = {
+						religion = naga_sung_bai
+						owns_core_province = 614
+					}
+				}
+				else_if = {
+					limit = {
+						tag = KHM
+					}
+					alliance_with = PEG
+					PEG = {
+						religion = naga_sung_bai
+						owns_core_province = 614
+					}
+				}
+			}
+			is_at_war = no
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = "preparing_expedition"
+				duration = 1825
+			}
+			hidden_effect = {
+				set_country_flag = preparing_expedition_flag
+			}
+		}
+	}
+	find_the_key = {
+		icon = mission_unite_home_region
+		required_missions = { take_kamchanod_mission }
+		position = 3
+		provinces_to_highlight = {
+			province_id = 587
+		}
+		trigger = {
+			OR = {
+				AND = {
+					owns_core_province = 587
+					had_country_flag = {
+						flag = preparing_expedition_flag
+						days = 1825
+					}
+				}
+				if = {
+					limit = {
+						tag = PEG
+					}
+					alliance_with = KHM
+					had_country_flag = {
+						flag = preparing_expedition_flag
+						days = 1825
+					}
+					KHM = {
+						religion = naga_sung_bai
+						owns_core_province = 587
+						had_country_flag = {
+							flag = preparing_expedition_flag
+							days = 1825
+						}
+					}	
+				}
+				else_if = {
+					limit = {
+						tag = KHM
+					}
+					alliance_with = PEG
+					had_country_flag = {
+						flag = preparing_expedition_flag
+						days = 1825
+					}
+					PEG = {
+						religion = naga_sung_bai
+						owns_core_province = 587
+						had_country_flag = {
+							flag = preparing_expedition_flag
+							days = 1825
+						}
+					}	
+				}
+			}
+			is_at_war = no
+		}
+		effect = {
+			add_prestige = 25
+			add_adm_power = 100
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "found_the_key"
+				duration = 1825
+			}
+			hidden_effect = {
+				set_country_flag = found_the_key_flag
+			}
+		}
+	}
+	emerge_from_the_underworld = {
+		icon = mission_chinese_general_riding
+		required_missions = { find_the_key }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 614
+		}
+		trigger = {
+			has_country_flag = a_meeting_with_naga
+			is_at_war = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = "naga_efficiency"
+				duration = -1
+			}
+		}
+	}
+}
