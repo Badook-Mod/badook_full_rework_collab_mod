@@ -1482,3 +1482,24 @@ flag_emblem_index_range = { 110 110 }
 		declare_war_in_regency = yes
 	}
 }
+
+snake_worship_group = {
+flag_emblem_index_range = { 110 110 }
+	naga_sung_bai = {
+		icon = 19
+		color = { 156 40 191 }
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			global_missionary_strength = 0.03
+			hostile_attrition = 1
+			siege_ability = 0.15
+		}
+		country_as_secondary = {
+			siege_ability = 0.15
+			hostile_attrition = 1
+		}
+		declare_war_in_regency = yes
+		personal_deity = yes
+	}
