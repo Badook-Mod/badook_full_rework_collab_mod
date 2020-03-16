@@ -78,8 +78,8 @@ shinto_invasion = {
 	}	
 	
 	
-	on_start = Chinareforms.2
-	on_end = Chinareforms.3
+	on_start = chinareforms.2
+	on_end = chinareforms.11
 	
 	on_monthly = {
 		events = {
