@@ -1,0 +1,86 @@
+emperor_under_attack = {
+	potential = {
+		has_global_flag = emperor_under_attack
+		OR = {
+			is_emperor_of_china = yes
+			has_reform = reform_china_successor_state
+			has_reform = reform_china_dynastic_supremacy
+	}
+
+	can_start = {
+		has_global_flag = emperor_under_attack
+		china_superregion = {
+			type = all
+			NOT = { owner = { religion = confucianism } }
+		}
+	}
+	
+	can_stop = { 
+		OR = {
+			NOT = { has_global_flag = emperor_under_attack }
+		}
+		china_superregion = {
+			type = all
+			owner = { religion = confucianism } 
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 5
+			china_superregion = {
+				type = all
+				NOT = { owner = { religion = confucianism } }
+			}
+		}
+		modifier = {
+			factor = -0.5
+			stability = 1
+		}
+		modifier = {
+			factor = -1
+			stability = 2
+		}
+		modifier = {
+			factor = -2
+			stability = 3
+		}
+	}
+
+	can_end = {
+		china_superregion = {
+			type = all
+			owner = { religion = confucianism }
+		}
+	}
+	
+
+	modifier = {
+		if = {
+			limit = {
+				is_emperor_of_china = yes
+			}
+			land_morale = -0.10
+			imperial_mandate = -0.20
+			global_unrest = 5
+		}
+		else = {
+			land_morale = -0.05
+			global_unrest = 3
+		}
+	}	
+	
+	
+	on_start = chinareforms.8
+	on_end = chinareforms.9
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			#1000 = 0
+			# None
+		}
+	}
+}
+
