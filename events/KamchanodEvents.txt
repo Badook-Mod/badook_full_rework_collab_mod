@@ -256,7 +256,7 @@ country_event = {
 		}
 		else = {
 			change_adm = -2
-			change_dip = -2
+			change_dip = -1
 		}
 	}
 	option = {
@@ -302,8 +302,8 @@ country_event = {
 			change_mil = -3
 		}
 		else = {
-			change_dip = -2
-			change_adm = -2
+			change_dip = -1
+			change_adm = -1
 			change_mil = -3
 		}
 	}
@@ -331,7 +331,7 @@ country_event = {
 	}
 	
 	option = {
-		name = kamchanod_forest.6.b 
+		name = kamchanod_forest.6.a 
 		set_country_flag = form_snake_major_flag
 		custom_tooltip = form_snake_major
 	}
