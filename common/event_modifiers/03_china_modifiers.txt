@@ -46,7 +46,7 @@ blessing_of_anouvong = {
 }
 
 blessing_of_mekong = {
-	vassal_forcelimit_bonus = 0.1
+	vassal_forcelimit_bonus = 1
 	vassal_income = 0.25
 }
 
