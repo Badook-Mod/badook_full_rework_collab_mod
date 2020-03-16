@@ -48,7 +48,7 @@ nagaraja =
 virupaksa =
 {
 	#(Adm - Farsight)
-	all_power_cost = -0.075
+	all_power_cost = -0.035
 	global_unrest = -3
 	
 	allow = { religion = naga_sung_bai }
@@ -93,7 +93,7 @@ sariputta =
 { 
 	#(Adm - Teaching) 
 	technology_cost = -0.075
-	idea_cost = -0.075
+	idea_cost = -0.1
 	
 	allow = { religion = naga_sung_bai }
 	sprite = 56

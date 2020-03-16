@@ -27,8 +27,8 @@ country_decisions = {
 			}
 			add_government_reform = naga_cult_reform
 			set_country_flag = went_naga
-			every_owned_province = {
-				limit = { 
+			random_owned_province = {
+				limit = {
 					NOT = { religion = naga_sung_bai }
 				}
 				change_religion = naga_sung_bai
