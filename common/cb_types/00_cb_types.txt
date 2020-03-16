@@ -1041,7 +1041,7 @@ cb_take_mandate = {
 		is_subject = no
 		is_neighbor_of = FROM
 		FROM = { is_emperor_of_china = yes }
-		empire_of_china_reform_level = 1
+		is_year = 1465
 		OR = {
 			religion_group = pagan
 			religion_group = eastern

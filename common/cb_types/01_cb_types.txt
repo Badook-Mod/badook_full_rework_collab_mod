@@ -38,6 +38,7 @@ cb_rebellion_emperor = {
 			is_emperor_of_china = yes
 		}
 		has_country_flag = rebellion_on_the_emperor
+		has_reform = reform_china_successor_state
 	}
 	war_goal = mandate_with_conquest
 }
