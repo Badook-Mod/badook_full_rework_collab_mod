@@ -1,15 +1,15 @@
-#590 - Moulmein
+#1815 - Pathein
 
 owner = PEG
 controller = PEG
 culture = mon
-religion = naga_sung_bai
-capital = "Martaban"
-trade_goods = sugar
+religion = buddhism
+capital = "Pathein"
+trade_goods = grain
 hre = no
-base_tax = 5 
-base_production = 5
-base_manpower = 4
+base_tax = 5
+base_production = 6
+base_manpower = 3
 is_city = yes
 add_core = PEG
 
@@ -19,6 +19,16 @@ discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
+
+extra_cost = 5
+
+add_permanent_province_modifier = {
+	name = irrawaddy_estuary_modifier
+	duration = -1
+}
+
+
+
 
 1500.1.1 = { discovered_by = POR }
 
@@ -36,4 +46,4 @@ discovered_by = ottoman
 1599.1.1 = { unrest = 4 }
 1613.1.1 = { unrest = 0 }
 1740.11.1 = { owner = PEG controller = PEG } # Restored Pegu Dynasty
-1757.5.6 = { owner = TAU controller = TAU } # Returned to Burmese control
+1757.5.6 = { owner = TAU controller = TAU } # Pegu is sacked & returned to Burmese control
