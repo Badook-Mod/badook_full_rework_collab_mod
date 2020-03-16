@@ -19,6 +19,7 @@ naga_missions_1 = {
 		trigger = {
 			army_size_percentage = 1
 			religious_unity = 0.5
+			religion = naga_sung_bai
 		}
 		effect = {
 			add_country_modifier = {
@@ -41,35 +42,39 @@ naga_missions_1 = {
 			}
 		}
 		trigger = {
-			OR = {
-				AND = {
-					owns_core_province = 614
-					614 = {
-						has_active_triggered_province_modifier = kamchanod_forest
-					}
-				}
-				if = {
-					limit = {
-						tag = PEG
-					}
-					alliance_with = KHM
-					KHM = {
-						religion = naga_sung_bai
+			custom_trigger_tooltip = {
+				tooltip = TAKE_KAMCHANOD_TOOLTIP
+				OR = {
+					AND = {
 						owns_core_province = 614
+						614 = {
+							has_active_triggered_province_modifier = kamchanod_forest
+						}
 					}
+					if = {
+						limit = {
+							tag = PEG
+						}
+						alliance_with = KHM
+						KHM = {
+							religion = naga_sung_bai
+							owns_core_province = 614
+						}
+					}
+					else_if = {
+						limit = {
+							tag = KHM
+						}
+						alliance_with = PEG
+						PEG = {
+							religion = naga_sung_bai
+							owns_core_province = 614
+						}
+					}
+				
 				}
-				else_if = {
-					limit = {
-						tag = KHM
-					}
-					alliance_with = PEG
-					PEG = {
-						religion = naga_sung_bai
-						owns_core_province = 614
-					}
-				}
+				is_at_war = no
 			}
-			is_at_war = no
 		}
 		effect = {
 			add_prestige = 25
@@ -90,52 +95,55 @@ naga_missions_1 = {
 			province_id = 587
 		}
 		trigger = {
-			OR = {
-				AND = {
-					owns_core_province = 587
-					had_country_flag = {
-						flag = preparing_expedition_flag
-						days = 1825
-					}
-				}
-				if = {
-					limit = {
-						tag = PEG
-					}
-					alliance_with = KHM
-					had_country_flag = {
-						flag = preparing_expedition_flag
-						days = 1825
-					}
-					KHM = {
-						religion = naga_sung_bai
+			custom_trigger_tooltip = {
+				tooltip = TAKE_KAMCHANOD_TOOLTIP
+				OR = {
+					AND = {
 						owns_core_province = 587
 						had_country_flag = {
 							flag = preparing_expedition_flag
 							days = 1825
 						}
-					}	
-				}
-				else_if = {
-					limit = {
-						tag = KHM
 					}
-					alliance_with = PEG
-					had_country_flag = {
-						flag = preparing_expedition_flag
-						days = 1825
-					}
-					PEG = {
-						religion = naga_sung_bai
-						owns_core_province = 587
+					if = {
+						limit = {
+							tag = PEG
+						}
+						alliance_with = KHM
 						had_country_flag = {
 							flag = preparing_expedition_flag
 							days = 1825
 						}
-					}	
+						KHM = {
+							religion = naga_sung_bai
+							owns_core_province = 587
+							had_country_flag = {
+								flag = preparing_expedition_flag
+								days = 1825
+							}
+						}	
+					}
+					else_if = {
+						limit = {
+							tag = KHM
+						}
+						alliance_with = PEG
+						had_country_flag = {
+							flag = preparing_expedition_flag
+							days = 1825
+						}
+						PEG = {
+							religion = naga_sung_bai
+							owns_core_province = 587
+							had_country_flag = {
+								flag = preparing_expedition_flag
+								days = 1825
+							}
+						}	
+					}
 				}
+				is_at_war = no
 			}
-			is_at_war = no
 		}
 		effect = {
 			add_prestige = 25
