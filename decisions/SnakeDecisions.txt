@@ -1,0 +1,38 @@
+country_decisions = {
+	convert_snake = {
+		major = yes
+		potential = {
+			NOT = { religion = naga_sung_bai }
+			NOT = { has_country_flag = went_naga }
+			any_owned_province = {
+				religion = naga_sung_bai
+			}
+			NOT = { adm_tech = 6 }
+		}
+		
+		allow = {
+			NOT = { adm_tech = 6 }
+			NOT = { is_at_war = yes }
+		}
+		
+		effect = {
+			add_prestige = -50
+			add_stability = 1
+			change_religion = naga_sung_bai
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+			}
+			add_government_reform = naga_cult_reform
+			set_country_flag = went_naga
+			every_owned_province = {
+				limit = { 
+					NOT = { religion = naga_sung_bai }
+				}
+				change_religion = naga_sung_bai
+			}
+		}
+	}
+}	
