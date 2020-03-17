@@ -3,7 +3,7 @@
 owner = MPH
 controller = MPH
 culture = lao
-religion = buddhism
+religion = naga_sung_bai
 capital = "Vientiane"
 trade_goods = grain
 hre = no

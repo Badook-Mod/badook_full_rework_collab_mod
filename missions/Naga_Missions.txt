@@ -96,7 +96,7 @@ naga_missions_1 = {
 		}
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = TAKE_KAMCHANOD_TOOLTIP
+				tooltip = FIND_THE_KEY_TOOLTIP
 				OR = {
 					AND = {
 						owns_core_province = 587

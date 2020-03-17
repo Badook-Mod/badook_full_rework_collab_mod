@@ -28,6 +28,8 @@ monarchy = {
 				mandala_reform
 				revolutionary_empire_reform
 				naga_cult_reform
+				naga_cult_major
+				naga_cult_minor
 			}
 		}
 		hereditary_vs_nobility = {

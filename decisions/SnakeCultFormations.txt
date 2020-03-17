@@ -1,0 +1,162 @@
+country_decisions = {
+
+	camobian_naga_nation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = KHM
+			}
+			NOT = { exists = CNA }
+			religion = naga_sung_bai
+			NOT = { has_country_flag = formed_cambodia }
+		}
+		provinces_to_highlight = {
+			OR = {
+			    region = indo_china_region
+			#	region = brmma_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { is_at_war = yes }
+			indo_china_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			has_country_flag = form_snake_minor_flag
+			#brmma_region = {
+			#	type = all
+			#	owned_by = ROOT
+			#	is_core = ROOT
+			#}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = CNA
+			set_country_flag = formed_cambodia
+			set_government_rank = 2
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+			}
+			add_government_reform = naga_cult_minor
+			add_country_modifier = {
+				name = "naga_co-operation"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	
+	brmma_naga_nation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = PEG
+			}
+			NOT = { exists = BRM }
+			religion = naga_sung_bai
+			NOT = { has_country_flag = formed_burma_naga }
+		}
+		provinces_to_highlight = {
+			OR = {
+			#    region = indo_china_region
+				region = burma_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { is_at_war = yes }
+			#indo_china_region = {
+			#	type = all
+			#	owned_by = ROOT
+			#	is_core = ROOT
+			#}
+			has_country_flag = form_snake_minor_flag
+			burma_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = BRM
+			set_country_flag = formed_burma_naga
+			set_government_rank = 2
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+			}
+			add_government_reform = naga_cult_minor
+			add_country_modifier = {
+				name = "naga_co-operation"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	
+	naga_empire = {
+		major = yes
+		potential = {
+			OR = {
+				tag = KHM
+				tag = PEG
+			}
+			NOT = { exists = NAE }
+			religion = naga_sung_bai
+			NOT = { has_country_flag = formed_naga_empire }
+		}
+		provinces_to_highlight = {
+			OR = {
+			    region = indo_china_region
+				region = brmma_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			NOT = { is_at_war = yes }
+			indo_china_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			has_country_flag = form_snake_major_flag
+			brmma_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = NAE
+			set_country_flag = formed_naga_empire
+			set_government_rank = 3
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+			}
+			add_government_reform = naga_cult_major
+			add_country_modifier = {
+				name = "naga_supremacy"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+}

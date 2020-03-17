@@ -57,3 +57,13 @@ blessing_of_sri_gumum = {
 naga_efficiency = {
 	administrative_efficiency = 0.10
 }
+
+naga_co-operation = {
+	discipline = 0.05
+}
+
+naga_supremacy = {
+	discipline = 0.05
+	land_morale = 0.10
+	max_states = 5
+}
