@@ -53,7 +53,7 @@ country_decisions = {
 		}
 	}
 	
-	brmma_naga_nation = {
+	burma_naga_nation = {
 		major = yes
 		potential = {
 			OR = {
