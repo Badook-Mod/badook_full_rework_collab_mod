@@ -46,6 +46,7 @@ SIA = "countries/Siam.txt" #siam formable
 NAE = "countries/NagaEmpire.txt" #naga siam formable
 CNA = "countries/CambodianNaga.txt" #Cambodian naga formable
 BRM = "countries/BurmaNaga.txt" #Burmese naga formable
+AHU = "countries/Austria-Hungary.txt" #austria hungary
 
 #east coast charters (opm)
 TAO = "countries/Taozhou.txt"
