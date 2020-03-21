@@ -70,6 +70,8 @@
  EJZ_ADJ:0 "East Jianzhou"
  SOL:0 "Solon"
  SOL_ADJ:0 "Solon"
+ NHX:0 "Nihxz"
+ NHX_ADJ:0 "Nihxz"
  
  #reform names
  
@@ -142,8 +144,15 @@
  emerge_from_the_underworld_desc:0 "We have done what no others could do, and have emerged from the realm of the Naga, blessed with their power and influence. Let us go forth and spread the tide of change, the world yearns to be under OUR rule."
  emerge_from_the_underworld_title:0 "Emerge From the Underworld"
  
- 
- 
+ #religions
+ soma:0 "Soma"
+ nagaraja:0 "Nagaraja"
+ virupaska:0 "Virupaska"
+ mucalinda:0 "Mucalinda"
+ sariputta:0 "Sariputta"
+ manjusri:0 "Manjusri"
+ naga_sung_bai:0 "Naga Sung-Bai"
+ naga_sung_bai_desc:0 "A new religion born out of the jungles of Indochina, primarily worshipping the Naga and Serpents as the protectors of humanity. They aim to traverse the borders of this world in an attempt to enter the world of the Naga, and claim the many boons for themselves." 
  
  #tooltip
  yellow_river_burst:0 "Provinces along the §YYellow River§! will be §Runinhabitable§! for the next 2 years. All of China expects §Rsocial consequences§! as a result."
