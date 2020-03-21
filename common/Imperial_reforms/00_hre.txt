@@ -2,11 +2,11 @@ reichsreform = {
 	empire = hre
 	
 	member = {
-		global_tax_income = 8
+		global_tax_income = 6
 		global_autonomy = -0.025
 	}
 	emperor = {
-		global_tax_income = 12
+		global_tax_income = 10
 		global_autonomy = -0.025
 		global_manpower = 2
 	}
@@ -58,7 +58,7 @@ gemeinerpfennig = {
 	}
 	emperor = {
 		leader_siege = 1
-		global_manpower = 6
+		global_manpower = 4
 		imperial_authority = 0.15
 	}
 	on_effect = {
@@ -71,7 +71,7 @@ landfriede = {
 	member = {
 		land_forcelimit = -15
 		army_tradition = -0.5
-		global_manpower = -10
+		land_morale = -0.05
 	}
 	emperor = {
 		land_forcelimit_modifier = 0.20
@@ -91,6 +91,9 @@ erbkaisertum = {
 	empire = hre
 	
 	member = {
+		development_cost = 0.1
+		global_manpower = -6
+		land_morale = -0.15
 	}
 	emperor = {
 		development_cost = -0.1
