@@ -130,3 +130,41 @@ gen_hre_emperor_italy = {
 frontier_life = {
 	may_establish_frontier = yes
 }
+
+#buffs
+
+swiss_authority = {
+	mercenary_discipline = 0.05
+}
+
+hesse_authority = {
+	global_manpower = 40
+}
+
+venice_authority = {
+	global_tax_income = 192
+}
+
+genoa_authority = {
+	development_cost = -0.1
+}
+
+italian_authority = {
+	possible_mercenaries = 0.25
+}
+
+habsburg_authority = {
+	diplomatic_annexation_cost = -0.50
+	diplomatic_reputation = 5
+}
+
+brandenburg_authority = {
+	land_morale = 0.075
+}
+
+danish_authority = {
+	monarch_military_power = 2
+	monarch_admin_power = 2
+	reelection_cost = -0.5
+	election_cycle = -2
+}
