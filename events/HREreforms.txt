@@ -36,14 +36,103 @@ country_event = {
 	
 	trigger = {
 		is_emperor = yes
+		NOT = { has_country_flag = had_buff_flag }
 	}
 	
 	immediate = {
-		hidden_effect = {
-			set_global_flag = IA_land_decision
+		hidden_effect = { 
+			set_country_flag = had_buff_flag 
 		}
 	}
 	option = {
 		name = HREreforms.2.a 
+		if = {
+			limit = {
+				tag = SWI
+			}
+			add_country_modifier = {
+				name = "swiss_authority"
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = HES
+					tag = WES
+				}
+			}
+			add_country_modifier = {
+				name = "hesse_authority"
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				tag = VEN
+			}
+			add_country_modifier = {
+				name = "venice_authority"
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				tag = GEN
+			}
+			add_country_modifier = {
+				name = "genoa_authority"
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = NAP
+					tag = ITA
+				}
+			}
+			add_country_modifier = {
+				name = "italian_authority"
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = HAB
+					tag = HUN
+					tag = AHU
+				}
+			}
+			add_country_modifier = {
+				name = "habsburg_authority"
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = BRA
+					tag = PRU
+				}
+			}
+			add_country_modifier = {
+				name = "brandenburg_authority"
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = DAN
+					tag = HAN
+				}
+			}
+			add_country_modifier = {
+				name = "danish_authority"
+				duration = -1
+			}
+		}
 	}
 }
