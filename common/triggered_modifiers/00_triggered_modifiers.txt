@@ -587,18 +587,19 @@ the_fort_of_roh = {
 
 #CN nerf
 
-badook_player_cn = {
-    potential = {
-        is_colonial_nation = yes
-    }
-    trigger = {
-        was_player = yes
-    }
-
-    land_forcelimit_modifier = -0.5
-    naval_forcelimit_modifier = -0.5
-    possible_mercenaries = -0.3
-    all_power_cost = 0.2
+badook_player_colony = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+	}
+	naval_forcelimit_modifier = -0.25
+	possible_mercenaries = -0.5
+	development_cost = 0.25
+	manpower_recovery_speed = -0.33
+	sailors_recovery_speed = -0.33
+	global_sailors_modifier = -0.5
 }
 
 #horde unity buffs
@@ -650,8 +651,13 @@ emperor_hesse = {
 		is_elector = yes
 	}
 	trigger = {
-		HES = {
-			is_emperor = yes
+		OR = {
+			HES = {
+				is_emperor = yes
+			}
+			WES = {
+				is_emperor = yes
+			}
 		}
 	}
 	global_manpower = 20
@@ -666,7 +672,7 @@ emperor_venice = {
 			is_emperor = yes
 		}
 	}
-	global_tax_income = 48
+	global_tax_income = 42
 }
 
 emperor_genoa = {
@@ -689,6 +695,9 @@ emperor_naples = {
 		NAP = {
 			is_emperor = yes
 		}
+		ITA = {
+			is_emperor = yes
+		}
 	}
 	possible_mercenaries = 0.25
 }
@@ -698,11 +707,18 @@ emperor_austria = {
 		is_elector = yes
 	}
 	trigger = {
-		HAB = {
-			is_emperor = yes
-		}
+		OR = {
+			HAB = {
+				is_emperor = yes
+			}
+			HUN = {
+				is_emperor = yes
+			}
+			AHU = {
+				is_emperor = yes
+			}
 	}
-	ae_impact = -0.15
+	ae_impact = -0.10
 	improve_relation_modifier = 0.25
 }
 
@@ -711,11 +727,16 @@ emperor_brandenburg = {
 		is_elector = yes
 	}
 	trigger = {
-		BRA = {
-			is_emperor = yes
+		OR = {
+			BRA = {
+				is_emperor = yes
+			}
+			PRU = {
+				is_emperor = yes
+			}
 		}
 	}
-	land_morale = 0.10
+	land_morale = 0.075
 }
 
 emperor_denmark = {
@@ -723,13 +744,19 @@ emperor_denmark = {
 		is_elector = yes
 	}
 	trigger = {
-		DAN = {
-			is_emperor = yes
+		OR = {
+			DAN = {
+				is_emperor = yes
+			}
+			HAN = {
+				is_emperor = yes
+			}
 		}
 	}
 	monarch_military_power = 2
 	monarch_diplomatic_power = 2
-	republican_tradition = 3
+	reelection_cost = -0.25
+	election_cycle = -1
 }
 
 #Yellow turban rebellion
