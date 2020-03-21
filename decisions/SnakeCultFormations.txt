@@ -132,7 +132,7 @@ country_decisions = {
 				is_core = ROOT
 			}
 			has_country_flag = form_snake_major_flag
-			brmma_region = {
+			burma_region = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
