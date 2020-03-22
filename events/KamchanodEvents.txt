@@ -71,39 +71,7 @@ country_event = {
 	}
 	
 	trigger = {
-		OR = {
-			AND = {
-				owns_core_province = 614
-				has_country_flag = found_the_key_flag
-				is_at_war = no
-			}
-			if = {
-				limit = {
-					tag = PEG
-				}
-				alliance_with = KHM
-				has_country_flag = found_the_key_flag
-				is_at_war = no
-				KHM = {
-					religion = naga_sung_bai
-					owns_core_province = 614
-					has_country_flag = found_the_key_flag
-				}	
-			}
-			else_if = {
-				limit = {
-					tag = KHM
-				}
-				alliance_with = PEG
-				has_country_flag = found_the_key_flag
-				is_at_war = no
-				PEG = {
-					religion = naga_sung_bai
-					owns_core_province = 614
-					has_country_flag = found_the_key_flag
-				}		
-			}
-		}
+		has_mission = find_the_key
 	}
 
 	immediate = {
