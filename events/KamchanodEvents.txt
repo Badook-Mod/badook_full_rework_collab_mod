@@ -75,6 +75,7 @@ country_event = {
 			AND = {
 				owns_core_province = 614
 				has_country_flag = found_the_key_flag
+				is_at_war = no
 			}
 			if = {
 				limit = {
@@ -82,6 +83,7 @@ country_event = {
 				}
 				alliance_with = KHM
 				has_country_flag = found_the_key_flag
+				is_at_war = no
 				KHM = {
 					religion = naga_sung_bai
 					owns_core_province = 614
@@ -94,6 +96,7 @@ country_event = {
 				}
 				alliance_with = PEG
 				has_country_flag = found_the_key_flag
+				is_at_war = no
 				PEG = {
 					religion = naga_sung_bai
 					owns_core_province = 614
@@ -101,7 +104,6 @@ country_event = {
 				}		
 			}
 		}
-		is_at_war = no
 	}
 
 	immediate = {
