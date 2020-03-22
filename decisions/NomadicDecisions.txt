@@ -3,23 +3,40 @@ country_decisions = {
 		major = yes
 		potential = {
 			is_nomad = yes
+			OR = {
+				tag = SHY
+				tag = GOL
+			}
 		}
 		
 		allow = {
-			AND = {
-				is_in_war = {
-					attacker_leader = ROOT
-					war_score = 50
-					casus_belli = cb_unity_gain
-				}
+			is_in_war = {
+				attacker_leader = ROOT
+				war_score = 50
+				casus_belli = cb_unity_gain
 			}
-		}
-		NOT = {
-			has_country_flag = unity_gained 
+			NOT = {
+				has_country_flag = unity_gained 
+			}
 		}
 		effect = {
 			add_horde_unity = 25
 			set_country_flag = unity_gained
+		}
+	}
+	qing_emperor = {
+		major = yes
+		potential = {
+			tag = QNG
+			NOT = { is_emperor_of_china = yes }
+		}
+		
+		allow = {
+			owns_core_province = 1836
+		}
+		effect = {
+			set_emperor_of_china = QNG
+			prestige = 50
 		}
 	}
 }	
