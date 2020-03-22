@@ -4,9 +4,8 @@ shu_missions_1 = {
 	ai = yes
 	potential = {	
 		OR = {
-			tag = CNU
-
-			tag = SHU
+			tag = QHU
+			tag = NYU
 		}
 	}
 		
@@ -16,22 +15,26 @@ shu_missions_1 = {
 		position = 1
 		provinces_to_highlight = {
 			OR = { 
-				province_id = 679
-				province_id = 671
-				province_id = 665
+				province_id = 2163
+				province_id = 5030
+				province_id = 5037
+				province_id = 1840
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			679 = { # Chengdu
+			2163 = { # Chengdu
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			671 = { # Changsha
+			5030 = { # Changsha
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			665 = { # Shiuhing
+			5037 = { # Shiuhing
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1840 = { # Shiuhing
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -40,28 +43,7 @@ shu_missions_1 = {
 				name = "conquered_shu_pretenders"
 				duration = 5475
 			}
-			sichuan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			hunan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			chuannan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			yun_gui_area = {
+			jianyang_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -75,8 +57,16 @@ shu_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			west_guangdong_area = {
+			chongzuo_area = {
 				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yun_gui_heartland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
@@ -89,39 +79,29 @@ shu_missions_1 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				area = west_guangdong_area
 				area = guangxi_area
-				area = yun_gui_area
-				area = chuannan_area
-				area = hunan_area
-				area = sichuan_area
+				area = yun_gui_heartland_area
+				area = jianyang_area
+				area = chongzuo_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			west_guangdong_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			guangxi_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			yun_gui_area = {
+			yun_gui_heartland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			chuannan_area = {
+			chongzuo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			hunan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			sichuan_area = {
+			jianyang_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -172,10 +152,8 @@ shu_missions_2 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CNU
-			tag = FAN
-			tag = NMS
-			tag = SHU
+			tag = QHU
+			tag = NYU
 		}
 	}
 	has_country_shield = yes
@@ -184,7 +162,7 @@ shu_missions_2 = {
 		required_missions = {  }
 		position = 1
 		trigger = {
-			num_of_royal_marriages = 5
+			num_of_royal_marriages = 3
 		}
 		effect = {
 			add_mil_power = 50
@@ -218,7 +196,7 @@ shu_missions_2 = {
 		effect = {
 			add_country_modifier = {
 				name = "han_dynasty_restored"
-				duration = 5475
+				duration = 10950
 			}
 		}
 	}
@@ -240,7 +218,7 @@ shu_missions_2 = {
 		}
 		effect = {
 			add_prestige = 25
-			add_mil_power = 100
+			add_mil_power = 125
 			add_country_modifier = {
 				name = "subdued_tibet"
 				duration = -1

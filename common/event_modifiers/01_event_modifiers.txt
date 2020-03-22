@@ -47,7 +47,7 @@ clergical_takeover = {
 }
 
 peasant_recruitment = {
-	manpower_recovery_speed = 0.30
+	manpower_recovery_speed = 0.10
 }
 
 decentralised_society = {
