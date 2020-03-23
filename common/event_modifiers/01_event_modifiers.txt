@@ -128,7 +128,8 @@ gen_hre_emperor_italy = {
 }
 
 frontier_life = {
-	may_establish_frontier = yes
+	colonists = 1
+	global_colonial_growth = 25
 }
 
 #buffs

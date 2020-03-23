@@ -847,8 +847,8 @@ HAO_ideas = {                                     # KML
 
 TBS_ideas = {                                  # KML
 	start = {
-		global_manpower_modifier = 0.2
-		yearly_harmony = -0.5
+		global_manpower_modifier = 0.25
+		global_unrest = -10
 	}
 	
 	bonus = {
@@ -861,11 +861,11 @@ TBS_ideas = {                                  # KML
 	free = yes		#will be added at load.
 
 	tbs_one = {
-		yearly_corruption = -0.1
+		land_morale = 0.10
 	}
 	tbs_two = {
 		production_efficiency = 0.10
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.10
 	}
 	tbs_three = {
 		loot_amount = 0.25
@@ -875,10 +875,10 @@ TBS_ideas = {                                  # KML
 		land_morale = 0.10
 	}
 	tbs_five = {
-			global_unrest = -1
+		discipline = 0.05
 	}
 	tbs_six = {
-		hostile_attrition = 1
+		hostile_attrition = 3
 	}
 	tbs_seven = {
 		manpower_recovery_speed = 0.2

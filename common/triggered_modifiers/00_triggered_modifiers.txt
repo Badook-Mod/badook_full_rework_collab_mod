@@ -763,7 +763,8 @@ emperor_denmark = {
 yellow_turbans_here = {
 	potential = {
 		exists = TBS
-		technology_group = chinese
+		culture_group = east_asian
+		NOT = { is_year = 1500 }
 	}
 	trigger = {
 		exists = TBS
