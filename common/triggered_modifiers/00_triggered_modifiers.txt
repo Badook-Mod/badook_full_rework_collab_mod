@@ -775,6 +775,60 @@ yellow_turbans_here = {
 	global_unrest = 5
 }
 
+fort_compensation_modifier = {
+	potential = {
+		was_player = yes
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 50
+			owner = ROOT
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 100
+				owner = ROOT
+			}
+		}
+	}
+	global_manpower = 10
+	fort_maintenance_modifier = -0.05
+}
+
+fort_compensation_modifier_big = {
+	potential = {
+		was_player = yes
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 100
+			owner = ROOT
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 200
+				owner = ROOT
+			}
+		}
+	}
+	global_manpower = 30
+	fort_maintenance_modifier = -0.15
+}
+
+fort_compensation_modifier_big = {
+	potential = {
+		was_player = yes
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 200
+			owner = ROOT
+		}
+	}
+	global_manpower = 50
+	fort_maintenance_modifier = -0.25
+}
+
 #charters
 charter_port_sungkiang = {
 	potential = {
