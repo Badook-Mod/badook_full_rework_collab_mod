@@ -679,7 +679,7 @@ war_exhaustion = {
 	sailors_recovery_speed = -0.01
 	global_trade_goods_size_modifier = -0.01
 	global_tariffs = -0.01
-	land_morale = 0.01
+	land_morale = 0.0075
 }
 
 doom = {
@@ -1294,7 +1294,7 @@ support_loyalists = {
 
 send_officers = {
 	discipline = 0.05
-	land_morale = 0.2
+	land_morale = 0.20
 }
 
 divert_trade = {
