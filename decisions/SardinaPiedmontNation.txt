@@ -10,7 +10,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = SPI }
+			tag = GEN
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
