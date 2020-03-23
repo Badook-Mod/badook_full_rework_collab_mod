@@ -2524,8 +2524,8 @@ HUN_ideas = {
 
 JAP_ideas = {
 	start = {
-		stability_cost_modifier = -0.1
 		discipline = 0.05
+		production_efficiency = 0.1
 	}
 	
 	bonus = {
@@ -2538,7 +2538,7 @@ JAP_ideas = {
 	free = yes
 	
 	jap_unification_under_the_emperor = {
-		max_absolutism = 10
+		max_absolutism = 15
 		yearly_absolutism = 0.2
 	}
 	reformed_land_holding = {
@@ -2553,7 +2553,7 @@ JAP_ideas = {
 	}
 	jap_land_of_the_rising_sun = {
 		prestige = 1
-		defensiveness = 0.25
+		land_morale = 0.1
 	}
 	jap_kaitakudan = {
 		global_colonial_growth = 25
@@ -2563,7 +2563,6 @@ JAP_ideas = {
 		envoy_travel_time = -0.33
 	}
 }
-
 
 MAM_ideas = {
 	start = {
@@ -10413,11 +10412,11 @@ HSK_ideas = {
 UES_ideas = {
 	start = {
 		army_tradition_decay = -0.01
-		production_efficiency = 0.1
+		production_efficiency = 0.05
 	}
 	
 	bonus = {
-		infantry_power = 0.1
+		infantry_power = 0.05
 	}
 
 	trigger = {
@@ -10434,7 +10433,7 @@ UES_ideas = {
 	}
 
 	ues_kamakura_office = {
-		reinforce_cost_modifier = -0.25
+		reinforce_cost_modifier = -0.15
 	}
 	
 	ues_dragon_of_echigo = {
@@ -10446,7 +10445,7 @@ UES_ideas = {
 	}
 	
 	ues_agakita_shu = {
-		discipline = 0.05
+		global_unrest = -2
 	}
 	
 	ues_denkoku_no_ji = {
