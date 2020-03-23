@@ -32,7 +32,7 @@ marketplace = {
 	time = 12
 	
 	modifier = {
-		province_trade_power_modifier = 0.25
+		province_trade_power_modifier = 0.35
 	}
 	
 	ai_will_do = {
@@ -44,7 +44,7 @@ workshop = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_production_efficiency = 0.25
+		local_production_efficiency = 0.35
 	}
 	
 	allow_in_gold_provinces = no
@@ -58,7 +58,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.4
+		local_tax_modifier = 0.5
 	}
 	
 	ai_will_do = {
@@ -70,7 +70,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.25
+		local_manpower_modifier = 0.35
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -109,7 +109,7 @@ shipyard = {
 	}
 	modifier = {
 		naval_forcelimit = 1
-		ship_recruit_speed = -0.10
+		ship_recruit_speed = -0.15
 		local_ship_repair = 0.15
 	}
 	
@@ -127,11 +127,12 @@ shipyard = {
 }
 
 fort_15th = {
-	cost = 250
+	cost = 200
 	time = 30
 	modifier = {
 		fort_level = 2
 		allowed_num_of_buildings = -1
+		global_manpower = -1
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -173,7 +174,7 @@ courthouse = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_state_maintenance_modifier = -0.36
+		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.2
 	}
 	
@@ -189,7 +190,7 @@ dock = {
 		has_port = yes
 	}
 	modifier = {
-		local_sailors_modifier = 0.25
+		local_sailors_modifier = 0.20
 	}
 	
 	ai_will_do = {
@@ -201,7 +202,7 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
-		land_forcelimit = 0.5
+		land_forcelimit = 0.75
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -247,6 +248,7 @@ fort_16th = {
 	modifier = {
 		fort_level = 4
 		allowed_num_of_buildings = -1
+		global_manpower = -2
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -349,7 +351,7 @@ trade_depot = {
 	make_obsolete = marketplace
 	
 	modifier = {
-		province_trade_power_modifier = 0.5
+		province_trade_power_modifier = 0.70
 	}
 	
 	ai_will_do = {
@@ -369,7 +371,7 @@ grand_shipyard = {
 	modifier = {
 		naval_forcelimit = 2
 		ship_recruit_speed = -0.25
-		local_ship_repair = 0.25
+		local_ship_repair = 0.30
 	}
 	
 	ai_will_do = {
@@ -415,7 +417,7 @@ training_fields = {
 #	}
 	
 	modifier = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.65
 	}
 	
 	ai_will_do = {
@@ -433,6 +435,7 @@ fort_17th = {
 	modifier = {
 		fort_level = 6
 		allowed_num_of_buildings = -1
+		global_manpower = -4
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -479,7 +482,7 @@ stock_exchange = {
 	make_obsolete = trade_depot
 	
 	modifier = {
-		province_trade_power_modifier = 0.65
+		province_trade_power_modifier = 0.75
 	}
 	
 	ai_will_do = {
@@ -493,7 +496,7 @@ counting_house = {
 	
 	make_obsolete = workshop
 	modifier = {
-		local_production_efficiency = 0.5
+		local_production_efficiency = 0.65
 	}
 	
 	allow_in_gold_provinces = no
@@ -514,7 +517,7 @@ town_hall = {
 	
 	modifier = {
 		local_state_maintenance_modifier = -1
-		local_autonomy = -0.4
+		local_autonomy = -0.5
 	}
 	
 	ai_will_do = {
@@ -533,7 +536,7 @@ drydock = {
 	}
 	
 	modifier = {
-		local_sailors_modifier = 0.5
+		local_sailors_modifier = 0.65
 	}	
 	
 	ai_will_do = {
@@ -572,7 +575,7 @@ conscription_center = {
 #	}
 	
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 1.25
 	}
 	
 	ai_will_do = {
@@ -591,7 +594,7 @@ conscription_center = {
 
 
 fort_18th = {
-	cost = 850
+	cost = 800
 	time = 30
 	
 	
@@ -600,6 +603,7 @@ fort_18th = {
 	modifier = {
 		fort_level = 8
 		allowed_num_of_buildings = -1
+		local_manpower = -8
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -642,7 +646,7 @@ manufactory = {
 	cost = 500
 	time = 60
 	modifier = {
-		trade_goods_size = 0.5
+		trade_goods_size = 0.65
 	}
 }
 
@@ -781,7 +785,7 @@ furnace = {
 	}
 
 	modifier = {
-		global_trade_goods_size_modifier = 0.025 #National Bonus
+		global_trade_goods_size_modifier = 0.05 #National Bonus
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
