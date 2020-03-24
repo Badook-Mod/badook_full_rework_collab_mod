@@ -88,6 +88,11 @@ country_event = {
 					duration = 30
 				}
 			}
+			QHU = {
+				every_owned_province = {
+					change_religion = confucianism
+				}
+			}
 			#treaty ports
 			
 			5010 = {
