@@ -23,7 +23,7 @@ oligarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.10
 		max_absolutism = -40
 	}
 	custom_attributes = {
@@ -40,8 +40,8 @@ PRC_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	modifiers = {
-			max_states = 15
-			global_manpower_modifier = 0.075
+			max_states = 10
+			global_manpower_modifier = 0.1
 			max_absolutism = 25
 			yearly_absolutism = 2
 	}
@@ -55,55 +55,18 @@ merchants_reform = {
 	icon = "politician"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_absolutism = -50
+		max_absolutism = -40
 		merchants = 1
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	legacy_equivalent = merchant_republic
-	potential = {
-		NOT = {
-			AND = {
-				tag = VEN
-				NOT = { map_setup = map_setup_random }
-			}
-		}
-	}
 	boost_income = yes
 	duration = 4
 	factions = {
 		mr_aristocrats
 		mr_traders
 		mr_guilds
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			NOT = { has_dlc = "Mare Nostrum" }
-		}
-		can_use_trade_post = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-		}
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-		}
-		can_use_trade_post = yes
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-		is_merchant_republic = yes
 	}
 }
 
@@ -119,14 +82,7 @@ venice_merchants_reform = {
 	nation_designer_cost = 40
 	legacy_equivalent = venetian_merchant_republic
 	potential = {
-		NOT = { map_setup = map_setup_random }
-		OR = {
-			tag = VEN
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = venice_merchants_reform
-			}
-		}
+		always = no
 	}
 	boost_income = yes
 	factions = {
@@ -196,8 +152,7 @@ pirate_republic_reform = {
 	}
 	
 	potential = {
-		has_reform = pirate_republic_reform
-		has_dlc = "Golden Century"
+		always = no
 	}
 	
 	factions_frame = 9
@@ -223,10 +178,10 @@ noble_elite_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		army_tradition = 0.25
+		army_tradition = 0.5
 		max_absolutism = -20
 	}
-	duration = 8
+	duration = 5
 
 	custom_attributes = {
 		enables_plutocratic_idea_group = no
@@ -246,9 +201,9 @@ presidential_despot_reform = {
 	legacy_equivalent = republican_dictatorship
 
 	modifiers = {
-		global_autonomy = -0.075
+		global_autonomy = -0.05
 		tolerance_heathen = 1
-		land_morale = 0.1
+		land_morale = 0.05
 	}
 
 	custom_attributes = {
@@ -275,7 +230,7 @@ revolutionary_republic_reform = {
 
 	modifiers = {
 		tolerance_heretic = 2
-		land_morale = 0.1
+		land_morale = 0.075
 		global_autonomy = -0.2
 	}
 	fixed_rank = 3
@@ -308,13 +263,8 @@ peasants_republic = {
 	nation_designer_cost = 20
 	legacy_equivalent = peasants_republic_legacy
 	modifiers = {
-		production_efficiency = 0.1
 		land_morale = 0.05
-		max_absolutism = -50
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		max_absolutism = -40
 	}
 	duration = 4
 }
@@ -337,16 +287,15 @@ free_city = {
 
 	free_city = yes
 	modifiers = {
-		trade_efficiency = 0.1
-		development_cost = -0.1
+		trade_efficiency = 0.15
+		development_cost = -0.15
+		global_tax_income = 24
 		max_absolutism = -20
 	}
 	fixed_rank = 1
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
 	}
 	duration = 4
 }
@@ -355,7 +304,7 @@ trading_city = {
 	icon = "trading_city"
 	allow_normal_conversion = no
 	potential = {
-		has_reform = trading_city
+		always = no
 	}
 	valid_for_nation_designer = no
 	legacy_equivalent = trading_city_legacy
@@ -421,12 +370,7 @@ ambrosian_republic = {
 	modifiers = {
 		global_tax_modifier = 0.1
 		land_morale = 0.05
-		max_states = 1
 		max_absolutism = -30
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
 	}
 	duration = 4
 }
@@ -452,7 +396,7 @@ veche_republic = {
 	modifiers = {
 		merchants = 1
 		max_states = 1
-		max_absolutism = -50
+		max_absolutism = -40
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -465,10 +409,6 @@ veche_republic = {
 	boost_income = yes
 	fixed_rank = 1
 
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -568,15 +508,11 @@ american_republic = {
 	}
 	legacy_equivalent = american_republic_legacy
 	modifiers = {
-		war_exhaustion = -0.04
+		war_exhaustion = -0.03
 		stability_cost_modifier = -0.1
 		max_absolutism = -30
 	}
-
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
+	
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
@@ -614,10 +550,6 @@ federal_republic = {
 		max_absolutism = -30
 	}
 
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
@@ -638,16 +570,13 @@ colonial_government = {
 	}
 	legacy_equivalent = colonial_government_legacy
 	modifiers = {
-		global_autonomy = -0.05
-		recover_army_morale_speed = 0.02
-		embracement_cost = -0.1
-		max_states = 2
+		development_cost = 0.05
+		max_states = 10
+		discipline = -0.05
 	}
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
 	}
 	duration = 4
 }
@@ -676,8 +605,8 @@ dutch_republic = {
 	}
 
 	modifiers = {
-		heavy_ship_power = 0.1
-		trade_efficiency = 0.1
+		heavy_ship_power = 0.05
+		trade_efficiency = 0.05
 		max_states = 1
 		max_absolutism = -30
 	}
@@ -690,10 +619,6 @@ dutch_republic = {
 		}
 	}
 
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -783,7 +708,7 @@ nepotism_reform = {
 		}
 	}
 	modifiers = {
-		candidate_random_bonus = 1
+		candidate_random_bonus = 2
 	}
 
 	custom_attributes = {
@@ -857,7 +782,7 @@ frequent_elections_reform = {
 		}
 	}
 	modifiers = {
-		max_absolutism = -10
+		max_absolutism = -25
 		election_cycle = -1
 	}
 }
@@ -866,7 +791,7 @@ consolidation_of_power_reform = {
 	icon = "constitution"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_absolutism = 10
+		max_absolutism = 25
 		election_cycle = 1
 	}
 }
@@ -886,7 +811,8 @@ lottery_reform = {
 		}
 	}
 	modifiers = {
-		yearly_corruption = -0.1
+		yearly_corruption = -0.15
+		naval_morale = 0.05
 	}
 	custom_attributes = {
 		lottery_election = yes
@@ -901,7 +827,7 @@ provincial_governments_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
 	modifiers = {
-		state_maintenance_modifier = -0.25
+		state_maintenance_modifier = -0.15
 	}
 	ai = {
 		factor = 1
@@ -912,7 +838,7 @@ administrative_divisions_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_states = 5
+		max_states = 3
 	}
 	ai = {
 		factor = 1
@@ -927,7 +853,7 @@ union_of_states_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
 	modifiers = {
-		global_trade_power = 0.1
+		global_trade_power = 0.05
 	}
 	ai = {
 		factor = 1
@@ -942,7 +868,7 @@ presidential_reform = {
 	icon = "man_on_podium"
 	allow_normal_conversion = yes
 	modifiers = {
-		embracement_cost = -0.1
+		embracement_cost = -0.25
 	}
 }
 
@@ -952,7 +878,7 @@ broaden_executive_powers_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
 	modifiers = {
-		stability_cost_modifier = -0.15
+		stability_cost_modifier = -0.10
 	}
 }
 
@@ -961,6 +887,7 @@ devolution_of_powers_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		diplomats = 1
+		diplomatic_upkeep = 1
 	}
 }
 
@@ -1026,6 +953,7 @@ political_principle_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		possible_adm_policy = 1
+		free_dip_policy = 1
 	}
 }
 
@@ -1034,6 +962,7 @@ moral_principle_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		possible_dip_policy = 1
+		free_adm_policy = 1
 	}
 }
 
@@ -1043,7 +972,7 @@ landholders_reform = {
 	icon = "dutch_flag"
 	allow_normal_conversion = yes
 	modifiers = {
-		manpower_recovery_speed = 0.1
+		manpower_recovery_speed = 0.075
 	}
 }
 
@@ -1051,7 +980,7 @@ citizenry_reform = {
 	icon = "people_walking"
 	allow_normal_conversion = yes
 	modifiers = {
-		land_morale = 0.1
+		land_morale = 0.05
 	}
 }
 
@@ -1062,7 +991,7 @@ appointment_by_committee_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		advisor_pool = 1
-		advisor_cost = -0.05
+		advisor_cost = -0.10
 	}
 }
 
@@ -1070,7 +999,7 @@ bureaucratic_aparatus_reform = {
 	icon = "map_2"
 	allow_normal_conversion = yes
 	modifiers = {
-		min_autonomy_in_territories = -0.10
+		min_autonomy_in_territories = -0.15
 	}
 }
 
@@ -1079,7 +1008,7 @@ universal_suffrage_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes
 	modifiers = {
-		num_accepted_cultures = 1
+		num_accepted_cultures = 3
 	}
 }
 
@@ -1160,7 +1089,7 @@ reinforce_republican_values_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
 	modifiers = {
-		free_adm_policy = 1
-		reelection_cost = -0.1
+		free_mil_policy = 1
+		reelection_cost = -0.15
 	}
 }

@@ -1079,14 +1079,14 @@ absolutism = {
 }
 
 low_army_professionalism = {
-	mercenary_cost = -0.15
-	possible_mercenaries = 0.15
+	mercenary_cost = -0.10
+	possible_mercenaries = 0.10
 }
 
 high_army_professionalism = {
-	fire_damage = 0.1
-	shock_damage = 0.1
-	siege_ability = 0.2
+	fire_damage = 0.2
+	shock_damage = 0.2
+	siege_ability = 0.25
 }
 
 streltsy_modifier = {
@@ -1095,7 +1095,7 @@ streltsy_modifier = {
 
 power_projection = {
 	defensiveness = 0.1
-	global_trade_power = 0.2
+	global_trade_power = 0.15
 	prestige = 0.5
 	land_morale = 0.1
 	naval_morale = 0.1
@@ -1118,17 +1118,17 @@ trade_company_dominant = {
 
 large_colonial_nation = {
 	merchants = 1
-	global_trade_power = 0.05
-	naval_forcelimit = 10
-	land_forcelimit = 5
+	global_trade_power = 0.02
+	naval_forcelimit = 2.5
+	land_forcelimit = 2.5
 }
 
 march_subject = {
-	land_forcelimit = 1
+	land_forcelimit = 1.5
 }
 
 vassal_subject = {
-	land_forcelimit = 1
+	land_forcelimit = 1.25
 }
 
 daimyo_subject = {
@@ -1144,13 +1144,13 @@ all_nations = {
 }
 
 subject_nation = {
-	global_tax_income = -6
-	land_forcelimit	= -3
-	naval_forcelimit = -6
+	global_tax_income = 2
 }
 
 vassal_nation = {
-	development_cost = 0.10
+	development_cost = -0.2
+	mil_tech_cost_modifier = -0.35
+	core_creation = -0.25
 }
 
 primitive_nation = {
@@ -1159,6 +1159,7 @@ primitive_nation = {
 
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
+	0.25
 }
 
 gov_rank_1 = {
@@ -1219,7 +1220,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.03
 }
 
 ##################################################################################################
