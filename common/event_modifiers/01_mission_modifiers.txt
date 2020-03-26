@@ -3,6 +3,10 @@
 ##################################################################################################
 
 #Generic Military Mission Rewards:
+ruthenia_cool = {
+	local_unrest = -2
+	local_development_cost = -0.05
+}
 
 thriving_arms_industry = {
 	land_morale = 0.05

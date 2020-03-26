@@ -873,9 +873,9 @@ recovery_motivation = {
 
 militarized_society = {
 
-	discipline = 0.10
-	manpower_recovery_speed = 0.20
-	land_maintenance_modifier = -0.20
+	infantry_power = 0.10
+	manpower_recovery_speed = 0.25
+	land_maintenance_modifier = -0.25
 
 }
 

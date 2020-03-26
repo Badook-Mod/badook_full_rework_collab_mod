@@ -36,7 +36,7 @@ bandit_rebels = {
 		modifier = {
 			factor = 0
 			owner = {
-				NOT = { culture_group = east_asian  }
+				NOT = { culture_group = east_asian }
 			}
 		}
 		modifier = {
@@ -123,10 +123,10 @@ bandit_rebels = {
 	# Country Scope	
 	demands_enforced_effect = {
 		every_owned_province = {
-			add_base_tax = -2
+			add_base_tax = -1
 		}
 		add_prestige = -25
-		add_years_of_income = -2.5
+		add_years_of_income = -2
 	}
 }
 

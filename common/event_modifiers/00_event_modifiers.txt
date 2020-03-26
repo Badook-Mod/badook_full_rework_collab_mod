@@ -208,19 +208,19 @@ suppress_minority = {
 }
 
 army_reform = {
-	land_morale = 0.20
+	land_morale = 0.10
 	mil_tech_cost_modifier = -0.10
 }
 naval_reform = {
-	naval_morale = 0.20
+	naval_morale = 0.10
 	dip_tech_cost_modifier = -0.10
 }
 
 military_reform = {
 	dip_tech_cost_modifier = -0.05
 	mil_tech_cost_modifier = -0.05
-	naval_morale = 0.10
-	land_morale = 0.10
+	naval_morale = 0.05
+	land_morale = 0.05
 }
 
 competitive_advantage = {

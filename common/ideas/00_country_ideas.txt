@@ -1912,7 +1912,6 @@ NED_ideas = {
 	trigger = {
 		OR = {
 			tag = NED
-			tag = HOL
 		}
 	}
 	free = yes		#will be added at load.
@@ -2513,7 +2512,7 @@ BUR_ideas = {
 		trade_efficiency = 0.1
 	}
 	bur_regimental_system = {
-		army_tradition_decay = -0.05
+		army_tradition_decay = -0.005
 	}
 }
 
@@ -13380,7 +13379,7 @@ UTR_ideas = {
 
 FLA_ideas = {
 	start = {
-		global_trade_goods_size_modifier = 0.1
+		liberty_desire = -25
 		land_forcelimit_modifier = 0.25
 	}
 	
@@ -13389,7 +13388,10 @@ FLA_ideas = {
 	}
 	
 	trigger = {
-		tag = FLA
+		OR = {
+			tag = FLA
+			tag = HOL
+		}
 	}
 	free = yes
 	
@@ -13418,8 +13420,8 @@ FLA_ideas = {
 
 BRB_ideas = {
 	start = {
-		global_tax_modifier = 0.10
-		stability_cost_modifier = -0.1
+		global_tax_modifier = 0.15
+		liberty_desire = -25
 	}
 	
 	bonus = {

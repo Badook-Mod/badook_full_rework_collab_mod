@@ -72,6 +72,7 @@ country_event = {
 	
 	trigger = {
 		has_mission = find_the_key
+		NOT = { has_country_flag = into_the_underworld }
 	}
 
 	immediate = {
@@ -106,10 +107,13 @@ country_event = {
 			tag = KHM	
 		}
 		has_country_flag = into_the_underworld
+		NOT = { has_country_flag = first_blessing }
 	}
 
 	immediate = {
-	
+		hidden_effect = {
+			set_country_flag = { first_blessing }
+		}
 	}
 	
 	option = {

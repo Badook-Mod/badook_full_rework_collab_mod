@@ -11,9 +11,7 @@ country_decisions = {
 			}
 			AND = {
 				ai = no
-				NOT = { exists = SNG }
 				NOT = { exists = XIA }
-				NOT = { exists = TNG }
 			}
 			OR = {
 				culture_group = east_asian
@@ -80,8 +78,6 @@ country_decisions = {
 			AND = {
 				ai = no
 				NOT = { exists = SNG }
-				NOT = { exists = XIA }
-				NOT = { exists = TNG }
 			}
 			OR = {
 				culture_group = east_asian
@@ -150,8 +146,6 @@ country_decisions = {
 			}
 			AND = {
 				ai = no
-				NOT = { exists = SNG }
-				NOT = { exists = XIA }
 				NOT = { exists = TNG }
 			}
 			OR = {

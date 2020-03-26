@@ -692,11 +692,13 @@ emperor_naples = {
 		is_elector = yes
 	}
 	trigger = {
-		NAP = {
-			is_emperor = yes
-		}
-		ITA = {
-			is_emperor = yes
+		OR = {
+			NAP = {
+				is_emperor = yes
+			}
+			ITA = {
+				is_emperor = yes
+			}
 		}
 	}
 	possible_mercenaries = 0.25
@@ -717,10 +719,11 @@ emperor_austria = {
 			AHU = {
 				is_emperor = yes
 			}
+		}
 	}
 	ae_impact = -0.10
 	improve_relation_modifier = 0.25
-}
+
 
 emperor_brandenburg = {
 	potential = {
@@ -777,18 +780,15 @@ yellow_turbans_here = {
 
 fort_compensation_modifier = {
 	potential = {
-		was_player = yes
+		OR = {
+			was_player = yes
+			ai = no
+		}
 	}
 	trigger = {
 		num_of_owned_provinces_with = {
 			value = 50
-			owner = ROOT
-		}
-		NOT = {
-			num_of_owned_provinces_with = {
-				value = 100
-				owner = ROOT
-			}
+			base_manpower = 1
 		}
 	}
 	global_manpower = 10
@@ -797,36 +797,36 @@ fort_compensation_modifier = {
 
 fort_compensation_modifier_big = {
 	potential = {
-		was_player = yes
+		OR = {
+			was_player = yes
+			ai = no
+		}
 	}
 	trigger = {
 		num_of_owned_provinces_with = {
 			value = 100
-			owner = ROOT
-		}
-		NOT = {
-			num_of_owned_provinces_with = {
-				value = 200
-				owner = ROOT
-			}
+			base_manpower = 1
 		}
 	}
-	global_manpower = 30
-	fort_maintenance_modifier = -0.15
+	global_manpower = 20
+	fort_maintenance_modifier = -0.10
 }
 
 fort_compensation_modifier_big = {
 	potential = {
-		was_player = yes
+		OR = {
+			was_player = yes
+			ai = no
+		}
 	}
 	trigger = {
 		num_of_owned_provinces_with = {
 			value = 200
-			owner = ROOT
+			base_manpower = 1
 		}
 	}
-	global_manpower = 50
-	fort_maintenance_modifier = -0.25
+	global_manpower = 20
+	fort_maintenance_modifier = -0.15
 }
 
 #charters

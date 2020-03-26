@@ -150,7 +150,7 @@ all_out_war = {
 	attacker = {
 		badboy_factor = 0.50
 		prestige_factor = 1.5
-		peace_cost_factor = 0.50
+		peace_cost_factor = 0.75
 		
 		allowed_provinces = {
 			always = yes
@@ -174,7 +174,7 @@ all_out_war = {
 	defender = {
 		badboy_factor = 0.25
 		prestige_factor = 1.5
-		peace_cost_factor = 0.50	
+		peace_cost_factor = 0.65	
 		
 		
 		allowed_provinces = {
@@ -201,7 +201,7 @@ all_out_war = {
 }
 
 limited_war = {
-	type = take_capital
+	type = superiority
 	
 	attacker = {
 		badboy_factor = 1
@@ -228,7 +228,7 @@ limited_war = {
 	defender = {
 		badboy_factor = 1
 		prestige_factor = 1
-		peace_cost_factor = 1.5	
+		peace_cost_factor = 1.75
 		
 		
 		allowed_provinces = {
