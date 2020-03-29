@@ -156,7 +156,7 @@ italian_authority = {
 
 habsburg_authority = {
 	diplomatic_annexation_cost = -0.50
-	diplomatic_reputation = 5
+	diplomatic_reputation = 3
 }
 
 brandenburg_authority = {
@@ -168,4 +168,10 @@ danish_authority = {
 	monarch_admin_power = 2
 	reelection_cost = -0.5
 	election_cycle = -2
+}
+
+#AHU
+dual_monarchy = {
+	promote_culture_cost = -0.5
+	num_accepted_cultures = 1
 }

@@ -1,7 +1,7 @@
 #Austria-Hungary
 graphical_culture = westerngfx
 
-color = { 218  192  195 }
+color = { 218 192 195 }
 
 revolutionary_colors = { 5  0  5 }
 

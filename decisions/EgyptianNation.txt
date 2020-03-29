@@ -42,7 +42,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			capital = 361 # Cairo
 			adm_tech = 15
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -61,15 +60,19 @@ country_decisions = {
 				}
 				add_stability = 1
 			}
-			else = {
-				add_government_reform = mamluk_government
+			EGY = {
+				if = {
+					limit = {
+						NOT = { has_reform = mamluk_government }
+					}
+					add_government_reform = mamluk_government
+				}
 			}
-			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			add_prestige = 25
 			add_country_modifier = {
@@ -80,6 +83,10 @@ country_decisions = {
 				limit = { culture = al_misr_arabic }
 				add_base_tax = 1
 				add_base_production = 1
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			361 = {
 				add_base_tax = 1
