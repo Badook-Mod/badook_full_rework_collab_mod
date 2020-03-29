@@ -1,3 +1,4 @@
+country_decisions = {
 	austria-hungary_nation = {
 		major = yes
 		potential = {
@@ -120,8 +121,15 @@
 				name = "dual_monarchy"
 				duration = -1
 			}
+			if = {
+				limit = {
+					tag = HUN
+				}
+				set_in_empire = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
+}
