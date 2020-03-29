@@ -415,7 +415,7 @@ age_of_reformation = {
 					tag = MUG
 					tag = DLH
 					tag = AFG
-					tag = RAJ
+					tag = RJP
 					tag = MER
 				}
 			}
@@ -432,7 +432,7 @@ age_of_reformation = {
 				OR = {
 					tag = PLC
 					tag = LIT
-					tag = RUT
+					tag = UKR
 					tag = POL
 				}
 			}
@@ -632,7 +632,7 @@ age_of_absolutism = {
 					tag = DAN
 					tag = GOL
 					tag = SHY
-					tag = MON
+					tag = MGE
 				}
 			}
 			modifier = {
@@ -839,6 +839,7 @@ age_of_revolutions = {
 					tag = HIN
 					tag = PRC
 					tag = ILK
+					tag = MGE
 				}
 			}
 			modifier = {

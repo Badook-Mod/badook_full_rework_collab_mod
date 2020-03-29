@@ -47,6 +47,10 @@ country_decisions = {
 			is_at_war = no
 			adm_tech = 20
 			is_free_or_tributary_trigger = yes
+			OR = {
+				is_emperor_of_china = yes
+				has_global_flag = china_gone_flag
+			}
 			xinan_region = {
 				type = all
 				owned_by = ROOT
@@ -65,10 +69,10 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRC
-			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_government_rank = 3
 			add_government_reform = reform_china_modern_state
+			dismantle_empire_of_china = yes
+			set_global_flag = china_gone_flag
 			south_china_region = {
 				limit = {
 					NOT = { owned_by = ROOT }

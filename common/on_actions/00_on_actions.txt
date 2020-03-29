@@ -950,9 +950,26 @@ on_mandate_of_heaven_gained = {
 			OR = {
 				NOT = { government = china_successor }
 				government = tribal
+				NOT = { tag = QNG }
+				NOT = { tag = YUA }
+				NOT = { tag = XIA }
+				NOT = { tag = TNG }
+				NOT = { tag = SNG }
 			}
 		}
 		change_government = china_successor
+	}
+	else_if = {
+		limit = {
+			OR = {
+				tag = QNG 
+				tag = YUA 
+				tag = XIA 
+				tag = TNG 
+				tag = SNG
+			}
+		}
+		change_government = reform_china_dynastic_supremacy
 	}
 	set_mandate = 60
 	set_meritocracy = 65
@@ -999,7 +1016,7 @@ on_mandate_of_heaven_lost = {
 	set_government_rank = 2
 	add_country_modifier = {
 		name = lost_mandate_of_heaven
-		duration = 7300	# 20 years
+		duration = 3650	# 10 years
 	}
 	add_stability = -2
 	china_superregion = {

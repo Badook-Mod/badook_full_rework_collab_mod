@@ -754,7 +754,7 @@ harvest_fails = {
 }
 
 tribal_succession_crisis = {
-	global_unrest = 10
+	global_unrest = 2
 }
 
 the_statue_in_restraint_of_appeals = {
@@ -7619,8 +7619,8 @@ british_ambition = {
 }
 
 completing_the_reconquista = {
-	land_morale = 0.15
-	manpower_recovery_speed = 0.15
+	land_morale = 0.10
+	manpower_recovery_speed = 0.10
 }
 
 death_of_lithuania = {

@@ -59,7 +59,10 @@ country_decisions = {
 				limit = {
 					has_reform = mamluk_government
 				}
-				add_stability = -1
+				add_stability = 1
+			}
+			else = {
+				add_government_reform = mamluk_government
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -69,11 +72,6 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			add_prestige = 25
-			if = {
-				limit = { has_reform = mamluk_government }
-				remove_government_reform = mamluk_government
-				set_legacy_government = administrative_monarchy
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -116,6 +114,7 @@ country_decisions = {
 			OR = {
 				ai = no
 				NOT = { exists = MAM }
+				NOT = { exists = EGY }
 			}
 			any_owned_province = {
 				OR = {
@@ -154,7 +153,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = MAM } #To Show why it might disappear
+			NOT = { exists = MAM }
+			NOT = { exists = EGY } #To Show why it might disappear
 			owns_core_province = 361
 			owns_core_province = 362
 			owns_core_province = 363

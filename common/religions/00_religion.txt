@@ -24,7 +24,7 @@ christian = {
 			protestant
 		}
 		country = {
-			warscore_cost_vs_other_religion = -0.25
+			warscore_cost_vs_other_religion = -0.15
 			technology_cost = -0.10
 		}
 		

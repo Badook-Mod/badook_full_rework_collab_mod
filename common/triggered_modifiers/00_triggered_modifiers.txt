@@ -723,7 +723,7 @@ emperor_austria = {
 	}
 	ae_impact = -0.10
 	improve_relation_modifier = 0.25
-
+}
 
 emperor_brandenburg = {
 	potential = {

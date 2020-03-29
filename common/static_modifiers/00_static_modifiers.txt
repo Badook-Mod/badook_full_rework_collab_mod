@@ -190,8 +190,8 @@ normal_winter = {
 }
 
 severe_winter = {
-	local_hostile_attrition = 3
-	supply_limit_modifier = -0.3
+	local_hostile_attrition = 2
+	supply_limit_modifier = -0.35
 
 	picture = "winter_severe"
 }
@@ -213,7 +213,7 @@ normal_monsoon = {
 }
 
 severe_monsoon = {
-	local_hostile_attrition = 3
+	local_hostile_attrition = 2
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 
@@ -340,13 +340,11 @@ territory_non_core = {
 
 march_bonus = {
 	global_manpower_modifier = 0.25
-	land_forcelimit_modifier = 0.30
-	naval_forcelimit_modifier = 0.30
+	land_forcelimit_modifier = 0.25
+	naval_forcelimit_modifier = 0.25
 	defensiveness = 0.2
 	fort_maintenance_modifier = -0.20
-	manpower_recovery_speed = 0.20
 	land_maintenance_modifier = -0.20
-	naval_maintenance_modifier = -0.20
 }
 
 same_culture_group = {
@@ -693,7 +691,7 @@ authority = {
 }
 
 regency_council = {
-	legitimacy = -2
+	legitimacy = -1
 }
 
 trade_efficiency = {
@@ -1124,11 +1122,11 @@ large_colonial_nation = {
 }
 
 march_subject = {
-	land_forcelimit = 1.5
+	land_forcelimit = 1.25
 }
 
 vassal_subject = {
-	land_forcelimit = 1.25
+	land_forcelimit = 1
 }
 
 daimyo_subject = {
@@ -1144,7 +1142,8 @@ all_nations = {
 }
 
 subject_nation = {
-	global_tax_income = 2
+	global_tax_income = -12
+	global_manpower = -6
 }
 
 vassal_nation = {

@@ -17,33 +17,11 @@ country_event = {
 		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
 		num_of_cities = 4
 		OR = {
-			NOT = { legitimacy_or_horde_unity = 50 }
 			has_regency = yes
 		}
 		OR = {
 			NOT = { tag = CRI }
 			has_global_flag = death_of_haji_giray
-		}
-	}
-	
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { legitimacy_or_horde_unity = 50 }
-				}
-				random_owned_province = {
-					limit = {
-						is_capital = no
-						is_state = yes
-					}
-					spawn_rebels = {
-						type = pretender_rebels
-						size = 2
-						win = yes
-					}
-				}
-			}
 		}
 	}
 	
@@ -60,7 +38,7 @@ country_event = {
 				}
 			}
 			hidden_effect = {
-				every_owned_province = {
+				random_owned_province = {
 					limit = {
 						NOT = { is_core = ROOT }
 						can_spawn_rebels = nationalist_rebels

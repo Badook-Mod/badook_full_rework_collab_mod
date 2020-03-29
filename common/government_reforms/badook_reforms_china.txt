@@ -12,6 +12,10 @@ reform_china_successor_state = {
 		reduced_liberty_desire = -10
 		max_states = -5
 	}
+	conditional = {
+		allow = { is_emperor_of_china = yes }
+		has_meritocracy = yes
+	}
 }
 
 reform_china_dynastic_supremacy = {
@@ -24,6 +28,8 @@ icon = "chinese_palace"
 			tag = XIA
 			tag = SNG
 			tag = TNG
+			tag = QNG
+			tag = YUA
 		}
 	}
 	modifiers = {
@@ -31,6 +37,10 @@ icon = "chinese_palace"
 		core_creation = -0.15
 		reduced_liberty_desire = 25
 		max_states = 3
+	}
+	conditional = {
+		allow = { is_emperor_of_china = yes }
+		has_meritocracy = yes
 	}
 }
 
