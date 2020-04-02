@@ -1364,12 +1364,12 @@ native_policy_hostile = {
 
 high_harmony = {
 	discipline = 0.05
-	global_unrest = -2
-	yearly_corruption = -0.1
+	global_unrest = -3
+	yearly_corruption = -0.2
 }
 
 low_harmony = {
-	land_morale = 0.1
+	development_cost = -0.05
 	technology_cost = -0.05
 	tolerance_heretic = 1.5
 	tolerance_heathen = 1.5
