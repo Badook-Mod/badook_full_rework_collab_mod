@@ -2,6 +2,44 @@
 # Do not change tags in here without changing every other reference to them.
 # If adding new groups or ideas, make sure they are unique.
 
+UKR_ideas = {
+	start = {
+		manpower_recovery_speed = 0.20
+		tolerance_own = 3
+	}
+	
+	bonus = {
+		leader_land_manuever = 1
+	}
+	
+	trigger = {
+			tag = UKR
+	}
+	free = yes		#will be added at load.
+	
+	UKR_one = {
+		leader_land_shock = 2
+	}
+	UKR_two = {
+		stability_cost_modifier = -0.15
+	}
+	UKR_three = {
+		global_tax_modifier = 0.15
+	}
+	UKR_four = {
+		production_efficiency = 0.15
+	}
+	UKR_five = {
+		cavalry_power = 0.2
+	}
+	UKR_six = {
+		global_unrest = -3
+	}
+	UKR_seven = {
+		technology_cost = -0.1
+	}
+}
+
 EGY_ideas = {
 	start = {
 		trade_steering = 0.35
@@ -2309,7 +2347,7 @@ PLC_ideas = {
 
 POL_ideas = {
 	start = {
-		cavalry_cost = -0.1
+		cavalry_cost = -0.15
 		num_accepted_cultures = 1
 	}
 	
@@ -2325,7 +2363,7 @@ POL_ideas = {
 	free = yes		#will be added at load.
 	
 	folwark_system = {
-		production_efficiency = 0.05
+		production_efficiency = 0.1
 	}
 	nihil_novi = {
 		stability_cost_modifier = -0.1
@@ -2342,7 +2380,7 @@ POL_ideas = {
 		diplomatic_upkeep = 2
 	}
 	foreign_section = {
-		caravan_power = 0.1
+		caravan_power = 0.15
 	}
 	focus_on_field_defences = {
 		land_morale = 0.10
@@ -3276,12 +3314,12 @@ BOH_ideas = {
 
 ITA_ideas = {
 	start = {
-		global_trade_power = 0.20
-		improve_relation_modifier = 0.50
+		global_trade_power = 0.15
+		global_trade_goods_size_modifier = 0.10
 	}
 	
 	bonus = {
-		defensiveness = 0.20
+		siege_ability = 0.10
 	}
 	
 	trigger = {
@@ -3290,26 +3328,28 @@ ITA_ideas = {
 	free = yes
 	
 	no_a_geographical_construct = {
-		stability_cost_modifier = -0.10
+		development_cost = -0.10
 	}
 	tradition_of_the_legion = {
-		infantry_power = 0.15
+		infantry_power = 0.10
+		discipline = 0.05
 	}
 	mare_nostrum = {
 		galley_cost = -0.15
-		galley_power = 0.20
+		galley_power = 0.10
 	}
 	office_of_censor = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.20
 	}
 	italian_tax_reform = {
 		global_tax_modifier = 0.15
+		state_maintenance_modifier = -0.1
 	}
 	heir_to_the_empire = {
 		prestige = 1
 	}
 	path_to_citizenship = {
-		core_creation = -0.25
+		core_creation = -0.20
 	}
 }
 
@@ -3661,7 +3701,7 @@ LIT_ideas = {
 	free = yes		#will be added at load.
 	
 	warlord_dukes = {
-		leader_land_shock = 2
+		leader_land_shock = 1
 	}
 	auksine_laisve = {
 		stability_cost_modifier = -0.1
@@ -3673,13 +3713,13 @@ LIT_ideas = {
 		production_efficiency = 0.1
 	}
 	lithuanian_hussars = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
 	}
 	lithuanian_renaissance = {
-		technology_cost = -0.075
+		technology_cost = -0.05
 	}
 }
 
@@ -3971,7 +4011,7 @@ ORI_ideas = {
 PUN_ideas = {
 	start = {
 		religious_unity = 0.25	#melting pot of religions
-		land_morale = 0.10
+		land_morale = 0.05
 	}
 
 	bonus = {
@@ -3979,7 +4019,10 @@ PUN_ideas = {
 	}
 	
 	trigger = {
-		tag = PUN
+		OR = {
+			tag = PUN
+			tag = SRH
+		}
 	}
 	free = yes
 	
@@ -3987,13 +4030,13 @@ PUN_ideas = {
 		global_trade_goods_size_modifier = 0.10
 	}
 	encourage_indo_persian_trade = {				
-		trade_efficiency = 0.1
+		trade_efficiency = 0.05
 	}
 	punjabi_textile_industry = {			
-		production_efficiency = 0.15
+		production_efficiency = 0.10
 	}
 	foundation_of_the_khalsa = { 							
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.10
 	}
 	gurmukhi_script = {
 		stability_cost_modifier = -0.1
@@ -4002,7 +4045,7 @@ PUN_ideas = {
 		cavalry_cost = -0.10
 	}
 	reforming_the_punjabi_army = {
-		discipline = 0.05
+		discipline = 0.025
 	}
 }
 
@@ -5069,9 +5112,8 @@ avan_ideas = {
 	
 	trigger = {
 		OR = {
-			tag = MAJ
 			tag = SUN
-		}t
+		}
 	}
 	free = yes
 	
@@ -11963,6 +12005,7 @@ QAR_ideas = {
 	qar_irrigation_and_public_works = {
 		global_tax_modifier = 0.10
 	}
+}
 
 MHR_ideas = {
 	start = {
@@ -14249,36 +14292,38 @@ CHR_ideas = {
 ILK_ideas = {
 	start = {
 		cavalry_power = 0.2
-		cavalry_cost = -0.15
+		cav_to_inf_ratio = 0.10
 	}
 	bonus = {
-		cavalry_flanking = 0.5
+		cavalry_cost = -0.1
 	}
 	trigger = {
 		tag = ILK
 	}
 	free = yes
 	ilk_restored_ilkhanate = {
-		legitimacy = 1
+		leader_land_shock = 1
 	}
 	ilk_favor_sufism = {
-		tolerance_heretic = 2
+		manpower_recovery_speed = 0.2
 	}
 	ilk_persian_language_at_court = {
 		num_accepted_cultures = 1
+		years_of_nationalism = -5
 	}
 	ilk_yam_networks = {
 		movement_speed = 0.15
-		envoy_travel_time = -0.25
+		cavalry_flanking = 0.5
 	}
 	ilk_mongol_peace = {
-		years_of_nationalism = -5
+		legitimacy = 1
+		horde_unity = 1
 	}
 	ilk_patronize_observatories = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 	}
 	ilk_recruit_turkoman_gunners = {
-		fire_damage = 0.1
+		discipline = 0.05
 	}
 }
 

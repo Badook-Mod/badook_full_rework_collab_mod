@@ -182,7 +182,7 @@ shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
 	potential = {
-		always = no
+		tag = JAP
 	}
 	legacy_equivalent = shogunate_legacy
 	fixed_rank = 2

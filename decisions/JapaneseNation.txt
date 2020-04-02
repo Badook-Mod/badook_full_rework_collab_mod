@@ -8,7 +8,10 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			region = japan_region
-			NOT = { owned_by = ROOT }
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_empty = yes
+			}
 		}
 		allow = {
 			NOT = { exists = JAP }
