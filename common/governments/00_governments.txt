@@ -426,6 +426,7 @@ china_successor  = {
 				reform_china_successor_state
 				reform_china_dynastic_supremacy
 				reform_china_modern_state
+				reform_china_emperor_superior
 			}
 		}
 		shift_in_tactics = {

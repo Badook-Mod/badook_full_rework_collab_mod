@@ -949,16 +949,22 @@ on_mandate_of_heaven_gained = {
 		limit = {
 			OR = {
 				NOT = { government = china_successor }
-				government = tribal
-				NOT = { tag = QNG }
-				NOT = { tag = YUA }
-				NOT = { tag = XIA }
-				NOT = { tag = TNG }
-				NOT = { tag = SNG }
 			}
 		}
 		change_government = china_successor
-		add_government_reform = reform_china_dynastic_supremacy
+		add_government_reform = reform_china_emperor_superior
+	}
+	else_if = {
+		limit = {
+			OR = {	
+				tag = SUI
+				tag = QHU
+				tag = NYU
+				tag = WUU
+				tag = SHG
+			}
+		}
+		add_government_reform = reform_china_emperor_superior
 	}
 	set_mandate = 60
 	set_meritocracy = 75

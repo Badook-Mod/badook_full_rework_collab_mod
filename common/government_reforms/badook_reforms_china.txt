@@ -5,16 +5,13 @@ reform_china_successor_state = {
 	lock_level_when_selected = yes
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { is_emperor_of_china = yes }
 	}
 	modifiers = {
 		years_of_nationalism = -5
 		ae_impact = 0.25
 		reduced_liberty_desire = -10
-		max_states = -5
-	}
-	conditional = {
-		allow = { is_emperor_of_china = yes }
-		has_meritocracy = yes
+		max_states = -3
 	}
 }
 
@@ -31,6 +28,7 @@ icon = "chinese_palace"
 			tag = QNG
 			tag = YUA
 		}
+		NOT = { is_emperor_of_china = yes }
 	}
 	modifiers = {
 		years_of_nationalism = -5
@@ -38,8 +36,23 @@ icon = "chinese_palace"
 		reduced_liberty_desire = 25
 		max_states = 3
 	}
+}
+	
+reform_china_emperor_superior = {
+icon = "chinese_palace"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		is_emperor_of_china = yes
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		ae_impact = 0.15
+		max_states = -2
+	}
 	conditional = {
-		allow = { is_emperor_of_china = yes }
+		allow = { has_dlc = "Mandate of Heaven" }
 		has_meritocracy = yes
 	}
 }
