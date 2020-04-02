@@ -7,7 +7,7 @@ reform_china_successor_state = {
 	potential = {
 	}
 	modifiers = {
-		years_of_nationalism = -10
+		years_of_nationalism = -5
 		ae_impact = 0.25
 		reduced_liberty_desire = -10
 		max_states = -5
@@ -34,7 +34,7 @@ icon = "chinese_palace"
 	}
 	modifiers = {
 		years_of_nationalism = -5
-		core_creation = -0.15
+		core_creation = -0.1
 		reduced_liberty_desire = 25
 		max_states = 3
 	}
@@ -43,7 +43,7 @@ icon = "chinese_palace"
 		has_meritocracy = yes
 	}
 }
-
+	
 reform_china_modern_state = {
 icon = "chinese_palace"
 	valid_for_nation_designer = no

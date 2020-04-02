@@ -958,21 +958,10 @@ on_mandate_of_heaven_gained = {
 			}
 		}
 		change_government = china_successor
-	}
-	else_if = {
-		limit = {
-			OR = {
-				tag = QNG 
-				tag = YUA 
-				tag = XIA 
-				tag = TNG 
-				tag = SNG
-			}
-		}
-		change_government = reform_china_dynastic_supremacy
+		add_government_reform = reform_china_dynastic_supremacy
 	}
 	set_mandate = 60
-	set_meritocracy = 65
+	set_meritocracy = 75
 	if = {
 		limit = {
 			has_dlc = "Mandate of Heaven"

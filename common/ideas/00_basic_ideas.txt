@@ -201,7 +201,7 @@ spy_ideas = {
 	}	
 	
 	agent_training = {
-		defensiveness = 0.15	
+		defensiveness = 0.10
 	}
 
 	vetting = {
@@ -824,7 +824,7 @@ administrative_ideas = {
 	}
 
 	organised_mercenary_payment = {
-		administrative_efficiency = 0.075
+		administrative_efficiency = 0.05
 	}
 	adaptability = {
 		core_creation = -0.20
@@ -908,7 +908,7 @@ influence_ideas = {
 	}
 	
 	integrated_elites = {
-		province_warscore_cost = -0.2
+		province_warscore_cost = -0.1
 	}
 	buffer_states = {
 		diplomatic_upkeep = 5
