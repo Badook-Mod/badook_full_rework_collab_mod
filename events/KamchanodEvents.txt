@@ -65,13 +65,9 @@ country_event = {
 	title = kamchanod_forest.3.t
 	desc = kamchanod_forest.3.d
 	picture = PRAYING_eventPicture
-
-	mean_time_to_happen = {
-		days = 10
-	}
+	is_triggered_only = yes
 	
 	trigger = {
-		has_mission = find_the_key
 		NOT = { has_country_flag = into_the_underworld }
 	}
 

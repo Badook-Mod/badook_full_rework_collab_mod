@@ -156,6 +156,12 @@ naga_missions_1 = {
 			hidden_effect = {
 				set_country_flag = found_the_key_flag
 			}
+			country_event = { 
+				id = kamchanod_forest.3
+				days = 10
+				random = 1
+				tooltip = kamchanod_forest.3_tooltip
+			}
 		}
 	}
 	emerge_from_the_underworld = {
