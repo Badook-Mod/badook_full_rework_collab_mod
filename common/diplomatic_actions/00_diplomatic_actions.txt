@@ -301,6 +301,30 @@ allianceaction = {
 			}
 		}
 	}
+	#emperor of china
+	condition = {
+		tooltip = badook_emperor_ally_restriction
+		potential = {
+			NOT = { tag = HAA }
+		}
+		allow = {
+			FROM = { 
+				NOT = { tag = HAA }
+			}
+		}
+	}
+	condition = {
+		tooltip = badook_emperor_ally_restriction2
+		potential = {
+			tag = HAA
+		}
+		allow = {
+			FROM = { 
+				tag = HAA
+			}
+		}
+	}
+	
 	#charter ports
 	condition = {
 		tooltip = badook_charter_ally_restriction
