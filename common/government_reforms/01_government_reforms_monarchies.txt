@@ -24,6 +24,26 @@ feudalism_reform = {
 	}
 }
 
+mercantile_monarchy = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	legacy_equivalent = feudal_monarchy
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = VEN
+			tag = GEN
+			tag = SWI
+		}
+	}
+	modifiers = {
+		merchants = 1
+		trade_efficiency = 0.10
+	}
+}
+
 naga_cult_reform = {
 	icon = "peasants"
 	allow_normal_conversion = no
@@ -185,12 +205,11 @@ shogunate = {
 		tag = JAP
 	}
 	legacy_equivalent = shogunate_legacy
-	fixed_rank = 2
 	maintain_dynasty = yes
 	lock_level_when_selected = yes
 
 	modifiers = {
-		land_morale = 0.075
+		land_morale = 0.05
 		galley_power = 0.10
 	}
 

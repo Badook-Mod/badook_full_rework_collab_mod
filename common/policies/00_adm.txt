@@ -770,7 +770,7 @@ vassal_integration_act = {
 		full_idea_group = administrative_ideas
 	}	
 	
-	vassal_forcelimit_bonus = 0.1
+	vassal_forcelimit_bonus = 0.5
 	
 	ai_will_do = {
 		factor = 1

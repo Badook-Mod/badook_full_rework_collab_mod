@@ -30,6 +30,7 @@ monarchy = {
 				naga_cult_reform
 				naga_cult_major
 				naga_cult_minor
+				mercantile_monarchy
 			}
 		}
 		hereditary_vs_nobility = {

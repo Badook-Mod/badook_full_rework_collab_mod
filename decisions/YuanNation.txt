@@ -134,12 +134,6 @@ country_decisions = {
 			}
 			change_tag = YUA
 			remove_non_electors_emperors_from_empire_effect = yes
-			china_superregion = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = YUA
-			}
 			manchuria_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -149,14 +143,6 @@ country_decisions = {
 				add_permanent_claim = YUA
 			}
 			mongolia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = YUA
-			}
-			tibet_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }

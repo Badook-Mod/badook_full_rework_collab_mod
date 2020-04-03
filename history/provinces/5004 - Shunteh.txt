@@ -1,8 +1,8 @@
 # No previous file for Shunteh
 
-owner = SHG
-controller = SHG
-add_core = SHG
+owner = DEZ
+controller = DEZ
+add_core = DEZ
 culture = chihan
 religion = confucianism
 capital = "Shunt"
@@ -12,7 +12,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = YAN
 
 
 

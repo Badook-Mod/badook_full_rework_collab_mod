@@ -582,7 +582,7 @@ the_fort_of_roh = {
 	trigger = {
 			owns_or_non_sovereign_subject_of = 578
 	}
-	global_tax_income = -20
+	global_tax_income = -24
 }
 
 #CN nerf
@@ -757,7 +757,7 @@ emperor_denmark = {
 		}
 	}
 	monarch_military_power = 2
-	monarch_diplomatic_power = 2
+	monarch_diplomatic_power = 1
 	reelection_cost = -0.25
 	election_cycle = -1
 }
@@ -812,7 +812,7 @@ fort_compensation_modifier_big = {
 	fort_maintenance_modifier = -0.10
 }
 
-fort_compensation_modifier_big = {
+fort_compensation_modifier_very_big = {
 	potential = {
 		OR = {
 			was_player = yes
@@ -825,7 +825,7 @@ fort_compensation_modifier_big = {
 			base_manpower = 1
 		}
 	}
-	global_manpower = 20
+	global_manpower = 25
 	fort_maintenance_modifier = -0.15
 }
 
