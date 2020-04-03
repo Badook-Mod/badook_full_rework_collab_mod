@@ -3,14 +3,15 @@ emperor_under_attack = {
 		has_global_flag = emperor_under_attack
 		OR = {
 			is_emperor_of_china = yes
-			has_reform = reform_china_successor_state
-			has_reform = reform_china_dynastic_supremacy
+			culture_group = east_asian
+		}
+		NOT = { tag = QNG }
 	}
 
 	can_start = {
 		has_global_flag = emperor_under_attack
 		china_superregion = {
-			type = all
+			type = any
 			NOT = { owner = { religion = confucianism } }
 		}
 	}
@@ -29,7 +30,7 @@ emperor_under_attack = {
 		modifier = {
 			factor = 5
 			china_superregion = {
-				type = all
+				type = any
 				NOT = { owner = { religion = confucianism } }
 			}
 		}
@@ -48,26 +49,20 @@ emperor_under_attack = {
 	}
 
 	can_end = {
-		china_superregion = {
-			type = all
-			owner = { religion = confucianism }
+		OR = {
+			china_superregion = {
+				type = all
+				owner = { religion = confucianism }
+			}
+			year = 1600
 		}
 	}
 	
 
 	modifier = {
-		if = {
-			limit = {
-				is_emperor_of_china = yes
-			}
-			land_morale = -0.10
-			imperial_mandate = -0.20
-			global_unrest = 5
-		}
-		else = {
-			land_morale = -0.05
-			global_unrest = 3
-		}
+		land_morale = -0.10
+		imperial_mandate = -0.35
+		global_unrest = 3
 	}	
 	
 	
