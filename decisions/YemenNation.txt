@@ -3,7 +3,7 @@ country_decisions = {
 	yemen_nation = {
 		major = yes
 		potential = {
-			ai = yes
+			always = no
 		}
 		provinces_to_highlight = {
 			OR = {

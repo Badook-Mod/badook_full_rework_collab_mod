@@ -606,7 +606,7 @@ badook_player_colony = {
 
 horde_centralisation_very_high = {
 	potential = {
-		is_nomad = yes
+		religion = nomadicism
 	}
 	trigger = {
 		horde_unity = 100
@@ -618,7 +618,7 @@ horde_centralisation_very_high = {
 }
 horde_centralisation_high = {
 	potential = {
-		is_nomad = yes
+		religion = nomadicism
 	}
 	trigger = {
 		NOT = { 
@@ -643,7 +643,7 @@ emperor_swiss = {
 			is_emperor = yes
 		}
 	}
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.075
 }
 
 emperor_hesse = {
@@ -656,6 +656,9 @@ emperor_hesse = {
 				is_emperor = yes
 			}
 			WES = {
+				is_emperor = yes
+			}
+			NED = {
 				is_emperor = yes
 			}
 		}
@@ -756,7 +759,7 @@ emperor_denmark = {
 			}
 		}
 	}
-	monarch_military_power = 2
+	monarch_military_power = 1
 	monarch_diplomatic_power = 1
 	reelection_cost = -0.25
 	election_cycle = -1

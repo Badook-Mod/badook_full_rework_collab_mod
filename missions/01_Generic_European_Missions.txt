@@ -79,7 +79,7 @@ gen_europe_hre_5 = {
 		
 		effect = {
 			add_prestige = 25
-			imperial_influence = 15
+			imperial_influence = 10
 		}
 	}
 	

@@ -169,7 +169,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "flavor_ind.EVTOPTA3"
+		name = "flavor_ind.EVTOPTA4"
 		add_adm_power = 25
 		add_mil_power = 25
 	}
@@ -201,7 +201,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "flavor_ind.EVTOPTA3"
+		name = "flavor_ind.EVTOPTA5"
 		add_adm_power = 125
 		add_mil_power = 125
 		add_years_of_income = 1.5
@@ -231,9 +231,9 @@ country_event = {
 	}
 	
 	option = {
-		name = "flavor_ind.EVTOPTA3"
-		add_adm_power = 50
-		add_mil_power = 50
+		name = "flavor_ind.EVTOPTA6"
+		add_adm_power = 25
+		add_mil_power = 25
 	}
 }
 
@@ -258,7 +258,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "flavor_ind.EVTOPTA3"
+		name = "flavor_ind.EVTOPTA7"
 		add_adm_power = 50
 		add_mil_power = 50
 	}
@@ -290,7 +290,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "flavor_ind.EVTOPTA3"
+		name = "flavor_ind.EVTOPTA8"
 		add_adm_power = 125
 		add_mil_power = 125
 		add_years_of_income = 1.5

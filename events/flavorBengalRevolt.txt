@@ -138,7 +138,6 @@ country_event = {
 		}
 		BAN = { 
 			random_core_province = { 
-				add_base_manpower = 1
 				remove_core = BAN
 				cede_province = BNG
 				add_core = BNG

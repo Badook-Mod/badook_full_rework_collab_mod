@@ -771,74 +771,7 @@ cultural_unity = {
 	}
 }
 
-skilled_cartographers = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = exploration_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = exploration_ideas
-	}	
-	
-	global_naval_engagement_modifier = 0.2
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0.6
-			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { num_of_colonies = 1 }
-		}
-	}
-}
 
-fortified_trading_posts = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = trade_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-	}	
-	
-	global_ship_trade_power = 0.4
-	light_ship_cost = -0.1
-	
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0.6
-			NOT = { trade_income_percentage = 0.1 }
-		}			
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.2
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.4
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.5
-		}
-	}
-}
 
 the_integrated_administration_act = {
 	monarch_power = DIP
@@ -880,34 +813,7 @@ the_integrated_administration_act = {
 	}
 }
 
-the_cooperation_act = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = influence_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = influence_ideas
-	}	
-	
-	caravan_power = 0.33
-	merchants = 1
-	
-	ai_will_do = {
-		factor = 0.7
-		modifier = {
-			factor = 0.6
-			NOT = { trade_income_percentage = 0.1 }
-		}			
-		modifier = {
-			factor = 0.6
-			NOT = { trade_income_percentage = 0.2 }
-		}
-	}
-}
+
 
 record_keeping_act = {
 	monarch_power = DIP
@@ -1125,31 +1031,6 @@ armed_neutrality_act = {
 		modifier = {
 			factor = 1.5
 			trade_income_percentage = 0.5
-		}
-	}
-}
-
-the_naval_supremacy_act = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = maritime_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = maritime_ideas
-	}	
-	
-	privateer_efficiency = 0.5
-	blockade_efficiency = 0.5
-	
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
 		}
 	}
 }

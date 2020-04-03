@@ -39,6 +39,7 @@ country_event = {
 	
 	trigger = {
 		religion = nomadicism
+		NOT = { is_year = 1445 }
 	}
 	
 	immediate = {
@@ -91,6 +92,11 @@ country_event = {
 			QHU = {
 				every_owned_province = {
 					change_religion = confucianism
+				}
+			}
+			ORM = {
+				every_owned_province = {
+					change_religion = ibadi
 				}
 			}
 			#treaty ports

@@ -2,6 +2,7 @@ government = tribal
 add_government_reform = steppe_horde
 technology_group = nomad_group
 religion = nomadicism
+primary_culture = crimean
 capital = 284	# Crimea
 
 1441.1.1 = {

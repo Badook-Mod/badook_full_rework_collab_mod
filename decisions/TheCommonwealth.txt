@@ -25,11 +25,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			LIT = { was_player = no }
-			LIT = {
-				NOT = { num_of_cities = 58 } #Keep this number the same as in potential. Original 38 +10
-			}
-			adm_tech = 20
+			adm_tech = 15
 			is_at_war = no
 			poland_region = {
 				type = all
@@ -44,6 +40,10 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PLC
+			add_country_modifier = {
+				name = "polish_steel"
+				duration = -1
+			}
 			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { accepted_culture = lithuanian } }

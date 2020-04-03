@@ -210,7 +210,7 @@ shogunate = {
 
 	modifiers = {
 		land_morale = 0.05
-		galley_power = 0.10
+		naval_morale = 0.10
 	}
 
 	custom_attributes = {
@@ -503,6 +503,7 @@ principality = {
 	modifiers = {
 		global_unrest = -1
 		global_tax_modifier = 0.10
+		max_states = 2
 	}
 
 	conditional = {
@@ -546,6 +547,7 @@ tsardom = {
 	modifiers = {
 		global_unrest = -3
 		global_tax_modifier = 0.20
+		max_states = 3
 	}
 
 	conditional = {

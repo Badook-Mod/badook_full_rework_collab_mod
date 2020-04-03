@@ -115,11 +115,11 @@ build_forts = {
 }
 
 gen_hre_emperor_south = {
-	imperial_authority_value = 0.15
+	imperial_authority_value = 0.25
 	prestige = 0.5
 }
 gen_hre_emperor_north = {
-	imperial_authority_value = 0.15
+	imperial_authority_value = 0.25
 	prestige = 0.5
 }
 gen_hre_emperor_italy = {
@@ -127,15 +127,34 @@ gen_hre_emperor_italy = {
 	prestige = 0.5
 }
 
+polish_steel = {
+	discipline = 0.05
+}
 frontier_life = {
 	colonists = 1
 	global_colonial_growth = 25
 }
 
+sok_quantity = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.25
+}
+
+sok_quality = {
+	discipline = 0.05
+	infantry_power = 0.05
+}
+
+sok_imperial = {
+	heavy_ship_power = 0.1
+	colonists = 2
+	global_colonial_growth = 30
+}
+
 #buffs
 
 swiss_authority = {
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.075
 }
 
 hesse_authority = {
@@ -155,8 +174,9 @@ italian_authority = {
 }
 
 habsburg_authority = {
-	diplomatic_annexation_cost = -0.50
+	province_warscore_cost = -0.25
 	diplomatic_reputation = 3
+	diplomats = 2
 }
 
 brandenburg_authority = {

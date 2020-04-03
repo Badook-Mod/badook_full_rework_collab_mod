@@ -8,6 +8,7 @@ country_decisions = {
 				tag = MGE
 				tag = ILK
 			}
+			NOT = { has_country_flag = frontier_life_flag }
 		}
 		
 		allow = {
@@ -18,6 +19,7 @@ country_decisions = {
 				name = "frontier_life"
 				duration = -1
 			}
+			set_country_flag = frontier_life_flag 
 		}
 	}
 }

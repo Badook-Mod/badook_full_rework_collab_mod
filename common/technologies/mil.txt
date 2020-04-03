@@ -103,6 +103,7 @@ technology = {
 	supply_limit 		= 	0.5
 	infantry_shock		= 	0.15
 	cavalry_shock		= 	0.2
+	cavalry_fire = 0.2
 
 	enable = western_men_at_arms	
 	enable = western_longbow	
@@ -181,6 +182,7 @@ technology = {
 	enable = steppe_riders
 	infantry_fire		= 	0.25
 	cavalry_shock		=	0.8
+	cavalry_fire = 0.4
 	
 	
 	regimental_camp = yes
@@ -206,6 +208,7 @@ technology = {
 	enable = ha_xiuhtecuhtli_soldier
 	military_tactics 	= 	0.25
 	combat_width = 1	
+	cavalry_fire = 0.25
 }
 
 technology = {
@@ -297,6 +300,7 @@ technology = {
 	#Star Bastions
 	fort_16th = yes
 	infantry_fire		=	0.3
+	cavalry_fire = 0.25
 	
 	enable = african_hussar
 	enable = french_caracolle 
@@ -364,8 +368,9 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.5
 	supply_limit		= 	0.5	
+	cavalry_fire = 0.50
 	
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
@@ -472,7 +477,7 @@ technology = {
 	
 	#Light Cavalry
 	
-	cavalry_shock		=	1.0
+	cavalry_shock		=	1
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 

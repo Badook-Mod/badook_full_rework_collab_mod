@@ -5,4 +5,10 @@ spriteTypes = {
   noOfFrames = 3
   loadType = "INGAME"
  }
+ spriteType = {
+  name = "GFX_disaster_emperor_attack"
+  texturefile = "gfx//interface//disasters//emperor_attack.dds"
+  noOfFrames = 3
+  loadType = "INGAME"
+ }
 }

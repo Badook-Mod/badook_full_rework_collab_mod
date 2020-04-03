@@ -162,10 +162,10 @@ wei_missions_2 = {
 		position = 1
 		trigger = {
 			OR = { 
-				fort_15th = 3
-				fort_16th = 2
-				fort_17th = 2
-				fort_18th = 2
+				fort_15th = 1
+				fort_16th = 1
+				fort_17th = 1
+				fort_18th = 1
 			}
 		}
 		effect = {
@@ -181,7 +181,7 @@ wei_missions_2 = {
 		required_missions = { bulwark_against_barbarism_mission }
 		position = 2
 		trigger = {
-			army_size = 40
+			army_size = 20
 		}
 		effect = {
 			add_country_modifier = {
@@ -198,7 +198,7 @@ wei_missions_2 = {
 			OR = { 
 				has_global_modifier_value = {
 				which = discipline
-				value = 0.125
+				value = 0.10
 				extra_shortcut = yes
 				}
 				land_morale = 5
@@ -207,7 +207,7 @@ wei_missions_2 = {
 		effect = {
 			add_country_modifier = {
 				name = "chinese_imperialism"
-				duration = 5475
+				duration = 10950
 			}
 		}
 	}
@@ -232,7 +232,7 @@ wei_missions_2 = {
 			add_mil_power = 100
 			add_country_modifier = {
 				name = "secured_manchuria"
-				duration = 5475
+				duration = 10950
 			}
 			add_country_modifier = {
 				name = "recruited_manchu_tribes"

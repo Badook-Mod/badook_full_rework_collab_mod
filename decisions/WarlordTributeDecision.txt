@@ -9,7 +9,7 @@ country_decisions = {
 			prestige = 25
 			is_at_war = no
 			NOT = { has_global_flag = took_warlord_tribute }
-			empire_of_china_reform_level = 2
+			is_year = 1475
 		}
 		
 		effect = {

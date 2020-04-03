@@ -523,89 +523,6 @@ colonial_garrisons = {
 	}
 }
 
-the_maritime_intelligencer_unit = {
-	monarch_power = MIL
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = spy_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = spy_ideas
-	}	
-	
-	siege_blockade_progress = 1
-	global_naval_engagement_modifier = 0.1
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { num_of_heavy_ship = 10 }
-		}
-	}
-}
-
-the_nautic_education_act = {
-	monarch_power = MIL
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = innovativeness_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = innovativeness_ideas
-	}	
-	
-	recover_navy_morale_speed = 0.05
-	leader_naval_fire = 1
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 10 }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { navy_size = 20 }
-		}
-	}
-}
-
-zealous_captains = {
-	monarch_power = MIL
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = religious_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = religious_ideas
-	}	
-	
-	sunk_ship_morale_hit_recieved = -0.10
-	leader_naval_shock = 1
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 10 }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { navy_size = 20 }
-		}
-	}
-}
-
 autonomous_estates = {
 	monarch_power = MIL
 	
@@ -670,30 +587,6 @@ inspirational_leaders = {
 	}
 }
 
-the_naval_inspection_act = {
-	monarch_power = MIL
-	
-	potential = {
-		has_idea_group = humanist_ideas
-		has_idea_group = naval_ideas
-	}
-	
-	allow = {
-		full_idea_group = humanist_ideas
-		full_idea_group = naval_ideas
-	}	
-	
-	ship_durability = 0.075
-	recover_navy_morale_speed = 0.075
-	
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}
-	}
-}
 
 the_preparation_act = {
 	monarch_power = MIL
@@ -1018,7 +911,7 @@ deserteur_act = {
 		full_idea_group = quality_ideas
 	}
 
-	army_tradition = 0.05
+	army_tradition = 0.5
 	
 	ai_will_do = {
 		factor = 0.75

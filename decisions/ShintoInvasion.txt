@@ -7,6 +7,7 @@ country_decisions = {
 			4196 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 4196	
@@ -25,6 +26,7 @@ country_decisions = {
 			2142 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 2142
@@ -43,6 +45,7 @@ country_decisions = {
 			685 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 685
@@ -61,6 +64,7 @@ country_decisions = {
 			5074 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 5074
@@ -79,6 +83,7 @@ country_decisions = {
 			2145 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 2145
@@ -97,6 +102,7 @@ country_decisions = {
 			1822 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 1822
@@ -115,6 +121,7 @@ country_decisions = {
 			5010 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 5010	
@@ -133,6 +140,7 @@ country_decisions = {
 			5015 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 5015	
@@ -151,6 +159,7 @@ country_decisions = {
 			684 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 684
@@ -169,6 +178,7 @@ country_decisions = {
 			2148 = {
 				NOT = { religion = confucianism }
 			}
+			religion = confucianism
 		}
 		allow = {
 			controls = 2148	

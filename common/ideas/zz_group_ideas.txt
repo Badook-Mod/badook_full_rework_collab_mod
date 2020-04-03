@@ -580,7 +580,7 @@ mindanao_ideas = {
 
 horde_ideas = {
 	start = {
-		cavalry_power = 0.125
+		cavalry_power = 0.15
 		years_of_nationalism = -5
 	}
 	

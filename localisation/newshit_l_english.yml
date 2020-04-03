@@ -70,8 +70,86 @@
  EJZ_ADJ:0 "East Jianzhou"
  SOL:0 "Solon"
  SOL_ADJ:0 "Solon"
- NHX:0 "Nihxz"
- NHX_ADJ:0 "Nihxz"
+ NHX:0 "Chuanbei"
+ NHX_ADJ:0 "Chuanbei"
+ SSN:0 "Sino-Soviet Union"
+ SSN_ADJ:0 "Sino-Soviet Union"
+ SIA:0 "Siam"
+ SIA_ADJ:0 "Siamese"
+ NAE:0 "Naga Empire"
+ NAE_ADJ:0 "Naga Empire"
+ CNA:0 "Cambodia"
+ CNA_ADJ:0 "Cambodian"
+ BRM:0 "Burma"
+ BRM_ADJ:0 "Burmese"
+ AHU:0 "Austria-Hungary"
+ AHU_ADJ:0 "Austria-Hungarian"
+ 
+ #events non china
+ nomadic_events.2.t:0 "Horde Unity Gain Unlocked"
+ nomadic_events.2.d:0 "We can once again gain Horde Unity from wars, let us ride out onto the steppe and take what is ours!"
+ nomadic_events.2.a:0 "Time for war?"
+ nomadic_events.3.t:0 "About Uzbeck..."
+ nomadic_events.3.d:0 "Uzbeck has a new mechanic utilising Horde Unity. If you border a player you recieve a special CB on them, use this CB and get to 50 warscore to pass the decision giving 25 Horde Unity, at 75 and 100 you recieve buffs via triggered modifiers. But beware, taking anything with this CB costs 35% more, so killing someone with this CB will be harder!"
+ nomadic_events.3.a:0 "Int time"
+ nomadic_events.4.t:0 "Colonisation of Siberia"
+ nomadic_events.4.d:0 "Our people have ventured our north for the first time anyone has recorded, finding a few tribes already living there! We have incorporated these into our territory and they will soon become one with our great nation."
+ nomadic_events.4.a:0 "Join us or die"
+ 
+ HREreforms.2.t:0 "The Eternal Emperor"
+ HREreforms.2.d:0 "We rule forever, no elector shall oppose us!"
+ HREreforms.2.a:0 "They all will perish..."
+ 
+ badookmp.1.t:0 "Persian Gold"
+ badookmp.1.d:0 "Our people have struck gold in the Iranian mountains! Truly a lasting legacy for our nation."
+ badookmp.1.a:0 "Cute gold mine mhm"
+ 
+ flavor_bngrev.1.t:0 "A province defects"
+ flavor_bngrev.1.d:0 "A province has been occupied and defected to another side, let us hope this helps us."
+ flavor_bngrev.1.a:0 "For better or for worse..."
+ flavor_bngrev.2.t:0 "A province defects"
+ flavor_bngrev.2.d:0 "A province has been occupied and defected to another side, let us hope this helps us."
+ flavor_bngrev.2.a:0 "For better or for worse..."
+ flavor_bngrev.3.t:0 "Inflitration success!"
+ flavor_bngrev.3.d:0 "We have inflitrated the enemy forces and helped a group of detractors take back our land, hopefully this gives us the edge in the conflict."
+ flavor_bngrev.3.a:0 "We should try again"
+ 
+ flavor_ind.EVTNAME1:0 "Bahmanis Expansion"
+ flavor_ind.EVTDESC1:0 "We have a choice of where to efficiently expand, taking this land will surely reward us, especially if it is on our rival Vijayanagar!"
+ flavor_ind.EVTOPTA1:0 "We shall go North"
+ flavor_ind.EVTOPTB1:0 "We shall go South"
+ flavor_ind.EVTOPTC1:0 "We shall take Vijayanagar"
+ 
+ flavor_ind.EVTNAME2:0 "Vijayanagar Expansion"
+ flavor_ind.EVTDESC2:0 "We have a choice of where to efficiently expand, taking this land will surely reward us, especially if it is on our rival Vijayanagar!"
+ flavor_ind.EVTOPTA2:0 "We shall go North"
+ flavor_ind.EVTOPTB2:0 "We shall go South"
+ flavor_ind.EVTOPTC2:0 "We shall take Bahmanis"
+ 
+ flavor_ind.EVTNAME3:0 "Securing the cores"
+ flavor_ind.EVTDESC3:0 "Taking the cores has given us a modest increase in support"
+ flavor_ind.EVTOPTA3:0 "Cute"
+ 
+ flavor_ind.EVTNAME4:0 "Securing the cores"
+ flavor_ind.EVTDESC4:0 "Taking the cores has given us a modest increase in support"
+ flavor_ind.EVTOPTA4:0 "Cute"
+ 
+ 
+ flavor_ind.EVTNAME5:0 "Securing Bahamnis"
+ flavor_ind.EVTDESC5:0 "Taking the cores has given us a sizeable increase in support"
+ flavor_ind.EVTOPTA5:0 "Chad"
+ 
+ flavor_ind.EVTNAME6:0 "Securing the cores"
+ flavor_ind.EVTDESC6:0 "Taking the cores has given us a modest increase in support"
+ flavor_ind.EVTOPTA6:0 "Cute"
+ 
+ flavor_ind.EVTNAME7:0 "Securing the cores"
+ flavor_ind.EVTDESC7:0 "Taking the cores has given us a modest increase in support"
+ flavor_ind.EVTOPTA7:0 "Cute"
+ 
+ flavor_ind.EVTNAME8:0 "Securing Vijayanagar"
+ flavor_ind.EVTDESC8:0 "Taking the cores has given us a sizeable increase in support"
+ flavor_ind.EVTOPTA8:0 "Chad"
  
  #reform names
  
@@ -165,7 +243,7 @@
  FIND_THE_KEY_TOOLTIP:0 "No longer have the modifier "Preparing Expedition". Own the province of Kengtung, and follow the religion of Naga Sung Bai. Or be allied to someone who fufills all of these criteria, and no longer have the modifier "Preparing Expedition yourself."
  TAKE_KAMCHANOD_TOOLTIP:0 "Own the province of Vientiane, and follow the religion of Naga Sung Bai. Or be allied to someone who fufills both of these criteria."
  
- #events
+ #events china
  mandate_events.3.t:0 "The Yellow Flood"
  mandate_events.3.d:0 "For a long time the state of Yellow River, situated in the north of china, has been a concern to all people of Asia. With the fall of the Ming Dynasty many of the measures used to keep the River in check have fallen into disrepear. This has culminated in the largest flood ever recorded by scribes, the social consequences will be far reaching as many flee the populous region to escape oncoming tides."
  mandate_events.3.a:0 "Hopefully we can avoid the harshest impact."
@@ -274,3 +352,12 @@
  
  warlord_construction_title:0 "Improve the city of Luoyang"
  warlord_construction_desc:0 "We must improve the anicent capital of Luoyang to be among the great imperial cities"
+ 
+ bengal_revolt_attack_title:0 "Attack Banten directly"
+ bengal_revolt_attack_desc:0 "Declare a war on Banten immediately, any provinces occupied by either side will defect to the opponent and lose some dev, make sure the war is quick and decisive."
+ 
+ bengal_revolt_defend_title:0 "Take a defensive approach"
+ bengal_revolt_defend_desc:0 "By building up a spy network over time we can take a safe and cautious, but effective, approach at taking back our land. We shall deal with Koch in the meantime!" 
+ 
+ bengal_revolt_infiltrate_title:0 "Inflitrate Banten"
+ bengal_revolt_infiltrate_desc:0" Send our spies deep into Banten to defect some land."

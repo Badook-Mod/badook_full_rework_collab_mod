@@ -32,5 +32,42 @@ country_event = {
 			add_base_production = 3
 		}
 	}
+}
+
+country_event = {
+	id = badookmp.2
+	title = badookmp.2.t
+	desc = badookmp.2.d
+	picture = LAND_MILITARY_eventPicture
 	
+	trigger = {
+		tag = SOK
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = badookmp.2.a
+		add_country_modifier = {
+				name = "sok_quantity"
+				duration = -1
+		}
+	}
+	
+	option = {
+		name = badookmp.2.b
+		add_country_modifier = {
+				name = "sok_quality"
+				duration = -1
+		}
+	}
+	
+	option = {
+		name = badookmp.2.c
+		add_country_modifier = {
+				name = "sok_imperial"
+				duration = -1
+		}
+	}
 }
