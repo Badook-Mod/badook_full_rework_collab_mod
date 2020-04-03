@@ -91,7 +91,7 @@ colony_gang = {
 }
 
 good_produced = {
-		global_trade_goods_size_modifier = 0.05
+	global_trade_goods_size_modifier = 0.05
 }
 
 impenetrable_fortress = {

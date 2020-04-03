@@ -201,7 +201,7 @@ all_out_war = {
 }
 
 limited_war = {
-	type = superiority
+	type = take_claim
 	
 	attacker = {
 		badboy_factor = 1

@@ -234,7 +234,7 @@ christian = {
 			catholic
 		}
 		country = {
-			possible_mercenaries = 0.20
+			possible_mercenaries = 0.15
 			colonists = 1
 		}
 		
