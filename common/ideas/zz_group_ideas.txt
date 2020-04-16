@@ -366,7 +366,7 @@ telugu_ideas = { #Telugu Ideas
 dravidian_ideas = {
 	start = {
 		hostile_attrition = 1
-		leader_land_shock = 2
+		leader_land_shock = 1
 	}
 
 	bonus = {
@@ -380,10 +380,10 @@ dravidian_ideas = {
 	
 	merchants_of_southern_india = {
 		trade_range_modifier = 1
-		trade_efficiency = 0.10
+		trade_efficiency = 0.15
 	}
 	water_tanks_and_canals = {	
-		global_tax_modifier = 0.10
+		global_tax_modifier = 0.15
 	}
 	polygar_system = {
 		global_manpower_modifier = 0.05
@@ -393,6 +393,7 @@ dravidian_ideas = {
 	}
 	patronage_of_temples = {
 		leader_land_fire = 1
+		leader_land_shock = 1
 	}
 	south_indian_literature = {
 		prestige = 1

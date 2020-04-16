@@ -128,7 +128,7 @@ gen_hre_emperor_italy = {
 }
 
 polish_steel = {
-	discipline = 0.05
+	discipline = 0.025
 }
 frontier_life = {
 	colonists = 1

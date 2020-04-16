@@ -582,6 +582,7 @@ country_event = {
 	title = mandate_events.7.t
 	desc = mandate_events.7.d
 	picture = FARMING_eventPicture
+	fire_only_once = yes
 	
 	trigger = {
 		tag = TBS

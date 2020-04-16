@@ -261,8 +261,10 @@ cb_conquest = {
 
 	prerequisites = {
 		claim = FROM
+		FROM = {
+			ai = yes
+		}
 		is_revolution_target = no
-		FROM = { ai = yes }
 	}
 
 	war_goal = take_claim
@@ -284,6 +286,7 @@ cb_core = {
 cb_all_out = {
 	valid_for_subject = no
 	prerequisites = {
+		ai = no
 		FROM = {
 			ai = no
 		}
@@ -302,7 +305,6 @@ cb_limited_war = {
 		}
 		claim = FROM
 	}
-
 	war_goal = limited_war
 }
 
@@ -1010,7 +1012,12 @@ cb_take_mandate = {
 		is_subject = no
 		is_neighbor_of = FROM
 		FROM = { is_emperor_of_china = yes }
-		is_year = 1465
+		OR = {
+			is_year = 1465
+			HAA = {
+				is_emperor_of_china = yes
+			}
+		}
 		OR = {
 			religion_group = pagan
 			religion_group = eastern

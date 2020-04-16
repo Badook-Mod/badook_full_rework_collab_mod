@@ -708,7 +708,7 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.35
+		land_forcelimit_modifier  = 0.25
 	}
 	mass_army = {
 		global_manpower_modifier = 0.35
@@ -729,7 +729,7 @@ quantity_ideas = {
 		garrison_size = 0.25
 	}
 	expanded_supply_trains = {
-		land_attrition = -0.15
+		land_attrition = -0.10
 	}
 
 	ai_will_do = {

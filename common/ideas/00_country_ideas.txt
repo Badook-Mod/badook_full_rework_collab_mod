@@ -1933,7 +1933,6 @@ RUS_ideas = {
 		army_tradition = 0.25
 	}	
 	curriculum_of_the_cadet_corps = {
-		land_morale = 0.10
 		fire_damage_received = -0.1
 	}
 }
@@ -2379,6 +2378,7 @@ POL_ideas = {
 	}
 	wojsko_komputoe = {
 		diplomatic_upkeep = 2
+		discipline = 0.05
 	}
 	foreign_section = {
 		caravan_power = 0.15

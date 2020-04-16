@@ -57,6 +57,11 @@ country_decisions = {
 			ahmednagar_area = { type = all is_core = ROOT owned_by = ROOT }
 			golconda_area = { type = all is_core = ROOT owned_by = ROOT }
 			telingana_area = { type = all is_core = ROOT owned_by = ROOT }
+			andhra_area = { type = all is_core = ROOT owned_by = ROOT }
+			OR = {
+				north_carnatic_area = { type = all is_core = ROOT owned_by = ROOT }
+				kanara_area = { type = all is_core = ROOT owned_by = ROOT }
+			}
 		}
 		effect = {
 			change_tag = MAR

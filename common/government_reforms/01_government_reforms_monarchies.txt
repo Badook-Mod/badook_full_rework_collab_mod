@@ -563,10 +563,10 @@ mamluk_government = {
 	icon = "mamluk_government"
 	allow_normal_conversion = yes
 	potential = {
-		religion_group = muslim
 		OR = {
 			AND = {
 				tag = MAM
+				tag = EGY
 				NOT = { map_setup = map_setup_random }
 			}
 			AND = {

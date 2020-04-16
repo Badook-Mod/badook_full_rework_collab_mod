@@ -75,7 +75,10 @@ country_event = {
 			every_province = {
 				limit = {
 					owner = {
-						ai = no
+						OR = {
+							ai = no
+							is_subject = yes
+						}
 					}
 				}
 				remove_building = fort_15th

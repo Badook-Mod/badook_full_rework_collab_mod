@@ -61,9 +61,9 @@ religious_school = shafii_school
 		birth_date = 1372.1.1
 		dynasty = "Burji"
 		culture = circassian
-		adm = 2
-		dip = 2
-		mil = 3
+		adm = 4
+		dip = 3
+		mil = 5
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = silver_tongue_personality

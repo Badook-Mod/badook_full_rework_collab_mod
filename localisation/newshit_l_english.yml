@@ -85,6 +85,16 @@
  AHU:0 "Austria-Hungary"
  AHU_ADJ:0 "Austria-Hungarian"
  
+ #cbs
+ cb_all_out:0 "All-Out War"
+ cb_all_out_desc:0 "Let us take what we deserve"
+ cb_limited_war:0 "Limited Warfare"
+ cb_limited_war_desc:0 "We must be conservative with our demands"
+ cb_unity_gain:0 "Unity Gain"
+ cb_unity_gain_desc:0 "The people of Uzbek must be united behind a war"
+ cb_rebellion_emperor:0 "Rebellion On The Emperor"
+ cb_rebellion_emperor_desc:0 "We cannot let the emperor continue to control us, rise up and fight!"
+ 
  #events non china
  nomadic_events.2.t:0 "Horde Unity Gain Unlocked"
  nomadic_events.2.d:0 "We can once again gain Horde Unity from wars, let us ride out onto the steppe and take what is ours!"

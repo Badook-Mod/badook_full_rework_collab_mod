@@ -201,7 +201,7 @@ all_out_war = {
 }
 
 limited_war = {
-	type = take_claim
+	type = take_province
 	
 	attacker = {
 		badboy_factor = 1
@@ -209,7 +209,7 @@ limited_war = {
 		peace_cost_factor = 1.5
 		
 		allowed_provinces = {
-			always = yes
+			is_claim = ROOT
 		}
 		
 		peace_options = {

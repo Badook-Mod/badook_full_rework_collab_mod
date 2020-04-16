@@ -46,21 +46,6 @@ vassal = {
 }
 
 
-####Chinese Tributaries
-
-vassal = {
-	first = NMS
-	second = CHN
-	start_date = 1444.1.1
-	end_date = 1644.4.22
-}
-
-vassal = {
-	first = NMS
-	second = CCH
-	start_date = 1444.1.1
-	end_date = 1644.4.22
-}
 
 #gay kml shit
 royal_marriage = {
