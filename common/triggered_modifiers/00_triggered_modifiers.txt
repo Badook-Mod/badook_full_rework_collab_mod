@@ -783,15 +783,17 @@ yellow_turbans_here = {
 
 fort_compensation_modifier = {
 	potential = {
-		OR = {
+		AND = {
 			was_player = yes
 			ai = no
+			is_nomad = yes
 		}
 	}
 	trigger = {
 		num_of_owned_provinces_with = {
 			value = 50
 			base_manpower = 1
+			is_nomad = yes
 		}
 	}
 	global_manpower = 10
@@ -800,9 +802,10 @@ fort_compensation_modifier = {
 
 fort_compensation_modifier_big = {
 	potential = {
-		OR = {
+		AND = {
 			was_player = yes
 			ai = no
+			is_nomad = yes
 		}
 	}
 	trigger = {
@@ -815,11 +818,29 @@ fort_compensation_modifier_big = {
 	fort_maintenance_modifier = -0.10
 }
 
+fort_compensation_modifier_ai = {
+	potential = {
+		AND = {
+			was_player = no
+			ai = yes
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 1
+			base_manpower = 1
+		}
+	}
+	global_manpower = 5
+	fort_maintenance_modifier = -0.5
+}
+
 fort_compensation_modifier_very_big = {
 	potential = {
-		OR = {
+		AND = {
 			was_player = yes
 			ai = no
+			is_nomad = yes
 		}
 	}
 	trigger = {
@@ -830,6 +851,60 @@ fort_compensation_modifier_very_big = {
 	}
 	global_manpower = 25
 	fort_maintenance_modifier = -0.15
+}
+
+fort_compensation_modifier_non_nomad = {
+	potential = {
+		AND = {
+			was_player = yes
+			ai = no
+			NOT = { is_nomad = yes }
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 1
+			fort_level = 2
+		}
+	}
+	global_manpower = 1
+	global_tax_income = 21
+}
+
+fort_compensation_modifier_non_nomad_big = {
+	potential = {
+		AND = {
+			was_player = yes
+			ai = no
+			NOT = { is_nomad = yes }
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 4
+			fort_level = 2
+		}
+	}
+	global_manpower = 1
+	global_tax_income = 21
+}
+
+fort_compensation_modifier_non_nomad_big = {
+	potential = {
+		AND = {
+			was_player = yes
+			ai = no
+			NOT = { is_nomad = yes }
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 8
+			fort_level = 2
+		}
+	}
+	global_manpower = 2
+	global_tax_income = 42
 }
 
 #charters

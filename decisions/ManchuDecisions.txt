@@ -52,25 +52,25 @@ country_decisions = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
-				add_core = MCH
+				add_permanent_claim = MCH
 			}
 			jilin_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
-				add_core = MCH
+				add_permanent_claim = MCH
 			}
 			liaoning_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
-				add_core = MCH
+				add_permanent_claim = MCH
 			}
 			central_heilongjiang_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
-				add_core = MCH
+				add_permanent_claim = MCH
 			}
 			heilongjiang_area = {
 				limit = {
@@ -84,7 +84,6 @@ country_decisions = {
 				}
 				add_permanent_claim = MCH
 			}
-			add_prestige = 25
 			change_tag = MCH
 			swap_non_generic_missions = yes
 			if = {

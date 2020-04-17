@@ -9,7 +9,7 @@ reform_china_successor_state = {
 	}
 	modifiers = {
 		years_of_nationalism = -5
-		ae_impact = 0.25
+		ae_impact = 0.10
 		reduced_liberty_desire = -10
 		max_states = -3
 	}
@@ -48,7 +48,7 @@ icon = "chinese_palace"
 	}
 	modifiers = {
 		years_of_nationalism = -5
-		ae_impact = 0.15
+		ae_impact = 0.05
 		max_states = -2
 	}
 	conditional = {

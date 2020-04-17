@@ -6,6 +6,9 @@ country_decisions = {
 			OR = {
 				tag = SHY
 				tag = GOL
+				tag = MGE
+				tag = ILK
+				tag = BUK
 			}
 		}
 		
