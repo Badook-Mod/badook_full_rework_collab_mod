@@ -154,15 +154,15 @@ sok_imperial = {
 #final reform buffs
 
 swiss_authority = {
-	mercenary_discipline = 0.1
+	mercenary_discipline = 0.075
 }
 
 hesse_authority = {
-	global_manpower = 30
+	global_manpower_modifier = 0.225
 }
 
 venice_authority = {
-	global_tax_modifier = 0.25
+	global_tax_modifier = 0.30
 }
 
 genoa_authority = {
@@ -174,7 +174,7 @@ italian_authority = {
 }
 
 habsburg_authority = {
-	province_warscore_cost = -0.25
+	province_warscore_cost = -0.2
 	diplomatic_reputation = 3
 	diplomats = 2
 }
@@ -209,7 +209,7 @@ reform5_buff = {
 	land_forcelimit_modifier = 0.1
 }
 reform6_buff = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 #Eating HRE Land outside
