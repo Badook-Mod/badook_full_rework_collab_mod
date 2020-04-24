@@ -649,6 +649,19 @@ yellow_turbans_here = {
 	global_unrest = 2.5
 }
 
+
+#HRE cancelling out +peace IA
+emperor_is_weak = {
+	potential = {
+		tag = NUM
+	}
+	trigger = {
+		tag = NUM
+	}
+	imperial_authority_value = -0.1
+}
+
+
 #ai 
 
 fort_compensation_modifier_ai = {
