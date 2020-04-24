@@ -20,7 +20,7 @@ shinto_invasion = {
 	
 	progress = {
 		modifier = {
-			factor = 20
+			factor = 10
 			has_global_flag = shinto_pirates_here
 		}
 		modifier = {
