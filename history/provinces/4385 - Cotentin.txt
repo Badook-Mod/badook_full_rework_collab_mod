@@ -17,6 +17,7 @@ discovered_by = muslim
 discovered_by = ottoman
 add_core = NRM
 add_claim = FRA
+add_claim = ENG
 extra_cost = 8
 center_of_trade = 1
 

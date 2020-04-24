@@ -1,0 +1,189 @@
+##################################################
+# Distinct
+##################################################
+
+vanguard = {
+	global_tax_modifier = 0.01
+}
+
+janniboar = {
+	global_tax_modifier = 0.01
+}
+
+krieg = {
+	land_morale = 0.1
+}
+
+desperate_defense = {
+	discipline = 0.05
+}
+
+limited_war = {
+	discipline = 0.05
+}
+
+krieg_hidden = {
+	global_tax_modifier = 0.01
+}
+
+escalate_hidden = {
+	global_tax_modifier = 0.01
+}
+
+reformed_dev = {
+	development_cost = -0.1
+}
+
+build_forts = {
+	build_cost = -0.85
+	build_time = -0.99
+}
+
+danish_flexibility = {
+	culture_conversion_cost = -0.15
+}
+
+westphalian_boom = {
+	local_manpower_modifier = 0.25
+	local_production_efficiency = 0.2
+}
+
+trade_hub = {
+	province_trade_power_value = 5
+	trade_goods_size = 1
+}
+
+danish_supremacy = {
+	trade_efficiency = 0.15
+	land_morale = 0.05
+}
+
+french_naval_efforts = {
+	 global_ship_cost = -0.15
+}
+
+florence_naval_efforts = {
+	 global_ship_cost = -0.1
+	naval_forcelimit_modifier  = 0.33
+}
+
+florence_expansion = {
+	ae_impact = -0.15
+}
+
+hessian_diplomacy = {
+	improve_relation_modifier = 0.5
+}
+
+hessian_trade = {
+	global_trade_power = 0.1
+}
+
+hessian_caution = {
+	land_attrition = -0.2
+}
+
+hessian_blitz = {
+	siege_ability = 0.1
+}
+
+hessian_prosperity = {
+	all_power_cost = -0.03
+}
+
+florence_bash = {
+	 infantry_power = 0.1
+}
+
+portugese_supremacy = {
+	 artillery_power = 0.1
+}
+
+spanish_supremacy = {
+	 global_manpower_modifier = 0.1
+	 trade_steering = 0.25
+}
+
+blessed_commerce = {
+	 province_trade_power_modifier = 0.5
+}
+
+papal_taskforce = {
+	 global_manpower_modifier = 0.1
+	 land_forcelimit = 5
+}
+
+papal_dominion = {
+	papal_influence = 1
+}
+
+boar_advisor = {
+	improve_relation_modifier = -0.1
+}
+
+boar_haven = {
+	local_manpower_modifier = 0.5
+}
+
+mystery_cannon = {
+	artillery_power = 0.3
+}
+
+child_labor = {
+	trade_goods_size = 2
+}
+
+papal_hostility = {
+	papal_influence = -1
+}
+
+parental_consent = {
+	global_manpower_modifier = -0.1
+}
+
+solo_consensus = {
+	global_manpower_modifier = 0.1
+	global_tax_modifier = 0.1
+	production_efficiency = 0.1
+}
+
+hesse_protestant = {
+	global_missionary_strength = 0.01
+	tolerance_heretic = 1
+}
+
+hesse_fully_protestant = {
+	religious_unity = 1
+	tolerance_heretic = 3
+	global_missionary_strength = 0.02
+}
+
+kef_excavation = {
+	global_manpower_modifier = -0.1
+	global_regiment_cost = 0.1
+}
+
+kef_mine_1 = {
+	trade_goods_size = 1
+}
+
+kef_mine_2 = {
+	trade_goods_size = 3
+}
+
+kef_mine_3 = {
+	trade_goods_size = 5
+	local_development_cost = -0.5
+}
+
+kef_mine_4 = {
+	trade_goods_size = 3
+}
+
+chinese_full_renaissance = {
+	local_production_efficiency = 0.5
+}
+
+chinese_renaissance = {
+	local_production_efficiency = 0.25
+}

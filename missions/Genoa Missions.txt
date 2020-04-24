@@ -1,0 +1,268 @@
+florence_mission = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GEN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	florence_trade_efforts = {
+		icon = mission_have_two_subjects
+		required_missions = { }
+		completed_by = 1536.1.1
+		trigger = {
+			116 = {
+				province_has_center_of_trade_of_level = 3
+				}
+		}
+		effect = {
+				add_country_modifier = {
+					name = "florence_expansion"
+					duration = 5475
+				}
+				121 = {
+					add_claim = ROOT
+				}
+				2983 = {
+					add_claim = ROOT
+				}
+		}
+	}
+	conquer_north_naples = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { florence_trade_efforts }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 121
+				province_id = 2983
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			121 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			2983 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "florence_naval_efforts"
+				duration = 5475
+			}
+		}
+	}
+	florence_fleet = {
+		icon = mission_galleys_in_port
+		required_missions = { conquer_north_naples }
+		trigger = {
+			naval_forcelimit = 30
+			navy_size_percentage = 0.95
+		}
+		effect = {
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	control_italian_isles = {
+		icon = mission_sea_battles
+		required_missions = { florence_fleet }
+		provinces_to_highlight = {
+			OR = {
+				area = corsica_sardinia_area
+				area = sicily_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+					name = "florence_bash"
+					duration = 3655
+				}
+		}
+	}
+	florence_monopoly = {
+		icon = mission_hanseatic_city
+		required_missions = { control_italian_isles }
+		trigger = {
+				land_forcelimit = 50
+				monthly_income = 50
+			}
+		effect = {
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+florence_papal_mission = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = LAN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	papal_relations = {
+		icon = mission_european_church
+		required_missions = { }
+		trigger = {
+			reverse_has_opinion = {
+				who = PAP
+				value = 150
+			}
+		}
+		effect = {
+			country_event = { id = eubmission_events.1 }
+		}
+	}
+	papal_plot = {
+		icon = mission_italian_condottiere
+		required_missions = { papal_relations }
+		trigger = {
+			reverse_has_opinion = {
+				who = PAP
+				value = 150
+			}
+			papal_influence = 20
+		}
+		effect = {
+			add_papal_influence = -20
+			PAP = {
+				kill_ruler = yes
+			}
+			
+			add_country_modifier = { 
+				name = papal_dominion
+				duration = 7300
+			}
+		}
+	}
+	florence_pope = {
+		icon = mission_empire
+		required_missions = { papal_plot }
+		trigger = {
+			 is_papal_controller = yes
+		}
+		effect = {
+			add_prestige = 10
+			central_italy_area = {
+				limit = {
+					owned_by = PAP
+				}
+				remove_core = PAP
+				add_core = URB
+				cede_province = URB
+			}
+			URB = { grant_independence = yes }
+		}
+	}
+	central_florence = {
+		icon = mission_cannons_firing
+		required_missions = { florence_pope }
+		provinces_to_highlight = {
+			area = central_italy_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			118 = {
+				owned_by = PAP
+				}
+			central_italy_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			papal_influence = 50
+			manpower_percentage = 0.25
+			treasury = 100
+		}
+		effect = {
+			add_papal_influence = -50
+			add_yearly_manpower = -0.2
+			add_treasury = -100
+			118 = { 
+	  			cede_province = LAN 
+				}
+		}
+	}
+	roman_florence = {
+		icon = mission_alliances
+		required_missions = { central_florence }
+		provinces_to_highlight = {
+			province_id = 118
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			118 = {
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			albania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

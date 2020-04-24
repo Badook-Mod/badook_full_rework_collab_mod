@@ -14,6 +14,7 @@ base_manpower = 4
 add_local_autonomy = 80
 add_core = ALE
 add_claim = FRA
+add_claim = ENG
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

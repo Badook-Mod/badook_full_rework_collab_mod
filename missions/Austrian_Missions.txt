@@ -20,50 +20,26 @@ hab_holy_roman_ambitions = {
 				tooltip = secure_the_imperial_crown.tooltip
 				calc_true_if = {
 					all_elector = {
-						preferred_emperor = ROOT
-						has_opinion = { who = ROOT value = 100 }
+						has_opinion = { who = ROOT value = 50 }
 					}
-					amount = 5
+					amount = 3
 				}
 			}
 		}
 		effect = {
-			if = {
+			bohemia_area = {
 				limit = {
-					exists = BOH
-					is_subject = no
-					government = monarchy
-					religion_group = christian
-					BOH = {
-						is_subject = no
-						government = monarchy
-					}
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = BOH
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				bohemia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
+			erzgebirge_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
 				}
-				erzgebirge_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			add_country_modifier = {
-				name = "succesful_bid_for_imperial_crown"
-				duration = 5475 #15 years
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -114,12 +90,6 @@ hab_holy_roman_ambitions = {
 			}
 			silesia_area = {
 				add_permanent_claim = ROOT
-			}
-			hidden_effect = {
-				remove_casus_belli = {
-					type = cb_restore_personal_union
-					target = BOH
-				}
 			}
 		}
 	}
@@ -268,57 +238,29 @@ hab_protect_the_balkans = {
 		required_missions = {  } #None
 		completed_by = 1490.1.1
 		trigger = {
-			if = {
-				limit = {
-					exists = HUN
-				}
-				total_development = HUN
-				total_development = 200
-			}
-			else = {
-				total_development = 200
-			}
+			total_development = 250
 		}
 		effect = {
-			if = {
+			slovakia_area = {
 				limit = {
-					exists = HUN
-					is_subject = no
-					government = monarchy
-					religion_group = christian
-					HUN = {
-						is_subject = no
-						government = monarchy
-					}
+				NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = HUN
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				slovakia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			transdanubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				transdanubia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			alfold_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				alfold_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -546,7 +488,7 @@ hab_protect_the_balkans = {
 			}
 		}
 		effect = {
-			add_mercantilism = 5
+			add_mercantilism = 15
 			venetia_area = {
 				add_province_modifier = {
 					name = "protected_italian_interests"

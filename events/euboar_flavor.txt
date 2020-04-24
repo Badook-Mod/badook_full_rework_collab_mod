@@ -1,6 +1,6 @@
 namespace = eubflavor_events
 
-country_event = { #boar hunt
+country_event = { #snake gang
 	id = eubflavor_events.1
 	title = "eubflavor_events.t1"
 	desc = "eubflavor_events.d1"
@@ -19,21 +19,21 @@ country_event = { #boar hunt
 	
 	option = { # eat it
 		name = "eubflavor_events.1a"
-		add_treasury = 150
-		add_prestige = 20
+		add_treasury = 300
+		add_prestige = 25
 	}
-	option = { # set the boar free
+	option = { # set the snake free
 		name = "eubflavor_events.1b"
 		hesse_area = {
-					limit = {
-						is_core = ROOT
-						owned_by = ROOT
-					}
-					add_province_modifier = { 
-						name = boar_haven
-						duration = -1 
-					}
-				}
+			limit = {
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			add_province_modifier = { 
+				name = boar_haven
+				duration = -1 
+			}
+		}
 	}
 	option = { # put the boar in charge
 		name = "eubflavor_events.1c"

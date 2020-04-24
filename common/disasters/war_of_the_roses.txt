@@ -1,0 +1,85 @@
+war_of_the_roses = {
+	potential = {
+		tag = ENG
+		normal_or_historical_nations = yes
+		government = monarchy
+		is_free_or_tributary_trigger = yes
+		uses_doom = no
+		NOT = { has_country_flag = had_war_of_the_roses }
+	}
+
+
+
+	can_start = {
+		current_age = age_of_discovery
+		has_any_disaster = no
+	}
+	
+	can_stop = { 
+		OR = {
+			stability = 3
+		}
+	}
+	
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 2.5
+			NOT = { stability = 2 }
+		}		
+		
+	}
+
+
+
+
+	
+	can_end = {
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
+		stability = 1
+		OR = {
+			AND = {
+				has_regency = no
+				has_heir = yes
+			}
+			NOT = { government = monarchy }
+		}
+	}
+	
+
+
+
+	modifier = {
+		possible_mercenaries = 0.125
+		global_trade_goods_size_modifier = -0.10
+	}	
+	
+	
+	on_start = war_of_the_roses.1
+	on_end = war_of_the_roses.100
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			100 = war_of_the_roses.2		
+			100 = war_of_the_roses.3		
+			100 = war_of_the_roses.4
+			100 = war_of_the_roses.5
+			#6 is triggere from on battle	
+			100 = war_of_the_roses.7
+			100 = war_of_the_roses.8	
+			100 = war_of_the_roses.9
+			#10 & 11 is triggered from siege won
+			#12 % 13 triggers for other nations, and fires 14.
+			#101 & 102 are endings for rebel victory.
+		}
+	}
+}
+
