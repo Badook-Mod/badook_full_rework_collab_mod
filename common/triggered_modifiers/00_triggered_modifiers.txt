@@ -775,11 +775,32 @@ yellow_turbans_here = {
 	trigger = {
 		exists = TBS
 	}
-	imperial_mandate = -0.25
+	imperial_mandate = -0.2
 	meritocracy = -2
-	stability_cost_modifier = 0.35
-	global_unrest = 5
+	stability_cost_modifier = 0.25
+	global_unrest = 2.5
 }
+
+#ai 
+
+fort_compensation_modifier_ai = {
+	potential = {
+		AND = {
+			was_player = no
+			ai = yes
+		}
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 1
+			base_manpower = 1
+		}
+	}
+	global_manpower = 5
+	fort_maintenance_modifier = -0.5
+}
+
+#non nomad
 
 fort_compensation_modifier = {
 	potential = {
@@ -793,7 +814,6 @@ fort_compensation_modifier = {
 		num_of_owned_provinces_with = {
 			value = 50
 			base_manpower = 1
-			is_nomad = yes
 		}
 	}
 	global_manpower = 10
@@ -818,23 +838,6 @@ fort_compensation_modifier_big = {
 	fort_maintenance_modifier = -0.10
 }
 
-fort_compensation_modifier_ai = {
-	potential = {
-		AND = {
-			was_player = no
-			ai = yes
-		}
-	}
-	trigger = {
-		num_of_owned_provinces_with = {
-			value = 1
-			base_manpower = 1
-		}
-	}
-	global_manpower = 5
-	fort_maintenance_modifier = -0.5
-}
-
 fort_compensation_modifier_very_big = {
 	potential = {
 		AND = {
@@ -852,6 +855,8 @@ fort_compensation_modifier_very_big = {
 	global_manpower = 25
 	fort_maintenance_modifier = -0.15
 }
+
+#normal
 
 fort_compensation_modifier_non_nomad = {
 	potential = {
