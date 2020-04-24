@@ -1,0 +1,959 @@
+namespace = eubflavor_events
+
+country_event = { #boar hunt
+	id = eubflavor_events.1
+	title = "eubflavor_events.t1"
+	desc = "eubflavor_events.d1"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		is_year = 1444
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = { # eat it
+		name = "eubflavor_events.1a"
+		add_treasury = 150
+		add_prestige = 20
+	}
+	option = { # set the boar free
+		name = "eubflavor_events.1b"
+		hesse_area = {
+					limit = {
+						is_core = ROOT
+						owned_by = ROOT
+					}
+					add_province_modifier = { 
+						name = boar_haven
+						duration = -1 
+					}
+				}
+	}
+	option = { # put the boar in charge
+		name = "eubflavor_events.1c"
+		add_ruler_modifier = { name = boar_advisor }
+		if = {
+			limit = {
+				NOT = { MIL = 5 }
+			}
+			change_mil = 2
+			else = {
+				if = {
+					limit = {
+						NOT = { MIL = 6 }
+					}
+					change_mil = 1
+					add_mil_power = 50
+					else = {
+						add_mil_power = 100
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #orphan
+	id = eubflavor_events.2
+	title = "eubflavor_events.t2"
+	desc = "eubflavor_events.d2"
+	picture = FARMING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		is_year = 1455
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = { # adopt him as your own
+		name = "eubflavor_events.2a"
+		define_heir = {
+			dynasty = ROOT
+			age = 6
+			adm = 1
+			dip = 1
+			mil = 1
+			claim = 20
+		}
+	}
+	option = { # pay for his education
+		name = "eubflavor_events.2b"
+		add_treasury = -100
+		country_event = { 
+			id = eubflavor_events.4
+			days = 3650
+			tooltip = MIL_ADV_DISCOUNT
+		}
+	}
+	option = { # send him to the mines
+		name = "eubflavor_events.2c"
+		83 = {
+			add_province_modifier = { 
+				name = child_labor
+				duration = 18250 
+			}
+		}
+	}
+}
+
+country_event = { #mad scientist
+	id = eubflavor_events.3
+	title = "eubflavor_events.t3"
+	desc = "eubflavor_events.d3"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		is_year = 1470
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = { # burn it
+		name = "eubflavor_events.3a"
+		add_stability_or_adm_power = yes
+	}
+	option = { # see if anything can be useful
+		name = "eubflavor_events.3b"
+		add_country_modifier = {
+				name = "mystery_cannon"
+				duration = 7310
+			}
+	}
+	option = { # fund his experiments
+		name = "eubflavor_events.3c"
+		change_innovativeness = 4
+		add_legitimacy = -20
+		add_years_of_income = -0.5
+	}
+}
+
+country_event = { #big basilisk
+	id = eubflavor_events.4
+	title = "eubflavor_events.t4"
+	desc = "eubflavor_events.d4"
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = { # orphan becomes advisor
+		name = "eubflavor_events.4a"
+		define_advisor = {
+			type = army_reformer
+			skill = 3
+			name = "Basilisk"
+			discount = yes
+		}
+	}
+}
+
+country_event = { #renaissance skepticism
+	id = eubflavor_events.5
+	title = "eubflavor_events.t5"
+	desc = "eubflavor_events.d5"
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		has_institution = renaissance
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { # the church is greedy
+		name = "eubflavor_events.5a"
+		add_prestige = 10
+		set_country_flag = renaissance_greed
+		set_variable = {            
+			which = hesse_counter
+			value = 2
+		}
+		add_country_modifier = {
+			name = "papal_hostility"
+			duration = 7310
+		}
+	}
+	option = { # pay the tribute
+		name = "eubflavor_events.5b"
+		add_years_of_income = -0.25
+		set_country_flag = renaissance_greed
+		set_variable = {            
+			which = hesse_counter
+			value = 0
+		}
+	}
+}
+
+country_event = { #Heretic preacher
+	id = eubflavor_events.6
+	title = "eubflavor_events.t6"
+	desc = "eubflavor_events.d6"
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		has_country_flag = renaissance_greed
+		reform_desire = 0.5
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { # hire him
+		name = "eubflavor_events.6a"
+		add_years_of_income = -0.25
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		change_variable = {            
+			which = hesse_counter
+			value = 2
+		}
+	}
+	option = { # let him be
+		name = "eubflavor_events.6b"
+		change_variable = {            
+			which = hesse_counter
+			value = 1
+		}
+		add_prestige = 10
+	}
+	option = { # put him on trial
+		name = "eubflavor_events.6c"
+		add_papal_influence = 20
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+}
+
+country_event = { #locals want different marriage customs
+	id = eubflavor_events.7
+	title = "eubflavor_events.t7"
+	desc = "eubflavor_events.d7"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		has_country_flag = renaissance_greed
+		reform_desire = 0.65
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { # mandatory parental consent
+		name = "eubflavor_events.7a"
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_years_of_income = 0.5
+		add_country_modifier = {
+			name = "parental_consent"
+			duration = 3650
+			}
+		change_variable = {            
+			which = hesse_counter
+			value = 2
+		}
+	}
+	option = { # formalise marriages
+		name = "eubflavor_events.7b"
+		add_years_of_income = 0.25
+		add_stability_or_adm_power = yes
+		change_variable = {
+			which = hesse_counter
+			value = 1
+		}
+	}
+	option = { # marriage is consensual
+		name = "eubflavor_events.7c"
+		add_papal_influence = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_country_modifier = {
+			name = "solo_consensus"
+			duration = 10950
+		}
+	}
+}
+
+country_event = { #tithes given to bishop
+	id = eubflavor_events.8
+	title = "eubflavor_events.t8"
+	desc = "eubflavor_events.d8"
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HES
+		has_country_flag = renaissance_greed
+		reform_desire = 0.8
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { # maintain fief
+		name = "eubflavor_events.8a"
+		add_legitimacy = -30
+		change_variable = {            
+			which = hesse_counter
+			value = 2
+		}
+	}
+	option = { # revoke fief
+		name = "eubflavor_events.8b"
+		random_owned_province = { 
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+country_event = { #synod of homberg
+	id = eubflavor_events.9
+	title = "eubflavor_events.t9"
+	desc = "eubflavor_events.d9"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { is_religion_enabled = protestant }
+		tag = HES
+		capital_scope = {
+			continent = europe
+		}
+		any_owned_province = {
+			can_have_center_of_reformation_trigger = {
+				RELIGION = protestant
+			}
+		}
+		religion = catholic
+		has_country_flag = renaissance_greed
+		reform_desire = 0.93
+		check_variable = {            
+			which = hesse_counter
+			value = 5
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { # embrace protestanism
+		name = "EVTOPTA2001"
+		enable_religion = protestant
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = protestant
+				}
+			}
+			change_religion = protestant
+			add_reform_center = protestant
+			if = {
+				limit = {
+					NOT = { is_capital = yes }
+				}
+				root = {
+					capital_scope = {
+						change_religion = protestant
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+					}
+				}
+			}
+		}
+		add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		change_religion = protestant
+		remove_country_modifier = counter_reformation
+		remove_country_modifier = the_statue_in_restraint_of_appeals
+		remove_country_modifier = bavarian_jesuits
+		remove_country_modifier = the_societas_jesu
+		remove_country_modifier = the_declaration_of_indulgence
+		remove_country_modifier = de_heretico_comburendo
+		remove_country_modifier = the_conventicle_act
+		if = {
+			limit = {
+				check_variable = {            
+					which = hesse_counter
+					value = 8
+				}
+			}
+			add_church_power = 100
+			add_country_modifier = {
+				name = "hesse_fully_protestant"
+				duration = 7290
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "hesse_protestant"
+				duration = 7290
+			}
+		}
+		set_country_flag = "protestant_reformation"
+	}
+	option = { # stay catholic
+		name = "eubflavor_events.9b"
+		add_stability_or_adm_power  = yes
+	}
+}
+
+country_event = { 
+	id = eubflavor_events.10
+	title = "flavor_mng.EVTNAME2"
+	desc = "flavor_mng.EVTDESC2"
+	picture = REVOLUTION_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = SUI
+			tag = SHG
+		}
+		is_year = 1450
+		NOT =  { has_country_flag = chinawall_1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA2" #Yes, we need to repair the Great Wall
+		add_years_of_income = -0.50
+		add_army_tradition = 25
+		set_country_flag = chinawall_1
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB2" #Let it continue to crumble
+		add_prestige = -10
+		set_country_flag = chinawall_1
+	}
+}
+
+country_event = { #Jin wall 2
+	id = eubflavor_events.11
+	title = "flavor_mng.EVTNAME3"
+	desc = "flavor_mng.EVTDESC3"
+	picture = REVOLUTION_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = SUI
+			tag = SHG
+		}
+		is_year = 1500
+		NOT =  { has_country_flag = chinawall_2 }
+		has_country_flag = chinawall_1
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA2" #Yes, we need to repair the Great Wall
+		add_years_of_income = -0.50
+		add_army_tradition = 25
+		set_country_flag = chinawall_2
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB2" #Let it continue to crumble
+		add_prestige = -10
+		set_country_flag = chinawall_2
+	}
+}
+
+# The Perfection of Ming Porcelain
+country_event = {
+	id = eubflavor_events.12
+	title = "flavor_mng.EVTNAME4"
+	desc = "flavor_mng.EVTDESC4"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = NYU
+			tag = SNW
+		}
+		is_year = 1500
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA4"
+		every_owned_province = {
+			limit = {
+				continent = asia
+				trade_goods = chinaware
+			}
+			add_province_modifier = {
+				name = perfected_porcelain
+				duration = -1				
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eubflavor_events.13
+	title = "flavor_mng.EVTNAME5"
+	desc = "flavor_mng.EVTDESC5"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = SNW
+			tag = NYU
+		}
+		num_of_ports = 1
+		any_country = {
+			capital_scope = { 
+				continent = europe
+			}
+			any_known_country = {
+				tag = YUE
+			}
+			any_active_trade_node = {
+				owned_by = YUE
+			}
+		}
+		NOT =  { has_country_flag = chinaport }
+	}
+	
+	mean_time_to_happen = {
+		months = 32
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB5" #Close China to the outside world
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = mng_closed_china
+			duration = -1
+		}
+		set_country_flag = chinaport
+	}
+	option = {
+		name = "flavor_mng.EVTOPTC5" #Keep trade open for all
+		add_stability = -1
+		add_country_modifier = {
+			name = mng_open_china
+			duration = -1
+		}
+		set_country_flag = chinaport
+	}
+}
+
+country_event = {
+	id = eubflavor_events.14
+	title = "flavor_mng.EVTNAME6"
+	desc = "flavor_mng.EVTDESC6"
+	picture = REFORM_eventPicture
+	
+	
+	trigger = {
+		culture_group = east_asian
+		ai = no
+		is_year = 1558
+		NOT = { is_year = 1588 }
+		NOT =  { has_country_flag = chinareform_1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA6" #Go with the reforms
+		add_mil_power = 100
+		set_country_flag = chinareform_1
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB6" #No, such reforms would be too costly
+		add_stability_or_adm_power = yes
+		set_country_flag = chinareform_1
+	}
+}
+
+country_event = {
+	id = eubflavor_events.15
+	title = "flavor_mng.EVTNAME7"
+	desc = "flavor_mng.EVTDESC7"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { religion_group = christian }
+		num_of_ports = 1
+		OR = {
+			has_country_modifier = mng_closed_china
+			has_country_modifier = mng_open_china
+		}
+		NOT =  { has_country_flag = chinaport_2 }
+
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA7" #Yes, we may benefit from their learning
+		set_country_flag = mng_accepted_jesuits
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				is_reformation_center = no
+			}
+			change_religion = catholic
+			add_permanent_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 7300
+			}
+			if = {
+				limit = { NOT = { renaissance = 100 } }
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+			}
+		}
+		add_dip_power = 100
+		add_mil_power = 100
+		add_adm_power = 100
+		set_country_flag = chinaport_2
+		every_known_country = {
+			limit = {
+				religion = catholic
+				has_discovered = event_target:current_ming_capital
+			}
+			add_opinion = {
+				who = MNG
+				modifier = opinion_accepted_jesuits
+			}
+		}
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB7"
+		add_stability_or_adm_power = yes
+		set_country_flag = chinaport_2
+	}
+}
+
+country_event = {
+	id = eubflavor_events.16
+	title = "flavor_mng.EVTNAME8"
+	desc = "flavor_mng.EVTDESC8"
+	picture = FAMINE_eventPicture
+	
+	trigger = {
+		culture_group = east_asian
+		ai = no
+		is_year = 1550
+		NOT = { is_year = 1600 }
+		NOT =  { has_country_flag = chinafamine }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA8" # There is nothing we can do
+		ai_chance = { factor = 25 }
+		set_country_flag = chinafamine
+		add_country_modifier = {
+			name = severe_famine
+			duration = 3650
+		}
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB8" # Try to ease the suffering
+		ai_chance = { factor = 50 }
+		set_country_flag = chinafamine
+		add_years_of_income = -0.50
+		add_country_modifier = {
+			name = famine
+			duration = 3650
+		}
+	}
+	option = {
+		name = "flavor_mng.EVTOPTC8" # Use all our resources to aim those in need
+		ai_chance = { factor = 25 }
+		add_years_of_income = -0.50
+		set_country_flag = chinafamine
+		add_adm_power = -100
+		add_country_modifier = {
+			name = fighting_famine
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = eubflavor_events.17
+	title = "flavor_mng.EVTNAME9"
+	desc = "flavor_mng.EVTDESC9"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		culture_group = east_asian
+		ai = no
+		is_year = 1600
+		any_owned_province = {
+			culture = manchu
+		}
+		NOT = {	DIP = 3 }
+		NOT = {	ADM = 3 }
+		NOT = {	MIL = 3	}
+		NOT = { stability = 2 }
+		NOT =  { has_country_flag = manchurevolt }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA9" #We are too weak to crush the rebels
+		every_owned_province = {
+			limit = {
+				culture = manchu
+			}
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
+		}
+		set_country_flag = manchurevolt
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB9" #Attempt to crush the rebels
+		add_mil_power = -100
+		every_owned_province = {
+			limit = {
+				culture = manchu
+			}
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
+		}
+		set_country_flag = manchurevolt
+	}
+}
+
+country_event = {
+	id = eubflavor_events.18
+	title = "flavor_mng.EVTNAME10"
+	desc = "flavor_mng.EVTDESC10"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		culture_group = east_asian
+		ai = no
+		is_year = 1600
+		NOT = { is_year = 1625 }
+		NOT =  { has_country_flag = whitelotus }
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA10" # Bah, surely these cultists can do no lasting harm!
+		set_country_flag = whitelotus
+		random_owned_province = {
+			limit = {
+				continent = asia
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				continent = asia
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
+			}
+		}
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB10" #Let the forces of the Empire crush the Rebellion!
+		add_years_of_income = -0.5
+		set_country_flag = whitelotus
+	}
+}
+
+country_event = {
+	id = eubflavor_events.19
+	title = "flavor_mng.EVTNAME13"
+	desc = "flavor_mng.EVTDESC13"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		is_year = 1700
+		has_country_flag = mng_accepted_jesuits
+		NOT = { religion = catholic }
+		num_of_owned_provinces_with = {
+			value = 10
+			superregion = china_superregion
+			has_owner_religion = no
+			religion = catholic
+		}
+		num_of_religion = { religion = catholic value = 1 }
+		NOT =  { has_country_flag = chinesejesuit }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA13"
+		set_country_flag = mng_jesuits_expelled
+		set_country_flag = chinesejesuit
+		every_owned_province = {
+			limit = {
+				religion = catholic
+				superregion = china_superregion
+			}
+			change_religion = root
+			if = {
+				limit = {
+					base_tax = 2
+				}
+				add_base_tax = -1
+			}
+		}
+		
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB13"
+		add_stability = -2
+		set_country_flag = chinesejesuit
+	}
+}
+
+country_event = {
+	id = eubflavor_events.20
+	title = "flavor_mng.EVTNAME14"
+	desc = "flavor_mng.EVTDESC14"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		culture_group = east_asian
+		ai = no
+		is_year = 1770
+		NOT = { is_year = 1800 }
+		NOT =  { has_country_flag = chinesecorrupt }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_mng.EVTOPTA14" #Appoint him despite his faults
+		add_adm_power = 100
+		set_country_flag = chinesecorrupt
+	}
+	option = {
+		name = "flavor_mng.EVTOPTB14" #No, such corruption could ruin the state!
+		add_legitimacy = 10
+		add_corruption = -1
+		set_country_flag = chinesecorrupt
+	}
+}
+
+country_event = {
+	id = eubflavor_events.21
+	title = "flavor_mng.18.t"
+	desc = "flavor_mng.18.d"
+	picture = DIPLOMACY_eventPicture	
+	
+	trigger = {
+		culture_group = east_asian
+		ai = no
+		has_country_flag = mng_accepted_jesuits
+		is_year = 1580
+		NOT = { is_year = 1600 }
+		NOT =  { has_country_flag = chinesericci }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "flavor_mng.18.a" #Welcome Ricci to our court.
+		set_country_flag = chinesericci
+		add_ruler_modifier = {
+			name = "mng_ricci_at_court"
+		}
+	}
+	option = {
+		name = "flavor_mng.18.b" #Go back to Macau!
+		add_stability_or_adm_power = yes
+		set_country_flag = chinesericci
+		add_prestige = 15
+	}
+}

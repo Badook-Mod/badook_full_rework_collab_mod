@@ -2,19 +2,13 @@ reichsreform = {
 	empire = hre
 	
 	member = {
-		global_tax_income = 10
-		global_autonomy = -0.025
 	}
 	emperor = {
-		global_tax_income = 10
-		global_autonomy = -0.025
-		global_manpower = 2
+		global_manpower = 5
+		global_tax_income = 12
 	}
 	on_effect = {
-		imperial_ban_allowed = yes
-	}
-	off_effect = {
-		imperial_ban_allowed = yes
+		country_event = { id = HREreforms.1 tooltip = vassalize_empire2 }
 	}
 }
 
@@ -22,14 +16,13 @@ reichsregiment = {
 	empire = hre
 	
 	member = {
-		reform_progress_growth = 0.20
-		adm_tech_cost_modifier = -0.075
-		global_manpower = 2
 	}
 	emperor = {
-		reform_progress_growth = 0.25
-		adm_tech_cost_modifier = -0.10
-		global_manpower = 4
+		global_manpower = 10
+		global_tax_income = 24
+	}
+	on_effect = {
+		country_event = { id = HREreforms.2 tooltip = vassalize_empire2 }
 	}
 }
 
@@ -37,13 +30,13 @@ hofgericht = {
 	empire = hre
 	
 	member = {
-		land_morale = 0.05
-		global_tax_modifier = 0.05
-		global_manpower = 2
 	}
 	emperor = {
-		leader_land_shock = 1
-		global_manpower = 4
+		global_manpower = 10
+		global_tax_income = 24
+	}
+	on_effect = {
+		country_event = { id = HREreforms.3 tooltip = vassalize_empire2 }
 	}
 }
 
@@ -51,17 +44,13 @@ gemeinerpfennig = {
 	empire = hre
 	
 	member = {
-		land_forcelimit = 15
-		army_tradition = 0.5
-		global_manpower = 4
-		republican_tradition = 0.5
 	}
 	emperor = {
-		leader_siege = 1
-		global_manpower = 6
-		imperial_authority = 0.15
+		global_manpower = 20
+		global_tax_income = 48
 	}
 	on_effect = {
+		country_event = { id = HREreforms.4 tooltip = vassalize_empire2 }
 	}
 }
 
@@ -69,18 +58,14 @@ landfriede = {
 	empire = hre
 	
 	member = {
-		land_forcelimit = -15
-		army_tradition = -0.5
-		land_morale = -0.05
 	}
 	emperor = {
-		land_forcelimit_modifier = 0.20
-		global_manpower = 6
-		land_morale = 0.05
+		global_manpower = 20
+		global_tax_income = 48
 	}
 	on_effect = {
 		internal_hre_cb = yes
-		#country_event = { id = HREreforms.2 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
+		country_event = { id = HREreforms.5 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
 	}
 	off_effect = {
 		internal_hre_cb = yes
@@ -91,19 +76,13 @@ erbkaisertum = {
 	empire = hre
 	
 	member = {
-		development_cost = 0.1
-		global_manpower = -6
-		land_morale = -0.15
 	}
 	emperor = {
-		development_cost = -0.1
-		global_manpower = 6
+		global_manpower = 20
+		global_tax_income = 48
 	}
 	on_effect = {
-		hre_inheritable = no
-	}
-	off_effect = {
-		hre_inheritable = no
+		country_event = { id = HREreforms.6 tooltip = vassalize_empire2 }
 	}
 }
 
@@ -113,9 +92,10 @@ privilegia_de_non_appelando = {
 	member = {
 	}
 	emperor = {
-		global_manpower = 8
+		global_manpower = 40
+		global_tax_income = 96
 	}
 	on_effect = {
-		country_event = { id = HREreforms.2 tooltip = vassalize_empire2 } #enables buff depending on tag
+		country_event = { id = HREreforms.7 tooltip = vassalize_empire2 }
 	}	
 }

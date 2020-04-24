@@ -36,6 +36,7 @@ country_event = {
 	desc = nomadic_events.3.d
 	picture = MESOAMERICAN_GODS_eventPicture
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	trigger = {
 		religion = nomadicism
@@ -45,10 +46,15 @@ country_event = {
 	immediate = {
 		hidden_effect = {		
 			#nomads land swapped
-			every_owned_province = {
-				change_religion = nomadicism
+			every_country = {
+				limit = {
+					religion = nomadicism 
+				}
+				every_owned_province = {
+					change_religion = nomadicism
+				}
+				add_horde_unity = -100
 			}
-			add_horde_unity = -100
 			#truces
 			BAH = {
 				add_truce_with = VIJ
@@ -102,6 +108,50 @@ country_event = {
 					change_religion = ibadi
 				}
 			}
+			
+			#HRE setup
+			
+			every_province = {
+				limit = {
+					OR = {
+						region = north_german_region 
+						region = south_german_region 
+						region = italy_region 
+					}
+				}
+				set_in_empire = no
+			}
+			
+			#savoy
+			205 = { set_in_empire = no }
+			
+			#slotted nations
+			HAB = {
+				set_in_empire = yes
+			}
+			DAN = {
+				set_in_empire = yes
+			}
+			NAP = {
+				set_in_empire = yes
+			}
+			GEN = {
+				set_in_empire = yes
+			}
+			VEN = {
+				set_in_empire = yes
+			}
+			HES = {
+				set_in_empire = yes
+			}
+			BRA = {
+				set_in_empire = yes
+			}
+			
+			#Emperor nuremburg forever, starting IA = 0
+			add_imperial_influence = -20
+			hre_inheritable = yes
+			
 			#treaty ports
 			
 			5010 = {
@@ -151,12 +201,30 @@ country_event = {
 				add_province_triggered_modifier = imperial_wuhan
 			}
 			
+			#estate clear
+			every_province = {
+				limit = { 
+					owner = {
+						OR = {
+							ai = no
+							was_player = yes 
+						}
+					}
+				}
+				remove_estate = estate_nobles
+				remove_estate = estate_brahmins
+				remove_estate = estate_church
+				remove_estate = estate_maratha
+				remove_estate = estate_vaisyas
+				remove_estate = estate_burghers
+				remove_estate = estate_cossacks
+				remove_estate = estate_nomadic_tribes
+				remove_estate = estate_burghers
+				remove_estate = estate_jains
+				remove_estate = estate_rajput
+			}
 		}	
-		ai_will_do = {
-			factor = 0
-		}
 	}
-	
 	option = {
 		name = nomadic_events.3.a #keep me in
 	}
