@@ -515,7 +515,7 @@ base_values = {
 	tolerance_heretic = -2
 	mercenary_cost = 0.5
 	global_missionary_strength = 0.02
-	global_manpower = 10.0
+	global_manpower = 20
 	advisor_pool = 3
 	colonist_placement_chance = 0.05
 	free_leader_pool = 1
@@ -525,7 +525,7 @@ base_values = {
 	horde_unity = 0
 	devotion = -0.5
 	meritocracy = -0.5
-	max_states = 10
+	max_states = 12
 	num_accepted_cultures = 2
 	monthly_splendor = 1
 	artillery_bonus_vs_fort = 5
@@ -1136,14 +1136,14 @@ union_subject = {
 }
 
 all_nations = {
-	global_tax_income = 12
-	land_forcelimit	= 5
-	naval_forcelimit = 12
+	global_tax_income = 48
+	land_forcelimit	= 10
+	naval_forcelimit = 15
 }
 
 subject_nation = {
-	global_tax_income = -12
-	global_manpower = -6
+	global_tax_income = -24
+	global_manpower = -5
 }
 
 vassal_nation = {
