@@ -147,9 +147,6 @@ country_event = {
 			BRA = {
 				set_in_empire = yes
 			}
-			SIL = {
-				set_in_empire = yes
-			}
 			
 			#Emperor nuremburg forever, starting IA = 0
 			add_imperial_influence = -20
