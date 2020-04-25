@@ -252,6 +252,13 @@
  form_snake_minor:0 "Unlock the Regional Naga Cult Formables"
  FIND_THE_KEY_TOOLTIP:0 "No longer have the modifier "Preparing Expedition". Own the province of Kengtung, and follow the religion of Naga Sung Bai. Or be allied to someone who fufills all of these criteria, and no longer have the modifier "Preparing Expedition yourself."
  TAKE_KAMCHANOD_TOOLTIP:0 "Own the province of Vientiane, and follow the religion of Naga Sung Bai. Or be allied to someone who fufills both of these criteria."
+ badook_hre1:0 "Any Electors who have grown by 50 dev will get a permanent buff to their nation"
+ badook_hre2:0 "Any Electors who have grown by 100 dev will get a permanent buff to their nation"
+ badook_hre3:0 "Any Electors who have grown by 150 dev will get a permanent buff to their nation"
+ badook_hre4:0 "Any Electors who have grown by 200 dev will get a permanent buff to their nation"
+ badook_hre5:0 "Any Electors who have grown by 250 dev will get a permanent buff to their nation"
+ badook_hre6:0 "Any Electors who have grown by 350 dev will get a permanent buff to their nation"
+ badook_hre7:0 "Any Electors who have grown by 450 dev, and have gotten the previous 3 buffs, will get a strong permanent buff to their nation"
  
  #events china
  mandate_events.3.t:0 "The Yellow Flood"
