@@ -8,7 +8,7 @@ reichsreform = {
 		global_tax_income = 12
 	}
 	on_effect = {
-		country_event = { id = HREreforms.1 tooltip = vassalize_empire2 }
+		country_event = { id = HREreforms.1 tooltip = badook_hre1 }
 	}
 }
 
@@ -22,7 +22,7 @@ reichsregiment = {
 		global_tax_income = 24
 	}
 	on_effect = {
-		country_event = { id = HREreforms.2 tooltip = vassalize_empire2 }
+		country_event = { id = HREreforms.2 tooltip = badook_hre2 }
 	}
 }
 
@@ -36,7 +36,7 @@ hofgericht = {
 		global_tax_income = 24
 	}
 	on_effect = {
-		country_event = { id = HREreforms.3 tooltip = vassalize_empire2 }
+		country_event = { id = HREreforms.3 tooltip = badook_hre3 }
 	}
 }
 
@@ -50,7 +50,7 @@ gemeinerpfennig = {
 		global_tax_income = 48
 	}
 	on_effect = {
-		country_event = { id = HREreforms.4 tooltip = vassalize_empire2 }
+		country_event = { id = HREreforms.4 tooltip = badook_hre4 }
 	}
 }
 
@@ -65,7 +65,7 @@ landfriede = {
 	}
 	on_effect = {
 		internal_hre_cb = yes
-		country_event = { id = HREreforms.5 tooltip = vassalize_empire2 } #enables IA decisions for owning hre land
+		country_event = { id = HREreforms.5 tooltip = badook_hre5 }
 	}
 	off_effect = {
 		internal_hre_cb = yes
@@ -82,7 +82,7 @@ erbkaisertum = {
 		global_tax_income = 48
 	}
 	on_effect = {
-		country_event = { id = HREreforms.6 tooltip = vassalize_empire2 }
+		country_event = { id = HREreforms.6 tooltip = badook_hre6 }
 	}
 }
 
@@ -96,6 +96,6 @@ privilegia_de_non_appelando = {
 		global_tax_income = 96
 	}
 	on_effect = {
-		country_event = { id = HREreforms.7 tooltip = vassalize_empire2 }
+		country_event = { id = HREreforms.7 tooltip = badook_hre7 }
 	}	
 }
