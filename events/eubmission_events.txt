@@ -1,0 +1,193 @@
+namespace = eubmission_events
+
+country_event = {
+	id = eubmission_events.1
+	title = "eubmission_events.t1"
+	desc = "eubmission_events.d1"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes	
+	
+	option = { # immediate gift
+		name = "eubmission_events.1a"
+		add_treasury = 350
+	}
+	option = { # trader
+		name = "eubmission_events.1b"
+		116 = {
+			add_province_modifier = { 
+				name = blessed_commerce
+				duration = 10950  
+			}
+		}
+	}
+	option = { # military help
+		name = "eubmission_events.1c"
+		add_country_modifier = { 
+			name = papal_taskforce
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = eubmission_events.2
+	title = "eubmission_events.t2"
+	desc = "eubmission_events.d2"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes	
+	
+	immediate = {
+		2454 = {
+			change_trade_goods = iron
+		}
+	}
+	
+	option = { # keep digging & get experts
+		name = "eubmission_events.2a"
+		add_treasury = -500
+		define_advisor = {
+			type = natural_scientist
+			name = "Giussepe Giordano"
+			culture = lombard
+			skill = 4
+			cost_multiplier = 0.25
+		}
+		define_advisor = {
+			type = naval_reformer
+			name = "Nelson Queen"
+			culture = english
+			skill = 4
+			cost_multiplier = 0.25
+		}
+		define_advisor = {
+			type = fortification_expert
+			name = "Pierre Leturq"
+			culture = cosmopolitan
+			skill = 4
+			cost_multiplier = 0.25
+		}
+		add_country_modifier = {
+				name = "kef_excavation"
+				duration = 5475
+			}
+		country_event = {
+				id = eubmission_events.3
+				days = 5475
+			}
+	}
+	option = { # keep digging
+		name = "eubmission_events.2b"
+		add_treasury = -100
+		add_country_modifier = {
+				name = "kef_excavation"
+				duration = 3650
+			}
+		country_event = {
+				id = eubmission_events.4
+				days = 3650
+			}
+	}
+	option = { # leave it
+		name = "eubmission_events.2c"
+		2454 = {
+			add_province_modifier = { 
+				name = kef_mine_1
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eubmission_events.3
+	title = "eubmission_events.t3"
+	desc = "eubmission_events.d3"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes	
+	
+	option = { 
+		name = "eubmission_events.3a"
+		2454 = {
+			add_province_modifier = { 
+				name = kef_mine_3
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eubmission_events.4
+	title = "eubmission_events.t4"
+	desc = "eubmission_events.d4"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes	
+	
+	option = { 
+		name = "eubmission_events.4a"
+		2454 = {
+			add_province_modifier = { 
+				name = kef_mine_2
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eubmission_events.5
+	title = "eubmission_events.t5"
+	desc = "eubmission_events.d5"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes	
+	
+	option = { 
+		name = "eubmission_events.5a"
+		2454 = {
+			change_trade_goods = coal
+			remove_province_modifier = kef_mine_1
+			remove_province_modifier = kef_mine_2
+			remove_province_modifier = kef_mine_3
+			add_province_modifier = { 
+				name = kef_mine_4
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eubmission_events.6
+	title = "eubmission_events.t6"
+	desc = "eubmission_events.d6"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		has_country_modifier = kef_excavation
+	}
+
+	mean_time_to_happen = {
+		months = 40
+	}
+	
+	option = { 
+		name = "eubmission_events.6a"
+		2454 = {
+			spawn_rebels = {
+				type = peasant_rebels
+				size = 2
+			}
+		}
+	}
+}
