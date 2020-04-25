@@ -3320,7 +3320,7 @@ ITA_ideas = {
 	}
 	
 	bonus = {
-		siege_ability = 0.10
+		siege_ability = 0.15
 	}
 	
 	trigger = {
@@ -3332,7 +3332,7 @@ ITA_ideas = {
 		development_cost = -0.10
 	}
 	tradition_of_the_legion = {
-		infantry_power = 0.125
+		infantry_power = 0.15
 		discipline = 0.05
 	}
 	mare_nostrum = {
@@ -3350,7 +3350,7 @@ ITA_ideas = {
 		prestige = 1
 	}
 	path_to_citizenship = {
-		core_creation = -0.20
+		land_morale = 0.05
 	}
 }
 
@@ -4255,7 +4255,7 @@ USA_ideas = {
 
 SWI_ideas = {
 	start = {
-		mercenary_discipline = 0.075
+		mercenary_discipline = 0.05
 		infantry_power = 0.1
 	}
 	
