@@ -49,4 +49,131 @@ country_decisions = {
 			country_event = { id = hashmp.5 } #Jihad Event
 		}
 	}
+	
+	muslim_school_change = {
+	potential = {
+			OR = {
+				religion = shiite
+				religion = sunni
+				religion = ibadi
+			}
+		}
+		allow = {
+			stability = 2
+		}
+		effect = {
+			add_stability = -2
+			country_event = { id = boutyboutique.1 days = 1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	educate_ruler = {
+	potential = {
+			NOT = { has_country_flag = educate_ruler }
+			government = monarchy
+			ai = no
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			set_country_flag = educate_ruler
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	blitzkrieg = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			is_at_war = yes
+			NOT = { has_country_modifier = krieg_hidden }
+			army_tradition = 50
+			has_idea = engineer_corps
+		}
+		effect = {
+			add_army_tradition = -25
+			add_country_modifier = { 
+				name = krieg
+				duration = 730 
+			}
+			add_country_modifier = { 
+				name = krieg_hidden
+				duration = 3655
+				hidden = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	desperate_defense = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			OR = {
+				is_in_war = {
+					defender_leader = ROOT
+					duration = 1100
+				}
+				is_in_war = {
+					attacker_leader = ROOT
+					duration = 1100
+				}
+			}
+			army_tradition = 50
+			has_idea = military_drill
+			NOT = { has_country_modifier = escalate_hidden }
+		}
+		effect = {
+			add_army_tradition = -25
+			add_country_modifier = { 
+				name = desperate_defense
+				duration = 1830 
+			}
+			add_country_modifier = { 
+				name = escalate_hidden
+				duration = 2930
+				hidden = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fetish_reform = {
+	potential = {
+			religion = shamanism
+		}
+		allow = {
+			is_at_war = no
+			is_religion_enabled = protestant
+			NOT = { has_country_flag = fetish_reform }
+		}
+		effect = {
+			set_country_flag = fetish_reform
+			add_prestige = -100
+			add_years_of_income = 1
+			change_religion = protestant
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
