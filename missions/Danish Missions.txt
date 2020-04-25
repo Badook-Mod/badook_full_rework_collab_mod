@@ -87,11 +87,6 @@ danish_missions_kalmar = {
 				owned_by = ROOT
 				NOT = { culture = danish }
 			}
-			skaneland_area = {
-				type = all
-				owned_by = ROOT
-				NOT = { culture = danish }
-			}
 			holstein_area = {
 				type = all
 				owned_by = ROOT
@@ -331,7 +326,7 @@ danish_missions_baltic = {
 		effect = {
 			add_country_modifier = {
 				name = "danish_supremacy"
-				duration = 5475
+				duration = -1
 			}
 		}
 	}
