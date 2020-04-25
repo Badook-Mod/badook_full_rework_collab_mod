@@ -664,7 +664,7 @@ emperor_is_weak = {
 
 #ai 
 
-fort_compensation_modifier_ai = {
+ai_nerfs = {
 	potential = {
 		AND = {
 			was_player = no
@@ -672,13 +672,14 @@ fort_compensation_modifier_ai = {
 		}
 	}
 	trigger = {
-		num_of_owned_provinces_with = {
-			value = 1
-			base_manpower = 1
+		AND = {
+			was_player = no
+			ai = yes
 		}
 	}
-	global_manpower = 2
-	fort_maintenance_modifier = -0.5
+	global_tax_income = -96
+	land_forcelimit	= -8
+	naval_forcelimit = -10
 }
 
 #charters
