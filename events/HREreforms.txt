@@ -111,7 +111,7 @@ country_event = {
 	
 	trigger = {
 		is_elector = yes
-		grown_by_development = 150
+		grown_by_development = 100
 	}
 	
 	immediate = {
@@ -137,7 +137,7 @@ country_event = {
 	
 	trigger = {
 		is_elector = yes
-		grown_by_development = 250
+		grown_by_development = 150
 	}
 	
 	immediate = {
@@ -163,7 +163,7 @@ country_event = {
 	
 	trigger = {
 		is_elector = yes
-		grown_by_development = 350
+		grown_by_development = 200
 	}
 	
 	immediate = {
@@ -189,7 +189,7 @@ country_event = {
 	
 	trigger = {
 		is_elector = yes
-		grown_by_development = 450
+		grown_by_development = 250
 	}
 	
 	immediate = {
@@ -215,7 +215,7 @@ country_event = {
 	
 	trigger = {
 		is_elector = yes
-		grown_by_development = 600
+		grown_by_development = 350
 	}
 	
 	immediate = {
@@ -240,7 +240,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		grown_by_development = 750 
+		grown_by_development = 450 
 		has_country_flag = got_third_reform_buff_flag 
 		has_country_flag = got_fourth_reform_buff_flag 
 		has_country_flag = got_fith_reform_buff_flag 
