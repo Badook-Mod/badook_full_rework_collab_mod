@@ -446,7 +446,10 @@ prussian_monarchy = {
 	potential = {
 		OR = {
 			AND = {
-				tag = PRU
+				OR = {
+					tag = PRU
+					tag = BRA
+				}
 				NOT = { map_setup = map_setup_random }
 			}
 			AND = {
