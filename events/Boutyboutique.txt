@@ -1,0 +1,211 @@
+namespace = boutyboutique
+
+# limited war bonus
+country_event = {
+	id = boutyboutique.5
+	title = "boutyboutique.5t"
+	desc = "boutyboutique.5d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = limited_war }
+		OR = {
+			is_in_war = {
+				casus_belli = cb_limited_war
+				attacker_leader = ROOT
+			}
+			is_in_war = {
+				casus_belli = cb_limited_imperial_war
+				attacker_leader = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "boutyboutique.05"
+		add_country_modifier = { 
+			name = limited_war
+			duration = 1830 
+		}
+	}
+}
+
+# remove limited_war_bonus
+country_event = {
+	id = boutyboutique.6
+	title = "boutyboutique.6t"
+	desc = "boutyboutique.6d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = limited_war
+		is_at_war = no
+		}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "boutyboutique.06"
+			remove_country_modifier = limited_war
+	}
+}
+
+country_event = {
+	id = boutyboutique.21
+	title = "EVTNAME725"
+	desc = "EVTDESC725"
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1443
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "boutyboutique.O2"
+		every_province = {
+			limit = {
+				OWNER = { 
+					NOT = { has_institution = feudalism } 
+				}
+			}
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = { adm_tech = 3 }
+			}
+			add_adm_tech = 1
+		}
+		every_country = {
+			limit = {
+				NOT = { dip_tech = 3 }
+			}
+			add_dip_tech = 1
+		}
+		every_country = {
+			limit = {
+				NOT = { mil_tech = 3 }
+			}
+			add_mil_tech = 1
+		}
+		every_country = {
+			limit = {
+				religion_group = muslim
+			}
+			country_event = { id = muslim_school_events.20 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = boutyboutique.1
+	title = muslim_school_events.20.t
+	desc = muslim_school_events.20.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1443
+		ai = no
+		NOT = { has_country_flag = muslim_school_choice }
+		religion_group = muslim
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_school_events.20.b #Hanafi
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_country_flag = muslim_school_choice
+		set_religious_school = {
+			group = muslim
+			school = hanafi_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.c #Hanbali
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_country_flag = muslim_school_choice
+		set_religious_school = {
+			group = muslim
+			school = hanbali_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.dd #Maliki
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_country_flag = muslim_school_choice
+		set_religious_school = {
+			group = muslim
+			school = maliki_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.e #Shafi'i
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_country_flag = muslim_school_choice
+		set_religious_school = {
+			group = muslim
+			school = shafii_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.f #Ismaili
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_country_flag = muslim_school_choice
+		set_religious_school = {
+			group = muslim
+			school = ismaili_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.g #Jafari
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_country_flag = muslim_school_choice
+		set_religious_school = {
+			group = muslim
+			school = jafari_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.h #Zaidi
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_country_flag = muslim_school_choice
+		set_religious_school = {
+			group = muslim
+			school = zaidi_school
+		}
+	}
+}

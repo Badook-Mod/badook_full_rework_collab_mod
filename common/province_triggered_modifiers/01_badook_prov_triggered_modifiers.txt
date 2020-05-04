@@ -211,6 +211,197 @@ kamchanod_forest = {
 		}
 	}
 	on_deactivation = {
+	}
+}
+
+bavarian_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = BAV }
+	}
+	
+	prestige = 0.5
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+saxon_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = SAX }
+	}
+	
+	prestige = 0.5
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+milanese_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = MLO }
+	}
+	
+	prestige = 0.5
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+roman_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = PAP }
+	}
+	
+	prestige = 0.5
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+munster_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = MUN }
+	}
+	
+	prestige = 0.5
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+hamburg_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = HAM }
+	}
+	
+	prestige = 0.5
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+wurttemberg_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = WUR }
+	}
+	
+	prestige = 0.5
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+florentine_seat = {  
+	potential = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = took_over_hre_flag }
+	}
+	trigger = {
+		ROOT = { is_part_of_hre = yes }
+		NOT = { exists = FLO }
+	}
+	
+	prestige = 0.25
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+
+	}
+}
+
+#set 2 of modifiers
+
+the_emperors_seats = {  
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			has_country_flag = took_over_hre_flag
+		}
+	}
+	
+	prestige = 0.25
+	global_manpower_modifier = 0.025
+
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
 
 	}
 }

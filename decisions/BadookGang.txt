@@ -78,6 +78,7 @@ country_decisions = {
 		}
 		allow = {
 			ai = no
+			is_year = 1450
 		}
 		effect = {
 			set_country_flag = educate_ruler
@@ -92,7 +93,10 @@ country_decisions = {
 	
 	blitzkrieg = {
 		potential = {
-			ai = no
+			is_at_war = yes
+			NOT = { has_country_modifier = krieg_hidden }
+			army_tradition = 50
+			has_idea = engineer_corps
 		}
 		allow = {
 			is_at_war = yes
@@ -119,7 +123,18 @@ country_decisions = {
 	
 	desperate_defense = {
 		potential = {
-			ai = no
+			OR = {
+				is_in_war = {
+					defender_leader = ROOT
+					duration = 1100
+				}
+				is_in_war = {
+					attacker_leader = ROOT
+					duration = 1100
+				}
+			}
+			army_tradition = 50
+			NOT = { has_country_modifier = escalate_hidden }
 		}
 		allow = {
 			OR = {
@@ -133,7 +148,6 @@ country_decisions = {
 				}
 			}
 			army_tradition = 50
-			has_idea = military_drill
 			NOT = { has_country_modifier = escalate_hidden }
 		}
 		effect = {
@@ -154,7 +168,7 @@ country_decisions = {
 	}
 	
 	fetish_reform = {
-	potential = {
+		potential = {
 			religion = shamanism
 		}
 		allow = {
@@ -171,6 +185,46 @@ country_decisions = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+		}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	take_control_of_the_hre = {
+		potential = {
+			is_elector = yes
+			NUM = {
+				is_emperor = yes 
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 104
+				province_id = 118
+				province_id = 116
+				province_id = 86
+				province_id = 65
+				province_id = 70
+				province_id = 44
+				province_id = 61
+			}
+		}
+		allow = {
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					has_province_modifier = the_emperors_seats
+				}
+				amount = 5
+			}
+		}
+		effect = {
+			custom_tooltip = taking_over_hre_tooltip
+			set_country_flag = took_over_hre_flag
+			add_prestige = 100
+			dismantle_hre = yes
+			set_government_rank = 3
 		}	
 		ai_will_do = {
 			factor = 0

@@ -1,5 +1,5 @@
 namespace = badookmp
-# ty foffy x3 :peepolove:
+# ty foffy x2 :peepolove:
 # Takab Gold Mine
 
 country_event = {

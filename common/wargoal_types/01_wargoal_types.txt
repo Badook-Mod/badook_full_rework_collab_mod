@@ -55,7 +55,7 @@ nomadic_conquest = {
 	attacker = {
 		badboy_factor = 0.5
 		prestige_factor = 1.25
-		peace_cost_factor = 1.5
+		peace_cost_factor = 1.25
 		
 		allowed_provinces = {
 			always = yes
@@ -150,7 +150,7 @@ all_out_war = {
 	attacker = {
 		badboy_factor = 0.50
 		prestige_factor = 1.5
-		peace_cost_factor = 0.75
+		peace_cost_factor = 0.90
 		
 		allowed_provinces = {
 			always = yes
@@ -172,9 +172,9 @@ all_out_war = {
 	}
 	
 	defender = {
-		badboy_factor = 0.25
+		badboy_factor = 0.50
 		prestige_factor = 1.5
-		peace_cost_factor = 0.65	
+		peace_cost_factor = 0.80	
 		
 		
 		allowed_provinces = {
@@ -228,7 +228,7 @@ limited_war = {
 	defender = {
 		badboy_factor = 1
 		prestige_factor = 1
-		peace_cost_factor = 1.75
+		peace_cost_factor = 1.5
 		
 		
 		allowed_provinces = {

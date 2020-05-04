@@ -14,10 +14,12 @@ country_event = {
 	trigger = {
 		NOT = {
 			capital_scope = {
-				region = north_german_region 
-				region = south_german_region 
-				region = italy_region 
-				region = maghreb_region
+				OR = {
+					region = north_german_region 
+					region = south_german_region 
+					region = italy_region 
+					region = maghreb_region
+				}
 			}
 			has_country_flag = got_ae_malus_flag
 		}
@@ -62,7 +64,7 @@ country_event = {
 	trigger = {	
 		had_country_flag = {
 			flag = got_ae_malus_flag
-			days = 3650
+			days = 7300
 		}
 	}
 	
@@ -151,6 +153,12 @@ country_event = {
 			name = reform3_buff
 			duration = -1  
 		}
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+		set_government_rank = 2
+		}
 	}
 }
 
@@ -174,8 +182,14 @@ country_event = {
 	option = {
 		name = HREreforms.1.a 
 		add_country_modifier = {
-			name = reform2_buff
+			name = reform4_buff
 			duration = -1  
+		}
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+		set_government_rank = 2
 		}
 	}
 }
@@ -203,6 +217,12 @@ country_event = {
 			name = reform5_buff
 			duration = -1  
 		}
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+		set_government_rank = 2
+		}
 	}
 }
 
@@ -229,6 +249,12 @@ country_event = {
 			name = reform6_buff
 			duration = -1  
 		}
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+		set_government_rank = 2
+		}
 	}
 }
 
@@ -241,7 +267,6 @@ country_event = {
 	
 	trigger = {
 		grown_by_development = 450 
-		has_country_flag = got_third_reform_buff_flag 
 		has_country_flag = got_fourth_reform_buff_flag 
 		has_country_flag = got_fith_reform_buff_flag 
 		has_country_flag = got_sixth_reform_buff_flag 
@@ -253,7 +278,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = HREreforms.7.a 
+		name = HREreforms.7.a 	
 		if = {
 			limit = {
 				tag = SWI

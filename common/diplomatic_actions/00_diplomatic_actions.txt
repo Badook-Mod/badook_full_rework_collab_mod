@@ -202,6 +202,15 @@ form_coalition = {
 			}
 		}
 	}
+	condition = {
+		tooltip = emperor_coalition_restriction
+		potential = {
+			tag = NUM
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 #Badook Mod
@@ -255,6 +264,30 @@ declarewar = {
 			always = no
 		}
 	}
+	condition = {
+		tooltip = badook_emperor_war_restriction
+		potential = {
+			always = yes
+		}
+		allow = {
+			FROM = { 
+				NOT = { 
+					tag = NUM
+				}	
+			}
+		}
+	}
+	condition = {
+		tooltip = badook_emperor_war_restriction2
+		potential = {
+			OR = {
+				tag = NUM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 
@@ -276,6 +309,28 @@ allianceaction = {
 		}
 		allow = {
 			FROM = { is_colonial_nation = no }
+		}
+	}
+	condition = {
+		tooltip = badook_emperorhre_ally_restriction
+		potential = {
+			NOT = { tag = NUM }
+		}
+		allow = {
+			FROM = { 
+				NOT = { tag = NUM }
+			}
+		}
+	}
+	condition = {
+		tooltip = badook_emperorhre_ally_restriction2
+		potential = {
+			tag = NUM
+		}
+		allow = {
+			FROM = { 
+				tag = NUM
+			}
 		}
 	}
 	#yellow turban

@@ -669,16 +669,18 @@ ai_nerfs = {
 		AND = {
 			was_player = no
 			ai = yes
+			is_subject = no
 		}
 	}
 	trigger = {
 		AND = {
 			was_player = no
 			ai = yes
+			is_subject = no
 		}
 	}
-	global_tax_income = -96
-	land_forcelimit	= -8
+	global_tax_income = -60
+	land_forcelimit	= -10
 	naval_forcelimit = -10
 }
 

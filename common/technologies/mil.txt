@@ -15,7 +15,7 @@ technology = {
 
 	infantry_fire		= 	0.25
 	infantry_shock 		= 	0.20	
-	cavalry_shock  		= 	0.8	
+	cavalry_shock  		= 	0.5
 	land_morale 		= 	2.0
 }
 
@@ -102,8 +102,8 @@ technology = {
 	#Standardised Pikes
 	supply_limit 		= 	0.5
 	infantry_shock		= 	0.15
-	cavalry_shock		= 	0.2
-	cavalry_fire = 0.2
+	cavalry_shock		= 	0.40
+	cavalry_fire 		=   0.05
 
 	enable = western_men_at_arms	
 	enable = western_longbow	
@@ -140,7 +140,7 @@ technology = {
 	#Arquebus
 	military_tactics 	= 	0.25
 	infantry_shock		= 	0.30
-	infantry_fire 		= 	0.20
+	infantry_fire 		= 	0.25
 	
 	
 	barracks = yes
@@ -181,8 +181,8 @@ technology = {
 	#Pike and Shot
 	enable = steppe_riders
 	infantry_fire		= 	0.25
-	cavalry_shock		=	0.8
-	cavalry_fire = 0.4
+	cavalry_shock		=	0.6
+	cavalry_fire 		= 	0.2
 	
 	
 	regimental_camp = yes
@@ -208,7 +208,7 @@ technology = {
 	enable = ha_xiuhtecuhtli_soldier
 	military_tactics 	= 	0.25
 	combat_width = 1	
-	cavalry_fire = 0.25
+	cavalry_fire = 0.1
 }
 
 technology = {
@@ -245,8 +245,8 @@ technology = {
 	year = 1544
 	
 	#Matchlock Musket
-	infantry_shock		= 	0.20
-	cavalry_fire		= 	0.5
+	infantry_shock		= 	0.3
+	cavalry_fire		= 	0.4
 
 	
 	weapons = yes
@@ -300,7 +300,7 @@ technology = {
 	#Star Bastions
 	fort_16th = yes
 	infantry_fire		=	0.3
-	cavalry_fire = 0.25
+	cavalry_fire = 0.5
 	
 	enable = african_hussar
 	enable = french_caracolle 
@@ -368,9 +368,7 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	0.5
 	supply_limit		= 	0.5	
-	cavalry_fire = 0.50
 	
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
@@ -456,7 +454,7 @@ technology = {
 	year = 1687
 	
 	#Cartridge	(1620)?)
-	cavalry_fire		=	0.5
+	cavalry_fire		=	0.65
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
 	
@@ -477,7 +475,7 @@ technology = {
 	
 	#Light Cavalry
 	
-	cavalry_shock		=	1
+	cavalry_shock		=	0.5
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 
@@ -577,6 +575,7 @@ technology = {
 	#Bayonet
 	supply_limit		=	0.5
 	infantry_fire		= 	0.5	
+	cavalry_fire = 0.5
 }
 
 technology = {
@@ -647,7 +646,7 @@ technology = {
 	year = 1820
 	
 	#Rifle
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.5
 	infantry_fire		=	1.0
 	supply_limit		=	0.5
 }

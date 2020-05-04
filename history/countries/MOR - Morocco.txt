@@ -36,9 +36,9 @@ religious_school = maliki_school
 	monarch = {
 		name = "Abdalhaqq II"
 		dynasty = "Marinid"
-		adm = 0
-		dip = 2
-		mil = 1
+		adm = 4
+		dip = 4
+		mil = 3
 	}
 	capital = 343 # Fez
 }

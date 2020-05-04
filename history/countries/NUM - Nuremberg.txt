@@ -6,6 +6,14 @@ technology_group = western
 primary_culture = franconian
 religion = catholic
 capital = 67 # Nürnberg
+historical_friend = HAB
+historical_friend = SWI
+historical_friend = BRA
+historical_friend = VEN
+historical_friend = GEN
+historical_friend = NAP
+historical_friend = HES
+historical_friend = DAN
 fixed_capital = 67 # Cannot move capital away from this province & no power cost to move to it
 
 #Ruled by a council of Patricians

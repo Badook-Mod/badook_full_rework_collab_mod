@@ -117,16 +117,16 @@ papal_dominion = {
 	papal_influence = 1
 }
 
-boar_advisor = {
+snake_advisor = {
 	improve_relation_modifier = -0.1
 }
 
-boar_haven = {
-	local_manpower_modifier = 0.5
+snake_haven = {
+	local_manpower_modifier = 0.3
 }
 
 mystery_cannon = {
-	artillery_power = 0.3
+	artillery_power = 0.25
 }
 
 child_labor = {

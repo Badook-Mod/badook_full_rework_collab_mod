@@ -19,6 +19,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { exists = SPA }
+		always = no
 		OR = {
 			AND = {
 				tag = CAS

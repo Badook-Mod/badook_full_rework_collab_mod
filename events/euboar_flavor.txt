@@ -30,14 +30,14 @@ country_event = { #snake gang
 				owned_by = ROOT
 			}
 			add_province_modifier = { 
-				name = boar_haven
+				name = snake_haven
 				duration = -1 
 			}
 		}
 	}
 	option = { # put the boar in charge
 		name = "eubflavor_events.1c"
-		add_ruler_modifier = { name = boar_advisor }
+		add_ruler_modifier = { name = advisor_advisor }
 		if = {
 			limit = {
 				NOT = { MIL = 5 }
@@ -50,6 +50,7 @@ country_event = { #snake gang
 					}
 					change_mil = 1
 					add_mil_power = 50
+					change_adm = 1
 					else = {
 						add_mil_power = 100
 					}
@@ -81,15 +82,15 @@ country_event = { #orphan
 		define_heir = {
 			dynasty = ROOT
 			age = 6
-			adm = 1
-			dip = 1
-			mil = 1
+			adm = 3
+			dip = 3
+			mil = 3
 			claim = 20
 		}
 	}
 	option = { # pay for his education
 		name = "eubflavor_events.2b"
-		add_treasury = -100
+		add_treasury = -150
 		country_event = { 
 			id = eubflavor_events.4
 			days = 3650
@@ -131,9 +132,9 @@ country_event = { #mad scientist
 	option = { # see if anything can be useful
 		name = "eubflavor_events.3b"
 		add_country_modifier = {
-				name = "mystery_cannon"
-				duration = 7310
-			}
+			name = "mystery_cannon"
+			duration = 7310
+		}
 	}
 	option = { # fund his experiments
 		name = "eubflavor_events.3c"

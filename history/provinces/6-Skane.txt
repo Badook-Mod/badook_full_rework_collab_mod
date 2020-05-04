@@ -1,9 +1,9 @@
 #Skåne
 
-owner = SWE
-controller = SWE
-add_core = SWE
-culture = swedish
+owner = DAN
+controller = DAN
+add_core = DAN
+culture = danish
 religion = catholic
 hre = no
 base_tax = 7
