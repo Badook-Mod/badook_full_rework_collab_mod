@@ -47,7 +47,7 @@ the_provincial_taxation_system = {
 		}
 	}
 	
-	manpower_recovery_speed = 0.1
+	manpower_recovery_speed = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -151,7 +151,7 @@ noble_loyalty_act = {
 		}
 	}
 
-	cavalry_power = 0.05
+	cavalry_power = 0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -179,6 +179,7 @@ modern_firearm_techniques = {
 	
 	potential = {
 		adm_tech = 7
+		NOT = { adm_tech = 26 }
 	}
 	
 	allow = {
@@ -193,7 +194,7 @@ modern_firearm_techniques = {
 		}
 	}
 	
-	infantry_power = 0.05
+	infantry_power = 0.1
 
 	ai_will_do = {
 		factor = 1.2		
@@ -261,7 +262,7 @@ the_liquor_act = {
 		}
 	}	
 	
-	shock_damage_received = -0.075
+	shock_damage_received = -0.1
 
 	ai_will_do = {
 		factor = 0.6
@@ -287,7 +288,7 @@ privy_council_establishment_act = {
 		}
 	}
 
-	defensiveness = 0.15
+	defensiveness = 0.2
 	
 	ai_will_do = {
 		factor = 0.6
@@ -344,11 +345,11 @@ agricultural_cultivations = {
 		full_idea_group = defensive_ideas
 		full_idea_group = quality_ideas
 		full_idea_group = quantity_ideas
-		amount = 3
+		amount = 2
 		}
 	}	
 	
-	development_cost = -0.075
+	development_cost = -0.1
 
 	ai_will_do = {
 		factor = 1
@@ -395,7 +396,7 @@ the_mercenary_registration_act = {
 		}
 	}
 
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.08
 	
 	ai_will_do = {
 		factor = 1
@@ -455,7 +456,7 @@ horse_artillery = {
 		amount = 4
 		}
 	}
-	artillery_power = 0.1
+	artillery_power = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -497,7 +498,7 @@ superior_supply_system = {
 		}
 	}
 	
-	fire_damage_received = -0.075
+	fire_damage_received = -0.15
 
 	ai_will_do = {
 		factor = 1
@@ -528,7 +529,7 @@ modern_siege_weapons = {
 		}
 	}
 	
-	fire_damage = 0.1
+	fire_damage = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -558,7 +559,7 @@ field_priests = {
 		}
 	}
 
-	land_morale = 0.05
+	land_morale = 0.1
 	
 	ai_will_do = {
 		factor = 1.2
@@ -587,7 +588,7 @@ pen_rely_on_sword_act = {
 		}
 	}
 	
-	land_forcelimit_modifier = 0.2
+	land_forcelimit_modifier = 0.3
 
 	
 	ai_will_do = {
@@ -632,7 +633,7 @@ underhanded_diplomacy_act = {
 		amount = 2
 		}
 	}
-	possible_mercenaries = 0.2
+	possible_mercenaries = 0.33
 
 	ai_will_do = {
 		factor = 0.6
@@ -658,7 +659,7 @@ weapon_quality_standards = {
 		}
 	}
 	
-	discipline = 0.03
+	discipline = 0.05
 	
 	ai_will_do = {
 		factor = 2
@@ -688,7 +689,7 @@ noble_loyalty_act_2 = {
 		}
 	}
 
-	cavalry_power = 0.1
+	cavalry_power = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -730,7 +731,7 @@ modern_firearm_techniques_2 = {
 		}
 	}
 	
-	infantry_power = 0.1
+	infantry_power = 0.15
 
 	ai_will_do = {
 		factor = 1.2		
@@ -768,7 +769,7 @@ superior_fortification_act_2 = {
 		}
 	}
 	
-	shock_damage = 0.1
+	shock_damage = 0.2
 
 
 	ai_will_do = {
@@ -796,7 +797,7 @@ the_liquor_act_2 = {
 		}
 	}	
 	
-	shock_damage_received = -0.075
+	shock_damage_received = -0.15
 
 	ai_will_do = {
 		factor = 0.6
