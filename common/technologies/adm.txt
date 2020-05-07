@@ -2,7 +2,7 @@ monarch_power = ADM
 
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
-	production_efficiency = 0.2
+	production_efficiency = 0.1
 	yearly_corruption = -0.05
 }
 
@@ -68,7 +68,7 @@ technology = { #National Ideas
 	year = 1466
 
 	allowed_idea_groups = 1
-	production_efficiency	 =	0.02
+	production_efficiency	 =	0.01
 	max_states = 3
 }
 
@@ -104,7 +104,7 @@ technology = { #The Scythe
 	year = 1518
 	
 	#The Scythe
-	production_efficiency 	=	0.02
+	production_efficiency 	=	0.01
 	
 
 }
@@ -165,7 +165,6 @@ technology = { #Metallurgy
 	year = 1609
 	
 	mills = yes
-	production_efficiency 	=	0.01
 
 
 }
@@ -209,7 +208,6 @@ technology = { #Land Clearance
 	year = 1674
 	
 	#Land Clearance
-	production_efficiency 	=	0.01
 	furnace = yes
 }
 
@@ -303,6 +301,5 @@ technology = { #Four Field Rotation
 	year = 1835
 	
 	#Four field rotation
-	production_efficiency 	=	0.01
 	max_states = 5
 }
